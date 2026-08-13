@@ -241,6 +241,18 @@ main {
     border-color: #06b6d4;
 }
 
+.filter-btn[data-filter="IPv4"].active {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    color: #ffffff;
+    border-color: #3b82f6;
+}
+
+.filter-btn[data-filter="IPv6"].active {
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    color: #ffffff;
+    border-color: #8b5cf6;
+}
+
 .filter-btn[data-filter="DoH"].active {
     background: linear-gradient(135deg, #8b5cf6, #a78bfa);
     color: #ffffff;
@@ -325,60 +337,9 @@ main {
     padding: 0.15rem 0.7rem;
     border-radius: 12px;
     font-weight: 500;
-}
-
-.category-badge:contains("Standard") {
-    background: rgba(59, 130, 246, 0.2);
-    color: #60a5fa;
-    border: 1px solid rgba(59, 130, 246, 0.2);
-}
-
-.category-badge:contains("AdBlock") {
-    background: rgba(245, 158, 11, 0.2);
-    color: #fbbf24;
-    border: 1px solid rgba(245, 158, 11, 0.2);
-}
-
-.category-badge:contains("Family") {
-    background: rgba(16, 185, 129, 0.2);
-    color: #34d399;
-    border: 1px solid rgba(16, 185, 129, 0.2);
-}
-
-.category-badge:contains("Security") {
-    background: rgba(239, 68, 68, 0.2);
-    color: #f87171;
-    border: 1px solid rgba(239, 68, 68, 0.2);
-}
-
-.category-badge:contains("Malware") {
-    background: rgba(220, 38, 38, 0.2);
-    color: #ef4444;
-    border: 1px solid rgba(220, 38, 38, 0.2);
-}
-
-.category-badge:contains("Adult") {
-    background: rgba(236, 72, 153, 0.2);
-    color: #f472b6;
-    border: 1px solid rgba(236, 72, 153, 0.2);
-}
-
-.category-badge:contains("Unfiltered") {
-    background: rgba(139, 92, 246, 0.2);
-    color: #a78bfa;
-    border: 1px solid rgba(139, 92, 246, 0.2);
-}
-
-.category-badge:contains("FreeShekan") {
-    background: rgba(249, 115, 22, 0.2);
-    color: #fb923c;
-    border: 1px solid rgba(249, 115, 22, 0.2);
-}
-
-.category-badge:contains("Private") {
-    background: rgba(6, 182, 212, 0.2);
-    color: #22d3ee;
-    border: 1px solid rgba(6, 182, 212, 0.2);
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .dns-protocols {
@@ -393,30 +354,9 @@ main {
     padding: 0.15rem 0.7rem;
     border-radius: 12px;
     font-weight: 500;
-}
-
-.protocol-badge:contains("DNS") {
-    background: rgba(99, 102, 241, 0.15);
-    color: #818cf8;
-    border: 1px solid rgba(99, 102, 241, 0.15);
-}
-
-.protocol-badge:contains("DoH") {
-    background: rgba(139, 92, 246, 0.15);
-    color: #a78bfa;
-    border: 1px solid rgba(139, 92, 246, 0.15);
-}
-
-.protocol-badge:contains("DoT") {
-    background: rgba(99, 102, 241, 0.15);
-    color: #818cf8;
-    border: 1px solid rgba(99, 102, 241, 0.15);
-}
-
-.protocol-badge:contains("DNSCrypt") {
-    background: rgba(20, 184, 166, 0.15);
-    color: #2dd4bf;
-    border: 1px solid rgba(20, 184, 166, 0.15);
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .dns-type {
