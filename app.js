@@ -172,10 +172,40 @@ class AristaDNSHub {
         const provider = dns.provider || 'Unknown Provider';
         const type = dns.type || 'Unknown';
         
+        let displayAddress = address;
+        let copyAddress = address;
+        
+        if (type === 'IPv6' && address !== 'N/A') {
+            if (dns.doh_url) {
+                displayAddress = dns.doh_url;
+                copyAddress = dns.doh_url;
+            } else if (dns.dot) {
+                displayAddress = `${address}:853`;
+                copyAddress = `${address}:853`;
+            } else {
+                displayAddress = `[${address}]`;
+                copyAddress = address;
+            }
+        } else if (type === 'IPv4' && address !== 'N/A') {
+            if (dns.doh_url) {
+                displayAddress = dns.doh_url;
+                copyAddress = dns.doh_url;
+            } else if (dns.dot) {
+                displayAddress = `${address}:853`;
+                copyAddress = `${address}:853`;
+            }
+        } else if (type === 'DoH' && dns.doh_url) {
+            displayAddress = dns.doh_url;
+            copyAddress = dns.doh_url;
+        } else if (type === 'DoT' && dns.dot) {
+            displayAddress = `${dns.dot}:853`;
+            copyAddress = `${dns.dot}:853`;
+        }
+        
         return `
             <div class="dns-card glass-card">
                 <div class="dns-header">
-                    <span class="dns-address">${address}</span>
+                    <span class="dns-address">${displayAddress}</span>
                     <span class="dns-status">● ACTIVE</span>
                 </div>
                 <div class="dns-provider">${provider}</div>
@@ -183,7 +213,7 @@ class AristaDNSHub {
                 <div class="dns-protocols">${protocols}</div>
                 <div class="dns-type">${type}</div>
                 <div class="dns-actions">
-                    <button class="copy-btn" data-address="${address}">Copy</button>
+                    <button class="copy-btn" data-address="${copyAddress}">Copy</button>
                 </div>
             </div>
         `;
