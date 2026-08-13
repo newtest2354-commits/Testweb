@@ -54,14 +54,7 @@ class DNSCryptParser:
             if len(parts) >= 2:
                 sdns_data = parts[1]
                 
-                try:
-                    decoded = base64.b64decode(sdns_data, validate=True)
-                except:
-                    padding = 4 - (len(sdns_data) % 4)
-                    if padding != 4:
-                        sdns_data += '=' * padding
-                    decoded = base64.b64decode(sdns_data)
-                
+                decoded = base64.b64decode(sdns_data + '=' * (-len(sdns_data) % 4))
                 decoded_str = decoded.decode('utf-8', errors='ignore')
                 
                 ip_match = re.search(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})', decoded_str)
@@ -72,5 +65,5 @@ class DNSCryptParser:
                 if ipv6_match:
                     return ipv6_match.group(1)
         except Exception as e:
-            print(f"Error extracting: {e}")
+            print(f"Error: {e}")
         return ''
