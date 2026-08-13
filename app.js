@@ -38,6 +38,7 @@ class AristaDNSHub {
         }
         
         this.filteredData = [...this.dnsData];
+        console.log('Total DNS loaded:', this.dnsData.length);
     }
     
     setupEventListeners() {
@@ -164,7 +165,8 @@ class AristaDNSHub {
             `<span class="category-badge">${cat}</span>`
         ).join('');
         
-        const protocols = (dns.protocols || []).map(proto => 
+        const protocols = Array.isArray(dns.protocols) ? dns.protocols : [];
+        const protocolsHtml = protocols.map(proto => 
             `<span class="protocol-badge">${proto}</span>`
         ).join('');
         
@@ -175,7 +177,12 @@ class AristaDNSHub {
         let displayAddress = address;
         let copyAddress = address;
         const isIPv6 = type === 'IPv6' && address !== 'N/A';
-        const hasDoH = dns.protocols && dns.protocols.includes('DoH');
+        const hasDoH = protocols.includes('DoH');
+        
+        console.log('DNS:', dns.name);
+        console.log('Address:', address);
+        console.log('Protocols:', protocols);
+        console.log('Has DoH:', hasDoH);
         
         if (hasDoH) {
             if (isIPv6) {
@@ -190,6 +197,10 @@ class AristaDNSHub {
             copyAddress = address;
         }
         
+        console.log('Display:', displayAddress);
+        console.log('Copy:', copyAddress);
+        console.log('---');
+        
         return `
             <div class="dns-card glass-card">
                 <div class="dns-header">
@@ -198,7 +209,7 @@ class AristaDNSHub {
                 </div>
                 <div class="dns-provider">${provider}</div>
                 <div class="dns-categories">${categories}</div>
-                <div class="dns-protocols">${protocols}</div>
+                <div class="dns-protocols">${protocolsHtml}</div>
                 <div class="dns-type">${type}</div>
                 <div class="dns-actions">
                     <button class="copy-btn" data-address="${copyAddress}">Copy</button>
