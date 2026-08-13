@@ -35,8 +35,8 @@ jobs:
           cd collector
           python main.py
         env:
-          DNSCRYPT_SOURCE_URL: ${{ vars.DNSCRYPT_SOURCE_URL }}
-          DOH_SOURCE_URL: ${{ vars.DOH_SOURCE_URL }}
+          DNSCRYPT_SOURCE_URL: ${{ secrets.DNSCRYPT_SOURCE_URL }}
+          DOH_SOURCE_URL: ${{ secrets.DOH_SOURCE_URL }}
           
       - name: Commit and push if changes
         run: |
