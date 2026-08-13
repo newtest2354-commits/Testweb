@@ -33,9 +33,10 @@ class Normalizer:
             normalized[key] = value
         
         if 'address' not in normalized or not normalized['address']:
-            if 'doh_url' in normalized:
+            if 'doh_url' in normalized and normalized['doh_url']:
                 parsed = urlparse(normalized['doh_url'])
-                normalized['address'] = parsed.netloc.split(':')[0]
+                hostname = parsed.netloc.split(':')[0]
+                normalized['address'] = hostname
             elif 'hostname' in normalized:
                 normalized['address'] = normalized['hostname']
                 
