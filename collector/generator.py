@@ -1,6 +1,6 @@
-import os
 import json
 import uuid
+import os
 from datetime import datetime
 from typing import List, Dict, Any
 
@@ -58,7 +58,7 @@ class Generator:
             'total_standard': self._count_category('Standard'),
             'total_private': self._count_category('Private'),
             'total_family': self._count_category('Family'),
-            'total_adblock': self._count_category('Adblock'),
+            'total_adblock': self._count_category('AdBlock'),
             'total_security': self._count_category('Security'),
             'total_freeshekan': self._count_category('FreeShekan'),
             'total_sources': len(set([s for entry in self.data for s in entry.get('sources', [])])),
@@ -84,7 +84,7 @@ class Generator:
     def _generate_minified(self) -> Dict[str, Any]:
         output = self._generate_output()
         for dns in output['dns']:
-            for key in ['description', 'source', 'dot']:
+            for key in ['description', 'source']:
                 if key in dns:
                     del dns[key]
         return output
