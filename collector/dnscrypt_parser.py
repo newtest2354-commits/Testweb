@@ -23,32 +23,28 @@ class DNSCryptParser:
         dns_list = []
         lines = content.split('\n')
         current_name = None
-        i = 0
-
-        while i < len(lines):
-            line = lines[i].strip()
-
+        
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+                
             if line.startswith('## '):
                 current_name = line[3:].strip()
-                i += 1
-                while i < len(lines):
-                    next_line = lines[i].strip()
-                    if next_line.startswith('sdns://'):
-                        address = cls._extract_address_from_sdns(next_line)
-                        if address:
-                            dns_list.append({
-                                'name': current_name,
-                                'address': address,
-                                'source': cls.SOURCE_NAME,
-                                'type': 'IPv6' if ':' in address else 'IPv4',
-                                'dnscrypt': True
-                            })
-                            print(f"Found: {current_name} -> {address}")
-                    elif next_line.startswith('## '):
-                        break
-                    i += 1
-            i += 1
-
+            elif line.startswith('sdns://'):
+                if current_name:
+                    address = cls._extract_address_from_sdns(line)
+                    if address:
+                        dns_list.append({
+                            'name': current_name,
+                            'address': address,
+                            'source': cls.SOURCE_NAME,
+                            'type': 'IPv6' if ':' in address else 'IPv4',
+                            'dnscrypt': True
+                        })
+                        print(f"Found: {current_name} -> {address}")
+        
+        print(f"Total DNSCrypt entries extracted: {len(dns_list)}")
         return dns_list
 
     @classmethod
