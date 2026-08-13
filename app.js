@@ -39,6 +39,11 @@ class AristaDNSHub {
         
         this.filteredData = [...this.dnsData];
         console.log('Total DNS loaded:', this.dnsData.length);
+        if (this.dnsData.length > 0) {
+            console.log('First DNS sample:', this.dnsData[0]);
+            console.log('First DNS protocols:', this.dnsData[0].protocols);
+            console.log('First DNS has DoH:', this.dnsData[0].protocols && this.dnsData[0].protocols.includes('DoH'));
+        }
     }
     
     setupEventListeners() {
@@ -179,10 +184,13 @@ class AristaDNSHub {
         const isIPv6 = type === 'IPv6' && address !== 'N/A';
         const hasDoH = protocols.includes('DoH');
         
-        console.log('DNS:', dns.name);
+        console.log('--- Processing DNS ---');
+        console.log('Name:', dns.name);
         console.log('Address:', address);
+        console.log('Type:', type);
         console.log('Protocols:', protocols);
         console.log('Has DoH:', hasDoH);
+        console.log('Is IPv6:', isIPv6);
         
         if (hasDoH) {
             if (isIPv6) {
@@ -192,13 +200,16 @@ class AristaDNSHub {
                 displayAddress = `https://${address}/dns-query`;
                 copyAddress = displayAddress;
             }
+            console.log('DoH mode - Display:', displayAddress);
         } else if (isIPv6) {
             displayAddress = `[${address}]`;
             copyAddress = address;
+            console.log('IPv6 mode - Display:', displayAddress);
+        } else {
+            console.log('Standard mode - Display:', displayAddress);
         }
         
-        console.log('Display:', displayAddress);
-        console.log('Copy:', copyAddress);
+        console.log('Copy address:', copyAddress);
         console.log('---');
         
         return `
