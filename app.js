@@ -174,13 +174,29 @@ class AristaDNSHub {
         
         let displayAddress = address;
         let copyAddress = address;
+        let isIPv6 = type === 'IPv6' && address !== 'N/A';
         
         if (dns.doh_url) {
-            displayAddress = dns.doh_url;
-            copyAddress = dns.doh_url;
+            if (isIPv6) {
+                displayAddress = `https://[${address}]/dns-query`;
+                copyAddress = `https://[${address}]/dns-query`;
+            } else {
+                displayAddress = dns.doh_url;
+                copyAddress = dns.doh_url;
+            }
         } else if (dns.dot) {
-            displayAddress = dns.dot;
-            copyAddress = `${dns.dot}:853`;
+            if (isIPv6) {
+                displayAddress = `[${address}]:853`;
+                copyAddress = `[${address}]:853`;
+            } else {
+                displayAddress = `${address}:853`;
+                copyAddress = `${address}:853`;
+            }
+        } else {
+            if (isIPv6) {
+                displayAddress = `[${address}]`;
+                copyAddress = address;
+            }
         }
         
         return `
