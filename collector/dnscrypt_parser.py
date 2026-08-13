@@ -21,38 +21,33 @@ class DNSCryptParser:
     @classmethod
     def _parse_content(cls, content: str) -> List[Dict[str, Any]]:
         dns_list = []
-        current_entry = {}
         lines = content.split('\n')
+        i = 0
         
-        for line in lines:
-            line = line.strip()
-            if not line:
-                continue
-                
+        while i < len(lines):
+            line = lines[i].strip()
+            
             if line.startswith('## '):
-                if current_entry:
-                    dns_list.append(current_entry)
-                current_entry = {
-                    'name': line[3:].strip(),
-                    'source': cls.SOURCE_NAME
-                }
-            elif line.startswith('sdns://'):
-                address = cls._extract_address_from_sdns(line)
-                if address:
-                    current_entry['address'] = address
-                    if ':' in address:
-                        current_entry['type'] = 'IPv6'
-                    else:
-                        current_entry['type'] = 'IPv4'
-                current_entry['dnscrypt'] = True
-            elif line.startswith('* '):
-                key_value = line[2:].strip()
-                if ': ' in key_value:
-                    key, value = key_value.split(': ', 1)
-                    current_entry[key.lower()] = value
-                    
-        if current_entry:
-            dns_list.append(current_entry)
+                current_name = line[3:].strip()
+                
+                i += 1
+                while i < len(lines):
+                    next_line = lines[i].strip()
+                    if next_line.startswith('sdns://'):
+                        address = cls._extract_address_from_sdns(next_line)
+                        if address:
+                            dns_list.append({
+                                'name': current_name,
+                                'address': address,
+                                'source': cls.SOURCE_NAME,
+                                'type': 'IPv6' if ':' in address else 'IPv4',
+                                'dnscrypt': True
+                            })
+                            print(f"Found: {current_name} -> {address}")
+                    elif next_line.startswith('## '):
+                        break
+                    i += 1
+            i += 1
             
         return dns_list
     
@@ -65,6 +60,7 @@ class DNSCryptParser:
                 padding = 4 - (len(sdns_data) % 4)
                 if padding != 4:
                     sdns_data += '=' * padding
+                    
                 decoded = base64.b64decode(sdns_data)
                 decoded_str = decoded.decode('utf-8', errors='ignore')
                 
@@ -75,12 +71,6 @@ class DNSCryptParser:
                 ipv6_match = re.search(r'\[([0-9a-fA-F:]+)\]', decoded_str)
                 if ipv6_match:
                     return ipv6_match.group(1)
-                    
-                hostname_match = re.search(r'([a-zA-Z0-9][a-zA-Z0-9.-]+\.[a-zA-Z]{2,})', decoded_str)
-                if hostname_match:
-                    return hostname_match.group(1)
-                    
         except Exception as e:
-            print(f"Error extracting address from sdns: {e}")
-            
+            print(f"Error decoding: {e}")
         return ''
