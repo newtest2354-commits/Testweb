@@ -1,4 +1,3 @@
-import json
 import requests
 import base64
 import re
@@ -63,7 +62,10 @@ class DNSCryptParser:
             parts = sdns_line.split()
             if len(parts) >= 2:
                 sdns_data = parts[1]
-                decoded = base64.b64decode(sdns_data + '=' * (4 - len(sdns_data) % 4))
+                padding = 4 - (len(sdns_data) % 4)
+                if padding != 4:
+                    sdns_data += '=' * padding
+                decoded = base64.b64decode(sdns_data)
                 decoded_str = decoded.decode('utf-8', errors='ignore')
                 
                 ip_match = re.search(r'(\d+\.\d+\.\d+\.\d+)', decoded_str)
@@ -79,6 +81,6 @@ class DNSCryptParser:
                     return hostname_match.group(1)
                     
         except Exception as e:
-            print(f"Error extracting address: {e}")
+            print(f"Error extracting address from sdns: {e}")
             
         return ''
