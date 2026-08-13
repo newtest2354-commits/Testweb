@@ -25,13 +25,20 @@ class Normalizer:
                 
                 if 'url' in key.lower() or key == 'doh_url':
                     value = cls._normalize_url(value)
-                elif 'hostname' in key.lower() or 'name' in key.lower():
+                elif 'hostname' in key.lower() or key == 'name':
                     value = value.lower()
                 elif 'ip' in key.lower() or key == 'address':
                     value = cls._normalize_ip(value)
                     
             normalized[key] = value
-            
+        
+        if 'address' not in normalized or not normalized['address']:
+            if 'doh_url' in normalized:
+                parsed = urlparse(normalized['doh_url'])
+                normalized['address'] = parsed.netloc.split(':')[0]
+            elif 'hostname' in normalized:
+                normalized['address'] = normalized['hostname']
+                
         if 'source' not in normalized:
             normalized['source'] = 'unknown'
             
@@ -66,12 +73,8 @@ class Normalizer:
     
     @classmethod
     def _is_valid(cls, entry: Dict[str, Any]) -> bool:
-        required_fields = ['name', 'source']
-        for field in required_fields:
-            if field not in entry or not entry[field]:
-                return False
-                
-        if 'address' not in entry and 'doh_url' not in entry and 'dot' not in entry:
+        if 'name' not in entry or not entry['name']:
             return False
-            
+        if 'address' not in entry and 'doh_url' not in entry:
+            return False
         return True
