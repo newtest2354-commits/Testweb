@@ -2,22 +2,23 @@ import requests
 import base64
 import re
 import ipaddress
+import os
 from typing import List, Dict, Any
 
 
 class DNSCryptParser:
-    SOURCE_URL = (
-        "https://raw.githubusercontent.com/DNSCrypt/"
-        "dnscrypt-resolvers/master/v3/public-resolvers.md"
-    )
-
     SOURCE_NAME = "dnscrypt"
 
     @classmethod
     def fetch(cls) -> List[Dict[str, Any]]:
         try:
+            source_url = os.environ.get('DNSCRYPT_SOURCE_URL')
+            if not source_url:
+                print("ERROR: DNSCRYPT_SOURCE_URL environment variable not set")
+                return []
+
             response = requests.get(
-                cls.SOURCE_URL,
+                source_url,
                 timeout=30,
                 headers={
                     "User-Agent": "DNS-Parser/1.0"
@@ -39,7 +40,6 @@ class DNSCryptParser:
     def _parse_content(cls, content: str) -> List[Dict[str, Any]]:
         dns_list = []
 
-        # هر رکورد Resolver از ## شروع می‌شود
         blocks = re.split(r"(?=##\s+)", content)
 
         for block in blocks:
@@ -48,7 +48,6 @@ class DNSCryptParser:
             if not block.startswith("## "):
                 continue
 
-            # فقط نام Resolver
             name_match = re.match(
                 r"^##\s+([^\s]+)",
                 block
@@ -59,7 +58,6 @@ class DNSCryptParser:
 
             name = name_match.group(1)
 
-            # تمام SDNSهای موجود در رکورد
             sdns_entries = re.findall(
                 r"sdns://[A-Za-z0-9_-]+",
                 block
@@ -114,9 +112,6 @@ class DNSCryptParser:
                 errors="ignore"
             )
 
-            # -------------------------
-            # IPv4
-            # -------------------------
             ipv4_matches = re.findall(
                 r"(?<![\d.])"
                 r"(\d{1,3}(?:\.\d{1,3}){3})"
@@ -136,9 +131,6 @@ class DNSCryptParser:
                 except ValueError:
                     continue
 
-            # -------------------------
-            # IPv6 داخل []
-            # -------------------------
             ipv6_match = re.search(
                 r"\[([0-9a-fA-F:]+)\]"
                 r"(?::(\d{1,5}))?",
@@ -160,9 +152,6 @@ class DNSCryptParser:
                 except ValueError:
                     pass
 
-            # -------------------------
-            # IPv6 بدون []
-            # -------------------------
             ipv6_match = re.search(
                 r"(?<![0-9a-fA-F:])"
                 r"([0-9a-fA-F]{1,4}"
