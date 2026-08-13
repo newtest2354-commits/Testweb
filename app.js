@@ -84,9 +84,15 @@ class AristaDNSHub {
         this.filteredData = this.dnsData.filter(dns => {
             let matchesFilter = true;
             if (this.currentFilter !== 'all') {
-                const inCategories = dns.categories && dns.categories.includes(this.currentFilter);
-                const inProtocols = dns.protocols && dns.protocols.includes(this.currentFilter);
-                matchesFilter = inCategories || inProtocols;
+                if (this.currentFilter === 'IPv4') {
+                    matchesFilter = dns.type === 'IPv4';
+                } else if (this.currentFilter === 'IPv6') {
+                    matchesFilter = dns.type === 'IPv6';
+                } else {
+                    const inCategories = dns.categories && dns.categories.includes(this.currentFilter);
+                    const inProtocols = dns.protocols && dns.protocols.includes(this.currentFilter);
+                    matchesFilter = inCategories || inProtocols;
+                }
             }
             
             let matchesSearch = true;
