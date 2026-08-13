@@ -181,8 +181,8 @@ class AristaDNSHub {
                 displayAddress = `https://[${address}]/dns-query`;
                 copyAddress = `https://[${address}]/dns-query`;
             } else {
-                displayAddress = dns.doh_url;
-                copyAddress = dns.doh_url;
+                displayAddress = `https://${address}/dns-query`;
+                copyAddress = `https://${address}/dns-query`;
             }
         } else if (dns.dot) {
             if (isIPv6) {
