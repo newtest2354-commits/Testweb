@@ -1,4 +1,5 @@
 import re
+import ipaddress
 from typing import List, Dict, Any
 
 class Classifier:
@@ -57,9 +58,17 @@ class Classifier:
         if 'address' in entry and entry['address']:
             address = entry['address']
             if ':' in address and '.' not in address:
-                return 'IPv6'
+                try:
+                    ipaddress.ip_address(address)
+                    return 'IPv6'
+                except:
+                    pass
             elif '.' in address:
-                return 'IPv4'
+                try:
+                    ipaddress.ip_address(address)
+                    return 'IPv4'
+                except:
+                    pass
         if 'doh_url' in entry:
             return 'DoH'
         if 'dot' in entry:
