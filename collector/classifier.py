@@ -50,23 +50,20 @@ class Classifier:
         if 'dnscrypt' in str(entry).lower():
             protocols.append('DNSCrypt')
             
-        if 'doh_url' in entry and not any(p in protocols for p in ['DoH', 'DNSCrypt']):
-            protocols.append('DoH')
-            
         return protocols
     
     @classmethod
     def _determine_type(cls, entry: Dict[str, Any]) -> str:
-        if 'address' in entry:
+        if 'address' in entry and entry['address']:
             address = entry['address']
-            if ':' in address:
+            if ':' in address and '.' not in address:
                 return 'IPv6'
             elif '.' in address:
                 return 'IPv4'
-        elif 'doh_url' in entry:
+        if 'doh_url' in entry:
             return 'DoH'
-        elif 'dot' in entry:
+        if 'dot' in entry:
             return 'DoT'
-        elif 'hostname' in entry:
+        if 'hostname' in entry:
             return 'Hostname'
         return 'Unknown'
