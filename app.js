@@ -21,7 +21,7 @@ class AristaDNSHub {
     }
     
     async loadData() {
-        const response = await fetch('data/dns.json');
+        const response = await fetch('/data/dns.json');
         if (!response.ok) {
             throw new Error('Failed to load DNS data');
         }
@@ -32,7 +32,7 @@ class AristaDNSHub {
             updated_at: data.updated_at || new Date().toISOString()
         };
         
-        const statsResponse = await fetch('data/stats.json');
+        const statsResponse = await fetch('/data/stats.json');
         if (statsResponse.ok) {
             this.stats = await statsResponse.json();
         }
