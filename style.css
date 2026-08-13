@@ -151,33 +151,112 @@ main {
     margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.6rem;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 12px;
 }
 
 .filter-btn {
-    padding: 0.4rem 1.2rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.5rem 1.2rem;
+    border: none;
     border-radius: 20px;
-    color: rgba(255, 255, 255, 0.6);
     font-size: 0.85rem;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .filter-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     color: #ffffff;
-    transform: translateY(-1px);
 }
 
 .filter-btn.active {
-    background: rgba(96, 165, 250, 0.2);
-    color: #60a5fa;
-    border-color: rgba(96, 165, 250, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.filter-btn[data-filter="all"].active {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #ffffff;
+    border-color: #6366f1;
+}
+
+.filter-btn[data-filter="Standard"].active {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    color: #ffffff;
+    border-color: #3b82f6;
+}
+
+.filter-btn[data-filter="AdBlock"].active {
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+    color: #ffffff;
+    border-color: #f59e0b;
+}
+
+.filter-btn[data-filter="Family"].active {
+    background: linear-gradient(135deg, #10b981, #34d399);
+    color: #ffffff;
+    border-color: #10b981;
+}
+
+.filter-btn[data-filter="Security"].active {
+    background: linear-gradient(135deg, #ef4444, #f87171);
+    color: #ffffff;
+    border-color: #ef4444;
+}
+
+.filter-btn[data-filter="Malware"].active {
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+    color: #ffffff;
+    border-color: #dc2626;
+}
+
+.filter-btn[data-filter="Adult Filter"].active {
+    background: linear-gradient(135deg, #ec4899, #f472b6);
+    color: #ffffff;
+    border-color: #ec4899;
+}
+
+.filter-btn[data-filter="Unfiltered"].active {
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    color: #ffffff;
+    border-color: #8b5cf6;
+}
+
+.filter-btn[data-filter="FreeShekan"].active {
+    background: linear-gradient(135deg, #f97316, #fb923c);
+    color: #ffffff;
+    border-color: #f97316;
+}
+
+.filter-btn[data-filter="Private"].active {
+    background: linear-gradient(135deg, #06b6d4, #22d3ee);
+    color: #ffffff;
+    border-color: #06b6d4;
+}
+
+.filter-btn[data-filter="DoH"].active {
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    color: #ffffff;
+    border-color: #8b5cf6;
+}
+
+.filter-btn[data-filter="DoT"].active {
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    color: #ffffff;
+    border-color: #6366f1;
+}
+
+.filter-btn[data-filter="DNSCrypt"].active {
+    background: linear-gradient(135deg, #14b8a6, #2dd4bf);
+    color: #ffffff;
+    border-color: #14b8a6;
 }
 
 .dns-grid {
@@ -244,10 +323,62 @@ main {
 .category-badge {
     font-size: 0.7rem;
     padding: 0.15rem 0.7rem;
-    background: rgba(255, 255, 255, 0.06);
     border-radius: 12px;
-    color: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    font-weight: 500;
+}
+
+.category-badge:contains("Standard") {
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.category-badge:contains("AdBlock") {
+    background: rgba(245, 158, 11, 0.2);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.category-badge:contains("Family") {
+    background: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.category-badge:contains("Security") {
+    background: rgba(239, 68, 68, 0.2);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.category-badge:contains("Malware") {
+    background: rgba(220, 38, 38, 0.2);
+    color: #ef4444;
+    border: 1px solid rgba(220, 38, 38, 0.2);
+}
+
+.category-badge:contains("Adult") {
+    background: rgba(236, 72, 153, 0.2);
+    color: #f472b6;
+    border: 1px solid rgba(236, 72, 153, 0.2);
+}
+
+.category-badge:contains("Unfiltered") {
+    background: rgba(139, 92, 246, 0.2);
+    color: #a78bfa;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.category-badge:contains("FreeShekan") {
+    background: rgba(249, 115, 22, 0.2);
+    color: #fb923c;
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.category-badge:contains("Private") {
+    background: rgba(6, 182, 212, 0.2);
+    color: #22d3ee;
+    border: 1px solid rgba(6, 182, 212, 0.2);
 }
 
 .dns-protocols {
@@ -260,10 +391,32 @@ main {
 .protocol-badge {
     font-size: 0.7rem;
     padding: 0.15rem 0.7rem;
-    background: rgba(96, 165, 250, 0.1);
     border-radius: 12px;
-    color: #60a5fa;
-    border: 1px solid rgba(96, 165, 250, 0.1);
+    font-weight: 500;
+}
+
+.protocol-badge:contains("DNS") {
+    background: rgba(99, 102, 241, 0.15);
+    color: #818cf8;
+    border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+.protocol-badge:contains("DoH") {
+    background: rgba(139, 92, 246, 0.15);
+    color: #a78bfa;
+    border: 1px solid rgba(139, 92, 246, 0.15);
+}
+
+.protocol-badge:contains("DoT") {
+    background: rgba(99, 102, 241, 0.15);
+    color: #818cf8;
+    border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+.protocol-badge:contains("DNSCrypt") {
+    background: rgba(20, 184, 166, 0.15);
+    color: #2dd4bf;
+    border: 1px solid rgba(20, 184, 166, 0.15);
 }
 
 .dns-type {
@@ -459,7 +612,7 @@ footer {
     
     .filter-section {
         padding: 0.75rem;
-        gap: 0.3rem;
+        gap: 0.4rem;
     }
     
     .filter-btn {
