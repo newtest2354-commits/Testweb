@@ -11,9 +11,9 @@ class Generator:
         
     def save(self):
         self._generate_stats()
-        self._save_json('data/dns.json', self._generate_output())
-        self._save_json('data/dns.min.json', self._generate_minified())
-        self._save_json('data/stats.json', self.stats)
+        self._save_json('../data/dns.json', self._generate_output())
+        self._save_json('../data/dns.min.json', self._generate_minified())
+        self._save_json('../data/stats.json', self.stats)
         
     def _generate_output(self) -> Dict[str, Any]:
         return {
