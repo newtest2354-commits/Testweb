@@ -175,8 +175,10 @@ class AristaDNSHub {
         let displayAddress = address;
         let copyAddress = address;
         let isIPv6 = type === 'IPv6' && address !== 'N/A';
+        let hasDoH = dns.protocols && dns.protocols.includes('DoH');
+        let hasDoT = dns.protocols && dns.protocols.includes('DoT');
         
-        if (dns.doh_url) {
+        if (hasDoH) {
             if (isIPv6) {
                 displayAddress = `https://[${address}]/dns-query`;
                 copyAddress = `https://[${address}]/dns-query`;
@@ -184,7 +186,7 @@ class AristaDNSHub {
                 displayAddress = `https://${address}/dns-query`;
                 copyAddress = `https://${address}/dns-query`;
             }
-        } else if (dns.dot) {
+        } else if (hasDoT) {
             if (isIPv6) {
                 displayAddress = `[${address}]:853`;
                 copyAddress = `[${address}]:853`;
