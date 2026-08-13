@@ -1,12 +1,11 @@
 import requests
-import base64
-import re
 from typing import List, Dict, Any
+import dns.dnscrypt  # کتابخانه جدید برای پردازش استاندارد Stamp
 
 class DNSCryptParser:
     SOURCE_URL = "https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md"
     SOURCE_NAME = "dnscrypt"
-    
+
     @classmethod
     def fetch(cls) -> List[Dict[str, Any]]:
         try:
@@ -17,19 +16,20 @@ class DNSCryptParser:
         except Exception as e:
             print(f"Error fetching DNSCrypt data: {e}")
             return []
-    
+
     @classmethod
     def _parse_content(cls, content: str) -> List[Dict[str, Any]]:
         dns_list = []
         lines = content.split('\n')
+        current_name = None
         i = 0
-        
+
         while i < len(lines):
             line = lines[i].strip()
-            
+
             if line.startswith('## '):
                 current_name = line[3:].strip()
-                
+
                 i += 1
                 while i < len(lines):
                     next_line = lines[i].strip()
@@ -48,29 +48,24 @@ class DNSCryptParser:
                         break
                     i += 1
             i += 1
-            
+
         return dns_list
-    
+
     @classmethod
     def _extract_address_from_sdns(cls, sdns_line: str) -> str:
         try:
-            parts = sdns_line.split()
-            if len(parts) >= 2:
-                sdns_data = parts[1]
-                padding = 4 - (len(sdns_data) % 4)
-                if padding != 4:
-                    sdns_data += '=' * padding
-                    
-                decoded = base64.b64decode(sdns_data)
-                decoded_str = decoded.decode('utf-8', errors='ignore')
-                
-                ip_match = re.search(r'(\d+\.\d+\.\d+\.\d+)', decoded_str)
-                if ip_match:
-                    return ip_match.group(1)
-                
-                ipv6_match = re.search(r'\[([0-9a-fA-F:]+)\]', decoded_str)
-                if ipv6_match:
-                    return ipv6_match.group(1)
+            # استخراج بخش stamp از خط
+            stamp_str = sdns_line.split('sdns://')[1].strip()
+            # استفاده از کتابخانه dnspython برای decode کردن stamp
+            stamp = dns.dnscrypt.DNSCryptStamp.from_text(stamp_str)
+            
+            # استخراج آدرس و پورت از stamp
+            if stamp.address:
+                # اگر آدرس یک IPv6 است، آن را درون کروشه قرار می‌دهیم تا استاندارد شود
+                if ':' in stamp.address:
+                    return f"[{stamp.address}]"
+                return stamp.address
         except Exception as e:
-            print(f"Error decoding: {e}")
+            print(f"Error decoding stamp from line '{sdns_line}': {e}")
+
         return ''
