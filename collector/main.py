@@ -11,17 +11,20 @@ from generator import Generator
 
 def main():
     try:
+        os.makedirs('../data', exist_ok=True)
+        
         dnscrypt_data = DNSCryptParser.fetch()
         doh_data = DOHParser.fetch()
         
         all_dns = dnscrypt_data + doh_data
         
+        if not all_dns:
+            print("No DNS data collected")
+            sys.exit(1)
+        
         normalized = Normalizer.normalize(all_dns)
-        
         validated = Normalizer.validate(normalized)
-        
         deduplicated = Deduplicator.deduplicate(validated)
-        
         classified = Classifier.classify(deduplicated)
         
         generator = Generator(classified)
