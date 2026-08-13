@@ -84,7 +84,9 @@ class AristaDNSHub {
         this.filteredData = this.dnsData.filter(dns => {
             let matchesFilter = true;
             if (this.currentFilter !== 'all') {
-                matchesFilter = dns.categories && dns.categories.includes(this.currentFilter);
+                const inCategories = dns.categories && dns.categories.includes(this.currentFilter);
+                const inProtocols = dns.protocols && dns.protocols.includes(this.currentFilter);
+                matchesFilter = inCategories || inProtocols;
             }
             
             let matchesSearch = true;
