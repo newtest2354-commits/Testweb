@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-08-13T19:16:25.129463",
+  "updated_at": "2026-08-13T19:19:03.847237",
   "total": 274,
   "categories": {
     "Standard": 251,
@@ -12,7 +12,7 @@
   },
   "dns": [
     {
-      "id": "772e856b-733f-4be2-9e94-97133d3f769b",
+      "id": "9c59f28b-6a91-4a30-a51f-9390d286ff6b",
       "address": "per.adfilter.net",
       "type": "DoH",
       "provider": "AdFilter",
@@ -32,7 +32,7 @@
       "description": "DoH server provided by AdFilter"
     },
     {
-      "id": "84255c86-5ada-4e09-85d0-0e7f57510931",
+      "id": "89f0823e-a46f-4076-94b5-62daa4816e95",
       "address": "syd.adfilter.net",
       "type": "DoH",
       "provider": "AdFilter",
@@ -52,7 +52,7 @@
       "description": "DoH server provided by AdFilter"
     },
     {
-      "id": "69803920-f180-427c-8403-d104e0b50d0d",
+      "id": "a9db2fe7-6425-442e-90ee-a2faf851f503",
       "address": "adl.adfilter.net",
       "type": "DoH",
       "provider": "AdFilter",
@@ -72,7 +72,7 @@
       "description": "DoH server provided by AdFilter"
     },
     {
-      "id": "b41636e3-815b-41b6-8f79-bd24daddb044",
+      "id": "fb01c747-4694-4781-a399-a51a27d31db4",
       "address": "adfreedns.top",
       "type": "DoH",
       "provider": "Adfreedns",
@@ -92,7 +92,7 @@
       "description": "DoH server provided by Adfreedns"
     },
     {
-      "id": "c3bd2ceb-1c35-4f24-b7e2-e0df5da67e69",
+      "id": "94e7c7ad-227d-41a9-a8b1-0f8944920269",
       "address": "dns.adguard-dns.com",
       "type": "DoH",
       "provider": "AdGuard",
@@ -112,7 +112,7 @@
       "description": "DoH server provided by AdGuard"
     },
     {
-      "id": "66f4f7ce-9cf6-44cf-9c01-8fbc4f5939ad",
+      "id": "8add1752-ed78-4822-bdae-4caa218de8d4",
       "address": "family.adguard-dns.com",
       "type": "DoH",
       "provider": "AdGuard",
@@ -132,7 +132,7 @@
       "description": "DoH server provided by AdGuard"
     },
     {
-      "id": "8293dd03-d0c6-4fb6-af8b-0b746a5cfede",
+      "id": "6cd6d7ad-874a-4452-8f6f-8e7d035533a3",
       "address": "unfiltered.adguard-dns.com",
       "type": "DoH",
       "provider": "AdGuard",
@@ -152,7 +152,7 @@
       "description": "DoH server provided by AdGuard"
     },
     {
-      "id": "90550374-4760-43d4-b8d8-3fbdb14709e4",
+      "id": "acbf13b3-add6-4f3d-986c-38cac7a577f1",
       "address": "dns.akbxr.com",
       "type": "DoH",
       "provider": "AKBXR DNS",
@@ -172,7 +172,7 @@
       "description": "DoH server provided by AKBXR DNS"
     },
     {
-      "id": "261bbe02-ab35-408f-9102-c653a3d621c7",
+      "id": "e8b6b0e3-7dc6-4266-9312-c2e8c94abc72",
       "address": "dns.alidns.com",
       "type": "DoH",
       "provider": "AliDNS",
@@ -192,7 +192,7 @@
       "description": "DoH server provided by AliDNS"
     },
     {
-      "id": "9e26662a-511a-4538-81e1-891e9b90a1c1",
+      "id": "c1fc9948-82bc-4b87-92fa-a969713b90f3",
       "address": "dns.aa.net.uk",
       "type": "DoH",
       "provider": "Andrews & Arnold",
@@ -212,7 +212,7 @@
       "description": "DoH server provided by Andrews & Arnold"
     },
     {
-      "id": "0951985b-6cfe-46a1-bc73-8dc5a59928bc",
+      "id": "d955aaf0-de97-4347-850c-cc73250047e2",
       "address": "doh.angry.im",
       "type": "DoH",
       "provider": "Angry.im",
@@ -232,7 +232,7 @@
       "description": "DoH server provided by Angry.im"
     },
     {
-      "id": "ead5378c-5dba-46ae-b8e1-a896905bcfdc",
+      "id": "a3a250bd-7961-4388-924c-54231ef32cb7",
       "address": "dns.anon.no",
       "type": "DoH",
       "provider": "anon.no",
@@ -252,7 +252,7 @@
       "description": "DoH server provided by anon.no"
     },
     {
-      "id": "bfaacaf0-5382-410b-8fc0-94dbfea90c6f",
+      "id": "7699cca9-8e13-43a5-8f02-0ad888fb38a9",
       "address": "dns.applewebkit.dev",
       "type": "DoH",
       "provider": "applewebkit.dev",
@@ -272,7 +272,7 @@
       "description": "DoH server provided by applewebkit.dev"
     },
     {
-      "id": "dcfb18b2-9be7-4ade-8641-b24304fe55ae",
+      "id": "c54cd1cd-08fe-497b-81a9-18eb9406618f",
       "address": "dns.aquilenet.fr",
       "type": "DoH",
       "provider": "Aquilenet DNS",
@@ -292,7 +292,7 @@
       "description": "DoH server provided by Aquilenet DNS"
     },
     {
-      "id": "900e9676-2147-4a8e-a758-58d1c45436c0",
+      "id": "9ad7e9cd-8f7f-4cbe-a65f-777d51e969e2",
       "address": "nsec.arnor.org",
       "type": "DoH",
       "provider": "arnor.org",
@@ -312,7 +312,7 @@
       "description": "DoH server provided by arnor.org"
     },
     {
-      "id": "097bd61c-2cef-491f-820b-9e20c6b172d2",
+      "id": "1a7c89ae-6efb-4b51-ba18-f927f89854ff",
       "address": "dns.asterimoon.com",
       "type": "DoH",
       "provider": "Asteri Moon",
@@ -332,7 +332,7 @@
       "description": "DoH server provided by Asteri Moon"
     },
     {
-      "id": "bf665dfb-7e5b-4869-bea9-ec331fba6218",
+      "id": "b442852f-f136-4c73-81b8-5158a0b89753",
       "address": "dns.a47.me",
       "type": "DoH",
       "provider": "a47.me",
@@ -352,7 +352,7 @@
       "description": "DoH server provided by a47.me"
     },
     {
-      "id": "4d33a8da-e6f1-48e3-a6bf-476dae1ec3e7",
+      "id": "2007a1e5-88f3-4466-8bb7-a4c2197b80bd",
       "address": "bazooki-infra.dev",
       "type": "DoH",
       "provider": "bazooki-infra.dev",
@@ -372,7 +372,7 @@
       "description": "DoH server provided by bazooki-infra.dev"
     },
     {
-      "id": "b4502244-d105-4c63-9bc2-0fd0eec5e10b",
+      "id": "2b246a2c-b8cf-44dd-b159-5196ace0abf7",
       "address": "dns.belnet.be",
       "type": "DoH",
       "provider": "Belnet",
@@ -392,7 +392,7 @@
       "description": "DoH server provided by Belnet"
     },
     {
-      "id": "26289d68-8f78-426e-9245-ef4a1ae4f588",
+      "id": "5a5e979b-bf57-4b83-a2f6-613272f2de19",
       "address": "dns.bmwhocking.com",
       "type": "DoH",
       "provider": "Ben Hocking",
@@ -412,7 +412,7 @@
       "description": "DoH server provided by Ben Hocking"
     },
     {
-      "id": "980b9fae-5071-42c8-8df6-f98ec5561415",
+      "id": "e0bccf2c-4480-43a1-94dc-9a181593b4dd",
       "address": "dns.bitservices.io",
       "type": "DoH",
       "provider": "BITServices",
@@ -432,7 +432,7 @@
       "description": "DoH server provided by BITServices"
     },
     {
-      "id": "8a94c9c7-64ba-482e-b5b1-b0478fc9020a",
+      "id": "4527eb11-2ccd-44f1-97e1-76c6c7fb002a",
       "address": "dns.blokada.org",
       "type": "DoH",
       "provider": "Blokada DNS",
@@ -452,7 +452,7 @@
       "description": "DoH server provided by Blokada DNS"
     },
     {
-      "id": "7dbe7ce8-8561-470d-9222-bb71c78b3b78",
+      "id": "988a3571-d7aa-4273-b45e-67f4eca03357",
       "address": "rfree1.blue-shield.at",
       "type": "DoH",
       "provider": "Blue Shield Umbrella",
@@ -472,7 +472,7 @@
       "description": "DoH server provided by Blue Shield Umbrella"
     },
     {
-      "id": "db50d5ee-a98b-4ee1-86af-e8e1097c90b3",
+      "id": "64071a30-cbb0-4e81-9ea7-83f48beb24ce",
       "address": "rfree2.blue-shield.at",
       "type": "DoH",
       "provider": "Blue Shield Umbrella",
@@ -492,7 +492,7 @@
       "description": "DoH server provided by Blue Shield Umbrella"
     },
     {
-      "id": "b07a29d4-b5d9-41a8-a82f-1ba664face12",
+      "id": "b8aeea40-d388-4a01-a97e-22023a0ed2bb",
       "address": "dns.brembeck.cloud",
       "type": "DoH",
       "provider": "brembeck.cloud",
@@ -512,7 +512,7 @@
       "description": "DoH server provided by brembeck.cloud"
     },
     {
-      "id": "f7043aea-b5bd-45f5-b6fa-04e836925d7a",
+      "id": "b51d36d7-8580-4052-85b6-3399fd49c1c7",
       "address": "dns.busold.ws",
       "type": "DoH",
       "provider": "busold.ws",
@@ -532,7 +532,7 @@
       "description": "DoH server provided by busold.ws"
     },
     {
-      "id": "5bafdbe7-a744-4cc5-bbaa-0ba724ca9f55",
+      "id": "efb9f573-4ec5-4706-99e0-5b5f4b836f64",
       "address": "doh.aaaab3n.moe",
       "type": "DoH",
       "provider": "Canarypwn",
@@ -552,7 +552,7 @@
       "description": "DoH server provided by Canarypwn"
     },
     {
-      "id": "35178967-72c2-4044-8dbb-8901e448c634",
+      "id": "9152788c-7794-444b-82e5-d0ac8391be71",
       "address": "dns.caspervk.net",
       "type": "DoH",
       "provider": "caspervk.net",
@@ -572,7 +572,7 @@
       "description": "DoH server provided by caspervk.net"
     },
     {
-      "id": "84d04371-981c-461d-a475-e33c7d08ff39",
+      "id": "0c4609a7-3d18-4d36-ada2-f862eee75bac",
       "address": "dns.cert.ee",
       "type": "DoH",
       "provider": "CERT Estonia",
@@ -592,7 +592,7 @@
       "description": "DoH server provided by CERT Estonia"
     },
     {
-      "id": "768a2140-0955-452f-b801-4e1e6d7bc5ec",
+      "id": "504fbe23-c5a0-473b-9d88-256358699ef4",
       "address": "doh-01.spectrum.com",
       "type": "DoH",
       "provider": "Charter",
@@ -612,7 +612,7 @@
       "description": "DoH server provided by Charter"
     },
     {
-      "id": "03954849-b9a5-42c5-8060-10326382cd69",
+      "id": "990833d0-1f4f-401f-9ad7-86d78ea37c6d",
       "address": "doh-02.spectrum.com",
       "type": "DoH",
       "provider": "Charter",
@@ -632,7 +632,7 @@
       "description": "DoH server provided by Charter"
     },
     {
-      "id": "69c148ae-af0a-44b7-8944-aa528c9bd276",
+      "id": "0a9aeaf0-9849-4fa0-8b60-a0315821d032",
       "address": "dns.chenu.ch",
       "type": "DoH",
       "provider": "chenu.ch",
@@ -652,7 +652,7 @@
       "description": "DoH server provided by chenu.ch"
     },
     {
-      "id": "a09e9cd4-7fe4-4d56-85be-d219712894d9",
+      "id": "6a3acd42-879c-4698-8d45-c7fe8758a57d",
       "address": "dns.christerwaren.fi",
       "type": "DoH",
       "provider": "Christer Warén",
@@ -672,7 +672,7 @@
       "description": "DoH server provided by Christer Warén"
     },
     {
-      "id": "e4bd4883-2334-47a3-bf21-58f84da724cd",
+      "id": "a69a5798-b557-438e-a0a3-8525b568672a",
       "address": "dns.chunghwamc.com",
       "type": "DoH",
       "provider": "ChunghwaMC",
@@ -692,7 +692,7 @@
       "description": "DoH server provided by ChunghwaMC"
     },
     {
-      "id": "ee40d95d-b7ce-4ce9-87a2-267a886bc526",
+      "id": "4cf37eae-56b5-4e9d-b767-6479e1e704d5",
       "address": "private.canadianshield.cira.ca",
       "type": "DoH",
       "provider": "CIRA Canadian Shield",
@@ -712,7 +712,7 @@
       "description": "DoH server provided by CIRA Canadian Shield"
     },
     {
-      "id": "b527b7db-de4a-41bb-9ff3-7eacf3a99ff0",
+      "id": "c4a5b4ec-b7ef-434b-8656-ae325e65b482",
       "address": "protected.canadianshield.cira.ca",
       "type": "DoH",
       "provider": "CIRA Canadian Shield",
@@ -732,7 +732,7 @@
       "description": "DoH server provided by CIRA Canadian Shield"
     },
     {
-      "id": "c44cd919-8b5f-44f4-8ed4-469408211384",
+      "id": "7fb82002-c675-4db2-be4c-82be5a43d343",
       "address": "family.canadianshield.cira.ca",
       "type": "DoH",
       "provider": "CIRA Canadian Shield",
@@ -752,7 +752,7 @@
       "description": "DoH server provided by CIRA Canadian Shield"
     },
     {
-      "id": "23bb1397-a112-4bb2-abdb-e1a90a8ad7df",
+      "id": "d5da2009-271d-4b1e-8b2e-0de6de68633e",
       "address": "doh.opendns.com",
       "type": "DoH",
       "provider": "Cisco Umbrella (OpenDNS)",
@@ -772,7 +772,7 @@
       "description": "DoH server provided by Cisco Umbrella (OpenDNS)"
     },
     {
-      "id": "bd09ff08-63e9-47c8-a403-451d26eb4c2c",
+      "id": "46c51624-76a7-428c-8ff6-07bf7bd31b33",
       "address": "doh.familyshield.opendns.com",
       "type": "DoH",
       "provider": "Cisco Umbrella (OpenDNS)",
@@ -792,7 +792,7 @@
       "description": "DoH server provided by Cisco Umbrella (OpenDNS)"
     },
     {
-      "id": "871c8e13-fbee-4510-8b06-582ffa5b4364",
+      "id": "3a47fdea-93f7-4ea5-acbc-3e4d19162ddc",
       "address": "doh.umbrella.com",
       "type": "DoH",
       "provider": "Cisco Umbrella (OpenDNS)",
@@ -812,7 +812,7 @@
       "description": "DoH server provided by Cisco Umbrella (OpenDNS)"
     },
     {
-      "id": "ae5cadb9-91e6-4597-bd90-1fdb90033c1c",
+      "id": "c8299e9b-0a03-4950-b819-9b396ef7deec",
       "address": "doh.cleanbrowsing.org",
       "type": "DoH",
       "provider": "CleanBrowsing",
@@ -832,7 +832,7 @@
       "description": "DoH server provided by CleanBrowsing"
     },
     {
-      "id": "f62bea3b-9fe0-4887-82bc-f0a59b1333aa",
+      "id": "5f2fe976-4217-4a59-8c69-5ff1303a5676",
       "address": "doh.cleanbrowsing.org",
       "type": "DoH",
       "provider": "CleanBrowsing",
@@ -852,7 +852,7 @@
       "description": "DoH server provided by CleanBrowsing"
     },
     {
-      "id": "d45b663a-77f3-41f2-af4b-cdef6dd7cd84",
+      "id": "8a4388a4-ff70-40b2-99ba-fd4143c5e5b7",
       "address": "doh.cleanbrowsing.org",
       "type": "DoH",
       "provider": "CleanBrowsing",
@@ -872,7 +872,7 @@
       "description": "DoH server provided by CleanBrowsing"
     },
     {
-      "id": "e095f65e-b789-49e7-bc29-d2cf25116f3e",
+      "id": "ee721d65-d16d-4231-aa07-caf80e6cd3b2",
       "address": "dns1.techniverse.net",
       "type": "DoH",
       "provider": "CleverAdmin",
@@ -892,7 +892,7 @@
       "description": "DoH server provided by CleverAdmin"
     },
     {
-      "id": "5c228c81-51a0-4cfe-8b5f-38e32346c192",
+      "id": "ffc298bb-20e1-4077-9643-f98de3990992",
       "address": "cloudflare-dns.com",
       "type": "DoH",
       "provider": "Cloudflare",
@@ -912,7 +912,7 @@
       "description": "DoH server provided by Cloudflare"
     },
     {
-      "id": "03c4dd28-d569-41fa-991e-0239571d7650",
+      "id": "e2f8eae8-e412-4018-a214-67c8b256a9a7",
       "address": "mozilla.cloudflare-dns.com",
       "type": "DoH",
       "provider": "Cloudflare",
@@ -932,7 +932,7 @@
       "description": "DoH server provided by Cloudflare"
     },
     {
-      "id": "ff66bc9e-4ec5-456f-8d2e-fe20279c75aa",
+      "id": "888c8e9a-cf26-4bc6-8962-97878d9097e9",
       "address": "security.cloudflare-dns.com",
       "type": "DoH",
       "provider": "Cloudflare",
@@ -952,7 +952,7 @@
       "description": "DoH server provided by Cloudflare"
     },
     {
-      "id": "ac425cb4-d8d5-4227-936f-d870c9dc3065",
+      "id": "9ec2a638-c9fc-4309-8f7d-a5dcfb023e43",
       "address": "family.cloudflare-dns.com",
       "type": "DoH",
       "provider": "Cloudflare",
@@ -972,7 +972,7 @@
       "description": "DoH server provided by Cloudflare"
     },
     {
-      "id": "c03e9f40-d27a-401b-9f71-f19bbde13721",
+      "id": "58422215-f23c-4df6-b5c8-a072eff219d7",
       "address": "dns64.cloudflare-dns.com",
       "type": "DoH",
       "provider": "Cloudflare",
@@ -992,7 +992,7 @@
       "description": "DoH server provided by Cloudflare"
     },
     {
-      "id": "64aa628e-8674-4d46-b053-343fad87fb06",
+      "id": "182e204e-b2df-4038-a516-95eae1d82d76",
       "address": "dns.comss.one",
       "type": "DoH",
       "provider": "Comss.one DNS",
@@ -1012,7 +1012,7 @@
       "description": "DoH server provided by Comss.one DNS"
     },
     {
-      "id": "c5331ebe-9de0-4c20-8035-38cb4168291d",
+      "id": "988c7e9e-833d-4e86-a0b8-fc6ea9f9347a",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1032,7 +1032,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "1122f0bd-905f-4ee1-8cc8-374324b0e823",
+      "id": "fa779462-6a98-4179-b5a5-ab6bf7a244af",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1052,7 +1052,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "536de80c-b38c-476a-896c-d528dfc8e73f",
+      "id": "a0572226-a47a-46e1-89ba-9ffcbabbbc80",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1072,7 +1072,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "6479587f-db4c-4470-ab87-5339a440b86b",
+      "id": "1bca8230-f10e-4c98-b496-0402e6e1cafb",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1092,7 +1092,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "56b0b306-0970-4206-bfe5-02db6e952481",
+      "id": "afc497c2-5d3c-43b6-84ff-e5790c05f54a",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1112,7 +1112,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "6293187a-eb20-4fe0-993b-176ca2243353",
+      "id": "0cf2c2d4-9a8c-468a-8512-4f867f999077",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1132,7 +1132,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "f5faf894-6b42-4534-a694-4d9435c47e12",
+      "id": "059b842a-7abb-4765-a250-e3cbbdede665",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1152,7 +1152,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "e7fc00b0-b67c-45de-8962-f658ba4220d6",
+      "id": "f1093115-54f8-4f90-9049-9297379d8df1",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1172,7 +1172,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "091f7d4a-f208-4bfd-9fd9-340ebd9283ac",
+      "id": "0c06191b-9e19-44d3-abd8-6ac16e118a61",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1192,7 +1192,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "bf701dde-3971-421d-aab0-ecbe45b81272",
+      "id": "947d105f-2d0f-4245-a454-0978211451c1",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1212,7 +1212,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "492f1f52-5c33-4f98-8116-ca4a521f0224",
+      "id": "c010928e-d1b5-482f-a008-1fccf9a5084f",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1232,7 +1232,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "66debad5-3c72-4964-935f-38357866edca",
+      "id": "65b7774f-c3be-4ef0-92f6-7444ac6f5c66",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1252,7 +1252,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "5a813bef-9062-4b26-a140-538f67ca6ab9",
+      "id": "cb7aa678-a49d-43a5-a65d-ff0f712be875",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1272,7 +1272,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "a70835e2-934c-49ed-9e5d-96954f1b5e2c",
+      "id": "6fe2c459-414f-4605-97bf-499cd1fdde40",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1292,7 +1292,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "f6bed04b-97a5-43d9-b4f6-3f78041ee375",
+      "id": "46e7390b-b649-45b6-8292-66a1d7ee0d72",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1312,7 +1312,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "64be7e25-6f51-425a-a6f1-d4ea9368d578",
+      "id": "4d26ea6b-93d6-4bac-9b5b-383f4d585306",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1332,7 +1332,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "e961a465-7be6-4071-bb7e-d5789ff79dc1",
+      "id": "0ecbbc3b-33a2-4e4a-a932-20d82d4c3f43",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1352,7 +1352,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "fe94dbfd-acc5-4ae3-8ddd-b57ba8e06c80",
+      "id": "28be0b56-6088-4fbf-9ba2-481da91625ec",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1372,7 +1372,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "b3d115f0-95cb-4c48-b026-062647d377ad",
+      "id": "37e8af42-50be-4c3a-9ee1-dcd7fe6dce84",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1392,7 +1392,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "4257c25b-cf7e-4fbd-bd18-7f475fcb6100",
+      "id": "9d3f3396-09b3-4727-9efe-d6e3e2dcfd5e",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1412,7 +1412,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "17dd7a87-fe68-4e74-b478-000ceecb3bdf",
+      "id": "b600663b-21b0-44b3-b016-3d28b15cc3f7",
       "address": "freedns.controld.com",
       "type": "DoH",
       "provider": "Control D",
@@ -1432,7 +1432,7 @@
       "description": "DoH server provided by Control D"
     },
     {
-      "id": "c87ce086-7952-4bc3-bb68-102318c9b521",
+      "id": "c7bc21bd-b0ec-43eb-8133-4b78e0171c26",
       "address": "dns.cynthialabs.net",
       "type": "DoH",
       "provider": "CynthiaLabs",
@@ -1452,7 +1452,7 @@
       "description": "DoH server provided by CynthiaLabs"
     },
     {
-      "id": "6d9522b5-615d-41aa-b07e-0aacac8c1daf",
+      "id": "28e49eb7-95e1-4251-a86c-f0ff8b9dd843",
       "address": "odvr.nic.cz",
       "type": "DoH",
       "provider": "CZ.NIC",
@@ -1472,7 +1472,7 @@
       "description": "DoH server provided by CZ.NIC"
     },
     {
-      "id": "2bd010b3-2441-499c-ba5c-2ce73047cc7a",
+      "id": "9f68fcc6-9beb-4a85-9ff9-05a1b9299c38",
       "address": "ns.data.haus",
       "type": "DoH",
       "provider": "data.haus",
@@ -1492,7 +1492,7 @@
       "description": "DoH server provided by data.haus"
     },
     {
-      "id": "902d5434-2409-4b1b-b65b-859839666c42",
+      "id": "d9264a76-d6da-4e57-89d3-290411587017",
       "address": "dns.datenquark.de",
       "type": "DoH",
       "provider": "datenquark.de",
@@ -1512,7 +1512,7 @@
       "description": "DoH server provided by datenquark.de"
     },
     {
-      "id": "920548bf-72df-4937-926a-05c1b8e57908",
+      "id": "ecfa2a33-8ca1-4a85-8e73-6320216a53ff",
       "address": "dns.dev-umbrellagov.com",
       "type": "DoH",
       "provider": "dev-umbrellagov",
@@ -1532,7 +1532,7 @@
       "description": "DoH server provided by dev-umbrellagov"
     },
     {
-      "id": "26f83983-4cb5-4473-a500-57572af1fff9",
+      "id": "b0393a38-59cc-4ddc-bb7e-3218bef617b7",
       "address": "dns.digitale-gesellschaft.ch",
       "type": "DoH",
       "provider": "Digitale Gesellschaft",
@@ -1552,7 +1552,7 @@
       "description": "DoH server provided by Digitale Gesellschaft"
     },
     {
-      "id": "237f615e-7609-4ee0-ab7c-2cfa8202a884",
+      "id": "1a84b72b-f2d4-425b-8bde-9650fab7880a",
       "address": "doh.disconnect.app",
       "type": "DoH",
       "provider": "Disconnect.app",
@@ -1572,7 +1572,7 @@
       "description": "DoH server provided by Disconnect.app"
     },
     {
-      "id": "82256956-0a6d-4c8e-b81f-0176aee3b618",
+      "id": "3e718161-af89-4c2a-bb70-778c67c1e987",
       "address": "dns.digitalsize.net",
       "type": "DoH",
       "provider": "dns.digitalsize.net",
@@ -1592,7 +1592,7 @@
       "description": "DoH server provided by dns.digitalsize.net"
     },
     {
-      "id": "507e0ba5-2ee5-470b-9fa8-75019924682d",
+      "id": "c448119c-e0be-4212-90ee-a56c95f4cd84",
       "address": "doh.dns.sb",
       "type": "DoH",
       "provider": "DNS.SB",
@@ -1612,7 +1612,7 @@
       "description": "DoH server provided by DNS.SB"
     },
     {
-      "id": "b69c3aad-9581-4a94-bbf2-e2d90036a85b",
+      "id": "d39d356c-1553-4d1e-b736-5e901859615b",
       "address": "doh.dns4all.eu",
       "type": "DoH",
       "provider": "DNS4all",
@@ -1632,7 +1632,7 @@
       "description": "DoH server provided by DNS4all"
     },
     {
-      "id": "f8d5e443-ec09-4896-88d2-4023d0119fb2",
+      "id": "a80a7d08-a908-44ac-b0fc-34dcf9c88086",
       "address": "protective.joindns4.eu",
       "type": "DoH",
       "provider": "DNS4EU",
@@ -1652,7 +1652,7 @@
       "description": "DoH server provided by DNS4EU"
     },
     {
-      "id": "a263ee9d-d9cb-4a2f-b30a-514b9400744f",
+      "id": "9e6412c9-5dbd-4b60-9fe7-7bdc586544ec",
       "address": "child.joindns4.eu",
       "type": "DoH",
       "provider": "DNS4EU",
@@ -1672,7 +1672,7 @@
       "description": "DoH server provided by DNS4EU"
     },
     {
-      "id": "bbd4f2d7-50fc-48b5-a10e-69305f6cbada",
+      "id": "c2eb5612-5d38-4ecf-a686-9a49a0119cfc",
       "address": "noads.joindns4.eu",
       "type": "DoH",
       "provider": "DNS4EU",
@@ -1692,7 +1692,7 @@
       "description": "DoH server provided by DNS4EU"
     },
     {
-      "id": "1597c0cf-2e9f-4ff8-b96a-ada024721334",
+      "id": "b3889df0-3f21-4eed-a27a-9753bb9e03a3",
       "address": "child-noads.joindns4.eu",
       "type": "DoH",
       "provider": "DNS4EU",
@@ -1712,7 +1712,7 @@
       "description": "DoH server provided by DNS4EU"
     },
     {
-      "id": "e7738887-b88d-4e3b-b21b-945305dee9a1",
+      "id": "0fc8fa6c-df92-4074-b2ec-0d7be894a7d3",
       "address": "unfiltered.joindns4.eu",
       "type": "DoH",
       "provider": "DNS4EU",
@@ -1732,7 +1732,7 @@
       "description": "DoH server provided by DNS4EU"
     },
     {
-      "id": "3cc3cc9a-f270-43ad-90af-be342b5ed50c",
+      "id": "f06f4295-2493-4654-89d7-bdfeeb5b347d",
       "address": "ca01.dns4me.net",
       "type": "DoH",
       "provider": "dns4me",
@@ -1752,7 +1752,7 @@
       "description": "DoH server provided by dns4me"
     },
     {
-      "id": "fb0e5390-76c9-45e1-a2e7-15489d15111c",
+      "id": "75008246-1312-41ff-88b2-901220310cd7",
       "address": "ca02.dns4me.net",
       "type": "DoH",
       "provider": "dns4me",
@@ -1772,7 +1772,7 @@
       "description": "DoH server provided by dns4me"
     },
     {
-      "id": "771cd048-21ce-417a-8ae0-ef09a42ccc56",
+      "id": "851b80d8-ae06-4941-bfef-d5f7400eaf45",
       "address": "us01.dns4me.net",
       "type": "DoH",
       "provider": "dns4me",
@@ -1792,7 +1792,7 @@
       "description": "DoH server provided by dns4me"
     },
     {
-      "id": "6fb013f9-fd53-408b-a828-286462346d6e",
+      "id": "d1874690-679e-4b4c-9edf-1f2cee75f711",
       "address": "us02.dns4me.net",
       "type": "DoH",
       "provider": "dns4me",
@@ -1812,7 +1812,7 @@
       "description": "DoH server provided by dns4me"
     },
     {
-      "id": "84f5c836-8a18-4a01-ab8b-6c33bae6ad97",
+      "id": "85b0ebeb-30fb-47ee-a627-a617dcb90944",
       "address": "sg01.dns4me.net",
       "type": "DoH",
       "provider": "dns4me",
@@ -1832,7 +1832,7 @@
       "description": "DoH server provided by dns4me"
     },
     {
-      "id": "aa5c2abc-b746-481e-8db6-5fe864cbbc48",
+      "id": "8a4ac9ea-2d58-4198-b7ae-d871f7fd2351",
       "address": "sa01.dns4me.net",
       "type": "DoH",
       "provider": "dns4me",
@@ -1852,7 +1852,7 @@
       "description": "DoH server provided by dns4me"
     },
     {
-      "id": "e05f8e03-b9e7-4243-a90f-36361612f5b6",
+      "id": "7f9c6c84-3cba-4b38-89df-ab40a523a331",
       "address": "au01.dns4me.net",
       "type": "DoH",
       "provider": "dns4me",
@@ -1872,7 +1872,7 @@
       "description": "DoH server provided by dns4me"
     },
     {
-      "id": "e445ad9b-0c66-4fea-8b6f-04d7c2cd4d3a",
+      "id": "3fb48b04-af7c-4d89-9e1b-bd2cda312fe8",
       "address": "uk01.dns4me.net",
       "type": "DoH",
       "provider": "dns4me",
@@ -1892,7 +1892,7 @@
       "description": "DoH server provided by dns4me"
     },
     {
-      "id": "cdae6ae5-a47e-4939-8c84-7db2ff10342b",
+      "id": "3bb5ce39-9880-43f9-ba82-8ae178a56098",
       "address": "nz01.dns4me.net",
       "type": "DoH",
       "provider": "dns4me",
@@ -1912,7 +1912,7 @@
       "description": "DoH server provided by dns4me"
     },
     {
-      "id": "672c4796-a697-445e-a1bc-3a254204236d",
+      "id": "42a8e8d6-a820-424c-b4fa-e2394a2868ae",
       "address": "ie01.dns4me.net",
       "type": "DoH",
       "provider": "dns4me",
@@ -1932,7 +1932,7 @@
       "description": "DoH server provided by dns4me"
     },
     {
-      "id": "c5027f4b-b3c7-471e-9319-1f985e537361",
+      "id": "6f6acbb6-722f-4d6a-9aba-7c83c23626dd",
       "address": "de01.dns4me.net",
       "type": "DoH",
       "provider": "dns4me",
@@ -1952,7 +1952,7 @@
       "description": "DoH server provided by dns4me"
     },
     {
-      "id": "b01532c7-ec53-4d04-9264-5270f47bd45b",
+      "id": "6c670fb9-63e8-4a82-9b91-c6add13bca11",
       "address": "dns.flatuslifir.is",
       "type": "DoH",
       "provider": "dns.flatuslifir.is",
@@ -1972,7 +1972,7 @@
       "description": "DoH server provided by dns.flatuslifir.is"
     },
     {
-      "id": "a07b3b1f-ffca-4c78-8305-14a5a31d4292",
+      "id": "05e743be-4e3a-42a8-853f-f7d21d7e33fc",
       "address": "dnsforge.de",
       "type": "DoH",
       "provider": "dnsforge.de",
@@ -1992,7 +1992,7 @@
       "description": "DoH server provided by dnsforge.de"
     },
     {
-      "id": "e4875a0f-cd76-4721-b049-80501db094db",
+      "id": "a43c9949-2273-46fd-bee2-a9334878d2cc",
       "address": "clean.dnsforge.de",
       "type": "DoH",
       "provider": "dnsforge.de",
@@ -2012,7 +2012,7 @@
       "description": "DoH server provided by dnsforge.de"
     },
     {
-      "id": "aa249d29-7ea8-494b-ad22-47c0be0c6d52",
+      "id": "edd46405-6a01-4f8d-b5aa-d34ca2c9d52a",
       "address": "hard.dnsforge.de",
       "type": "DoH",
       "provider": "dnsforge.de",
@@ -2032,7 +2032,7 @@
       "description": "DoH server provided by dnsforge.de"
     },
     {
-      "id": "88b87fa9-afba-470a-ae38-5cacd1a1a8e4",
+      "id": "d2b3b804-fbf4-4d0e-954f-5c2839c81c74",
       "address": "dns.dnshome.de",
       "type": "DoH",
       "provider": "dnsHome.de",
@@ -2052,7 +2052,7 @@
       "description": "DoH server provided by dnsHome.de"
     },
     {
-      "id": "c72e9527-4c43-492f-8395-4312ed0d766a",
+      "id": "7a230cb3-6be9-40e8-b605-ab8293de03c6",
       "address": "dnslow.me",
       "type": "DoH",
       "provider": "dnslow.me",
@@ -2072,7 +2072,7 @@
       "description": "DoH server provided by dnslow.me"
     },
     {
-      "id": "72afd743-1afa-4c49-9503-f1b414617dc5",
+      "id": "7c68c54c-3373-4e22-b9f7-8c32fb1e7468",
       "address": "japan.dnsovertor.cc",
       "type": "DoH",
       "provider": "DNS over Tor",
@@ -2092,7 +2092,7 @@
       "description": "DoH server provided by DNS over Tor"
     },
     {
-      "id": "b983b8bc-0b64-46b1-8680-3e6041d7dea4",
+      "id": "582474d2-794b-4578-9a6b-e69a4e81d774",
       "address": "chuncheon.dnsovertor.cc",
       "type": "DoH",
       "provider": "DNS over Tor",
@@ -2112,7 +2112,7 @@
       "description": "DoH server provided by DNS over Tor"
     },
     {
-      "id": "78f6accd-a48f-4a42-bf35-cb8dc36c174a",
+      "id": "b836c35d-a91e-4677-9faa-aae966f212dc",
       "address": "seoul.dnsovertor.cc",
       "type": "DoH",
       "provider": "DNS over Tor",
@@ -2132,7 +2132,7 @@
       "description": "DoH server provided by DNS over Tor"
     },
     {
-      "id": "8410bf06-84c1-4eba-b096-469a7c0c552f",
+      "id": "afea2aba-06b5-4cde-af88-a3cb50f3d11d",
       "address": "dns.pub",
       "type": "DoH",
       "provider": "DNSPod",
@@ -2152,7 +2152,7 @@
       "description": "DoH server provided by DNSPod"
     },
     {
-      "id": "3e6e4313-290e-488e-aa2f-8acec8e2c37c",
+      "id": "2d4a5bd9-03f6-47b3-860a-8f9f4fbb7eba",
       "address": "doh.beauty",
       "type": "DoH",
       "provider": "doh.beauty",
@@ -2172,7 +2172,7 @@
       "description": "DoH server provided by doh.beauty"
     },
     {
-      "id": "4d4a43b4-ffd8-499a-ba28-fc04f57ed219",
+      "id": "2f3ffde6-9075-4bc1-b7cf-2153952d49ef",
       "address": "doh.buzz",
       "type": "DoH",
       "provider": "doh.buzz",
@@ -2192,7 +2192,7 @@
       "description": "DoH server provided by doh.buzz"
     },
     {
-      "id": "9ef8fae9-1ff5-4dfc-ba41-08906f43b9c3",
+      "id": "fb403e74-1149-4dde-a7de-d52fae327d39",
       "address": "doh.domreg.lt",
       "type": "DoH",
       "provider": "domreg.lt",
@@ -2212,7 +2212,7 @@
       "description": "DoH server provided by domreg.lt"
     },
     {
-      "id": "b22bff0c-2bff-4d8a-ba55-657aefea681e",
+      "id": "96651bde-8873-4e8a-a91e-506ef9a8aedc",
       "address": "agh.dshubham.xyz",
       "type": "DoH",
       "provider": "dshubham.xyz",
@@ -2232,7 +2232,7 @@
       "description": "DoH server provided by dshubham.xyz"
     },
     {
-      "id": "91e3e07c-a314-431d-9622-39b92573707a",
+      "id": "db26d2f3-6c70-4aa0-909d-ab2fe1ff2f34",
       "address": "dukun.de",
       "type": "DoH",
       "provider": "Dukun.de",
@@ -2252,7 +2252,7 @@
       "description": "DoH server provided by Dukun.de"
     },
     {
-      "id": "e83b41fd-b94f-4533-95c6-3258a766f110",
+      "id": "0fd49433-8ba0-41f0-9d00-d972be586a12",
       "address": "xn--durhre-yxa.de",
       "type": "DoH",
       "provider": "duröhre.de",
@@ -2272,7 +2272,7 @@
       "description": "DoH server provided by duröhre.de"
     },
     {
-      "id": "9a7992e2-1f16-4d07-812a-c1fe90c77f6b",
+      "id": "5e98babe-5c78-403f-b6bb-1fc75aa9e4b7",
       "address": "dns.d94.xyz",
       "type": "DoH",
       "provider": "d94.xyz",
@@ -2292,7 +2292,7 @@
       "description": "DoH server provided by d94.xyz"
     },
     {
-      "id": "7d12eb47-4465-40ba-bfd0-d0d9190a42e4",
+      "id": "b4c68c2d-537e-465d-952b-35aec9d129ba",
       "address": "dns.easyhns.com",
       "type": "DoH",
       "provider": "Easy HNS",
@@ -2312,7 +2312,7 @@
       "description": "DoH server provided by Easy HNS"
     },
     {
-      "id": "375cc42f-c8e4-4936-abd3-bdc8d1a47c2c",
+      "id": "0859c86f-ae6e-4704-ba80-6286f326f459",
       "address": "dns.elemental.software",
       "type": "DoH",
       "provider": "Elemental Software",
@@ -2332,7 +2332,7 @@
       "description": "DoH server provided by Elemental Software"
     },
     {
-      "id": "e65edd42-66dd-4419-8355-dea290f3a759",
+      "id": "9f4cd65d-dd77-4478-ba93-763af8f4f43d",
       "address": "dns.envs.net",
       "type": "DoH",
       "provider": "envs.net",
@@ -2352,7 +2352,7 @@
       "description": "DoH server provided by envs.net"
     },
     {
-      "id": "02ea5798-380c-4ba4-b15b-57cd4460aa5a",
+      "id": "dba334be-440c-47bb-b12a-09c319986a37",
       "address": "dns.faked.org",
       "type": "DoH",
       "provider": "faked.org",
@@ -2372,7 +2372,7 @@
       "description": "DoH server provided by faked.org"
     },
     {
-      "id": "17487a0d-4d6a-4ae0-b170-c49ddbec65fb",
+      "id": "fc654f3e-f2f0-4424-99d3-cb0405d9470b",
       "address": "dnsvps.familiamv.net",
       "type": "DoH",
       "provider": "familiamv.net",
@@ -2392,7 +2392,7 @@
       "description": "DoH server provided by familiamv.net"
     },
     {
-      "id": "2c8510dd-65cf-450c-b5c7-ab3e4faf667f",
+      "id": "c6300d56-fc74-40e2-a160-101805977403",
       "address": "dns.farshidhakimy.de",
       "type": "DoH",
       "provider": "farshidhakimy.de",
@@ -2412,7 +2412,7 @@
       "description": "DoH server provided by farshidhakimy.de"
     },
     {
-      "id": "85afa2a7-7630-4cea-b0fe-74f29c81cda4",
+      "id": "e2c97143-c598-44a2-ab5c-afd9425af428",
       "address": "nicsezcheckfbi.gov",
       "type": "DoH",
       "provider": "FBI NICS E-Check",
@@ -2432,7 +2432,7 @@
       "description": "DoH server provided by FBI NICS E-Check"
     },
     {
-      "id": "7eb8443a-0886-400d-9f0f-b50feace76c5",
+      "id": "0870ba00-3f88-4310-a732-b4a58fff86c6",
       "address": "ns0.fdn.fr",
       "type": "DoH",
       "provider": "FDN- French Data Network",
@@ -2452,7 +2452,7 @@
       "description": "DoH server provided by FDN- French Data Network"
     },
     {
-      "id": "3ac7945b-ccdb-4f16-83c3-c80a29c18430",
+      "id": "f262be54-424d-41d6-b09a-5e39b76a0d46",
       "address": "ns1.fdn.fr",
       "type": "DoH",
       "provider": "FDN- French Data Network",
@@ -2472,7 +2472,7 @@
       "description": "DoH server provided by FDN- French Data Network"
     },
     {
-      "id": "12b48777-530f-4625-b44a-825041a00972",
+      "id": "8cca2613-5f5c-45b9-b063-72de43d35511",
       "address": "doh.li",
       "type": "DoH",
       "provider": "Feroz",
@@ -2492,7 +2492,7 @@
       "description": "DoH server provided by Feroz"
     },
     {
-      "id": "894ab3aa-884e-40f8-bdd4-ed4719e968f5",
+      "id": "8087c7d9-2b61-4ee4-8330-1a760c58a8df",
       "address": "doh.ffmuc.net",
       "type": "DoH",
       "provider": "ffmuc.net",
@@ -2512,7 +2512,7 @@
       "description": "DoH server provided by ffmuc.net"
     },
     {
-      "id": "b1b062e4-51fa-48c5-919a-f1b7a1746294",
+      "id": "8536c208-9d15-49ff-b5ae-52c6f9915ba0",
       "address": "fidelius.top",
       "type": "DoH",
       "provider": "fidelius.top",
@@ -2532,7 +2532,7 @@
       "description": "DoH server provided by fidelius.top"
     },
     {
-      "id": "50617180-f5c2-4ad6-8a52-4df908cea320",
+      "id": "7f969cd2-6db0-4f3c-b030-91128da260f3",
       "address": "dns.floriantinney.de",
       "type": "DoH",
       "provider": "floriantinney.de",
@@ -2552,7 +2552,7 @@
       "description": "DoH server provided by floriantinney.de"
     },
     {
-      "id": "a56e90db-65a8-47d1-ad17-65ee6e1743f5",
+      "id": "39444de6-a0e1-4956-b365-10716846ad17",
       "address": "doh.applied-privacy.net",
       "type": "DoH",
       "provider": "Foundation for Applied Privacy",
@@ -2572,7 +2572,7 @@
       "description": "DoH server provided by Foundation for Applied Privacy"
     },
     {
-      "id": "2310c5f2-e924-4bbf-a578-fe8f7a4c92a5",
+      "id": "eff78b1e-873e-4fd2-9225-7f08e4a3c0b4",
       "address": "es-ma.foxyfy.net",
       "type": "DoH",
       "provider": "Foxyfy DNS",
@@ -2592,7 +2592,7 @@
       "description": "DoH server provided by Foxyfy DNS"
     },
     {
-      "id": "f584591f-842c-4a29-964a-d875dcc6f719",
+      "id": "a0dcbea2-d90c-448e-8e93-6e5ae8a7e466",
       "address": "dns.furrix.zone",
       "type": "DoH",
       "provider": "FurrIX vIX",
@@ -2612,7 +2612,7 @@
       "description": "DoH server provided by FurrIX vIX"
     },
     {
-      "id": "24646529-81b1-486c-aa68-2d598f374046",
+      "id": "64510ebe-d6c2-40b1-b73a-e85172bdaf90",
       "address": "doh.futa.gg",
       "type": "DoH",
       "provider": "FutaDNS",
@@ -2632,7 +2632,7 @@
       "description": "DoH server provided by FutaDNS"
     },
     {
-      "id": "006798c4-76b9-4c24-83a5-3f85473b39eb",
+      "id": "730d1ccf-971a-4a0e-a9e1-4f2eb47b393d",
       "address": "dns.gamban.com",
       "type": "DoH",
       "provider": "Gamban",
@@ -2652,7 +2652,7 @@
       "description": "DoH server provided by Gamban"
     },
     {
-      "id": "a4640d11-dac2-4acb-953e-ee128e5ce59b",
+      "id": "18391288-e24c-4cfd-8023-cc7d8c9c6e2e",
       "address": "gibblets.top",
       "type": "DoH",
       "provider": "gibblets.top",
@@ -2672,7 +2672,7 @@
       "description": "DoH server provided by gibblets.top"
     },
     {
-      "id": "76fc2441-81a1-43e7-80aa-5f57083bba7f",
+      "id": "1b7deaf0-597c-4879-ab07-5709602c35f0",
       "address": "glacius.top",
       "type": "DoH",
       "provider": "glacius.top",
@@ -2692,7 +2692,7 @@
       "description": "DoH server provided by glacius.top"
     },
     {
-      "id": "97fbc174-1e67-4c94-a87a-679f6784b56e",
+      "id": "01ec24ec-7041-407d-b913-42627b8b436b",
       "address": "dns.google",
       "type": "DoH",
       "provider": "Google",
@@ -2712,7 +2712,7 @@
       "description": "DoH server provided by Google"
     },
     {
-      "id": "5e1003f7-0ef9-4ac1-8752-634424d0cf94",
+      "id": "6b53c35f-062d-440d-972d-05d5eda496ce",
       "address": "dns64.dns.google",
       "type": "DoH",
       "provider": "Google",
@@ -2732,7 +2732,7 @@
       "description": "DoH server provided by Google"
     },
     {
-      "id": "b46fd222-764b-4b4c-9e06-aa2f78ebdb9a",
+      "id": "7fd3ee15-b316-4fea-9ab6-ad755e073395",
       "address": "8888.google",
       "type": "DoH",
       "provider": "Google",
@@ -2752,7 +2752,7 @@
       "description": "DoH server provided by Google"
     },
     {
-      "id": "7b091cee-4b6d-4269-acc3-491fe19e9b83",
+      "id": "2340c773-e572-472c-9064-9fde346fd80d",
       "address": "dns.glf.wtf",
       "type": "DoH",
       "provider": "Gottlieb Freitag",
@@ -2772,7 +2772,7 @@
       "description": "DoH server provided by Gottlieb Freitag"
     },
     {
-      "id": "2f5457ac-57a2-474b-970d-c6aac72197c8",
+      "id": "895ae29a-9be8-4f48-be6c-74c894d5c5cd",
       "address": "dns.guard.io",
       "type": "DoH",
       "provider": "Guardio",
@@ -2792,7 +2792,7 @@
       "description": "DoH server provided by Guardio"
     },
     {
-      "id": "12c61fc4-e38c-42d2-8327-82fce1e490fa",
+      "id": "52ce7ee7-9f01-4527-a46a-559a64a8b04b",
       "address": "secure.hafnova.com",
       "type": "DoH",
       "provider": "Hafnova",
@@ -2812,7 +2812,7 @@
       "description": "DoH server provided by Hafnova"
     },
     {
-      "id": "ae12e26b-5226-4930-a3ea-213d9bd13c8b",
+      "id": "bc660380-4d5d-4138-b124-7a7c3b867750",
       "address": "root.hagezi.org",
       "type": "DoH",
       "provider": "HaGeZi DNS",
@@ -2832,7 +2832,7 @@
       "description": "DoH server provided by HaGeZi DNS"
     },
     {
-      "id": "0b08a901-3350-4f1a-b1f8-87eaa309db5d",
+      "id": "e8a862ba-0171-40a3-bc2d-e7fa70e3aad1",
       "address": "wurzn.hagezi.org",
       "type": "DoH",
       "provider": "HaGeZi DNS",
@@ -2852,7 +2852,7 @@
       "description": "DoH server provided by HaGeZi DNS"
     },
     {
-      "id": "0eeee21a-29ce-4500-8b98-e3c01b67e31b",
+      "id": "8bfb75cf-c699-477e-a042-8c339c60efd5",
       "address": "juuri.hagezi.org",
       "type": "DoH",
       "provider": "HaGeZi DNS",
@@ -2872,7 +2872,7 @@
       "description": "DoH server provided by HaGeZi DNS"
     },
     {
-      "id": "fbf09a1a-4caa-4ceb-bc49-147ab503665a",
+      "id": "f12e0a97-d036-4334-80bc-3d04bfffcd4d",
       "address": "dns.haka.se",
       "type": "DoH",
       "provider": "Hakase",
@@ -2892,7 +2892,7 @@
       "description": "DoH server provided by Hakase"
     },
     {
-      "id": "ea94f478-1a84-49e1-a602-f487ea72dd1c",
+      "id": "16413e24-41e5-432b-a04b-4a4dac6d70cc",
       "address": "hnsdoh.com",
       "type": "DoH",
       "provider": "HNS DoH",
@@ -2912,7 +2912,7 @@
       "description": "DoH server provided by HNS DoH"
     },
     {
-      "id": "f8222608-0092-4701-a24c-65ec9ceb4e97",
+      "id": "98b83587-c197-4fd7-be5b-5d294e0e9df6",
       "address": "dns.hostux.net",
       "type": "DoH",
       "provider": "Hostux.net",
@@ -2932,7 +2932,7 @@
       "description": "DoH server provided by Hostux.net"
     },
     {
-      "id": "8a3a93c3-047b-4b11-a111-b41e53ce0263",
+      "id": "a512b399-cff0-4cf0-a0c2-8b8301b0d400",
       "address": "dns.hostux.net",
       "type": "DoH",
       "provider": "Hostux.net",
@@ -2952,7 +2952,7 @@
       "description": "DoH server provided by Hostux.net"
     },
     {
-      "id": "305dc221-b803-4d10-80a6-a0503e8b57f2",
+      "id": "2f7f9860-47dc-4f40-9db4-d87484df23be",
       "address": "doth.huque.com",
       "type": "DoH",
       "provider": "Huque",
@@ -2973,7 +2973,7 @@
       "description": "DoH server provided by Huque"
     },
     {
-      "id": "6ec35a2e-8e68-4cab-8d29-ebb412bf5cd8",
+      "id": "35d5b823-46b9-4ab2-83a7-9b8fc75afa79",
       "address": "imperio.top",
       "type": "DoH",
       "provider": "imperio.top",
@@ -2993,7 +2993,7 @@
       "description": "DoH server provided by imperio.top"
     },
     {
-      "id": "b568fcf5-d208-4af4-ab6d-9ee42c77c815",
+      "id": "cad8ac0a-e50c-4318-9722-466e26d892e2",
       "address": "dns1.in-berlin.de",
       "type": "DoH",
       "provider": "In-Berlin",
@@ -3013,7 +3013,7 @@
       "description": "DoH server provided by In-Berlin"
     },
     {
-      "id": "6fb146f2-9962-46c3-b4b7-44ef19d7ff63",
+      "id": "d850c9e5-88f2-4a0a-bb8d-e13b832c1824",
       "address": "dns2.in-berlin.de",
       "type": "DoH",
       "provider": "In-Berlin",
@@ -3033,7 +3033,7 @@
       "description": "DoH server provided by In-Berlin"
     },
     {
-      "id": "a7e40dc4-2a18-4d7b-bb77-e6e308d89716",
+      "id": "511a8fa6-8197-40a2-91bc-f2f2111dfc25",
       "address": "dns.inforlogia.com",
       "type": "DoH",
       "provider": "Inforlogia",
@@ -3053,7 +3053,7 @@
       "description": "DoH server provided by Inforlogia"
     },
     {
-      "id": "dededb28-afe6-4efe-b520-bd9e23c8004a",
+      "id": "57533d5b-1ff2-44fe-b884-b362aa756ce7",
       "address": "public.dns.iij.jp",
       "type": "DoH",
       "provider": "Internet Initiative Japan",
@@ -3073,7 +3073,7 @@
       "description": "DoH server provided by Internet Initiative Japan"
     },
     {
-      "id": "3188baea-e895-4e48-8ca6-f0cc2380369d",
+      "id": "969b5f18-3be5-4142-b1f4-93a221935ee4",
       "address": "dns.kapite.in",
       "type": "DoH",
       "provider": "kapite.in",
@@ -3093,7 +3093,7 @@
       "description": "DoH server provided by kapite.in"
     },
     {
-      "id": "e68ce728-ab20-4d26-8a88-0a0438bf7523",
+      "id": "38e1a834-e13f-40e0-91cd-9a3686b79813",
       "address": "dns.kernel-error.de",
       "type": "DoH",
       "provider": "Kernel Error",
@@ -3113,7 +3113,7 @@
       "description": "DoH server provided by Kernel Error"
     },
     {
-      "id": "7b9788a2-8488-4a7a-8e17-8915d376a4d4",
+      "id": "8290d38f-ad37-4728-940d-a3a9365b3862",
       "address": "dns.kescher.at",
       "type": "DoH",
       "provider": "kescher",
@@ -3133,7 +3133,7 @@
       "description": "DoH server provided by kescher"
     },
     {
-      "id": "36912a5e-d4b1-4982-94a9-b6adefcf7e43",
+      "id": "74758365-c1b1-482c-b2e1-55ec813b0340",
       "address": "dns.koala.us.to",
       "type": "DoH",
       "provider": "Koala",
@@ -3153,7 +3153,7 @@
       "description": "DoH server provided by Koala"
     },
     {
-      "id": "71318b4c-ebd0-453c-9df6-d98cd01ef3be",
+      "id": "d24d7c56-9f6a-4f2e-9eba-5e929b642a1c",
       "address": "dns.kosan.moe",
       "type": "DoH",
       "provider": "Kosan",
@@ -3173,7 +3173,7 @@
       "description": "DoH server provided by Kosan"
     },
     {
-      "id": "7fc15b4e-8172-4c7b-a93f-20932823b20b",
+      "id": "c991f7d2-f9fc-4f71-96c5-38e3a30dd4ed",
       "address": "adblock.krctech.dev",
       "type": "DoH",
       "provider": "krctech.dev",
@@ -3193,7 +3193,7 @@
       "description": "DoH server provided by krctech.dev"
     },
     {
-      "id": "44b8949a-9704-49e6-9e6f-9760727e148a",
+      "id": "abe3e824-e927-45ee-9b65-d97f9b5c8bc2",
       "address": "doh.lacontrevoie.fr",
       "type": "DoH",
       "provider": "La Contre-Voie",
@@ -3213,7 +3213,7 @@
       "description": "DoH server provided by La Contre-Voie"
     },
     {
-      "id": "bda8bcdf-9f29-4ce9-a53a-1b1d420135f6",
+      "id": "a71d71ce-84bc-4418-a943-d259e884a987",
       "address": "dns.liberador.net",
       "type": "DoH",
       "provider": "Liberador.net",
@@ -3233,7 +3233,7 @@
       "description": "DoH server provided by Liberador.net"
     },
     {
-      "id": "7a66ee58-9188-4a33-9cae-18aec6338259",
+      "id": "6b2c45b4-3e42-4445-b7ac-34a57837fe31",
       "address": "doh.libredns.gr",
       "type": "DoH",
       "provider": "LibreDNS",
@@ -3253,7 +3253,7 @@
       "description": "DoH server provided by LibreDNS"
     },
     {
-      "id": "0c3f7242-09b5-487d-a386-94a8aadc7536",
+      "id": "18a8ba55-e32c-4331-96f1-35b41e827304",
       "address": "doh.libredns.gr",
       "type": "DoH",
       "provider": "LibreDNS",
@@ -3273,7 +3273,7 @@
       "description": "DoH server provided by LibreDNS"
     },
     {
-      "id": "37ceb61c-d44e-41a6-acdc-e0e15f2cad16",
+      "id": "32dc76a2-192b-4197-acdd-d5c83f633cdd",
       "address": "loadlow.me",
       "type": "DoH",
       "provider": "loadlow.me",
@@ -3293,7 +3293,7 @@
       "description": "DoH server provided by loadlow.me"
     },
     {
-      "id": "15a73f1e-42dc-4e48-8207-8e7041656bea",
+      "id": "205be212-3c74-418c-82f4-3c535b6d801c",
       "address": "dns.lobbygod.com",
       "type": "DoH",
       "provider": "LobbyGod",
@@ -3313,7 +3313,7 @@
       "description": "DoH server provided by LobbyGod"
     },
     {
-      "id": "e90fd73f-6f34-4bd8-9374-6e13b11f9624",
+      "id": "2828fd47-7370-493d-a619-09f1ef869b4a",
       "address": "dns.luma-medien.com",
       "type": "DoH",
       "provider": "LuMa Medien",
@@ -3333,7 +3333,7 @@
       "description": "DoH server provided by LuMa Medien"
     },
     {
-      "id": "10671c28-b492-4893-85f1-68e9c2a21556",
+      "id": "d799189c-d4b3-4d9b-912b-c960587737ce",
       "address": "dns.l337.site",
       "type": "DoH",
       "provider": "l337.site",
@@ -3353,7 +3353,7 @@
       "description": "DoH server provided by l337.site"
     },
     {
-      "id": "9c0a2e8c-b9c6-4d51-870e-aa0e4057b158",
+      "id": "aea3e0f2-091e-4dc0-8e1f-17e05ffd75d0",
       "address": "dns.marasov.id",
       "type": "DoH",
       "provider": "marasov.id",
@@ -3373,7 +3373,7 @@
       "description": "DoH server provided by marasov.id"
     },
     {
-      "id": "5424140e-1e42-4e56-9e48-697355855aaf",
+      "id": "090ed572-042d-49db-9019-cd9ef88c98fa",
       "address": "masters-of-cloud.de",
       "type": "DoH",
       "provider": "Masters of Cloud",
@@ -3393,7 +3393,7 @@
       "description": "DoH server provided by Masters of Cloud"
     },
     {
-      "id": "7f6435af-0da4-440b-b2c3-cad43e9f80fc",
+      "id": "fbb64079-2e2e-42a1-aa6d-a96ff3e03e6d",
       "address": "dns.mateo.ovh",
       "type": "DoH",
       "provider": "mateo.ovh",
@@ -3413,7 +3413,7 @@
       "description": "DoH server provided by mateo.ovh"
     },
     {
-      "id": "415314cf-443f-47de-b5af-ff8108a7f674",
+      "id": "68bcd8ae-6719-498f-8417-ef9138d090a4",
       "address": "dns.mayx.eu.org",
       "type": "DoH",
       "provider": "Mayx",
@@ -3433,7 +3433,7 @@
       "description": "DoH server provided by Mayx"
     },
     {
-      "id": "a2a07df3-c59f-4085-bcf8-7c7762a1284b",
+      "id": "ca0018cc-50cb-4a92-ac69-b148bc5ba9ad",
       "address": "adguard.meddy94.de",
       "type": "DoH",
       "provider": "meddy94.de",
@@ -3453,7 +3453,7 @@
       "description": "DoH server provided by meddy94.de"
     },
     {
-      "id": "0635541a-6476-473b-827c-c684a84d2771",
+      "id": "6d054aae-962f-42e1-b532-a2da76d63289",
       "address": "dns.mh4ckt3mh4ckt1c4s.xyz",
       "type": "DoH",
       "provider": "mh4ckt3mh4ckt1c4s.xyz",
@@ -3473,7 +3473,7 @@
       "description": "DoH server provided by mh4ckt3mh4ckt1c4s.xyz"
     },
     {
-      "id": "b2b8175f-e50b-4a81-b485-9206e0319940",
+      "id": "1144e9d7-5d0d-4aac-b814-6ce8d1a0c366",
       "address": "addns1.m-it.ro",
       "type": "DoH",
       "provider": "m-it.ro",
@@ -3493,7 +3493,7 @@
       "description": "DoH server provided by m-it.ro"
     },
     {
-      "id": "8e48dd57-0741-41c1-b8f8-e3815d2e3949",
+      "id": "defed837-e90b-4594-9068-1b223e49cd0c",
       "address": "doh.mmmalia.com",
       "type": "DoH",
       "provider": "mmmalia.com",
@@ -3513,7 +3513,7 @@
       "description": "DoH server provided by mmmalia.com"
     },
     {
-      "id": "0fbbcef2-0c76-468f-b41c-c516c6d4deec",
+      "id": "6e463ec9-7c53-4282-8d9f-d4b2d3ce8196",
       "address": "dns.mullvad.net",
       "type": "DoH",
       "provider": "Mullvad",
@@ -3533,7 +3533,7 @@
       "description": "DoH server provided by Mullvad"
     },
     {
-      "id": "238bd948-ae23-4144-b170-bbb4a410a5e0",
+      "id": "97cb0acc-2376-43e2-80bf-a3b29d2c6fa6",
       "address": "adblock.dns.mullvad.net",
       "type": "DoH",
       "provider": "Mullvad",
@@ -3553,7 +3553,7 @@
       "description": "DoH server provided by Mullvad"
     },
     {
-      "id": "189333cf-60cd-48e7-b4b2-ff6b333b7c0c",
+      "id": "927bd054-34a6-4610-956a-b086c82f82fd",
       "address": "base.dns.mullvad.net",
       "type": "DoH",
       "provider": "Mullvad",
@@ -3573,7 +3573,7 @@
       "description": "DoH server provided by Mullvad"
     },
     {
-      "id": "1c5cb555-f707-467a-a94a-f716573ac095",
+      "id": "43149dae-cb41-4af0-9b38-367d04669f23",
       "address": "extended.dns.mullvad.net",
       "type": "DoH",
       "provider": "Mullvad",
@@ -3593,7 +3593,7 @@
       "description": "DoH server provided by Mullvad"
     },
     {
-      "id": "524acec3-1116-4e2d-8782-854175c33d08",
+      "id": "5190324c-b442-44f3-b1aa-9b94bb7e6df1",
       "address": "all.dns.mullvad.net",
       "type": "DoH",
       "provider": "Mullvad",
@@ -3613,7 +3613,7 @@
       "description": "DoH server provided by Mullvad"
     },
     {
-      "id": "bbc09e88-5256-41ec-894e-28038dd03c38",
+      "id": "f9074149-7635-4f9b-92c0-a7e1992e3ed1",
       "address": "family.dns.mullvad.net",
       "type": "DoH",
       "provider": "Mullvad",
@@ -3633,7 +3633,7 @@
       "description": "DoH server provided by Mullvad"
     },
     {
-      "id": "c6b99e4a-16cb-49ea-b288-588a3dc324f7",
+      "id": "4ef1e679-c740-4757-aa7d-8f27aa80ca7d",
       "address": "freedom.mydns.network",
       "type": "DoH",
       "provider": "mydns.network",
@@ -3653,7 +3653,7 @@
       "description": "DoH server provided by mydns.network"
     },
     {
-      "id": "c94ed03b-319c-44dd-a457-29b9979b95a8",
+      "id": "a625074d-035a-43af-85a7-4b97ab2d42aa",
       "address": "paranoia.mydns.network",
       "type": "DoH",
       "provider": "mydns.network",
@@ -3673,7 +3673,7 @@
       "description": "DoH server provided by mydns.network"
     },
     {
-      "id": "a0d215f1-af8f-4fc9-930d-2b24bcf0fa8a",
+      "id": "86d03508-36ac-468e-aab1-aa4fe2729ef3",
       "address": "adblock.mydns.network",
       "type": "DoH",
       "provider": "mydns.network",
@@ -3693,7 +3693,7 @@
       "description": "DoH server provided by mydns.network"
     },
     {
-      "id": "d9ae37f8-836e-415e-b8e9-68f0f75323bf",
+      "id": "feb50a99-8766-4c71-968e-13b962f127b1",
       "address": "family.mydns.network",
       "type": "DoH",
       "provider": "mydns.network",
@@ -3713,7 +3713,7 @@
       "description": "DoH server provided by mydns.network"
     },
     {
-      "id": "0a57b9fd-ed5a-485b-88fa-2851c5806de5",
+      "id": "fbfc29c6-9350-417c-8493-5b719678a6c8",
       "address": "dns.mzjtechnology.com",
       "type": "DoH",
       "provider": "MZJ Technology",
@@ -3733,7 +3733,7 @@
       "description": "DoH server provided by MZJ Technology"
     },
     {
-      "id": "de48cff3-a2d2-469a-98aa-f92df7bc3a6d",
+      "id": "f379c158-ea4c-4451-a394-b835e5880b01",
       "address": "ae-fuj-w-p-1.nashkan.net",
       "type": "DoH",
       "provider": "nashkan.net",
@@ -3753,7 +3753,7 @@
       "description": "DoH server provided by nashkan.net"
     },
     {
-      "id": "02b65728-5f11-4634-ad1b-f26dce60b3c4",
+      "id": "1223b413-ed04-4ed4-822c-75c3aacd7bfd",
       "address": "ae-fuj-w-p-2.nashkan.net",
       "type": "DoH",
       "provider": "nashkan.net",
@@ -3773,7 +3773,7 @@
       "description": "DoH server provided by nashkan.net"
     },
     {
-      "id": "f03553b5-59ca-46e2-8d2e-8c177f1b7fd7",
+      "id": "27f20cf1-5310-4f18-bd9e-b9f8860f2fdc",
       "address": "ae-fuj-w-p-3.nashkan.net",
       "type": "DoH",
       "provider": "nashkan.net",
@@ -3793,7 +3793,7 @@
       "description": "DoH server provided by nashkan.net"
     },
     {
-      "id": "01c475dd-aa75-4e12-a46e-d32ab897c299",
+      "id": "5038f6a3-5fa1-43e9-bbd1-d1f6aadb049e",
       "address": "au-syd-w-f-1.nashkan.net",
       "type": "DoH",
       "provider": "nashkan.net",
@@ -3813,7 +3813,7 @@
       "description": "DoH server provided by nashkan.net"
     },
     {
-      "id": "fe566567-e032-454a-8292-6e3ac41921f0",
+      "id": "8e799a62-7d0f-46cf-81f9-837233e9a5c6",
       "address": "gb-lon-w-p-2.nashkan.net",
       "type": "DoH",
       "provider": "nashkan.net",
@@ -3833,7 +3833,7 @@
       "description": "DoH server provided by nashkan.net"
     },
     {
-      "id": "f59a727f-74b1-48a3-81bd-fa3661e47869",
+      "id": "89a4a433-b951-4086-83f1-263e28454c8d",
       "address": "ro-buc-w-p-1.nashkan.net",
       "type": "DoH",
       "provider": "nashkan.net",
@@ -3853,7 +3853,7 @@
       "description": "DoH server provided by nashkan.net"
     },
     {
-      "id": "07edc3e6-2466-43dc-87a3-c5073013fcbb",
+      "id": "df5fd522-4d86-4b42-a300-8a56927fa3fc",
       "address": "sg-w-p-1.nashkan.net",
       "type": "DoH",
       "provider": "nashkan.net",
@@ -3873,7 +3873,7 @@
       "description": "DoH server provided by nashkan.net"
     },
     {
-      "id": "57b22a29-46c4-4153-82b1-ec980ec55489",
+      "id": "7a270b21-d713-47a9-b078-5e99f07923bb",
       "address": "us-chi-w-f-1.nashkan.net",
       "type": "DoH",
       "provider": "nashkan.net",
@@ -3893,7 +3893,7 @@
       "description": "DoH server provided by nashkan.net"
     },
     {
-      "id": "2451558b-c370-4e02-99ba-e3042d044334",
+      "id": "f505db3e-8f72-474f-aacc-9da7fad2536b",
       "address": "us-chi-w-p-1.nashkan.net",
       "type": "DoH",
       "provider": "nashkan.net",
@@ -3913,7 +3913,7 @@
       "description": "DoH server provided by nashkan.net"
     },
     {
-      "id": "6ed84ae6-e954-4bb5-82d2-a600b150b15f",
+      "id": "6abb1150-d36c-420d-8f16-f7cb8fa1b109",
       "address": "us-jac-w-f-1.nashkan.net",
       "type": "DoH",
       "provider": "nashkan.net",
@@ -3933,7 +3933,7 @@
       "description": "DoH server provided by nashkan.net"
     },
     {
-      "id": "99e59798-5ba7-4400-9f2c-95106327af1f",
+      "id": "b72c69e4-6b36-4e48-860c-956e58f500c8",
       "address": "us-jac-w-p-1.nashkan.net",
       "type": "DoH",
       "provider": "nashkan.net",
@@ -3953,7 +3953,7 @@
       "description": "DoH server provided by nashkan.net"
     },
     {
-      "id": "3227bf3b-5c6c-41ea-9d92-71bdba5624ac",
+      "id": "7c9f76b5-857c-4d48-9914-4968a7e36549",
       "address": "us-kan-w-p-1.nashkan.net",
       "type": "DoH",
       "provider": "nashkan.net",
@@ -3973,7 +3973,7 @@
       "description": "DoH server provided by nashkan.net"
     },
     {
-      "id": "ddbe1b1d-7d6a-4744-b48d-04dc434dfc1c",
+      "id": "86088407-8481-4a2a-a8ae-c9b26e644878",
       "address": "us-nyc-w-p-1.nashkan.net",
       "type": "DoH",
       "provider": "nashkan.net",
@@ -3993,7 +3993,7 @@
       "description": "DoH server provided by nashkan.net"
     },
     {
-      "id": "64728a09-01da-4258-9eb6-eefd532fbd10",
+      "id": "fc74eaa0-cbf3-4829-870c-1092dd3b635e",
       "address": "dns.neeb.it",
       "type": "DoH",
       "provider": "neeb.it",
@@ -4013,7 +4013,7 @@
       "description": "DoH server provided by neeb.it"
     },
     {
-      "id": "2f2ae801-17ab-4a61-9b99-afe3d4c5a7f7",
+      "id": "dba0cec0-69a1-4f81-ad92-f181a4c8fa68",
       "address": "dns.nextdns.io",
       "type": "DoH",
       "provider": "NextDNS",
@@ -4033,7 +4033,7 @@
       "description": "DoH server provided by NextDNS"
     },
     {
-      "id": "a4554daa-2023-4997-9045-2b6fac3ec384",
+      "id": "b30e9372-b08d-4f03-b804-f3dac71bcfc9",
       "address": "dns.nick-slowinski.de",
       "type": "DoH",
       "provider": "Nick Slowinski",
@@ -4053,7 +4053,7 @@
       "description": "DoH server provided by Nick Slowinski"
     },
     {
-      "id": "58bfd5ef-e862-4dac-b3f9-0a891f1d822f",
+      "id": "1c8771c3-e882-4daa-9217-dea1868f1c29",
       "address": "doh.lv",
       "type": "DoH",
       "provider": "NIC.LV",
@@ -4073,7 +4073,7 @@
       "description": "DoH server provided by NIC.LV"
     },
     {
-      "id": "fca477a2-d74a-491b-8325-24b6ccd9c890",
+      "id": "ecdafa79-c6bc-4b91-bd08-adcc9ed0dc45",
       "address": "doh.nic.lv",
       "type": "DoH",
       "provider": "NIC.LV",
@@ -4093,7 +4093,7 @@
       "description": "DoH server provided by NIC.LV"
     },
     {
-      "id": "28629b31-9c24-48e5-86ee-62c76577332d",
+      "id": "a23e453e-c055-4fcb-9933-65105dd1682e",
       "address": "doh-dilution-to-upstreams-adguardhome.nicolas-dorriere.fr",
       "type": "DoH",
       "provider": "Nicolas Dorriere",
@@ -4113,7 +4113,7 @@
       "description": "DoH server provided by Nicolas Dorriere"
     },
     {
-      "id": "eddceb4b-a368-4cb2-9f5f-9e070c733552",
+      "id": "f2e54f7d-f836-4bdd-87e3-a6d2de6989c4",
       "address": "doh.niyawe.de",
       "type": "DoH",
       "provider": "NiYaWe",
@@ -4133,7 +4133,7 @@
       "description": "DoH server provided by NiYaWe"
     },
     {
-      "id": "bd63e323-ce64-4d0c-8592-924a9247a8ad",
+      "id": "2a1dba65-f06a-4511-ba6a-ecf4369cf9c3",
       "address": "dns.njal.la",
       "type": "DoH",
       "provider": "Njalla",
@@ -4153,7 +4153,7 @@
       "description": "DoH server provided by Njalla"
     },
     {
-      "id": "a229e996-afcb-4625-87ba-10863c57a7a9",
+      "id": "1205a546-4df4-4d3c-8859-553ce56566f7",
       "address": "dns.novg.net",
       "type": "DoH",
       "provider": "novg.net",
@@ -4173,7 +4173,7 @@
       "description": "DoH server provided by novg.net"
     },
     {
-      "id": "b96a10f8-edf7-49a4-89da-8bacb5d88436",
+      "id": "03eb6264-7a55-494c-aa85-a3230035f90b",
       "address": "dns.ofdoom.net",
       "type": "DoH",
       "provider": "ofdoom.net",
@@ -4193,7 +4193,7 @@
       "description": "DoH server provided by ofdoom.net"
     },
     {
-      "id": "0fce8c35-9703-4f2e-be0a-2b4a207ca598",
+      "id": "1e737ea1-fb14-417d-bfb4-403308943049",
       "address": "dns.omada.cafe",
       "type": "DoH",
       "provider": "Omada",
@@ -4213,7 +4213,7 @@
       "description": "DoH server provided by Omada"
     },
     {
-      "id": "10ee22c4-0e5e-469a-bbb3-155cc10b1d30",
+      "id": "a6a25965-6eac-473c-bc46-9baa16e2ae3a",
       "address": "ada.openbld.net",
       "type": "DoH",
       "provider": "OpenBLD.net",
@@ -4233,7 +4233,7 @@
       "description": "DoH server provided by OpenBLD.net"
     },
     {
-      "id": "6f603172-2e21-4452-9d8e-3b29aba6798c",
+      "id": "30f40b36-592d-45c7-b24c-69aa38767728",
       "address": "ag.apollohct.com",
       "type": "DoH",
       "provider": "OpenLoop",
@@ -4253,7 +4253,7 @@
       "description": "DoH server provided by OpenLoop"
     },
     {
-      "id": "abd554bc-e15b-43c5-b16f-5303cb134216",
+      "id": "c982896f-2355-42ee-968d-3adc06f15ad3",
       "address": "dns4eu.online",
       "type": "DoH",
       "provider": "o2cloud.fr",
@@ -4273,7 +4273,7 @@
       "description": "DoH server provided by o2cloud.fr"
     },
     {
-      "id": "8948ccd8-b649-479d-8cd9-8eeba5ace761",
+      "id": "7a7796e7-6e21-4e6d-8244-d730fb3c9d32",
       "address": "dns.paesa.es",
       "type": "DoH",
       "provider": "PaesaDNS",
@@ -4293,7 +4293,7 @@
       "description": "DoH server provided by PaesaDNS"
     },
     {
-      "id": "9b970f8f-3d64-4921-b31c-42eae02f3ee0",
+      "id": "97b9d16c-11e5-4d38-94ed-517e3b27f816",
       "address": "dns.paulo.nom.za",
       "type": "DoH",
       "provider": "Paulo",
@@ -4313,7 +4313,7 @@
       "description": "DoH server provided by Paulo"
     },
     {
-      "id": "d6a07018-e5a3-440d-a8b7-10ef40f387d0",
+      "id": "6d142acd-0b76-4f5b-8a20-4276eebea97f",
       "address": "dns.decky.eu",
       "type": "DoH",
       "provider": "Pavol Decky",
@@ -4333,7 +4333,7 @@
       "description": "DoH server provided by Pavol Decky"
     },
     {
-      "id": "2c7f9761-0716-4c8f-b1be-6c4147f133bb",
+      "id": "5cd885dd-21c4-4460-970b-61ab72353b30",
       "address": "dns.petqa.ru",
       "type": "DoH",
       "provider": "petqa.ru",
@@ -4353,7 +4353,7 @@
       "description": "DoH server provided by petqa.ru"
     },
     {
-      "id": "f6cdf2cf-b540-414c-ab95-f3d4b04c6fda",
+      "id": "3938d909-b8e8-4781-ae64-d290cee983b9",
       "address": "kronos.plan9-dns.com",
       "type": "DoH",
       "provider": "plan9-dns",
@@ -4373,7 +4373,7 @@
       "description": "DoH server provided by plan9-dns"
     },
     {
-      "id": "3c9d9685-4c39-4d7f-b275-985d89b9ee9b",
+      "id": "51a4be76-ac92-430b-b657-f50fc80c9ae0",
       "address": "helios.plan9-dns.com",
       "type": "DoH",
       "provider": "plan9-dns",
@@ -4393,7 +4393,7 @@
       "description": "DoH server provided by plan9-dns"
     },
     {
-      "id": "e82f8f61-6d4e-4a63-b88d-d71aa129590d",
+      "id": "6ad7dcfa-70ed-450b-ade3-f00a316eb493",
       "address": "privacy.plumedns.com",
       "type": "DoH",
       "provider": "PlumeDNS",
@@ -4413,7 +4413,7 @@
       "description": "DoH server provided by PlumeDNS"
     },
     {
-      "id": "cf9199c0-5b37-4e87-985f-8c47fa6f3f53",
+      "id": "614e6583-5d33-47d5-b80c-4a26d205fbff",
       "address": "pooblet.co.za",
       "type": "DoH",
       "provider": "pooblet.co.za",
@@ -4433,7 +4433,7 @@
       "description": "DoH server provided by pooblet.co.za"
     },
     {
-      "id": "cf1c54ee-a326-4cf1-a34b-a21b821310f7",
+      "id": "a6630ab0-5ae5-43e8-a528-ae6039b2a7e5",
       "address": "dns.practicallyunhackable.com",
       "type": "DoH",
       "provider": "Practically Unhackable",
@@ -4453,7 +4453,7 @@
       "description": "DoH server provided by Practically Unhackable"
     },
     {
-      "id": "8e46ba07-3722-4201-a28a-b230974cfdf9",
+      "id": "c892cf9a-be2a-4fa5-8113-1232a0145d67",
       "address": "dns.quad9.net",
       "type": "DoH",
       "provider": "Quad9",
@@ -4473,7 +4473,7 @@
       "description": "DoH server provided by Quad9"
     },
     {
-      "id": "23e22cd5-ecc2-416e-9ceb-2d715d3e8fef",
+      "id": "18001b34-f75d-40e3-b756-68634212c93f",
       "address": "dns9.quad9.net",
       "type": "DoH",
       "provider": "Quad9",
@@ -4493,7 +4493,7 @@
       "description": "DoH server provided by Quad9"
     },
     {
-      "id": "24157496-3776-4e51-90e1-6df7032c741a",
+      "id": "30902a77-fe51-4012-85a2-2ed0880ccf97",
       "address": "dns10.quad9.net",
       "type": "DoH",
       "provider": "Quad9",
@@ -4513,7 +4513,7 @@
       "description": "DoH server provided by Quad9"
     },
     {
-      "id": "9e542bc8-e271-4569-8ede-954806e316a4",
+      "id": "31c7d43f-6a18-4076-9e51-7dd37a217a98",
       "address": "dns11.quad9.net",
       "type": "DoH",
       "provider": "Quad9",
@@ -4533,7 +4533,7 @@
       "description": "DoH server provided by Quad9"
     },
     {
-      "id": "00958b58-e759-4b83-a611-be878bb20dc1",
+      "id": "3ad02a7e-51a8-4bc6-9947-ccb456e0c845",
       "address": "dns12.quad9.net",
       "type": "DoH",
       "provider": "Quad9",
@@ -4553,7 +4553,7 @@
       "description": "DoH server provided by Quad9"
     },
     {
-      "id": "50fb5f9c-7bcc-4ae0-a569-a54238c13633",
+      "id": "eb7abf51-e2cd-431c-9073-f9db0ea74b1c",
       "address": "dns.quiet.rocks",
       "type": "DoH",
       "provider": "Quiet Rocks",
@@ -4573,7 +4573,7 @@
       "description": "DoH server provided by Quiet Rocks"
     },
     {
-      "id": "32f8ad27-2126-4276-9d75-b69e02141ece",
+      "id": "091bd5a2-ebeb-4229-9455-4a723de5d301",
       "address": "dog.dns.qwer.pw",
       "type": "DoH",
       "provider": "QWER DNS",
@@ -4593,7 +4593,7 @@
       "description": "DoH server provided by QWER DNS"
     },
     {
-      "id": "5eadeab3-464d-4d21-8c5f-3a9c9b4f262c",
+      "id": "ec9c035e-bb55-44b5-8a64-aa72795fc8e7",
       "address": "tiger.dns.qwer.pw",
       "type": "DoH",
       "provider": "QWER DNS",
@@ -4613,7 +4613,7 @@
       "description": "DoH server provided by QWER DNS"
     },
     {
-      "id": "e267f5f2-5367-4481-aeb2-34908fa77e03",
+      "id": "fb9f4875-36cb-4c89-bc3b-f0e380455305",
       "address": "dns.redhosting.com.ar",
       "type": "DoH",
       "provider": "redhosting.com.ar",
@@ -4633,7 +4633,7 @@
       "description": "DoH server provided by redhosting.com.ar"
     },
     {
-      "id": "ddf3a208-93fa-4b97-9d6c-aca36e0794d1",
+      "id": "41df1946-22d7-42ed-b45c-428c387aabcf",
       "address": "regiopolis.cloud",
       "type": "DoH",
       "provider": "regiopolis.cloud",
@@ -4653,7 +4653,7 @@
       "description": "DoH server provided by regiopolis.cloud"
     },
     {
-      "id": "80b84976-40e7-45bb-86f3-705ae6b3348a",
+      "id": "ea54d491-eb5c-4cf3-87fa-d8a035672e32",
       "address": "renardbleu.dev",
       "type": "DoH",
       "provider": "renardbleu.dev",
@@ -4673,7 +4673,7 @@
       "description": "DoH server provided by renardbleu.dev"
     },
     {
-      "id": "ecebe7df-c3ef-43a9-ae24-0de203d8dfaf",
+      "id": "3e75d173-8480-4845-953f-492709dc4a27",
       "address": "dnspub.restena.lu",
       "type": "DoH",
       "provider": "Restena",
@@ -4693,7 +4693,7 @@
       "description": "DoH server provided by Restena"
     },
     {
-      "id": "5890fa20-6a63-460a-b88b-90c266dd442a",
+      "id": "93b50a57-fbef-48c7-a972-46c837533113",
       "address": "dns.retakecs.com",
       "type": "DoH",
       "provider": "RetakeCS",
@@ -4713,7 +4713,7 @@
       "description": "DoH server provided by RetakeCS"
     },
     {
-      "id": "7976ec91-3e91-4016-ac39-3580badc3a6c",
+      "id": "829bd183-36c5-43f7-a73c-4ba3c407a604",
       "address": "sky.rethinkdns.com",
       "type": "DoH",
       "provider": "RethinkDNS",
@@ -4733,7 +4733,7 @@
       "description": "DoH server provided by RethinkDNS"
     },
     {
-      "id": "d1cdeb17-5b12-4bdb-877f-810706cd377c",
+      "id": "004e43d2-bf65-4e75-9150-2a0a1e80bb4c",
       "address": "sky.rethinkdns.com",
       "type": "DoH",
       "provider": "RethinkDNS",
@@ -4753,7 +4753,7 @@
       "description": "DoH server provided by RethinkDNS"
     },
     {
-      "id": "aa353ff9-de47-48db-a459-b8d0d548d777",
+      "id": "18831d54-5368-4645-b10f-d56e3f002119",
       "address": "revelio.top",
       "type": "DoH",
       "provider": "revelio.top",
@@ -4773,7 +4773,7 @@
       "description": "DoH server provided by revelio.top"
     },
     {
-      "id": "598e9350-0613-4b68-a230-f9038f17c04e",
+      "id": "943cefb2-5c77-4ef8-9761-6c598c14bd3a",
       "address": "dns.rbn.gr",
       "type": "DoH",
       "provider": "RobinGroppe.de",
@@ -4793,7 +4793,7 @@
       "description": "DoH server provided by RobinGroppe.de"
     },
     {
-      "id": "92e10241-7bd3-4758-a2bc-a1bc88e87dc9",
+      "id": "70bf630b-190b-475e-87ed-bffd7e2f6478",
       "address": "dns.roedel.cloud",
       "type": "DoH",
       "provider": "roedel.cloud",
@@ -4813,7 +4813,7 @@
       "description": "DoH server provided by roedel.cloud"
     },
     {
-      "id": "3b26b070-d1e3-4475-a951-e4b4aac7b1ae",
+      "id": "0c8bc06c-c235-4177-af94-6d214136b60b",
       "address": "safeservedns.com",
       "type": "DoH",
       "provider": "SafeServe",
@@ -4833,7 +4833,7 @@
       "description": "DoH server provided by SafeServe"
     },
     {
-      "id": "e434562b-b295-4c05-99f8-51f151054c55",
+      "id": "965555dd-8384-47ae-afbc-aedf5d52b46a",
       "address": "adguard.shoupperuser.com",
       "type": "DoH",
       "provider": "shoupperuser.com",
@@ -4853,7 +4853,7 @@
       "description": "DoH server provided by shoupperuser.com"
     },
     {
-      "id": "cd201838-5e96-48ef-b6f3-c8468676d2b1",
+      "id": "386465a1-c1d2-45cf-8065-fabb835b6e0e",
       "address": "dns.silen.org",
       "type": "DoH",
       "provider": "silen.org",
@@ -4873,7 +4873,7 @@
       "description": "DoH server provided by silen.org"
     },
     {
-      "id": "5949598c-6276-4b9d-af62-2480945e6f9e",
+      "id": "be84b4b8-cbd0-4cb5-9e90-798e61bf8aac",
       "address": "dns.simplylinux.ch",
       "type": "DoH",
       "provider": "simplylinux.ch",
@@ -4893,7 +4893,7 @@
       "description": "DoH server provided by simplylinux.ch"
     },
     {
-      "id": "74c83d49-a2d0-4360-9880-a177666dcd77",
+      "id": "b679d8f6-859a-473b-975e-bf7477241951",
       "address": "dns.skrep.eu",
       "type": "DoH",
       "provider": "skrep.eu",
@@ -4913,7 +4913,7 @@
       "description": "DoH server provided by skrep.eu"
     },
     {
-      "id": "4d117646-fde5-45c2-8eee-e8eaac3f5f4c",
+      "id": "b07579a0-9529-43fe-8a07-502432e5bfac",
       "address": "dns.slinkyman.net",
       "type": "DoH",
       "provider": "Slinkyman.net",
@@ -4933,7 +4933,7 @@
       "description": "DoH server provided by Slinkyman.net"
     },
     {
-      "id": "711dae53-8735-4724-a0d2-e44af42dc14f",
+      "id": "cf6462fd-4e54-4ddd-a760-9792ca2d19b5",
       "address": "dns.smartguard.io",
       "type": "DoH",
       "provider": "SmartGuard",
@@ -4953,7 +4953,7 @@
       "description": "DoH server provided by SmartGuard"
     },
     {
-      "id": "610447da-9e58-4ccd-95a1-c015114cc3dc",
+      "id": "8c41ce61-40e7-4b82-926d-43bd707b903e",
       "address": "dns.startupstack.tech",
       "type": "DoH",
       "provider": "Startup Stack",
@@ -4973,7 +4973,7 @@
       "description": "DoH server provided by Startup Stack"
     },
     {
-      "id": "1d367a4b-b2a2-4130-81d8-d0217e51ecaf",
+      "id": "470d6634-be9a-41a7-a35f-bb1e4b2c0e4d",
       "address": "doh.sz-dns.com",
       "type": "DoH",
       "provider": "SZ DNS",
@@ -4993,7 +4993,7 @@
       "description": "DoH server provided by SZ DNS"
     },
     {
-      "id": "78f62e23-f26b-440b-82eb-a4d87db1a81e",
+      "id": "a5c95c81-1e0a-40d5-b6f3-9cf3e98ec35e",
       "address": "dns.stirringphoto.com",
       "type": "DoH",
       "provider": "stirringphoto.com",
@@ -5013,7 +5013,7 @@
       "description": "DoH server provided by stirringphoto.com"
     },
     {
-      "id": "1a5804ec-0d88-4c09-a0f7-9d140cb0dcd0",
+      "id": "1b3f64bc-37fa-4898-85d3-94016d7fe84d",
       "address": "dns.surfsharkdns.com",
       "type": "DoH",
       "provider": "Surfshark DNS",
@@ -5033,7 +5033,7 @@
       "description": "DoH server provided by Surfshark DNS"
     },
     {
-      "id": "0fac858f-6675-4dff-8e81-3d57ff1c4122",
+      "id": "b8467644-96b9-43e3-9b76-4228e431bd58",
       "address": "resolver.sunet.se",
       "type": "DoH",
       "provider": "Sunet DNS",
@@ -5053,7 +5053,7 @@
       "description": "DoH server provided by Sunet DNS"
     },
     {
-      "id": "77bd94c0-6943-405c-b1f5-981133333745",
+      "id": "52b01844-4dba-409e-9501-fd1841176de7",
       "address": "dns.switch.ch",
       "type": "DoH",
       "provider": "Switch",
@@ -5073,7 +5073,7 @@
       "description": "DoH server provided by Switch"
     },
     {
-      "id": "e23837db-889a-448e-a9dc-5b01535dac3b",
+      "id": "5a3bd982-d981-4e48-8cf7-de3b3f9d8ee1",
       "address": "dns.t53.de",
       "type": "DoH",
       "provider": "t53.de",
@@ -5093,7 +5093,7 @@
       "description": "DoH server provided by t53.de"
     },
     {
-      "id": "4945367d-9749-42a5-a8f1-8bacca81fa3e",
+      "id": "98dd834e-46ca-402c-b794-9f9d9f6468de",
       "address": "dns.telekom.de",
       "type": "DoH",
       "provider": "Telekom Deutschland",
@@ -5113,7 +5113,7 @@
       "description": "DoH server provided by Telekom Deutschland"
     },
     {
-      "id": "48f68e22-bef3-450a-87a1-1bdec7f58da5",
+      "id": "60e26cd8-4bf1-428d-9a57-f83c29fca279",
       "address": "dns.tipsy.coffee",
       "type": "DoH",
       "provider": "TipsyCoffee",
@@ -5133,7 +5133,7 @@
       "description": "DoH server provided by TipsyCoffee"
     },
     {
-      "id": "9d885912-942c-410e-b569-15f7830ad35d",
+      "id": "03e7f579-dc37-4ef5-b480-03103c6f8562",
       "address": "dns.tls-data.de",
       "type": "DoH",
       "provider": "Tls-data.de",
@@ -5153,7 +5153,7 @@
       "description": "DoH server provided by Tls-data.de"
     },
     {
-      "id": "2e9a3113-7b9d-4659-9d7d-1875497f8388",
+      "id": "e3a640e1-99b6-48a1-a2f3-b310bc30765e",
       "address": "doh.tiar.app",
       "type": "DoH",
       "provider": "Tiarap",
@@ -5173,7 +5173,7 @@
       "description": "DoH server provided by Tiarap"
     },
     {
-      "id": "06f66042-b95e-4337-aa71-b320ceb73386",
+      "id": "b09d5112-d666-4839-bbbc-8d09f39b186e",
       "address": "anycast.uncensoreddns.org",
       "type": "DoH",
       "provider": "UncensoredDNS",
@@ -5193,7 +5193,7 @@
       "description": "DoH server provided by UncensoredDNS"
     },
     {
-      "id": "3e82d35d-210b-4c67-9106-6b69de8116fc",
+      "id": "ef0b85f8-d9c6-4d5f-8288-39ea511e98d1",
       "address": "dns.unx.io",
       "type": "DoH",
       "provider": "unx.io",
@@ -5213,7 +5213,7 @@
       "description": "DoH server provided by unx.io"
     },
     {
-      "id": "c782b645-1b0c-4f9b-9c78-9e7020cedc2a",
+      "id": "0185ac97-98d8-4553-bcf0-5b29df0a6d8b",
       "address": "adfree.usableprivacy.net",
       "type": "DoH",
       "provider": "Usable Privacy",
@@ -5233,7 +5233,7 @@
       "description": "DoH server provided by Usable Privacy"
     },
     {
-      "id": "1e86fdca-6751-4f73-83f7-b8efdfc8829a",
+      "id": "9e6ec535-1cfd-4805-8786-a733a25f2a9e",
       "address": "v.recipes",
       "type": "DoH",
       "provider": "v.recipes",
@@ -5253,7 +5253,7 @@
       "description": "DoH server provided by v.recipes"
     },
     {
-      "id": "ba546276-2aba-463e-8b5d-83f1c97092f5",
+      "id": "46c44b71-d6e2-4247-b7c7-89e9d3d692c7",
       "address": "v.recipes",
       "type": "DoH",
       "provider": "v.recipes",
@@ -5273,7 +5273,7 @@
       "description": "DoH server provided by v.recipes"
     },
     {
-      "id": "500301ab-b883-4977-8922-67beaaf2fcd7",
+      "id": "466219c6-0a6a-402b-a04e-a404ee71d70c",
       "address": "v.recipes",
       "type": "DoH",
       "provider": "v.recipes",
@@ -5293,7 +5293,7 @@
       "description": "DoH server provided by v.recipes"
     },
     {
-      "id": "87b6510b-f9e3-4a72-a327-55507754eea7",
+      "id": "62e2a9fb-7ea8-4f77-b223-795f9cf9eb5d",
       "address": "dns.vaioswolke.xyz",
       "type": "DoH",
       "provider": "vaioswolke.xyz",
@@ -5313,7 +5313,7 @@
       "description": "DoH server provided by vaioswolke.xyz"
     },
     {
-      "id": "3dbe26d0-5e22-4267-9d14-6de0bf4c4962",
+      "id": "909c2bb8-0940-43b7-b70e-114ef69d7e07",
       "address": "doh.viatech.com.tw",
       "type": "DoH",
       "provider": "VIA",
@@ -5333,7 +5333,7 @@
       "description": "DoH server provided by VIA"
     },
     {
-      "id": "7e63ec65-8364-4ddf-8000-91f60ddceb2b",
+      "id": "2328cece-4a52-48d4-9fe4-7fe42b50f78d",
       "address": "v0dka.ru",
       "type": "DoH",
       "provider": "v0dka.ru",
@@ -5353,7 +5353,7 @@
       "description": "DoH server provided by v0dka.ru"
     },
     {
-      "id": "38e1edbd-e755-430a-9f4d-69cd9e7c872d",
+      "id": "276be3c7-f037-4379-92db-76f3d5fde3c5",
       "address": "abel.waringer-atg.de",
       "type": "DoH",
       "provider": "waringer-atg.de",
@@ -5373,7 +5373,7 @@
       "description": "DoH server provided by waringer-atg.de"
     },
     {
-      "id": "f1244b2e-2e1e-4058-8c26-22f206c3b728",
+      "id": "3ac8a156-3314-4330-af13-7c50feb1c014",
       "address": "wikimedia-dns.org",
       "type": "DoH",
       "provider": "Wikimedia DNS",
@@ -5393,7 +5393,7 @@
       "description": "DoH server provided by Wikimedia DNS"
     },
     {
-      "id": "5fae73f6-396b-4188-a1b5-c8478035fe7a",
+      "id": "99a38e33-5392-484c-8393-fdf8bb5ce631",
       "address": "dns.w3ctag.org",
       "type": "DoH",
       "provider": "W3C TAG",
@@ -5413,7 +5413,7 @@
       "description": "DoH server provided by W3C TAG"
     },
     {
-      "id": "3d9b0c06-774d-4e0e-b2b4-a289f414aa08",
+      "id": "6fda56d5-6fe2-4ef3-b987-70a94f78c1ff",
       "address": "zdn.ro",
       "type": "DoH",
       "provider": "zdn.ro",
@@ -5433,7 +5433,7 @@
       "description": "DoH server provided by zdn.ro"
     },
     {
-      "id": "1d9f27d0-2217-47d4-8fd7-54dc434ded84",
+      "id": "d5e7cb44-dde5-405c-aab5-4224342e3452",
       "address": "ns2.4netguides.org",
       "type": "DoH",
       "provider": "4NetGuides",
@@ -5453,7 +5453,7 @@
       "description": "DoH server provided by 4NetGuides"
     },
     {
-      "id": "4e454991-1f1d-4d01-a546-2bf32c5c7228",
+      "id": "753ef208-7993-4c12-9b3f-971b1b5de346",
       "address": "ibuki.cgnat.net",
       "type": "DoH",
       "provider": "@null31",
@@ -5473,7 +5473,7 @@
       "description": "DoH server provided by @null31"
     },
     {
-      "id": "d7ccb959-5660-4ea3-992f-4c23fe827f78",
+      "id": "59c23fe8-3615-4f66-a083-0586088bfacf",
       "address": "doh.seby.io",
       "type": "DoH",
       "provider": "@publicarraydns.seby.io",
