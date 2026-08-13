@@ -175,30 +175,11 @@ class AristaDNSHub {
         let displayAddress = address;
         let copyAddress = address;
         
-        if (type === 'IPv6' && address !== 'N/A') {
-            if (dns.doh_url) {
-                displayAddress = dns.doh_url;
-                copyAddress = dns.doh_url;
-            } else if (dns.dot) {
-                displayAddress = `${address}:853`;
-                copyAddress = `${address}:853`;
-            } else {
-                displayAddress = `[${address}]`;
-                copyAddress = address;
-            }
-        } else if (type === 'IPv4' && address !== 'N/A') {
-            if (dns.doh_url) {
-                displayAddress = dns.doh_url;
-                copyAddress = dns.doh_url;
-            } else if (dns.dot) {
-                displayAddress = `${address}:853`;
-                copyAddress = `${address}:853`;
-            }
-        } else if (type === 'DoH' && dns.doh_url) {
+        if (dns.doh_url) {
             displayAddress = dns.doh_url;
             copyAddress = dns.doh_url;
-        } else if (type === 'DoT' && dns.dot) {
-            displayAddress = `${dns.dot}:853`;
+        } else if (dns.dot) {
+            displayAddress = dns.dot;
             copyAddress = `${dns.dot}:853`;
         }
         
