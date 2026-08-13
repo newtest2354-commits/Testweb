@@ -169,7 +169,6 @@ class AristaDNSHub {
         ).join('');
         
         const address = dns.address || 'N/A';
-        const port = dns.port || null;
         const provider = dns.provider || dns.name || 'Unknown Provider';
         const type = dns.type || 'Unknown';
         
@@ -177,8 +176,6 @@ class AristaDNSHub {
         let copyAddress = address;
         const isIPv6 = type === 'IPv6' && address !== 'N/A';
         const hasDoH = dns.protocols && dns.protocols.includes('DoH');
-        const hasDoT = dns.protocols && dns.protocols.includes('DoT');
-        const isDNSCrypt = dns.dnscrypt === true;
         
         if (hasDoH) {
             if (isIPv6) {
@@ -188,29 +185,9 @@ class AristaDNSHub {
                 displayAddress = `https://${address}/dns-query`;
                 copyAddress = displayAddress;
             }
-        } else if (hasDoT) {
-            const dotPort = port || 853;
-            if (isIPv6) {
-                displayAddress = `[${address}]:${dotPort}`;
-                copyAddress = displayAddress;
-            } else {
-                displayAddress = `${address}:${dotPort}`;
-                copyAddress = displayAddress;
-            }
-        } else if (isDNSCrypt) {
-            const dnscryptPort = port || 443;
-            if (isIPv6) {
-                displayAddress = `[${address}]:${dnscryptPort}`;
-                copyAddress = displayAddress;
-            } else {
-                displayAddress = `${address}:${dnscryptPort}`;
-                copyAddress = displayAddress;
-            }
-        } else {
-            if (isIPv6) {
-                displayAddress = `[${address}]`;
-                copyAddress = address;
-            }
+        } else if (isIPv6) {
+            displayAddress = `[${address}]`;
+            copyAddress = address;
         }
         
         return `
