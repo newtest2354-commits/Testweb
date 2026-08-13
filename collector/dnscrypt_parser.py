@@ -1,6 +1,7 @@
 import requests
+import base64
+import re
 from typing import List, Dict, Any
-import dns.dnscrypt
 
 class DNSCryptParser:
     SOURCE_URL = "https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md"
@@ -53,14 +54,23 @@ class DNSCryptParser:
     @classmethod
     def _extract_address_from_sdns(cls, sdns_line: str) -> str:
         try:
-            stamp_str = sdns_line.split('sdns://')[1].strip()
-            stamp = dns.dnscrypt.DNSCryptStamp.from_text(stamp_str)
-            
-            if stamp.address:
-                if ':' in stamp.address:
-                    return f"[{stamp.address}]"
-                return stamp.address
+            parts = sdns_line.split()
+            if len(parts) >= 2:
+                sdns_data = parts[1]
+                padding = 4 - (len(sdns_data) % 4)
+                if padding != 4:
+                    sdns_data += '=' * padding
+                    
+                decoded = base64.b64decode(sdns_data)
+                decoded_str = decoded.decode('utf-8', errors='ignore')
+                
+                ip_match = re.search(r'(\d+\.\d+\.\d+\.\d+)', decoded_str)
+                if ip_match:
+                    return ip_match.group(1)
+                
+                ipv6_match = re.search(r'\[([0-9a-fA-F:]+)\]', decoded_str)
+                if ipv6_match:
+                    return ipv6_match.group(1)
         except Exception as e:
-            print(f"Error decoding stamp: {e}")
-
+            print(f"Error decoding: {e}")
         return ''
