@@ -43,6 +43,18 @@ header {
     flex-wrap: wrap;
 }
 
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-icon {
+    height: 40px;
+    width: auto;
+    border-radius: 8px;
+}
+
 .logo-section h1 {
     font-size: 1.8rem;
     font-weight: 700;
@@ -523,9 +535,17 @@ footer {
         gap: 1rem;
     }
     
+    .logo-icon {
+        height: 30px;
+    }
+    
     .logo-section h1 {
         font-size: 1.4rem;
         text-align: center;
+    }
+    
+    .logo-section {
+        justify-content: center;
     }
     
     .stats-section {
