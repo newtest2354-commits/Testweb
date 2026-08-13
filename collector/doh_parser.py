@@ -1,16 +1,22 @@
 import re
 import requests
+import os
 from typing import List, Dict, Any
 from bs4 import BeautifulSoup
+from urllib.parse import urlparse
 
 class DOHParser:
-    SOURCE_URL = "https://github.com/curl/curl/wiki/DNS-over-HTTPS"
     SOURCE_NAME = "curl"
     
     @classmethod
     def fetch(cls) -> List[Dict[str, Any]]:
         try:
-            response = requests.get(cls.SOURCE_URL, timeout=30, headers={
+            source_url = os.environ.get('DOH_SOURCE_URL')
+            if not source_url:
+                print("ERROR: DOH_SOURCE_URL environment variable not set")
+                return []
+
+            response = requests.get(source_url, timeout=30, headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
             })
             response.raise_for_status()
@@ -47,11 +53,14 @@ class DOHParser:
                 
                 if provider and urls:
                     for url in urls:
+                        address = urlparse(url).netloc.split(':')[0]
                         dns_list.append({
                             'provider': provider,
                             'doh_url': url,
+                            'address': address,
                             'name': provider,
                             'source': cls.SOURCE_NAME,
+                            'type': 'DoH',
                             'description': f"DoH server provided by {provider}"
                         })
         
