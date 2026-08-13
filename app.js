@@ -21,7 +21,7 @@ class AristaDNSHub {
     }
     
     async loadData() {
-        const response = await fetch('/data/dns.json');
+        const response = await fetch('data/dns.json');
         if (!response.ok) {
             throw new Error('Failed to load DNS data');
         }
@@ -32,7 +32,7 @@ class AristaDNSHub {
             updated_at: data.updated_at || new Date().toISOString()
         };
         
-        const statsResponse = await fetch('/data/stats.json');
+        const statsResponse = await fetch('data/stats.json');
         if (statsResponse.ok) {
             this.stats = await statsResponse.json();
         }
@@ -184,14 +184,6 @@ class AristaDNSHub {
         const isIPv6 = type === 'IPv6' && address !== 'N/A';
         const hasDoH = protocols.includes('DoH');
         
-        console.log('--- Processing DNS ---');
-        console.log('Name:', dns.name);
-        console.log('Address:', address);
-        console.log('Type:', type);
-        console.log('Protocols:', protocols);
-        console.log('Has DoH:', hasDoH);
-        console.log('Is IPv6:', isIPv6);
-        
         if (hasDoH) {
             if (isIPv6) {
                 displayAddress = `https://[${address}]/dns-query`;
@@ -200,17 +192,10 @@ class AristaDNSHub {
                 displayAddress = `https://${address}/dns-query`;
                 copyAddress = displayAddress;
             }
-            console.log('DoH mode - Display:', displayAddress);
         } else if (isIPv6) {
             displayAddress = `[${address}]`;
             copyAddress = address;
-            console.log('IPv6 mode - Display:', displayAddress);
-        } else {
-            console.log('Standard mode - Display:', displayAddress);
         }
-        
-        console.log('Copy address:', copyAddress);
-        console.log('---');
         
         return `
             <div class="dns-card glass-card">
