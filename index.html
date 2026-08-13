@@ -7,11 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-container">
-        <div class="glass-overlay"></div>
-    </div>
+    <div class="background-container"></div>
     
-    <header class="glass-header">
+    <header>
         <div class="header-content">
             <div class="logo-section">
                 <h1>Arista DNS Hub</h1>
@@ -28,7 +26,7 @@
     </header>
     
     <main>
-        <div class="dashboard glass-card">
+        <div class="dashboard">
             <div class="dashboard-grid">
                 <div class="dashboard-item">
                     <span class="dashboard-label">Total</span>
@@ -65,7 +63,7 @@
             </div>
         </div>
         
-        <div class="filter-section glass-card">
+        <div class="filter-section">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="Standard">Standard</button>
             <button class="filter-btn" data-filter="AdBlock">AdBlock</button>
@@ -83,20 +81,26 @@
         
         <div id="dnsContainer" class="dns-grid"></div>
         
-        <div class="pagination glass-card" id="pagination">
+        <div class="pagination" id="pagination">
             <button id="prevPage" disabled>Previous</button>
             <span id="pageInfo">Page 1 of 1</span>
             <button id="nextPage" disabled>Next</button>
         </div>
     </main>
     
-    <div id="errorModal" class="modal glass-card">
+    <footer>
+        <a href="https://t.me/aristapanel" target="_blank" class="telegram-btn">
+            Join us on Telegram
+        </a>
+    </footer>
+    
+    <div id="errorModal" class="modal">
         <h2>Unable to Load DNS Data</h2>
         <p>Please check your connection and try again.</p>
         <button id="retryBtn">Retry</button>
     </div>
     
-    <div id="emptyState" class="empty-state glass-card" style="display: none;">
+    <div id="emptyState" class="empty-state" style="display: none;">
         <h2>No DNS Found</h2>
         <p>Try adjusting your search or filter criteria.</p>
     </div>
