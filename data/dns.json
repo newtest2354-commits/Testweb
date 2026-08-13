@@ -1,0 +1,5496 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-13T17:49:06.161114",
+  "total": 274,
+  "categories": {
+    "Standard": 251,
+    "Family": 8,
+    "Private": 1,
+    "Security": 4,
+    "Adult_Filter": 1,
+    "Adblock": 9
+  },
+  "dns": [
+    {
+      "id": "dbac9cc0-ac78-4343-a818-0685d9e2eafe",
+      "address": "per.adfilter.net",
+      "type": "IPv4",
+      "provider": "AdFilter",
+      "name": "adfilter",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://per.adfilter.net/dns-query",
+      "description": "DoH server provided by AdFilter"
+    },
+    {
+      "id": "f0747079-7930-4f79-a6b4-a35e5ad4dd3f",
+      "address": "syd.adfilter.net",
+      "type": "IPv4",
+      "provider": "AdFilter",
+      "name": "adfilter",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://syd.adfilter.net/dns-query",
+      "description": "DoH server provided by AdFilter"
+    },
+    {
+      "id": "2cbb79e8-e553-497e-b4cd-0335fde3213e",
+      "address": "adl.adfilter.net",
+      "type": "IPv4",
+      "provider": "AdFilter",
+      "name": "adfilter",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://adl.adfilter.net/dns-query",
+      "description": "DoH server provided by AdFilter"
+    },
+    {
+      "id": "8839d0cf-9a72-464b-922a-f6966349ce44",
+      "address": "adfreedns.top",
+      "type": "IPv4",
+      "provider": "Adfreedns",
+      "name": "adfreedns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://adfreedns.top/dns-query",
+      "description": "DoH server provided by Adfreedns"
+    },
+    {
+      "id": "a8d70fa1-7ce9-4989-96b1-1d28ceb7aa10",
+      "address": "dns.adguard-dns.com",
+      "type": "IPv4",
+      "provider": "AdGuard",
+      "name": "adguard",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.adguard-dns.com/dns-query",
+      "description": "DoH server provided by AdGuard"
+    },
+    {
+      "id": "ec2a5dcd-cfa6-43de-8d00-e7caa61131b7",
+      "address": "family.adguard-dns.com",
+      "type": "IPv4",
+      "provider": "AdGuard",
+      "name": "adguard",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Family"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://family.adguard-dns.com/dns-query",
+      "description": "DoH server provided by AdGuard"
+    },
+    {
+      "id": "8b225a2d-5567-4c8e-b5c2-267f2cea6e94",
+      "address": "unfiltered.adguard-dns.com",
+      "type": "IPv4",
+      "provider": "AdGuard",
+      "name": "adguard",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://unfiltered.adguard-dns.com/dns-query",
+      "description": "DoH server provided by AdGuard"
+    },
+    {
+      "id": "86e822be-5744-4442-a090-e8068dfacad5",
+      "address": "dns.akbxr.com",
+      "type": "IPv4",
+      "provider": "AKBXR DNS",
+      "name": "akbxr dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.akbxr.com/dns-query",
+      "description": "DoH server provided by AKBXR DNS"
+    },
+    {
+      "id": "7da853f2-277c-4833-881a-f5091485fef1",
+      "address": "dns.alidns.com",
+      "type": "IPv4",
+      "provider": "AliDNS",
+      "name": "alidns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.alidns.com/dns-query",
+      "description": "DoH server provided by AliDNS"
+    },
+    {
+      "id": "e29bb1c2-fa36-4ec2-9503-2f042f24935a",
+      "address": "dns.aa.net.uk",
+      "type": "IPv4",
+      "provider": "Andrews & Arnold",
+      "name": "andrews & arnold",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.aa.net.uk/dns-query",
+      "description": "DoH server provided by Andrews & Arnold"
+    },
+    {
+      "id": "b2518d38-d744-4d22-9a67-28e1c82081b1",
+      "address": "doh.angry.im",
+      "type": "IPv4",
+      "provider": "Angry.im",
+      "name": "angry.im",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.angry.im/dns-query",
+      "description": "DoH server provided by Angry.im"
+    },
+    {
+      "id": "ebc5e9f6-0fd6-40f3-a1cd-230b88c32df9",
+      "address": "dns.anon.no",
+      "type": "IPv4",
+      "provider": "anon.no",
+      "name": "anon.no",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.anon.no/dns-query",
+      "description": "DoH server provided by anon.no"
+    },
+    {
+      "id": "6646afdc-fe22-4ae0-be72-3cca02002eb9",
+      "address": "dns.applewebkit.dev",
+      "type": "IPv4",
+      "provider": "applewebkit.dev",
+      "name": "applewebkit.dev",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.applewebkit.dev/dns-query",
+      "description": "DoH server provided by applewebkit.dev"
+    },
+    {
+      "id": "3487d48e-5ffa-4308-9ae8-144a33fca350",
+      "address": "dns.aquilenet.fr",
+      "type": "IPv4",
+      "provider": "Aquilenet DNS",
+      "name": "aquilenet dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.aquilenet.fr/dns-query",
+      "description": "DoH server provided by Aquilenet DNS"
+    },
+    {
+      "id": "e36c1ae8-a6ff-4c36-a965-2e3a246fd3f0",
+      "address": "nsec.arnor.org",
+      "type": "IPv4",
+      "provider": "arnor.org",
+      "name": "arnor.org",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://nsec.arnor.org/dns-query",
+      "description": "DoH server provided by arnor.org"
+    },
+    {
+      "id": "5032a450-11f0-4001-a2ef-1509963c165f",
+      "address": "dns.asterimoon.com",
+      "type": "IPv4",
+      "provider": "Asteri Moon",
+      "name": "asteri moon",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.asterimoon.com/dns-query",
+      "description": "DoH server provided by Asteri Moon"
+    },
+    {
+      "id": "b6952027-a95b-4057-90f1-beefe4a8b2d7",
+      "address": "dns.a47.me",
+      "type": "IPv4",
+      "provider": "a47.me",
+      "name": "a47.me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.a47.me/dns-query",
+      "description": "DoH server provided by a47.me"
+    },
+    {
+      "id": "4a250172-4f16-4849-9c9e-5f829c388d68",
+      "address": "bazooki-infra.dev",
+      "type": "IPv4",
+      "provider": "bazooki-infra.dev",
+      "name": "bazooki-infra.dev",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://bazooki-infra.dev/dns-query",
+      "description": "DoH server provided by bazooki-infra.dev"
+    },
+    {
+      "id": "8ef228d5-f193-42e9-a09b-5aadd7e6a305",
+      "address": "dns.belnet.be",
+      "type": "IPv4",
+      "provider": "Belnet",
+      "name": "belnet",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.belnet.be/dns-query",
+      "description": "DoH server provided by Belnet"
+    },
+    {
+      "id": "a12fbe71-46ae-4705-917d-961b62923f29",
+      "address": "dns.bmwhocking.com",
+      "type": "IPv4",
+      "provider": "Ben Hocking",
+      "name": "ben hocking",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.bmwhocking.com/dns-query",
+      "description": "DoH server provided by Ben Hocking"
+    },
+    {
+      "id": "f3a5a6bd-dd7d-46ca-af75-3f7586b80ff6",
+      "address": "dns.bitservices.io",
+      "type": "IPv4",
+      "provider": "BITServices",
+      "name": "bitservices",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.bitservices.io/dns-query",
+      "description": "DoH server provided by BITServices"
+    },
+    {
+      "id": "fe4d1d75-a535-4b7f-93e1-67717ad85ab3",
+      "address": "dns.blokada.org",
+      "type": "IPv4",
+      "provider": "Blokada DNS",
+      "name": "blokada dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.blokada.org/dns-query",
+      "description": "DoH server provided by Blokada DNS"
+    },
+    {
+      "id": "68637051-ded7-424c-b707-b621b45dea86",
+      "address": "rfree1.blue-shield.at",
+      "type": "IPv4",
+      "provider": "Blue Shield Umbrella",
+      "name": "blue shield umbrella",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://rfree1.blue-shield.at/dns-query",
+      "description": "DoH server provided by Blue Shield Umbrella"
+    },
+    {
+      "id": "c9d00bac-e83a-4eb0-b557-85a6dcbe243c",
+      "address": "rfree2.blue-shield.at",
+      "type": "IPv4",
+      "provider": "Blue Shield Umbrella",
+      "name": "blue shield umbrella",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://rfree2.blue-shield.at/dns-query",
+      "description": "DoH server provided by Blue Shield Umbrella"
+    },
+    {
+      "id": "043cd2b2-5450-4f8b-b9da-f50e39f2bcff",
+      "address": "dns.brembeck.cloud",
+      "type": "IPv4",
+      "provider": "brembeck.cloud",
+      "name": "brembeck.cloud",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.brembeck.cloud/dns-query",
+      "description": "DoH server provided by brembeck.cloud"
+    },
+    {
+      "id": "a99a2860-54a5-40ed-a2fd-7963cfd49400",
+      "address": "dns.busold.ws",
+      "type": "IPv4",
+      "provider": "busold.ws",
+      "name": "busold.ws",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.busold.ws/dns-query",
+      "description": "DoH server provided by busold.ws"
+    },
+    {
+      "id": "466d2a2f-11a3-4cc6-a91d-b94cb6568272",
+      "address": "doh.aaaab3n.moe",
+      "type": "IPv4",
+      "provider": "Canarypwn",
+      "name": "canarypwn",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.aaaab3n.moe/dns-query-114514",
+      "description": "DoH server provided by Canarypwn"
+    },
+    {
+      "id": "c0e578f4-752a-4e01-833b-0cfc485bfb6e",
+      "address": "dns.caspervk.net",
+      "type": "IPv4",
+      "provider": "caspervk.net",
+      "name": "caspervk.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.caspervk.net/dns-query",
+      "description": "DoH server provided by caspervk.net"
+    },
+    {
+      "id": "2aacdc1f-96bf-4241-acfb-28514c70cc9d",
+      "address": "dns.cert.ee",
+      "type": "IPv4",
+      "provider": "CERT Estonia",
+      "name": "cert estonia",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.cert.ee/dns-query",
+      "description": "DoH server provided by CERT Estonia"
+    },
+    {
+      "id": "4873cae8-d95c-43e6-8bf1-d1ff3b79c974",
+      "address": "doh-01.spectrum.com",
+      "type": "IPv4",
+      "provider": "Charter",
+      "name": "charter",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh-01.spectrum.com/dns-query",
+      "description": "DoH server provided by Charter"
+    },
+    {
+      "id": "38f2657e-6bff-4b26-8e38-1f07bef58e08",
+      "address": "doh-02.spectrum.com",
+      "type": "IPv4",
+      "provider": "Charter",
+      "name": "charter",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh-02.spectrum.com/dns-query",
+      "description": "DoH server provided by Charter"
+    },
+    {
+      "id": "04697100-ab65-49a4-93f3-a3d754083c88",
+      "address": "dns.chenu.ch",
+      "type": "IPv4",
+      "provider": "chenu.ch",
+      "name": "chenu.ch",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.chenu.ch/dns-query",
+      "description": "DoH server provided by chenu.ch"
+    },
+    {
+      "id": "cbb9b4ea-a195-4d47-bf84-c4b1e70d3ecb",
+      "address": "dns.christerwaren.fi",
+      "type": "IPv4",
+      "provider": "Christer Warén",
+      "name": "christer warén",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.christerwaren.fi",
+      "description": "DoH server provided by Christer Warén"
+    },
+    {
+      "id": "9ea3880d-6659-4697-87af-6dd4159091c0",
+      "address": "dns.chunghwamc.com",
+      "type": "IPv4",
+      "provider": "ChunghwaMC",
+      "name": "chunghwamc",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.chunghwamc.com/dns-query",
+      "description": "DoH server provided by ChunghwaMC"
+    },
+    {
+      "id": "fbfbe0a0-44e2-4d9e-abbf-7cbbeafbdb19",
+      "address": "private.canadianshield.cira.ca",
+      "type": "IPv4",
+      "provider": "CIRA Canadian Shield",
+      "name": "cira canadian shield",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Private"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://private.canadianshield.cira.ca/dns-query",
+      "description": "DoH server provided by CIRA Canadian Shield"
+    },
+    {
+      "id": "39785cbf-7aad-4e34-9cd5-1c6d51aa4599",
+      "address": "protected.canadianshield.cira.ca",
+      "type": "IPv4",
+      "provider": "CIRA Canadian Shield",
+      "name": "cira canadian shield",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Security"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://protected.canadianshield.cira.ca/dns-query",
+      "description": "DoH server provided by CIRA Canadian Shield"
+    },
+    {
+      "id": "a0f31bce-7d6c-48ba-94f0-fda6a20d7a20",
+      "address": "family.canadianshield.cira.ca",
+      "type": "IPv4",
+      "provider": "CIRA Canadian Shield",
+      "name": "cira canadian shield",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Family"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://family.canadianshield.cira.ca/dns-query",
+      "description": "DoH server provided by CIRA Canadian Shield"
+    },
+    {
+      "id": "38fe6336-9e14-49ed-a57d-6f468bebec00",
+      "address": "doh.opendns.com",
+      "type": "IPv4",
+      "provider": "Cisco Umbrella (OpenDNS)",
+      "name": "cisco umbrella (opendns)",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.opendns.com/dns-query",
+      "description": "DoH server provided by Cisco Umbrella (OpenDNS)"
+    },
+    {
+      "id": "7c6b5ff5-a368-4f44-aea7-42e7976c96d7",
+      "address": "doh.familyshield.opendns.com",
+      "type": "IPv4",
+      "provider": "Cisco Umbrella (OpenDNS)",
+      "name": "cisco umbrella (opendns)",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Family"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.familyshield.opendns.com/dns-query",
+      "description": "DoH server provided by Cisco Umbrella (OpenDNS)"
+    },
+    {
+      "id": "4345e235-46cd-4fd9-95cd-484585ce409b",
+      "address": "doh.umbrella.com",
+      "type": "IPv4",
+      "provider": "Cisco Umbrella (OpenDNS)",
+      "name": "cisco umbrella (opendns)",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.umbrella.com/dns-query",
+      "description": "DoH server provided by Cisco Umbrella (OpenDNS)"
+    },
+    {
+      "id": "c0e1f61d-24a5-482e-971c-c845b0a95f98",
+      "address": "doh.cleanbrowsing.org",
+      "type": "IPv4",
+      "provider": "CleanBrowsing",
+      "name": "cleanbrowsing",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Family"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.cleanbrowsing.org/doh/family-filter",
+      "description": "DoH server provided by CleanBrowsing"
+    },
+    {
+      "id": "2a114579-4ee5-46f2-8143-99d39e53e54e",
+      "address": "doh.cleanbrowsing.org",
+      "type": "IPv4",
+      "provider": "CleanBrowsing",
+      "name": "cleanbrowsing",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Adult_Filter"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.cleanbrowsing.org/doh/adult-filter",
+      "description": "DoH server provided by CleanBrowsing"
+    },
+    {
+      "id": "12c01a30-74d0-4470-83e7-815e8114ba9f",
+      "address": "doh.cleanbrowsing.org",
+      "type": "IPv4",
+      "provider": "CleanBrowsing",
+      "name": "cleanbrowsing",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Security"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.cleanbrowsing.org/doh/security-filter",
+      "description": "DoH server provided by CleanBrowsing"
+    },
+    {
+      "id": "18c21734-6349-471a-85c0-2e8419051ac2",
+      "address": "dns1.techniverse.net",
+      "type": "IPv4",
+      "provider": "CleverAdmin",
+      "name": "cleveradmin",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns1.techniverse.net/dns-query",
+      "description": "DoH server provided by CleverAdmin"
+    },
+    {
+      "id": "d4603c13-329f-4904-a6a4-da00ef698742",
+      "address": "cloudflare-dns.com",
+      "type": "IPv4",
+      "provider": "Cloudflare",
+      "name": "cloudflare",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://cloudflare-dns.com/dns-query",
+      "description": "DoH server provided by Cloudflare"
+    },
+    {
+      "id": "2d91988c-b8e6-4fd9-9ac5-88a96cf181a1",
+      "address": "mozilla.cloudflare-dns.com",
+      "type": "IPv4",
+      "provider": "Cloudflare",
+      "name": "cloudflare",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://mozilla.cloudflare-dns.com/dns-query",
+      "description": "DoH server provided by Cloudflare"
+    },
+    {
+      "id": "b954a24b-666c-4b37-841f-ea763f2ba0ee",
+      "address": "security.cloudflare-dns.com",
+      "type": "IPv4",
+      "provider": "Cloudflare",
+      "name": "cloudflare",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Security"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://security.cloudflare-dns.com/dns-query",
+      "description": "DoH server provided by Cloudflare"
+    },
+    {
+      "id": "a9e6ee32-ba80-4b39-b17b-6e7557a22c7f",
+      "address": "family.cloudflare-dns.com",
+      "type": "IPv4",
+      "provider": "Cloudflare",
+      "name": "cloudflare",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Family"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://family.cloudflare-dns.com/dns-query",
+      "description": "DoH server provided by Cloudflare"
+    },
+    {
+      "id": "60214966-4a86-4e72-a264-e92bef154536",
+      "address": "dns64.cloudflare-dns.com",
+      "type": "IPv4",
+      "provider": "Cloudflare",
+      "name": "cloudflare",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns64.cloudflare-dns.com/dns-query",
+      "description": "DoH server provided by Cloudflare"
+    },
+    {
+      "id": "8a980cc0-bb7c-4f6d-b998-ebd43c31f2b9",
+      "address": "dns.comss.one",
+      "type": "IPv4",
+      "provider": "Comss.one DNS",
+      "name": "comss.one dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.comss.one/dns-query",
+      "description": "DoH server provided by Comss.one DNS"
+    },
+    {
+      "id": "0b42a610-4363-438b-8934-eca83dc89803",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/p0",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "4d40ea8f-3d9f-4fb0-bd29-5590e688fe1d",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/p1",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "d1a497d6-a695-4028-87e9-f832aedcdcf9",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/p2",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "e3d1d897-d193-4bf3-a1ad-9ffe69e989f2",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/p3",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "af88aba5-fe68-4b93-b5e7-f162500a4ffc",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Family"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/family",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "fb14cd4f-55d3-45d0-98cc-0cddbe746c83",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/uncensored",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "fe81b9fc-a72e-4577-b492-8480d3702e7e",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-oisd",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "3173f0aa-ade5-4bff-84b7-96e8803624c5",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-oisd-basic",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "6da10a65-c6ef-4b95-a70d-8d6395427e33",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-stevenblack",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "45bffd15-31bf-4308-b54d-704fb5201070",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-devdan",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "bfe2c022-e28b-4ac9-988f-fe7a503e3e6a",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-1hosts-mini",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "8196f037-f789-44b1-a3bc-f438e3e12f2d",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-1hosts-lite",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "c3f9a3bb-4e1b-4c50-8042-e2df9c5cc234",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-1hosts-pro",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "44fd1ff7-3952-4355-8779-af191e1487f0",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-hagezi-light",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "716ef6eb-0ce9-40fe-94df-9d226bbfdd27",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-hagezi-normal",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "59a9911a-9211-4ad2-8707-a5184633dfc1",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-hagezi-pro",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "f286df66-9265-406c-b8ce-1fb7be87ed15",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-hagezi-proplus",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "03bd23c4-0900-4a58-88d5-5fb8d9bb7b28",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-hagezi-ultimate",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "cb6cf9ca-0e8f-4087-9abd-3c22deb4bad5",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-hagezi-tif",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "1bb58b62-81b0-4758-8cd8-269a9c0be912",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Adblock"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-goodbyeads",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "2065f25e-2f30-4ba5-9e30-a99e098cd071",
+      "address": "freedns.controld.com",
+      "type": "IPv4",
+      "provider": "Control D",
+      "name": "control d",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedns.controld.com/x-adguard",
+      "description": "DoH server provided by Control D"
+    },
+    {
+      "id": "fb65abdd-3b7e-4414-b13e-8ad380d9fd27",
+      "address": "dns.cynthialabs.net",
+      "type": "IPv4",
+      "provider": "CynthiaLabs",
+      "name": "cynthialabs",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.cynthialabs.net/dns-query",
+      "description": "DoH server provided by CynthiaLabs"
+    },
+    {
+      "id": "e161671c-dced-44ac-a456-7c282feea499",
+      "address": "odvr.nic.cz",
+      "type": "IPv4",
+      "provider": "CZ.NIC",
+      "name": "cz.nic",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://odvr.nic.cz/dns-query",
+      "description": "DoH server provided by CZ.NIC"
+    },
+    {
+      "id": "7ff56116-71d4-4b32-a2cf-47b0df1385a2",
+      "address": "ns.data.haus",
+      "type": "IPv4",
+      "provider": "data.haus",
+      "name": "data.haus",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ns.data.haus/dns-query",
+      "description": "DoH server provided by data.haus"
+    },
+    {
+      "id": "d2b3a88c-a091-4bfe-9234-097a28c21c21",
+      "address": "dns.datenquark.de",
+      "type": "IPv4",
+      "provider": "datenquark.de",
+      "name": "datenquark.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.datenquark.de/dns-query",
+      "description": "DoH server provided by datenquark.de"
+    },
+    {
+      "id": "167dfe77-a02d-4fd8-8475-e4e3a1402d3b",
+      "address": "dns.dev-umbrellagov.com",
+      "type": "IPv4",
+      "provider": "dev-umbrellagov",
+      "name": "dev-umbrellagov",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.dev-umbrellagov.com/dns-query",
+      "description": "DoH server provided by dev-umbrellagov"
+    },
+    {
+      "id": "f5016413-105f-47f0-bc86-ec0b1e0e82c6",
+      "address": "dns.digitale-gesellschaft.ch",
+      "type": "IPv4",
+      "provider": "Digitale Gesellschaft",
+      "name": "digitale gesellschaft",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.digitale-gesellschaft.ch/dns-query",
+      "description": "DoH server provided by Digitale Gesellschaft"
+    },
+    {
+      "id": "646a0343-0fbb-4e97-abb5-066ee466b2f8",
+      "address": "doh.disconnect.app",
+      "type": "IPv4",
+      "provider": "Disconnect.app",
+      "name": "disconnect.app",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.disconnect.app/dns-query",
+      "description": "DoH server provided by Disconnect.app"
+    },
+    {
+      "id": "12c04174-6aa6-4a1e-be81-66cfedaf34f4",
+      "address": "dns.digitalsize.net",
+      "type": "IPv4",
+      "provider": "dns.digitalsize.net",
+      "name": "dns.digitalsize.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.digitalsize.net/dns-query",
+      "description": "DoH server provided by dns.digitalsize.net"
+    },
+    {
+      "id": "12c3f1c4-7ce3-4f3e-ae5e-47fc55181fe1",
+      "address": "doh.dns.sb",
+      "type": "IPv4",
+      "provider": "DNS.SB",
+      "name": "dns.sb",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.dns.sb/dns-query",
+      "description": "DoH server provided by DNS.SB"
+    },
+    {
+      "id": "3494eeb1-3e32-48de-9f1c-39a15d06ebe4",
+      "address": "doh.dns4all.eu",
+      "type": "IPv4",
+      "provider": "DNS4all",
+      "name": "dns4all",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.dns4all.eu/dns-query",
+      "description": "DoH server provided by DNS4all"
+    },
+    {
+      "id": "d89a0020-77f2-4d0d-a813-b8385789e51b",
+      "address": "protective.joindns4.eu",
+      "type": "IPv4",
+      "provider": "DNS4EU",
+      "name": "dns4eu",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Security"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://protective.joindns4.eu/dns-query",
+      "description": "DoH server provided by DNS4EU"
+    },
+    {
+      "id": "c1d7b362-6cb0-4e99-9908-4b0cac63981f",
+      "address": "child.joindns4.eu",
+      "type": "IPv4",
+      "provider": "DNS4EU",
+      "name": "dns4eu",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://child.joindns4.eu/dns-query",
+      "description": "DoH server provided by DNS4EU"
+    },
+    {
+      "id": "0193fc7e-73da-4f82-99bb-cfc88bc8df22",
+      "address": "noads.joindns4.eu",
+      "type": "IPv4",
+      "provider": "DNS4EU",
+      "name": "dns4eu",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Adblock"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://noads.joindns4.eu/dns-query",
+      "description": "DoH server provided by DNS4EU"
+    },
+    {
+      "id": "3af33a43-73a4-4a9d-a81f-c10526d9b4b1",
+      "address": "child-noads.joindns4.eu",
+      "type": "IPv4",
+      "provider": "DNS4EU",
+      "name": "dns4eu",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Adblock"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://child-noads.joindns4.eu/dns-query",
+      "description": "DoH server provided by DNS4EU"
+    },
+    {
+      "id": "d6b49b47-462d-41d1-9e0e-0e9a10edf10a",
+      "address": "unfiltered.joindns4.eu",
+      "type": "IPv4",
+      "provider": "DNS4EU",
+      "name": "dns4eu",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://unfiltered.joindns4.eu/dns-query",
+      "description": "DoH server provided by DNS4EU"
+    },
+    {
+      "id": "e6bb0646-c0fc-4490-9dc2-a8faab61718b",
+      "address": "ca01.dns4me.net",
+      "type": "IPv4",
+      "provider": "dns4me",
+      "name": "dns4me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ca01.dns4me.net",
+      "description": "DoH server provided by dns4me"
+    },
+    {
+      "id": "0be3caee-96a7-4802-bda6-308c54b46db5",
+      "address": "ca02.dns4me.net",
+      "type": "IPv4",
+      "provider": "dns4me",
+      "name": "dns4me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ca02.dns4me.net",
+      "description": "DoH server provided by dns4me"
+    },
+    {
+      "id": "3c899c29-e591-4232-9f82-35f6ea59884d",
+      "address": "us01.dns4me.net",
+      "type": "IPv4",
+      "provider": "dns4me",
+      "name": "dns4me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://us01.dns4me.net",
+      "description": "DoH server provided by dns4me"
+    },
+    {
+      "id": "a4b7a0a9-59f1-4187-b34a-f1bb521f187e",
+      "address": "us02.dns4me.net",
+      "type": "IPv4",
+      "provider": "dns4me",
+      "name": "dns4me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://us02.dns4me.net",
+      "description": "DoH server provided by dns4me"
+    },
+    {
+      "id": "1e1e1b81-57c7-49dd-99f9-f84b5601989f",
+      "address": "sg01.dns4me.net",
+      "type": "IPv4",
+      "provider": "dns4me",
+      "name": "dns4me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://sg01.dns4me.net",
+      "description": "DoH server provided by dns4me"
+    },
+    {
+      "id": "abaed800-53d2-4e93-911b-35f2ebc66747",
+      "address": "sa01.dns4me.net",
+      "type": "IPv4",
+      "provider": "dns4me",
+      "name": "dns4me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://sa01.dns4me.net",
+      "description": "DoH server provided by dns4me"
+    },
+    {
+      "id": "9e456bc3-b6ce-4c91-8989-6906459b032d",
+      "address": "au01.dns4me.net",
+      "type": "IPv4",
+      "provider": "dns4me",
+      "name": "dns4me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://au01.dns4me.net",
+      "description": "DoH server provided by dns4me"
+    },
+    {
+      "id": "096f75a0-f931-4da2-bfb7-a2df1be16b2b",
+      "address": "uk01.dns4me.net",
+      "type": "IPv4",
+      "provider": "dns4me",
+      "name": "dns4me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://uk01.dns4me.net",
+      "description": "DoH server provided by dns4me"
+    },
+    {
+      "id": "61085322-ac69-4901-8e36-c84f490e108c",
+      "address": "nz01.dns4me.net",
+      "type": "IPv4",
+      "provider": "dns4me",
+      "name": "dns4me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://nz01.dns4me.net",
+      "description": "DoH server provided by dns4me"
+    },
+    {
+      "id": "e2e68f92-3812-46a0-9099-68ae5eaa61a4",
+      "address": "ie01.dns4me.net",
+      "type": "IPv4",
+      "provider": "dns4me",
+      "name": "dns4me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ie01.dns4me.net",
+      "description": "DoH server provided by dns4me"
+    },
+    {
+      "id": "8ae7312a-a9f2-483b-9cd2-d906755325b4",
+      "address": "de01.dns4me.net",
+      "type": "IPv4",
+      "provider": "dns4me",
+      "name": "dns4me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://de01.dns4me.net",
+      "description": "DoH server provided by dns4me"
+    },
+    {
+      "id": "74e881c8-5a90-45e8-99be-d47f504ddff8",
+      "address": "dns.flatuslifir.is",
+      "type": "IPv4",
+      "provider": "dns.flatuslifir.is",
+      "name": "dns.flatuslifir.is",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.flatuslifir.is/dns-query",
+      "description": "DoH server provided by dns.flatuslifir.is"
+    },
+    {
+      "id": "aea490c9-7017-47f4-a92a-45e2eeb1f914",
+      "address": "dnsforge.de",
+      "type": "IPv4",
+      "provider": "dnsforge.de",
+      "name": "dnsforge.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dnsforge.de/dns-query",
+      "description": "DoH server provided by dnsforge.de"
+    },
+    {
+      "id": "011dce04-6683-4878-a5ce-f747ef964c4f",
+      "address": "clean.dnsforge.de",
+      "type": "IPv4",
+      "provider": "dnsforge.de",
+      "name": "dnsforge.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://clean.dnsforge.de/dns-query",
+      "description": "DoH server provided by dnsforge.de"
+    },
+    {
+      "id": "0db9c5bf-399b-4e67-913d-a07031634957",
+      "address": "hard.dnsforge.de",
+      "type": "IPv4",
+      "provider": "dnsforge.de",
+      "name": "dnsforge.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://hard.dnsforge.de/dns-query",
+      "description": "DoH server provided by dnsforge.de"
+    },
+    {
+      "id": "04bc19e2-c67a-41d2-9de6-5f2b43777d4c",
+      "address": "dns.dnshome.de",
+      "type": "IPv4",
+      "provider": "dnsHome.de",
+      "name": "dnshome.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.dnshome.de/dns-query",
+      "description": "DoH server provided by dnsHome.de"
+    },
+    {
+      "id": "0002e65e-0845-4197-8b8a-3ceb76bf1b45",
+      "address": "dnslow.me",
+      "type": "IPv4",
+      "provider": "dnslow.me",
+      "name": "dnslow.me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dnslow.me/dns-query",
+      "description": "DoH server provided by dnslow.me"
+    },
+    {
+      "id": "8722c5ac-0c4e-4532-a670-0e6a760861d8",
+      "address": "japan.dnsovertor.cc",
+      "type": "IPv4",
+      "provider": "DNS over Tor",
+      "name": "dns over tor",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://japan.dnsovertor.cc/dns-query",
+      "description": "DoH server provided by DNS over Tor"
+    },
+    {
+      "id": "ca6635af-09b3-4c67-915a-125ab2468718",
+      "address": "chuncheon.dnsovertor.cc",
+      "type": "IPv4",
+      "provider": "DNS over Tor",
+      "name": "dns over tor",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://chuncheon.dnsovertor.cc/dns-query",
+      "description": "DoH server provided by DNS over Tor"
+    },
+    {
+      "id": "93e26b9f-1f8c-4899-929b-46f89853ea28",
+      "address": "seoul.dnsovertor.cc",
+      "type": "IPv4",
+      "provider": "DNS over Tor",
+      "name": "dns over tor",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://seoul.dnsovertor.cc/dns-query",
+      "description": "DoH server provided by DNS over Tor"
+    },
+    {
+      "id": "1b42170b-2e56-4e94-9c19-0c12b972914f",
+      "address": "dns.pub",
+      "type": "IPv4",
+      "provider": "DNSPod",
+      "name": "dnspod",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.pub/dns-query",
+      "description": "DoH server provided by DNSPod"
+    },
+    {
+      "id": "d40ea929-73ea-4290-87b1-63b95571a6fa",
+      "address": "doh.beauty",
+      "type": "IPv4",
+      "provider": "doh.beauty",
+      "name": "doh.beauty",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.beauty",
+      "description": "DoH server provided by doh.beauty"
+    },
+    {
+      "id": "754a1b07-d6c5-4db3-b77c-f2043c935a0a",
+      "address": "doh.buzz",
+      "type": "IPv4",
+      "provider": "doh.buzz",
+      "name": "doh.buzz",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.buzz/dns-query",
+      "description": "DoH server provided by doh.buzz"
+    },
+    {
+      "id": "eefa674d-757e-4cd3-bffe-8e87ba57260a",
+      "address": "doh.domreg.lt",
+      "type": "IPv4",
+      "provider": "domreg.lt",
+      "name": "domreg.lt",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.domreg.lt/dns-query",
+      "description": "DoH server provided by domreg.lt"
+    },
+    {
+      "id": "72055d56-cfee-4dfa-b540-f79da2f87c47",
+      "address": "agh.dshubham.xyz",
+      "type": "IPv4",
+      "provider": "dshubham.xyz",
+      "name": "dshubham.xyz",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://agh.dshubham.xyz/dns-query",
+      "description": "DoH server provided by dshubham.xyz"
+    },
+    {
+      "id": "5cf54564-ad50-42f4-8856-eae753f1835d",
+      "address": "dukun.de",
+      "type": "IPv4",
+      "provider": "Dukun.de",
+      "name": "dukun.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dukun.de/dns-query",
+      "description": "DoH server provided by Dukun.de"
+    },
+    {
+      "id": "bf4b8aa7-7e42-4b49-895a-96442ca7e9b9",
+      "address": "xn--durhre-yxa.de",
+      "type": "IPv4",
+      "provider": "duröhre.de",
+      "name": "duröhre.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://xn--durhre-yxa.de/dns-query",
+      "description": "DoH server provided by duröhre.de"
+    },
+    {
+      "id": "b3cd5fb4-2e1e-4d39-b5b9-8caa79d9846d",
+      "address": "dns.d94.xyz",
+      "type": "IPv4",
+      "provider": "d94.xyz",
+      "name": "d94.xyz",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.d94.xyz/dns-query",
+      "description": "DoH server provided by d94.xyz"
+    },
+    {
+      "id": "f6436e3f-eb02-4edb-9ebe-7983a6b13d0e",
+      "address": "dns.easyhns.com",
+      "type": "IPv4",
+      "provider": "Easy HNS",
+      "name": "easy hns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.easyhns.com/dns-query",
+      "description": "DoH server provided by Easy HNS"
+    },
+    {
+      "id": "19bfd5b9-be79-4c44-864d-2019056a6895",
+      "address": "dns.elemental.software",
+      "type": "IPv4",
+      "provider": "Elemental Software",
+      "name": "elemental software",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.elemental.software/dns-query",
+      "description": "DoH server provided by Elemental Software"
+    },
+    {
+      "id": "8fd6a512-acd7-4158-a65d-651ca9cb4a97",
+      "address": "dns.envs.net",
+      "type": "IPv4",
+      "provider": "envs.net",
+      "name": "envs.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.envs.net/dns-query",
+      "description": "DoH server provided by envs.net"
+    },
+    {
+      "id": "ebf6720d-95a0-4414-af5e-c96c8cc8f520",
+      "address": "dns.faked.org",
+      "type": "IPv4",
+      "provider": "faked.org",
+      "name": "faked.org",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.faked.org/dns-query",
+      "description": "DoH server provided by faked.org"
+    },
+    {
+      "id": "93e342a1-2baa-4e68-b6a4-f5b1371c99ac",
+      "address": "dnsvps.familiamv.net",
+      "type": "IPv4",
+      "provider": "familiamv.net",
+      "name": "familiamv.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dnsvps.familiamv.net/dns-query",
+      "description": "DoH server provided by familiamv.net"
+    },
+    {
+      "id": "a118710a-cdc2-4c54-9af3-4c90cf32e1bb",
+      "address": "dns.farshidhakimy.de",
+      "type": "IPv4",
+      "provider": "farshidhakimy.de",
+      "name": "farshidhakimy.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.farshidhakimy.de/dns-query",
+      "description": "DoH server provided by farshidhakimy.de"
+    },
+    {
+      "id": "1c4b9a4a-04b3-47c8-8f95-44736ba39817",
+      "address": "nicsezcheckfbi.gov",
+      "type": "IPv4",
+      "provider": "FBI NICS E-Check",
+      "name": "fbi nics e-check",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://nicsezcheckfbi.gov",
+      "description": "DoH server provided by FBI NICS E-Check"
+    },
+    {
+      "id": "44053edf-5a0d-4002-98df-ba3e58687ebe",
+      "address": "ns0.fdn.fr",
+      "type": "IPv4",
+      "provider": "FDN- French Data Network",
+      "name": "fdn- french data network",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ns0.fdn.fr/dns-query",
+      "description": "DoH server provided by FDN- French Data Network"
+    },
+    {
+      "id": "71628c59-5be6-4aca-9e7c-4fa5d19d2289",
+      "address": "ns1.fdn.fr",
+      "type": "IPv4",
+      "provider": "FDN- French Data Network",
+      "name": "fdn- french data network",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ns1.fdn.fr/dns-query",
+      "description": "DoH server provided by FDN- French Data Network"
+    },
+    {
+      "id": "a45aa83d-37e5-4617-915f-e1435aeff8c1",
+      "address": "doh.li",
+      "type": "IPv4",
+      "provider": "Feroz",
+      "name": "feroz",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.li/dns-query",
+      "description": "DoH server provided by Feroz"
+    },
+    {
+      "id": "cd959ea8-396c-425e-a4df-b45b21770484",
+      "address": "doh.ffmuc.net",
+      "type": "IPv4",
+      "provider": "ffmuc.net",
+      "name": "ffmuc.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.ffmuc.net/dns-query",
+      "description": "DoH server provided by ffmuc.net"
+    },
+    {
+      "id": "22bb3b82-835f-4684-bc8c-3dd16ba82e65",
+      "address": "fidelius.top",
+      "type": "IPv4",
+      "provider": "fidelius.top",
+      "name": "fidelius.top",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://fidelius.top/dns-query",
+      "description": "DoH server provided by fidelius.top"
+    },
+    {
+      "id": "1942c386-7644-45e9-8b46-f566936fce9d",
+      "address": "dns.floriantinney.de",
+      "type": "IPv4",
+      "provider": "floriantinney.de",
+      "name": "floriantinney.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.floriantinney.de/dns-query",
+      "description": "DoH server provided by floriantinney.de"
+    },
+    {
+      "id": "fbd6daf9-dc8b-457f-99ec-b02a3e1bfc8d",
+      "address": "doh.applied-privacy.net",
+      "type": "IPv4",
+      "provider": "Foundation for Applied Privacy",
+      "name": "foundation for applied privacy",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.applied-privacy.net/query",
+      "description": "DoH server provided by Foundation for Applied Privacy"
+    },
+    {
+      "id": "0824602e-43c3-44ee-8541-c7354001f60a",
+      "address": "es-ma.foxyfy.net",
+      "type": "IPv4",
+      "provider": "Foxyfy DNS",
+      "name": "foxyfy dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://es-ma.foxyfy.net/dns-query",
+      "description": "DoH server provided by Foxyfy DNS"
+    },
+    {
+      "id": "f12b7a1c-0921-467f-95d3-61a34d67c579",
+      "address": "dns.furrix.zone",
+      "type": "IPv4",
+      "provider": "FurrIX vIX",
+      "name": "furrix vix",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.furrix.zone/dns-query",
+      "description": "DoH server provided by FurrIX vIX"
+    },
+    {
+      "id": "2e6b00d0-21aa-4a4e-b9a2-5af8df71227a",
+      "address": "doh.futa.gg",
+      "type": "IPv4",
+      "provider": "FutaDNS",
+      "name": "futadns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.futa.gg/dns-query",
+      "description": "DoH server provided by FutaDNS"
+    },
+    {
+      "id": "b377d2c6-238f-43de-9207-8ef1b88cdc56",
+      "address": "dns.gamban.com",
+      "type": "IPv4",
+      "provider": "Gamban",
+      "name": "gamban",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.gamban.com/dns-query",
+      "description": "DoH server provided by Gamban"
+    },
+    {
+      "id": "52702129-ee3e-47ba-8b3d-ecc93ab8667c",
+      "address": "gibblets.top",
+      "type": "IPv4",
+      "provider": "gibblets.top",
+      "name": "gibblets.top",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://gibblets.top/dns-query",
+      "description": "DoH server provided by gibblets.top"
+    },
+    {
+      "id": "4ae4148e-c9c9-4306-b563-00275b1fbf25",
+      "address": "glacius.top",
+      "type": "IPv4",
+      "provider": "glacius.top",
+      "name": "glacius.top",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://glacius.top/dns-query",
+      "description": "DoH server provided by glacius.top"
+    },
+    {
+      "id": "a0345622-a582-440a-9ce4-43bd2d8a9b50",
+      "address": "dns.google",
+      "type": "IPv4",
+      "provider": "Google",
+      "name": "google",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.google/dns-query",
+      "description": "DoH server provided by Google"
+    },
+    {
+      "id": "b44ffc69-0096-49a5-8350-2de28e87b5a6",
+      "address": "dns64.dns.google",
+      "type": "IPv4",
+      "provider": "Google",
+      "name": "google",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns64.dns.google/dns-query",
+      "description": "DoH server provided by Google"
+    },
+    {
+      "id": "cbe9eb4c-1935-4cda-a8cb-2fd2121030ea",
+      "address": "8888.google",
+      "type": "IPv4",
+      "provider": "Google",
+      "name": "google",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://8888.google/dns-query",
+      "description": "DoH server provided by Google"
+    },
+    {
+      "id": "c5c9e350-4730-47bf-87e0-e4d46ba604a7",
+      "address": "dns.glf.wtf",
+      "type": "IPv4",
+      "provider": "Gottlieb Freitag",
+      "name": "gottlieb freitag",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.glf.wtf/dns-query",
+      "description": "DoH server provided by Gottlieb Freitag"
+    },
+    {
+      "id": "61f1ffea-ef0d-4e85-8815-b99eecc237d4",
+      "address": "dns.guard.io",
+      "type": "IPv4",
+      "provider": "Guardio",
+      "name": "guardio",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.guard.io/dns-query",
+      "description": "DoH server provided by Guardio"
+    },
+    {
+      "id": "ca12d614-e450-4889-9092-9d946162c140",
+      "address": "secure.hafnova.com",
+      "type": "IPv4",
+      "provider": "Hafnova",
+      "name": "hafnova",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://secure.hafnova.com/dns-query",
+      "description": "DoH server provided by Hafnova"
+    },
+    {
+      "id": "fdf47953-42d0-4fbc-aa51-f54e6b4b50d5",
+      "address": "root.hagezi.org",
+      "type": "IPv4",
+      "provider": "HaGeZi DNS",
+      "name": "hagezi dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://root.hagezi.org/dns-query",
+      "description": "DoH server provided by HaGeZi DNS"
+    },
+    {
+      "id": "ca13b9cc-618b-4117-a2f9-f3e55442505e",
+      "address": "wurzn.hagezi.org",
+      "type": "IPv4",
+      "provider": "HaGeZi DNS",
+      "name": "hagezi dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://wurzn.hagezi.org/dns-query",
+      "description": "DoH server provided by HaGeZi DNS"
+    },
+    {
+      "id": "a29e1e12-d3c2-43d7-b0d5-14326f6d27b3",
+      "address": "juuri.hagezi.org",
+      "type": "IPv4",
+      "provider": "HaGeZi DNS",
+      "name": "hagezi dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://juuri.hagezi.org/dns-query",
+      "description": "DoH server provided by HaGeZi DNS"
+    },
+    {
+      "id": "2b030c7f-d917-4d97-8bf0-815a9bcbea8d",
+      "address": "dns.haka.se",
+      "type": "IPv4",
+      "provider": "Hakase",
+      "name": "hakase",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.haka.se/dns-query",
+      "description": "DoH server provided by Hakase"
+    },
+    {
+      "id": "41132e8b-2061-4a03-a91a-d2e8acced4ad",
+      "address": "hnsdoh.com",
+      "type": "IPv4",
+      "provider": "HNS DoH",
+      "name": "hns doh",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://hnsdoh.com/dns-query",
+      "description": "DoH server provided by HNS DoH"
+    },
+    {
+      "id": "972ca7b0-f074-494d-85ff-00e88f03acf0",
+      "address": "dns.hostux.net",
+      "type": "IPv4",
+      "provider": "Hostux.net",
+      "name": "hostux.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.hostux.net/dns-query",
+      "description": "DoH server provided by Hostux.net"
+    },
+    {
+      "id": "43ab24eb-8535-4613-b36d-69258807e7db",
+      "address": "dns.hostux.net",
+      "type": "IPv4",
+      "provider": "Hostux.net",
+      "name": "hostux.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Adblock"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.hostux.net/ads",
+      "description": "DoH server provided by Hostux.net"
+    },
+    {
+      "id": "f8f9d865-43c6-42ea-b652-12f1f13e0e5a",
+      "address": "doth.huque.com",
+      "type": "IPv4",
+      "provider": "Huque",
+      "name": "huque",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH",
+        "DoT"
+      ],
+      "status": "active",
+      "doh_url": "https://doth.huque.com/dns-query",
+      "description": "DoH server provided by Huque"
+    },
+    {
+      "id": "215f5f96-f6e9-4eb0-8e73-edd7cb0bed19",
+      "address": "imperio.top",
+      "type": "IPv4",
+      "provider": "imperio.top",
+      "name": "imperio.top",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://imperio.top/dns-query",
+      "description": "DoH server provided by imperio.top"
+    },
+    {
+      "id": "cb794079-b163-4280-ae75-c49e1270044d",
+      "address": "dns1.in-berlin.de",
+      "type": "IPv4",
+      "provider": "In-Berlin",
+      "name": "in-berlin",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns1.in-berlin.de/dns-query",
+      "description": "DoH server provided by In-Berlin"
+    },
+    {
+      "id": "aae4c194-512a-4418-b0f8-5860a6eca3ca",
+      "address": "dns2.in-berlin.de",
+      "type": "IPv4",
+      "provider": "In-Berlin",
+      "name": "in-berlin",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns2.in-berlin.de/dns-query",
+      "description": "DoH server provided by In-Berlin"
+    },
+    {
+      "id": "b0c05a7e-9dd3-4473-a36e-7d9355e9b11e",
+      "address": "dns.inforlogia.com",
+      "type": "IPv4",
+      "provider": "Inforlogia",
+      "name": "inforlogia",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.inforlogia.com/dns-query",
+      "description": "DoH server provided by Inforlogia"
+    },
+    {
+      "id": "312bcb16-c747-4e0d-980a-4af7f9b75b18",
+      "address": "public.dns.iij.jp",
+      "type": "IPv4",
+      "provider": "Internet Initiative Japan",
+      "name": "internet initiative japan",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://public.dns.iij.jp/dns-query",
+      "description": "DoH server provided by Internet Initiative Japan"
+    },
+    {
+      "id": "c1cc16bd-5fd2-4a60-bf8b-1f912c002966",
+      "address": "dns.kapite.in",
+      "type": "IPv4",
+      "provider": "kapite.in",
+      "name": "kapite.in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.kapite.in/dns-query",
+      "description": "DoH server provided by kapite.in"
+    },
+    {
+      "id": "ed684b84-103a-47f4-b6b2-591315512b9c",
+      "address": "dns.kernel-error.de",
+      "type": "IPv4",
+      "provider": "Kernel Error",
+      "name": "kernel error",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.kernel-error.de/dns-query",
+      "description": "DoH server provided by Kernel Error"
+    },
+    {
+      "id": "96ed087a-08e6-4ac1-a547-612a4da01ea2",
+      "address": "dns.kescher.at",
+      "type": "IPv4",
+      "provider": "kescher",
+      "name": "kescher",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.kescher.at/dns-query",
+      "description": "DoH server provided by kescher"
+    },
+    {
+      "id": "d1b5e6a9-ef64-407f-ab6c-1034bd62f22e",
+      "address": "dns.koala.us.to",
+      "type": "IPv4",
+      "provider": "Koala",
+      "name": "koala",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.koala.us.to/dns-query",
+      "description": "DoH server provided by Koala"
+    },
+    {
+      "id": "ddf7b08b-1def-436a-b7d2-e489de0398e6",
+      "address": "dns.kosan.moe",
+      "type": "IPv4",
+      "provider": "Kosan",
+      "name": "kosan",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.kosan.moe/dns-query",
+      "description": "DoH server provided by Kosan"
+    },
+    {
+      "id": "884e7aab-58fb-4de6-ad9a-4027cc035375",
+      "address": "adblock.krctech.dev",
+      "type": "IPv4",
+      "provider": "krctech.dev",
+      "name": "krctech.dev",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Adblock"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://adblock.krctech.dev/dns-query",
+      "description": "DoH server provided by krctech.dev"
+    },
+    {
+      "id": "869e306a-bafd-4068-b91f-ed94eaa3a676",
+      "address": "doh.lacontrevoie.fr",
+      "type": "IPv4",
+      "provider": "La Contre-Voie",
+      "name": "la contre-voie",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.lacontrevoie.fr/dns-query",
+      "description": "DoH server provided by La Contre-Voie"
+    },
+    {
+      "id": "7e6a1d33-bb30-47dc-a9fb-dbce830bf4c9",
+      "address": "dns.liberador.net",
+      "type": "IPv4",
+      "provider": "Liberador.net",
+      "name": "liberador.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.liberador.net",
+      "description": "DoH server provided by Liberador.net"
+    },
+    {
+      "id": "5eba2a87-6995-404b-840e-014f4d5ae9de",
+      "address": "doh.libredns.gr",
+      "type": "IPv4",
+      "provider": "LibreDNS",
+      "name": "libredns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.libredns.gr/dns-query",
+      "description": "DoH server provided by LibreDNS"
+    },
+    {
+      "id": "ac18ad33-1ccb-4238-a18a-b3e7fad21af0",
+      "address": "doh.libredns.gr",
+      "type": "IPv4",
+      "provider": "LibreDNS",
+      "name": "libredns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Adblock"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.libredns.gr/noads",
+      "description": "DoH server provided by LibreDNS"
+    },
+    {
+      "id": "ec338adf-4c37-4e85-9873-2373903ccfba",
+      "address": "loadlow.me",
+      "type": "IPv4",
+      "provider": "loadlow.me",
+      "name": "loadlow.me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://loadlow.me/dns-query",
+      "description": "DoH server provided by loadlow.me"
+    },
+    {
+      "id": "0c749179-dc76-41bb-b6f5-f425a7a30a92",
+      "address": "dns.lobbygod.com",
+      "type": "IPv4",
+      "provider": "LobbyGod",
+      "name": "lobbygod",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.lobbygod.com/dns-query",
+      "description": "DoH server provided by LobbyGod"
+    },
+    {
+      "id": "84dc430f-6a95-4a80-9c8d-27bce695a8c7",
+      "address": "dns.luma-medien.com",
+      "type": "IPv4",
+      "provider": "LuMa Medien",
+      "name": "luma medien",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.luma-medien.com/dns-query",
+      "description": "DoH server provided by LuMa Medien"
+    },
+    {
+      "id": "84ac1020-6e57-4741-8ed0-1b2bfd9f9f41",
+      "address": "dns.l337.site",
+      "type": "IPv4",
+      "provider": "l337.site",
+      "name": "l337.site",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.l337.site/dns-query",
+      "description": "DoH server provided by l337.site"
+    },
+    {
+      "id": "e57f4274-7c42-43d6-9d66-79c2089e281f",
+      "address": "dns.marasov.id",
+      "type": "IPv4",
+      "provider": "marasov.id",
+      "name": "marasov.id",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.marasov.id/dns-query",
+      "description": "DoH server provided by marasov.id"
+    },
+    {
+      "id": "8a119547-3beb-45a0-84ce-b7590cdb7167",
+      "address": "masters-of-cloud.de",
+      "type": "IPv4",
+      "provider": "Masters of Cloud",
+      "name": "masters of cloud",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://masters-of-cloud.de/dns-query",
+      "description": "DoH server provided by Masters of Cloud"
+    },
+    {
+      "id": "9fa4153c-7830-46b8-9950-2e5c5ecbdea2",
+      "address": "dns.mateo.ovh",
+      "type": "IPv4",
+      "provider": "mateo.ovh",
+      "name": "mateo.ovh",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.mateo.ovh/dns-query",
+      "description": "DoH server provided by mateo.ovh"
+    },
+    {
+      "id": "6db5d6a7-d320-4e5a-8555-bb35499c6590",
+      "address": "dns.mayx.eu.org",
+      "type": "IPv4",
+      "provider": "Mayx",
+      "name": "mayx",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.mayx.eu.org/dns-query",
+      "description": "DoH server provided by Mayx"
+    },
+    {
+      "id": "60509e3d-df91-471e-adaa-5d28066d9d68",
+      "address": "adguard.meddy94.de",
+      "type": "IPv4",
+      "provider": "meddy94.de",
+      "name": "meddy94.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://adguard.meddy94.de/dns-query",
+      "description": "DoH server provided by meddy94.de"
+    },
+    {
+      "id": "b91cde0c-3b9a-4763-a8a7-dde29a3d83e4",
+      "address": "dns.mh4ckt3mh4ckt1c4s.xyz",
+      "type": "IPv4",
+      "provider": "mh4ckt3mh4ckt1c4s.xyz",
+      "name": "mh4ckt3mh4ckt1c4s.xyz",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.mh4ckt3mh4ckt1c4s.xyz/dns-query",
+      "description": "DoH server provided by mh4ckt3mh4ckt1c4s.xyz"
+    },
+    {
+      "id": "de0fcf24-4ab0-4658-bea7-09ee3d85b989",
+      "address": "addns1.m-it.ro",
+      "type": "IPv4",
+      "provider": "m-it.ro",
+      "name": "m-it.ro",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://addns1.m-it.ro/dns-query",
+      "description": "DoH server provided by m-it.ro"
+    },
+    {
+      "id": "9c54208b-4d2b-46a6-bc47-b0b044f0d228",
+      "address": "doh.mmmalia.com",
+      "type": "IPv4",
+      "provider": "mmmalia.com",
+      "name": "mmmalia.com",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.mmmalia.com/dns-query",
+      "description": "DoH server provided by mmmalia.com"
+    },
+    {
+      "id": "df938af6-ff83-4717-bbd2-dab9c12da8b1",
+      "address": "dns.mullvad.net",
+      "type": "IPv4",
+      "provider": "Mullvad",
+      "name": "mullvad",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.mullvad.net/dns-query",
+      "description": "DoH server provided by Mullvad"
+    },
+    {
+      "id": "48e50104-ab70-4f3d-9342-70cfbd25122b",
+      "address": "adblock.dns.mullvad.net",
+      "type": "IPv4",
+      "provider": "Mullvad",
+      "name": "mullvad",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Adblock"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://adblock.dns.mullvad.net/dns-query",
+      "description": "DoH server provided by Mullvad"
+    },
+    {
+      "id": "75bc042a-c752-4028-97ff-d4e646744c32",
+      "address": "base.dns.mullvad.net",
+      "type": "IPv4",
+      "provider": "Mullvad",
+      "name": "mullvad",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://base.dns.mullvad.net/dns-query",
+      "description": "DoH server provided by Mullvad"
+    },
+    {
+      "id": "7aad710f-85f0-432c-b500-96d6033166ff",
+      "address": "extended.dns.mullvad.net",
+      "type": "IPv4",
+      "provider": "Mullvad",
+      "name": "mullvad",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://extended.dns.mullvad.net/dns-query",
+      "description": "DoH server provided by Mullvad"
+    },
+    {
+      "id": "241b08a4-9289-4c66-a876-1f4ce1088a84",
+      "address": "all.dns.mullvad.net",
+      "type": "IPv4",
+      "provider": "Mullvad",
+      "name": "mullvad",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://all.dns.mullvad.net/dns-query",
+      "description": "DoH server provided by Mullvad"
+    },
+    {
+      "id": "9d475e2d-0eda-4c8f-a67f-b1345d0482a5",
+      "address": "family.dns.mullvad.net",
+      "type": "IPv4",
+      "provider": "Mullvad",
+      "name": "mullvad",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Family"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://family.dns.mullvad.net/dns-query",
+      "description": "DoH server provided by Mullvad"
+    },
+    {
+      "id": "44d6b0e1-1e4c-4127-a232-323313a8ec38",
+      "address": "freedom.mydns.network",
+      "type": "IPv4",
+      "provider": "mydns.network",
+      "name": "mydns.network",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://freedom.mydns.network/dns-query",
+      "description": "DoH server provided by mydns.network"
+    },
+    {
+      "id": "6e001ed0-ab81-40c3-a20c-0c5f6c337ebe",
+      "address": "paranoia.mydns.network",
+      "type": "IPv4",
+      "provider": "mydns.network",
+      "name": "mydns.network",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://paranoia.mydns.network/dns-query",
+      "description": "DoH server provided by mydns.network"
+    },
+    {
+      "id": "34c7a068-cade-4b59-b892-b4cd1158e870",
+      "address": "adblock.mydns.network",
+      "type": "IPv4",
+      "provider": "mydns.network",
+      "name": "mydns.network",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Adblock"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://adblock.mydns.network/dns-query",
+      "description": "DoH server provided by mydns.network"
+    },
+    {
+      "id": "c9e219fc-f7d5-4340-8a8e-777057bd9914",
+      "address": "family.mydns.network",
+      "type": "IPv4",
+      "provider": "mydns.network",
+      "name": "mydns.network",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Family"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://family.mydns.network/dns-query",
+      "description": "DoH server provided by mydns.network"
+    },
+    {
+      "id": "ada6f8e0-5b80-459c-8075-d28b5942ae94",
+      "address": "dns.mzjtechnology.com",
+      "type": "IPv4",
+      "provider": "MZJ Technology",
+      "name": "mzj technology",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.mzjtechnology.com/dns-query",
+      "description": "DoH server provided by MZJ Technology"
+    },
+    {
+      "id": "1a423e67-c7fc-4e5f-9fe9-88047b7bd4fa",
+      "address": "ae-fuj-w-p-1.nashkan.net",
+      "type": "IPv4",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ae-fuj-w-p-1.nashkan.net/dns-query",
+      "description": "DoH server provided by nashkan.net"
+    },
+    {
+      "id": "3196d12c-d5b7-440f-8f8e-3580d0d947d8",
+      "address": "ae-fuj-w-p-2.nashkan.net",
+      "type": "IPv4",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ae-fuj-w-p-2.nashkan.net/dns-query",
+      "description": "DoH server provided by nashkan.net"
+    },
+    {
+      "id": "e70a8acf-3935-40e8-aca4-6a25ec58b81c",
+      "address": "ae-fuj-w-p-3.nashkan.net",
+      "type": "IPv4",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ae-fuj-w-p-3.nashkan.net/dns-query",
+      "description": "DoH server provided by nashkan.net"
+    },
+    {
+      "id": "dbc98484-0b87-41fd-af91-b0a58089522b",
+      "address": "au-syd-w-f-1.nashkan.net",
+      "type": "IPv4",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://au-syd-w-f-1.nashkan.net/dns-query",
+      "description": "DoH server provided by nashkan.net"
+    },
+    {
+      "id": "f6d82f7b-e2b0-4d9e-ac7b-c706acb71531",
+      "address": "gb-lon-w-p-2.nashkan.net",
+      "type": "IPv4",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://gb-lon-w-p-2.nashkan.net/dns-query",
+      "description": "DoH server provided by nashkan.net"
+    },
+    {
+      "id": "d7628c2c-6d4d-4355-b04c-7955bd1216c6",
+      "address": "ro-buc-w-p-1.nashkan.net",
+      "type": "IPv4",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ro-buc-w-p-1.nashkan.net/dns-query",
+      "description": "DoH server provided by nashkan.net"
+    },
+    {
+      "id": "bf815f21-dd90-448b-b5d5-57a360ecb04c",
+      "address": "sg-w-p-1.nashkan.net",
+      "type": "IPv4",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://sg-w-p-1.nashkan.net/dns-query",
+      "description": "DoH server provided by nashkan.net"
+    },
+    {
+      "id": "800c3728-c214-4ae2-aae8-35189593099a",
+      "address": "us-chi-w-f-1.nashkan.net",
+      "type": "IPv4",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://us-chi-w-f-1.nashkan.net/dns-query",
+      "description": "DoH server provided by nashkan.net"
+    },
+    {
+      "id": "6c09076c-cc0a-450b-ad52-74bfad2ef77c",
+      "address": "us-chi-w-p-1.nashkan.net",
+      "type": "IPv4",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://us-chi-w-p-1.nashkan.net/dns-query",
+      "description": "DoH server provided by nashkan.net"
+    },
+    {
+      "id": "4d6dc662-fd40-49a2-8d8d-8a0d63e4d364",
+      "address": "us-jac-w-f-1.nashkan.net",
+      "type": "IPv4",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://us-jac-w-f-1.nashkan.net/dns-query",
+      "description": "DoH server provided by nashkan.net"
+    },
+    {
+      "id": "2a51dd45-bbf4-4e07-978d-2857780279a3",
+      "address": "us-jac-w-p-1.nashkan.net",
+      "type": "IPv4",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://us-jac-w-p-1.nashkan.net/dns-query",
+      "description": "DoH server provided by nashkan.net"
+    },
+    {
+      "id": "a4bbc08f-fec5-4899-bf07-0f322a3bd3db",
+      "address": "us-kan-w-p-1.nashkan.net",
+      "type": "IPv4",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://us-kan-w-p-1.nashkan.net/dns-query",
+      "description": "DoH server provided by nashkan.net"
+    },
+    {
+      "id": "4fd863a9-85d3-4db8-af8a-83d9333bf5eb",
+      "address": "us-nyc-w-p-1.nashkan.net",
+      "type": "IPv4",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://us-nyc-w-p-1.nashkan.net/dns-query",
+      "description": "DoH server provided by nashkan.net"
+    },
+    {
+      "id": "dc45659f-169d-4b76-a5fa-608f5c06cdcf",
+      "address": "dns.neeb.it",
+      "type": "IPv4",
+      "provider": "neeb.it",
+      "name": "neeb.it",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.neeb.it/dns-query",
+      "description": "DoH server provided by neeb.it"
+    },
+    {
+      "id": "cc02c028-131d-4251-be4c-c5a020e64423",
+      "address": "dns.nextdns.io",
+      "type": "IPv4",
+      "provider": "NextDNS",
+      "name": "nextdns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.nextdns.io",
+      "description": "DoH server provided by NextDNS"
+    },
+    {
+      "id": "08f226f1-bb4e-4a38-b0a5-4ce206a969af",
+      "address": "dns.nick-slowinski.de",
+      "type": "IPv4",
+      "provider": "Nick Slowinski",
+      "name": "nick slowinski",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.nick-slowinski.de/dns-query",
+      "description": "DoH server provided by Nick Slowinski"
+    },
+    {
+      "id": "36ccacd1-8180-4e92-927a-6b06299b4617",
+      "address": "doh.lv",
+      "type": "IPv4",
+      "provider": "NIC.LV",
+      "name": "nic.lv",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.lv/dns-query",
+      "description": "DoH server provided by NIC.LV"
+    },
+    {
+      "id": "1a23e743-71c8-4eae-b1cc-7fe75c074a29",
+      "address": "doh.nic.lv",
+      "type": "IPv4",
+      "provider": "NIC.LV",
+      "name": "nic.lv",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.nic.lv/dns-query",
+      "description": "DoH server provided by NIC.LV"
+    },
+    {
+      "id": "6c84d47f-00a1-40c0-b7e6-3ac7230cae8f",
+      "address": "doh-dilution-to-upstreams-adguardhome.nicolas-dorriere.fr",
+      "type": "IPv4",
+      "provider": "Nicolas Dorriere",
+      "name": "nicolas dorriere",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh-dilution-to-upstreams-adguardhome.nicolas-dorriere.fr/dns-query",
+      "description": "DoH server provided by Nicolas Dorriere"
+    },
+    {
+      "id": "f744e3e2-c965-4fb9-9c79-6777e9a65db0",
+      "address": "doh.niyawe.de",
+      "type": "IPv4",
+      "provider": "NiYaWe",
+      "name": "niyawe",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.niyawe.de/dns-query",
+      "description": "DoH server provided by NiYaWe"
+    },
+    {
+      "id": "80a7830c-13fb-4269-85e7-15639bea1073",
+      "address": "dns.njal.la",
+      "type": "IPv4",
+      "provider": "Njalla",
+      "name": "njalla",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.njal.la/dns-query",
+      "description": "DoH server provided by Njalla"
+    },
+    {
+      "id": "4c0f53e1-003c-432c-94dd-0e6de29115ae",
+      "address": "dns.novg.net",
+      "type": "IPv4",
+      "provider": "novg.net",
+      "name": "novg.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.novg.net/dns-query",
+      "description": "DoH server provided by novg.net"
+    },
+    {
+      "id": "e85ae0b0-f4fb-4db4-961c-dc1ad52b8042",
+      "address": "dns.ofdoom.net",
+      "type": "IPv4",
+      "provider": "ofdoom.net",
+      "name": "ofdoom.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.ofdoom.net/dns-query",
+      "description": "DoH server provided by ofdoom.net"
+    },
+    {
+      "id": "2f748b1d-95a3-4222-84d1-6d74547474f9",
+      "address": "dns.omada.cafe",
+      "type": "IPv4",
+      "provider": "Omada",
+      "name": "omada",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.omada.cafe/dns-query",
+      "description": "DoH server provided by Omada"
+    },
+    {
+      "id": "d4432ce8-15c8-429e-8a9a-07f89a072d67",
+      "address": "ada.openbld.net",
+      "type": "IPv4",
+      "provider": "OpenBLD.net",
+      "name": "openbld.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ada.openbld.net/dns-query",
+      "description": "DoH server provided by OpenBLD.net"
+    },
+    {
+      "id": "80307a68-ac82-4d49-92ad-95652bc05f38",
+      "address": "ag.apollohct.com",
+      "type": "IPv4",
+      "provider": "OpenLoop",
+      "name": "openloop",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ag.apollohct.com/dns-query",
+      "description": "DoH server provided by OpenLoop"
+    },
+    {
+      "id": "ab7c6334-859d-43a3-a961-536ac6fc617d",
+      "address": "dns4eu.online",
+      "type": "IPv4",
+      "provider": "o2cloud.fr",
+      "name": "o2cloud.fr",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns4eu.online/dns-query",
+      "description": "DoH server provided by o2cloud.fr"
+    },
+    {
+      "id": "7fb11f7f-7c0d-4b3a-a836-ec7e8cbf8130",
+      "address": "dns.paesa.es",
+      "type": "IPv4",
+      "provider": "PaesaDNS",
+      "name": "paesadns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.paesa.es/dns-query",
+      "description": "DoH server provided by PaesaDNS"
+    },
+    {
+      "id": "775cfa5e-cf74-4534-96cf-e25bac436c9b",
+      "address": "dns.paulo.nom.za",
+      "type": "IPv4",
+      "provider": "Paulo",
+      "name": "paulo",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.paulo.nom.za/dns-query",
+      "description": "DoH server provided by Paulo"
+    },
+    {
+      "id": "669b7f7e-c0e9-442f-a63f-2fa70e5ea4b1",
+      "address": "dns.decky.eu",
+      "type": "IPv4",
+      "provider": "Pavol Decky",
+      "name": "pavol decky",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.decky.eu/dns-query",
+      "description": "DoH server provided by Pavol Decky"
+    },
+    {
+      "id": "2ee886fd-9973-4ed7-bffa-5da0f176f43f",
+      "address": "dns.petqa.ru",
+      "type": "IPv4",
+      "provider": "petqa.ru",
+      "name": "petqa.ru",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.petqa.ru/dns-query",
+      "description": "DoH server provided by petqa.ru"
+    },
+    {
+      "id": "6f4f0525-6899-485a-9684-b3d3f69cb910",
+      "address": "kronos.plan9-dns.com",
+      "type": "IPv4",
+      "provider": "plan9-dns",
+      "name": "plan9-dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://kronos.plan9-dns.com/dns-query",
+      "description": "DoH server provided by plan9-dns"
+    },
+    {
+      "id": "b295e44a-f515-4d79-9bd4-4b87e9190f83",
+      "address": "helios.plan9-dns.com",
+      "type": "IPv4",
+      "provider": "plan9-dns",
+      "name": "plan9-dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://helios.plan9-dns.com/dns-query",
+      "description": "DoH server provided by plan9-dns"
+    },
+    {
+      "id": "9ef0f800-6103-4aa8-8d91-7183f6b2444a",
+      "address": "privacy.plumedns.com",
+      "type": "IPv4",
+      "provider": "PlumeDNS",
+      "name": "plumedns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://privacy.plumedns.com/dns-query",
+      "description": "DoH server provided by PlumeDNS"
+    },
+    {
+      "id": "c12d2b50-9c54-45a3-8fb7-a07751743912",
+      "address": "pooblet.co.za",
+      "type": "IPv4",
+      "provider": "pooblet.co.za",
+      "name": "pooblet.co.za",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://pooblet.co.za/dns-query",
+      "description": "DoH server provided by pooblet.co.za"
+    },
+    {
+      "id": "8ac67e7c-1e16-4199-b2c7-75edf32ac56c",
+      "address": "dns.practicallyunhackable.com",
+      "type": "IPv4",
+      "provider": "Practically Unhackable",
+      "name": "practically unhackable",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.practicallyunhackable.com/dns-query",
+      "description": "DoH server provided by Practically Unhackable"
+    },
+    {
+      "id": "b347a879-497f-4cae-9f51-008de3e9a38d",
+      "address": "dns.quad9.net",
+      "type": "IPv4",
+      "provider": "Quad9",
+      "name": "quad9",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.quad9.net/dns-query",
+      "description": "DoH server provided by Quad9"
+    },
+    {
+      "id": "a605bc23-cd04-4b30-ab2f-afef26818afa",
+      "address": "dns9.quad9.net",
+      "type": "IPv4",
+      "provider": "Quad9",
+      "name": "quad9",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns9.quad9.net/dns-query",
+      "description": "DoH server provided by Quad9"
+    },
+    {
+      "id": "39e2d178-b3fe-46e9-98dd-73dd0719fd6e",
+      "address": "dns10.quad9.net",
+      "type": "IPv4",
+      "provider": "Quad9",
+      "name": "quad9",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns10.quad9.net/dns-query",
+      "description": "DoH server provided by Quad9"
+    },
+    {
+      "id": "66b9026a-1497-49c3-93ad-4232d61954b6",
+      "address": "dns11.quad9.net",
+      "type": "IPv4",
+      "provider": "Quad9",
+      "name": "quad9",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns11.quad9.net/dns-query",
+      "description": "DoH server provided by Quad9"
+    },
+    {
+      "id": "a42a4373-6068-4625-bcbe-0ec52d4527de",
+      "address": "dns12.quad9.net",
+      "type": "IPv4",
+      "provider": "Quad9",
+      "name": "quad9",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns12.quad9.net/dns-query",
+      "description": "DoH server provided by Quad9"
+    },
+    {
+      "id": "0c9e6986-3b77-4a93-82fe-618640d3c264",
+      "address": "dns.quiet.rocks",
+      "type": "IPv4",
+      "provider": "Quiet Rocks",
+      "name": "quiet rocks",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.quiet.rocks/dns-query",
+      "description": "DoH server provided by Quiet Rocks"
+    },
+    {
+      "id": "a0629d25-a440-4931-aa63-62f7ed002fa1",
+      "address": "dog.dns.qwer.pw",
+      "type": "IPv4",
+      "provider": "QWER DNS",
+      "name": "qwer dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dog.dns.qwer.pw/dns-query",
+      "description": "DoH server provided by QWER DNS"
+    },
+    {
+      "id": "91b79b44-8ef6-4bd1-83e5-924b03bb4b12",
+      "address": "tiger.dns.qwer.pw",
+      "type": "IPv4",
+      "provider": "QWER DNS",
+      "name": "qwer dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://tiger.dns.qwer.pw/dns-query",
+      "description": "DoH server provided by QWER DNS"
+    },
+    {
+      "id": "f05cddae-0fda-439b-94fc-6c344b1f4ab3",
+      "address": "dns.redhosting.com.ar",
+      "type": "IPv4",
+      "provider": "redhosting.com.ar",
+      "name": "redhosting.com.ar",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.redhosting.com.ar/dns-query",
+      "description": "DoH server provided by redhosting.com.ar"
+    },
+    {
+      "id": "f8db702f-d492-49e3-ae21-f42d2f8fb8db",
+      "address": "regiopolis.cloud",
+      "type": "IPv4",
+      "provider": "regiopolis.cloud",
+      "name": "regiopolis.cloud",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://regiopolis.cloud/dns-query",
+      "description": "DoH server provided by regiopolis.cloud"
+    },
+    {
+      "id": "5adc3218-3e9c-40fe-bf5a-1765026fcc7f",
+      "address": "renardbleu.dev",
+      "type": "IPv4",
+      "provider": "renardbleu.dev",
+      "name": "renardbleu.dev",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://renardbleu.dev/dns-query",
+      "description": "DoH server provided by renardbleu.dev"
+    },
+    {
+      "id": "91a82945-731c-4dce-be11-56d495c0f6f9",
+      "address": "dnspub.restena.lu",
+      "type": "IPv4",
+      "provider": "Restena",
+      "name": "restena",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dnspub.restena.lu/dns-query",
+      "description": "DoH server provided by Restena"
+    },
+    {
+      "id": "8a2d318d-51d4-4bff-9b90-82e931641bdc",
+      "address": "dns.retakecs.com",
+      "type": "IPv4",
+      "provider": "RetakeCS",
+      "name": "retakecs",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.retakecs.com/dns-query",
+      "description": "DoH server provided by RetakeCS"
+    },
+    {
+      "id": "a9bc4ceb-a4cb-40f2-ac1e-65c04fd6b28e",
+      "address": "sky.rethinkdns.com",
+      "type": "IPv4",
+      "provider": "RethinkDNS",
+      "name": "rethinkdns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://sky.rethinkdns.com/dns-query",
+      "description": "DoH server provided by RethinkDNS"
+    },
+    {
+      "id": "e917b4cc-0abd-48b8-806e-1325fe400b65",
+      "address": "sky.rethinkdns.com",
+      "type": "IPv4",
+      "provider": "RethinkDNS",
+      "name": "rethinkdns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://sky.rethinkdns.com/1:IAAgAA==",
+      "description": "DoH server provided by RethinkDNS"
+    },
+    {
+      "id": "92f7e070-3d1e-4d63-87f2-a554ab5bbbe5",
+      "address": "revelio.top",
+      "type": "IPv4",
+      "provider": "revelio.top",
+      "name": "revelio.top",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://revelio.top/dns-query",
+      "description": "DoH server provided by revelio.top"
+    },
+    {
+      "id": "8d0c2416-bd8e-4534-a7c8-2ed882b11834",
+      "address": "dns.rbn.gr",
+      "type": "IPv4",
+      "provider": "RobinGroppe.de",
+      "name": "robingroppe.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.rbn.gr/dns-query",
+      "description": "DoH server provided by RobinGroppe.de"
+    },
+    {
+      "id": "1ab4e34d-5940-42ce-bde8-db77d9b47cf2",
+      "address": "dns.roedel.cloud",
+      "type": "IPv4",
+      "provider": "roedel.cloud",
+      "name": "roedel.cloud",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.roedel.cloud/dns-query",
+      "description": "DoH server provided by roedel.cloud"
+    },
+    {
+      "id": "54d22281-b04f-4858-8181-ca606a04b3b8",
+      "address": "safeservedns.com",
+      "type": "IPv4",
+      "provider": "SafeServe",
+      "name": "safeserve",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://safeservedns.com/dns-query",
+      "description": "DoH server provided by SafeServe"
+    },
+    {
+      "id": "9c63cec9-84ea-4f0b-a056-e3f0a95a036a",
+      "address": "adguard.shoupperuser.com",
+      "type": "IPv4",
+      "provider": "shoupperuser.com",
+      "name": "shoupperuser.com",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://adguard.shoupperuser.com/dns-query",
+      "description": "DoH server provided by shoupperuser.com"
+    },
+    {
+      "id": "30475867-0404-4ec4-8614-de9d9e9e17fc",
+      "address": "dns.silen.org",
+      "type": "IPv4",
+      "provider": "silen.org",
+      "name": "silen.org",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.silen.org/dns-query",
+      "description": "DoH server provided by silen.org"
+    },
+    {
+      "id": "e082cde2-22c1-48ed-b753-77405a7eb42c",
+      "address": "dns.simplylinux.ch",
+      "type": "IPv4",
+      "provider": "simplylinux.ch",
+      "name": "simplylinux.ch",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.simplylinux.ch/dns-query",
+      "description": "DoH server provided by simplylinux.ch"
+    },
+    {
+      "id": "48d4c2e5-c046-4945-b7d7-6d387c107e93",
+      "address": "dns.skrep.eu",
+      "type": "IPv4",
+      "provider": "skrep.eu",
+      "name": "skrep.eu",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.skrep.eu/dns-query",
+      "description": "DoH server provided by skrep.eu"
+    },
+    {
+      "id": "0a0e1f59-1e68-421c-aeb6-0d49b4d23d36",
+      "address": "dns.slinkyman.net",
+      "type": "IPv4",
+      "provider": "Slinkyman.net",
+      "name": "slinkyman.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.slinkyman.net/dns-query",
+      "description": "DoH server provided by Slinkyman.net"
+    },
+    {
+      "id": "e1487b8d-b28e-43fe-8c70-a0dc083b2b1f",
+      "address": "dns.smartguard.io",
+      "type": "IPv4",
+      "provider": "SmartGuard",
+      "name": "smartguard",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.smartguard.io/dns-query",
+      "description": "DoH server provided by SmartGuard"
+    },
+    {
+      "id": "a66e2aca-e150-4089-9568-b78f9698d7ec",
+      "address": "dns.startupstack.tech",
+      "type": "IPv4",
+      "provider": "Startup Stack",
+      "name": "startup stack",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.startupstack.tech/dns-query",
+      "description": "DoH server provided by Startup Stack"
+    },
+    {
+      "id": "fa9c3f9c-dc5b-42ae-89b8-34e8b5a86c9b",
+      "address": "doh.sz-dns.com",
+      "type": "IPv4",
+      "provider": "SZ DNS",
+      "name": "sz dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.sz-dns.com/dns-query",
+      "description": "DoH server provided by SZ DNS"
+    },
+    {
+      "id": "4225082b-078b-496e-aaeb-c95fbde175f5",
+      "address": "dns.stirringphoto.com",
+      "type": "IPv4",
+      "provider": "stirringphoto.com",
+      "name": "stirringphoto.com",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.stirringphoto.com/dns-query",
+      "description": "DoH server provided by stirringphoto.com"
+    },
+    {
+      "id": "bb93100c-a998-425e-96ce-967e3abac8f7",
+      "address": "dns.surfsharkdns.com",
+      "type": "IPv4",
+      "provider": "Surfshark DNS",
+      "name": "surfshark dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.surfsharkdns.com/dns-query",
+      "description": "DoH server provided by Surfshark DNS"
+    },
+    {
+      "id": "a0f1b167-1d58-47a4-a899-a7192b1e3efc",
+      "address": "resolver.sunet.se",
+      "type": "IPv4",
+      "provider": "Sunet DNS",
+      "name": "sunet dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://resolver.sunet.se/dns-query",
+      "description": "DoH server provided by Sunet DNS"
+    },
+    {
+      "id": "d76df680-2b51-4988-b25f-d7fba3a425df",
+      "address": "dns.switch.ch",
+      "type": "IPv4",
+      "provider": "Switch",
+      "name": "switch",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.switch.ch/dns-query",
+      "description": "DoH server provided by Switch"
+    },
+    {
+      "id": "9cd2f8b8-d12f-467b-ae93-3252cf604d07",
+      "address": "dns.t53.de",
+      "type": "IPv4",
+      "provider": "t53.de",
+      "name": "t53.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.t53.de/dns-query",
+      "description": "DoH server provided by t53.de"
+    },
+    {
+      "id": "393c16cb-bfbe-42c9-9f81-c0a124fd3b58",
+      "address": "dns.telekom.de",
+      "type": "IPv4",
+      "provider": "Telekom Deutschland",
+      "name": "telekom deutschland",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.telekom.de/dns-query",
+      "description": "DoH server provided by Telekom Deutschland"
+    },
+    {
+      "id": "00305999-71d2-445c-831e-668ad251d6a3",
+      "address": "dns.tipsy.coffee",
+      "type": "IPv4",
+      "provider": "TipsyCoffee",
+      "name": "tipsycoffee",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.tipsy.coffee/dns-query",
+      "description": "DoH server provided by TipsyCoffee"
+    },
+    {
+      "id": "73d791ca-8095-49ae-9e98-099a7baa41e9",
+      "address": "dns.tls-data.de",
+      "type": "IPv4",
+      "provider": "Tls-data.de",
+      "name": "tls-data.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.tls-data.de/dns-query",
+      "description": "DoH server provided by Tls-data.de"
+    },
+    {
+      "id": "bb3d44b4-8f1f-4003-bc0a-d6c5a14986a6",
+      "address": "doh.tiar.app",
+      "type": "IPv4",
+      "provider": "Tiarap",
+      "name": "tiarap",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.tiar.app/dns-query",
+      "description": "DoH server provided by Tiarap"
+    },
+    {
+      "id": "9f9bec67-5821-40c5-a640-b70df7ce12c8",
+      "address": "anycast.uncensoreddns.org",
+      "type": "IPv4",
+      "provider": "UncensoredDNS",
+      "name": "uncensoreddns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://anycast.uncensoreddns.org/dns-query",
+      "description": "DoH server provided by UncensoredDNS"
+    },
+    {
+      "id": "04d0a73c-2e2d-4a11-9a49-b195b5dac44c",
+      "address": "dns.unx.io",
+      "type": "IPv4",
+      "provider": "unx.io",
+      "name": "unx.io",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.unx.io/dns-query",
+      "description": "DoH server provided by unx.io"
+    },
+    {
+      "id": "94743588-43b8-4627-9170-082fc48d2ddd",
+      "address": "adfree.usableprivacy.net",
+      "type": "IPv4",
+      "provider": "Usable Privacy",
+      "name": "usable privacy",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://adfree.usableprivacy.net/dns-query",
+      "description": "DoH server provided by Usable Privacy"
+    },
+    {
+      "id": "61f9fe7d-a120-4b75-883b-bf18bbefef4f",
+      "address": "v.recipes",
+      "type": "IPv4",
+      "provider": "v.recipes",
+      "name": "v.recipes",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://v.recipes/dns-query",
+      "description": "DoH server provided by v.recipes"
+    },
+    {
+      "id": "8089b833-d179-4527-9ceb-90b244d73fab",
+      "address": "v.recipes",
+      "type": "IPv4",
+      "provider": "v.recipes",
+      "name": "v.recipes",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Adblock"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://v.recipes/dns-adblock",
+      "description": "DoH server provided by v.recipes"
+    },
+    {
+      "id": "e96a616b-aa9f-4f5c-bd69-8e6ac1d64b6f",
+      "address": "v.recipes",
+      "type": "IPv4",
+      "provider": "v.recipes",
+      "name": "v.recipes",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://v.recipes/dns-ecs",
+      "description": "DoH server provided by v.recipes"
+    },
+    {
+      "id": "5766babf-e7f8-43bd-b090-f72dd539125b",
+      "address": "dns.vaioswolke.xyz",
+      "type": "IPv4",
+      "provider": "vaioswolke.xyz",
+      "name": "vaioswolke.xyz",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.vaioswolke.xyz/dns-query",
+      "description": "DoH server provided by vaioswolke.xyz"
+    },
+    {
+      "id": "cf787088-a68a-4830-b4bd-19d029c9f288",
+      "address": "doh.viatech.com.tw",
+      "type": "IPv4",
+      "provider": "VIA",
+      "name": "via",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.viatech.com.tw/dns-query",
+      "description": "DoH server provided by VIA"
+    },
+    {
+      "id": "1e8ea254-f77e-4fc9-acc6-e288a729012d",
+      "address": "v0dka.ru",
+      "type": "IPv4",
+      "provider": "v0dka.ru",
+      "name": "v0dka.ru",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://v0dka.ru/dns-query",
+      "description": "DoH server provided by v0dka.ru"
+    },
+    {
+      "id": "261bc78f-e790-4e2c-84e2-69539937ac72",
+      "address": "abel.waringer-atg.de",
+      "type": "IPv4",
+      "provider": "waringer-atg.de",
+      "name": "waringer-atg.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://abel.waringer-atg.de/dns-query",
+      "description": "DoH server provided by waringer-atg.de"
+    },
+    {
+      "id": "0c7ec534-37b9-4e14-a8bb-5db802b2de4b",
+      "address": "wikimedia-dns.org",
+      "type": "IPv4",
+      "provider": "Wikimedia DNS",
+      "name": "wikimedia dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://wikimedia-dns.org/dns-query",
+      "description": "DoH server provided by Wikimedia DNS"
+    },
+    {
+      "id": "4f848c70-1458-4ea6-938e-245dde3e9f04",
+      "address": "dns.w3ctag.org",
+      "type": "IPv4",
+      "provider": "W3C TAG",
+      "name": "w3c tag",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.w3ctag.org/dns-query",
+      "description": "DoH server provided by W3C TAG"
+    },
+    {
+      "id": "47c39e15-b347-4853-a3d0-dddd5bc57eb1",
+      "address": "zdn.ro",
+      "type": "IPv4",
+      "provider": "zdn.ro",
+      "name": "zdn.ro",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://zdn.ro/dns-query",
+      "description": "DoH server provided by zdn.ro"
+    },
+    {
+      "id": "698520b1-482c-4535-a4d3-a6aa372ea544",
+      "address": "ns2.4netguides.org",
+      "type": "IPv4",
+      "provider": "4NetGuides",
+      "name": "4netguides",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ns2.4netguides.org/dns-query",
+      "description": "DoH server provided by 4NetGuides"
+    },
+    {
+      "id": "b3a86b02-f771-4c2e-90e0-83c46133c428",
+      "address": "ibuki.cgnat.net",
+      "type": "IPv4",
+      "provider": "@null31",
+      "name": "@null31",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ibuki.cgnat.net/dns-query",
+      "description": "DoH server provided by @null31"
+    },
+    {
+      "id": "780acc68-2e35-49bb-b319-1951196f8ac4",
+      "address": "doh.seby.io",
+      "type": "IPv4",
+      "provider": "@publicarraydns.seby.io",
+      "name": "@publicarraydns.seby.io",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://doh.seby.io/dns-query",
+      "description": "DoH server provided by @publicarraydns.seby.io"
+    }
+  ]
+}
