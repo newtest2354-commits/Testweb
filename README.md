@@ -518,31 +518,3 @@ DNSهای موجود در این پروژه از منابع عمومی جمع‌
 **Arista Team**
 
 </div>
-
----
-
-## 📡 ارتباط با تیم آریستا
-
-<div align="center">
-
-<a href="https://t.me/aristapanel">
-<img src="https://img.shields.io/badge/Telegram-کانال%20آریستا-229ED9?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
-</a>
-
-<a href="https://matrix.to/#/#arista:matrix.org">
-<img src="https://img.shields.io/badge/Element-انجمن%20آریستا-0DBD8B?style=for-the-badge&logo=element&logoColor=white" alt="Element">
-</a>
-
-</div>
-
----
-
-<div align="center">
-
-### Arista DNS Hub
-
-**جمع‌آوری • استخراج • تست • تحلیل • دسته‌بندی • انتشار**
-
-ساخته‌شده با ❤️ توسط **تیم آریستا**
-
-</div>
