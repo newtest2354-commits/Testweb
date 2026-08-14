@@ -20,7 +20,6 @@ class DOHParser:
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
             })
             response.raise_for_status()
-            
             soup = BeautifulSoup(response.text, 'html.parser')
             return cls._parse_content(soup)
         except Exception as e:
@@ -31,37 +30,60 @@ class DOHParser:
     def _parse_content(cls, soup: BeautifulSoup) -> List[Dict[str, Any]]:
         dns_list = []
         
-        table = soup.find('table')
-        if not table:
-            return dns_list
+        tables = soup.find_all('table')
+        for table in tables:
+            rows = table.find_all('tr')
+            if len(rows) < 2:
+                continue
             
-        rows = table.find_all('tr')
-        if len(rows) < 2:
-            return dns_list
+            headers = [h.get_text(strip=True).lower() for h in rows[0].find_all(['th', 'td'])]
+            provider_idx = None
+            url_idx = None
             
-        for row in rows[1:]:
-            cells = row.find_all('td')
-            if len(cells) >= 2:
-                provider = cells[0].get_text(strip=True)
-                base_url_cell = cells[1]
+            for i, h in enumerate(headers):
+                if 'run' in h or 'who' in h:
+                    provider_idx = i
+                elif 'base' in h or 'url' in h:
+                    url_idx = i
+            
+            if provider_idx is None or url_idx is None:
+                continue
+            
+            for row in rows[1:]:
+                cells = row.find_all(['td', 'th'])
+                if len(cells) <= max(provider_idx, url_idx):
+                    continue
                 
+                provider = cells[provider_idx].get_text(strip=True)
+                if not provider:
+                    continue
+                
+                url_cell = cells[url_idx]
                 urls = []
-                for link in base_url_cell.find_all('a'):
+                for link in url_cell.find_all('a'):
                     href = link.get('href')
                     if href and href.startswith('https://'):
                         urls.append(href.rstrip('/'))
                 
-                if provider and urls:
-                    for url in urls:
-                        address = urlparse(url).netloc.split(':')[0]
-                        dns_list.append({
-                            'provider': provider,
-                            'doh_url': url,
-                            'address': address,
-                            'name': provider,
-                            'source': cls.SOURCE_NAME,
-                            'type': 'DoH',
-                            'description': f"DoH server provided by {provider}"
-                        })
+                if not urls:
+                    text_urls = re.findall(r'https?://[^\s|<"\'\)]+', url_cell.get_text())
+                    urls.extend(text_urls)
+                
+                for url in urls:
+                    parsed = urlparse(url)
+                    address = parsed.netloc.split(':')[0]
+                    dns_list.append({
+                        'provider': provider,
+                        'doh_url': url,
+                        'address': address,
+                        'name': provider,
+                        'source': cls.SOURCE_NAME,
+                        'type': 'DoH',
+                        'hostname': parsed.netloc.split(':')[0],
+                        'path': parsed.path or '/dns-query',
+                        'port': parsed.port or 443,
+                        'protocol': 'DoH',
+                        'description': f"DoH server provided by {provider}"
+                    })
         
         return dns_list
