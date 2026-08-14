@@ -17,29 +17,47 @@ class DOHParser:
     )
 
     DOT_URL_PATTERN = re.compile(
-        r'(?<![\w])tls://'
+        r'\btls://'
         r'(?P<host>'
         r'\[[0-9a-fA-F:]+\]'
         r'|'
-        r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9.-]*[a-zA-Z0-9])?)'
-        r'|'
-        r'(?:\d{1,3}\.){3}\d{1,3}'
+        r'[a-zA-Z0-9]'
+        r'(?:[a-zA-Z0-9.-]*[a-zA-Z0-9])?'
         r')'
         r'(?::(?P<port>\d{1,5}))?',
         re.IGNORECASE
     )
 
     DOT_HOST_PORT_PATTERN = re.compile(
-        r'(?<![/:@\w.-])'
+        r'(?<![A-Za-z0-9._/-])'
         r'(?P<host>'
         r'\[[0-9a-fA-F:]+\]'
         r'|'
-        r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9.-]*[a-zA-Z0-9])?\.)+'
-        r'[a-zA-Z]{2,}'
+        r'(?:[a-zA-Z0-9]'
+        r'(?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?'
+        r'\.)+'
+        r'[a-zA-Z]{2,63}'
         r'|'
         r'(?:\d{1,3}\.){3}\d{1,3}'
         r')'
         r':(?P<port>\d{1,5})'
+        r'(?!\d)',
+        re.IGNORECASE
+    )
+
+    DOT_853_PATTERN = re.compile(
+        r'(?<![A-Za-z0-9._/-])'
+        r'(?P<host>'
+        r'\[[0-9a-fA-F:]+\]'
+        r'|'
+        r'(?:[a-zA-Z0-9]'
+        r'(?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?'
+        r'\.)+'
+        r'[a-zA-Z]{2,63}'
+        r'|'
+        r'(?:\d{1,3}\.){3}\d{1,3}'
+        r')'
+        r':853'
         r'(?!\d)',
         re.IGNORECASE
     )
@@ -76,8 +94,10 @@ class DOHParser:
         r'(?P<host>'
         r'\[[0-9a-fA-F:]+\]'
         r'|'
-        r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9.-]*[a-zA-Z0-9])?\.)+'
-        r'[a-zA-Z]{2,}'
+        r'(?:[a-zA-Z0-9]'
+        r'(?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?'
+        r'\.)+'
+        r'[a-zA-Z]{2,63}'
         r'|'
         r'(?:\d{1,3}\.){3}\d{1,3}'
         r')'
@@ -181,12 +201,37 @@ class DOHParser:
         soup: BeautifulSoup
     ) -> List[Dict[str, Any]]:
         dns_list = []
-        seen = set()
+        seen_doh = set()
+        seen_dot = set()
+
+        def add_entry(entry):
+            if not entry:
+                return
+
+            protocol = entry.get("protocol")
+
+            if protocol == "DoH":
+                key = cls._doh_key(entry)
+
+                if key in seen_doh:
+                    return
+
+                seen_doh.add(key)
+                dns_list.append(entry)
+
+            elif protocol == "DoT":
+                key = cls._dot_key(entry)
+
+                if key in seen_dot:
+                    return
+
+                seen_dot.add(key)
+                dns_list.append(entry)
 
         for table in soup.find_all("table"):
             rows = table.find_all("tr")
 
-            if len(rows) < 2:
+            if not rows:
                 continue
 
             headers = cls._extract_headers(rows[0])
@@ -203,10 +248,7 @@ class DOHParser:
                     continue
 
                 row_text = cls._clean_text(
-                    row.get_text(
-                        " ",
-                        strip=True
-                    )
+                    row.get_text(" ", strip=True)
                 )
 
                 provider = cls._extract_provider_from_row(
@@ -233,35 +275,56 @@ class DOHParser:
                     if not cls._is_dns_url(url):
                         continue
 
-                    entry = cls._build_entry(
-                        url,
-                        provider
+                    add_entry(
+                        cls._build_entry(
+                            url,
+                            provider
+                        )
                     )
 
-                    if not entry:
-                        continue
-
-                    key = cls._doh_key(entry)
-
-                    if key not in seen:
-                        seen.add(key)
-                        dns_list.append(entry)
-
-                dot_entries = cls._extract_dot_entries(
+                for dot_entry in cls._extract_dot_entries(
                     row,
                     row_text,
                     provider,
                     urls
+                ):
+                    add_entry(dot_entry)
+
+        for element in cls._get_generic_containers(soup):
+            text = cls._clean_text(
+                element.get_text(
+                    " ",
+                    strip=True
+                )
+            )
+
+            if not text:
+                continue
+
+            provider = cls._extract_provider_from_element(
+                element
+            )
+
+            urls = cls._extract_urls(element)
+
+            for url in urls:
+                if not cls._is_dns_url(url):
+                    continue
+
+                add_entry(
+                    cls._build_entry(
+                        url,
+                        provider
+                    )
                 )
 
-                for dot_entry in dot_entries:
-                    key = cls._dot_key(dot_entry)
-
-                    if key in seen:
-                        continue
-
-                    seen.add(key)
-                    dns_list.append(dot_entry)
+            for dot_entry in cls._extract_dot_entries(
+                element,
+                text,
+                provider,
+                urls
+            ):
+                add_entry(dot_entry)
 
         if dns_list:
             return dns_list
@@ -269,7 +332,89 @@ class DOHParser:
         return cls._parse_fallback(soup)
 
     @classmethod
-    def _extract_headers(cls, row) -> List[str]:
+    def _get_generic_containers(
+        cls,
+        soup: BeautifulSoup
+    ) -> List[Any]:
+        containers = []
+
+        for element in soup.find_all(
+            ["article", "li", "section", "div"]
+        ):
+            if element.find_parent("table"):
+                continue
+
+            text = cls._clean_text(
+                element.get_text(
+                    " ",
+                    strip=True
+                )
+            )
+
+            if not text:
+                continue
+
+            has_dns_signal = (
+                cls._contains_url(text)
+                or cls._contains_dot_endpoint(text)
+                or cls._supports_dot(text)
+                or "dns" in text.lower()
+            )
+
+            if not has_dns_signal:
+                continue
+
+            containers.append(element)
+
+        return containers
+
+    @classmethod
+    def _extract_provider_from_element(
+        cls,
+        element
+    ) -> str:
+        text = cls._clean_text(
+            element.get_text(
+                " ",
+                strip=True
+            )
+        )
+
+        if not text:
+            return "Unknown"
+
+        provider = cls._clean_provider(
+            text
+        )
+
+        provider = re.sub(
+            r'\b(?:standard|adblock|family|security|malware|adult|'
+            r'unfiltered|free|shekan|private|ipv4|ipv6|doh|dot|'
+            r'dns)\b',
+            ' ',
+            provider,
+            flags=re.IGNORECASE
+        )
+
+        provider = re.sub(
+            r'\s+',
+            ' ',
+            provider
+        ).strip()
+
+        if len(provider) > 100:
+            return "Unknown"
+
+        if not provider:
+            return "Unknown"
+
+        return provider
+
+    @classmethod
+    def _extract_headers(
+        cls,
+        row
+    ) -> List[str]:
         return [
             cls._clean_text(
                 cell.get_text(
@@ -400,6 +545,15 @@ class DOHParser:
             if len(text) > 200:
                 continue
 
+            if re.fullmatch(
+                r'(?:standard|adblock|family|security|malware|adult|'
+                r'unfiltered|free|shekan|private|ipv4|ipv6|doh|dot|'
+                r'dns|active|copy)+',
+                re.sub(r'\s+', '', text),
+                re.IGNORECASE
+            ):
+                continue
+
             candidates.append(text)
 
         if candidates:
@@ -484,25 +638,65 @@ class DOHParser:
                         )
                     )
 
-            link_text = cls._clean_text(
-                link.get_text(
-                    " ",
-                    strip=True
-                )
+        for match in cls.DOT_URL_PATTERN.finditer(
+            row_text
+        ):
+            host = match.group("host")
+            port = match.group("port")
+
+            endpoint = cls._make_dot_endpoint(
+                host,
+                int(port)
+                if port
+                else cls.DEFAULT_DOT_PORT
             )
 
-            if link_text:
-                candidates.extend(
-                    cls._extract_bare_dot_candidates(
-                        link_text
+            if endpoint:
+                candidates.append(
+                    (
+                        endpoint,
+                        False
                     )
                 )
 
-        candidates.extend(
-            cls._extract_bare_dot_candidates(
-                row_text
+        for match in cls.DOT_853_PATTERN.finditer(
+            row_text
+        ):
+            host = match.group("host")
+
+            endpoint = cls._make_dot_endpoint(
+                host,
+                cls.DEFAULT_DOT_PORT
             )
-        )
+
+            if endpoint:
+                candidates.append(
+                    (
+                        endpoint,
+                        False
+                    )
+                )
+
+        for match in cls.DOT_HOST_PORT_PATTERN.finditer(
+            row_text
+        ):
+            host = match.group("host")
+            port = int(
+                match.group("port")
+            )
+
+            endpoint = cls._make_dot_endpoint(
+                host,
+                port
+            )
+
+            if endpoint:
+                candidates.append(
+                    (
+                        endpoint,
+                        False
+                    )
+                )
 
         labeled_hosts = cls._extract_labeled_dot_hosts(
             row_text
@@ -569,66 +763,6 @@ class DOHParser:
             result.append(entry)
 
         return result
-
-    @classmethod
-    def _extract_bare_dot_candidates(
-        cls,
-        text: str
-    ) -> List[tuple]:
-        candidates = []
-
-        if not text:
-            return candidates
-
-        for match in cls.DOT_URL_PATTERN.finditer(
-            text
-        ):
-            host = match.group("host")
-            port = match.group("port")
-
-            endpoint = cls._make_dot_endpoint(
-                host,
-                int(port)
-                if port
-                else cls.DEFAULT_DOT_PORT
-            )
-
-            if endpoint:
-                candidates.append(
-                    (
-                        endpoint,
-                        False
-                    )
-                )
-
-        for match in cls.DOT_HOST_PORT_PATTERN.finditer(
-            text
-        ):
-            host = match.group("host")
-            port = match.group("port")
-
-            try:
-                port = int(port)
-            except (
-                ValueError,
-                TypeError
-            ):
-                continue
-
-            endpoint = cls._make_dot_endpoint(
-                host,
-                port
-            )
-
-            if endpoint:
-                candidates.append(
-                    (
-                        endpoint,
-                        False
-                    )
-                )
-
-        return candidates
 
     @classmethod
     def _extract_labeled_dot_hosts(
@@ -724,11 +858,20 @@ class DOHParser:
             ):
                 return None
 
-            if ".." in host:
+            labels = host.split(".")
+
+            if any(
+                not label
+                or len(label) > 63
+                or label.startswith("-")
+                or label.endswith("-")
+                for label in labels
+            ):
                 return None
 
         try:
             port = int(port)
+
         except (
             ValueError,
             TypeError
@@ -814,7 +957,15 @@ class DOHParser:
                 ):
                     return {}
 
-                if ".." in hostname:
+                labels = hostname.split(".")
+
+                if any(
+                    not label
+                    or len(label) > 63
+                    or label.startswith("-")
+                    or label.endswith("-")
+                    for label in labels
+                ):
                     return {}
 
             provider = cls._clean_provider(
@@ -860,66 +1011,80 @@ class DOHParser:
         soup: BeautifulSoup
     ) -> List[Dict[str, Any]]:
         dns_list = []
-        seen = set()
+        seen_doh = set()
+        seen_dot = set()
 
-        for table in soup.find_all("table"):
-            for row in table.find_all("tr"):
-                cells = row.find_all(
-                    ["td", "th"]
+        def add_entry(entry):
+            if not entry:
+                return
+
+            if entry.get("protocol") == "DoH":
+                key = cls._doh_key(entry)
+
+                if key in seen_doh:
+                    return
+
+                seen_doh.add(key)
+                dns_list.append(entry)
+
+            elif entry.get("protocol") == "DoT":
+                key = cls._dot_key(entry)
+
+                if key in seen_dot:
+                    return
+
+                seen_dot.add(key)
+                dns_list.append(entry)
+
+        for element in soup.find_all(
+            ["table", "article", "li", "section", "div"]
+        ):
+            cells = element.find_all(
+                ["td", "th"]
+            )
+
+            row_text = cls._clean_text(
+                element.get_text(
+                    " ",
+                    strip=True
                 )
+            )
 
-                if not cells:
-                    continue
+            if not row_text:
+                continue
 
-                row_text = cls._clean_text(
-                    row.get_text(
-                        " ",
-                        strip=True
-                    )
-                )
+            urls = cls._extract_urls(element)
 
-                urls = cls._extract_urls(row)
+            provider = cls._extract_provider_from_element(
+                element
+            )
 
+            if cells:
                 provider = cls._extract_provider_from_row(
-                    row,
+                    element,
                     cells,
                     None,
                     None
                 )
 
-                for url in urls:
-                    if not cls._is_dns_url(url):
-                        continue
+            for url in urls:
+                if not cls._is_dns_url(url):
+                    continue
 
-                    entry = cls._build_entry(
+                add_entry(
+                    cls._build_entry(
                         url,
                         provider
                     )
-
-                    if not entry:
-                        continue
-
-                    key = cls._doh_key(entry)
-
-                    if key not in seen:
-                        seen.add(key)
-                        dns_list.append(entry)
-
-                dot_entries = cls._extract_dot_entries(
-                    row,
-                    row_text,
-                    provider,
-                    urls
                 )
 
-                for entry in dot_entries:
-                    key = cls._dot_key(entry)
-
-                    if key in seen:
-                        continue
-
-                    seen.add(key)
-                    dns_list.append(entry)
+            for entry in cls._extract_dot_entries(
+                element,
+                row_text,
+                provider,
+                urls
+            ):
+                add_entry(entry)
 
         if dns_list:
             return dns_list
@@ -933,93 +1098,33 @@ class DOHParser:
                 ""
             ).strip()
 
-            link_text = cls._clean_text(
-                link.get_text(
-                    " ",
-                    strip=True
-                )
-            )
+            if not cls._is_dns_url(href):
+                continue
 
             provider = cls._find_provider(
                 link
             )
 
-            if cls._is_dns_url(href):
-                entry = cls._build_entry(
-                    href,
-                    provider
-                )
+            entry = cls._build_entry(
+                href,
+                provider
+            )
 
-                if entry:
-                    key = cls._doh_key(entry)
-
-                    if key not in seen:
-                        seen.add(key)
-                        dns_list.append(entry)
+            add_entry(entry)
 
             context = cls._get_link_context(
                 link
             )
 
-            dot_context = " ".join(
-                part
-                for part in (
-                    link_text,
-                    context,
-                    href
-                )
-                if part
-            )
-
             dot_entries = cls._extract_dot_entries(
                 link.parent,
-                dot_context,
+                context,
                 provider,
-                [href] if cls._is_http_url(href) else []
+                [href]
             )
 
             for dot_entry in dot_entries:
-                key = cls._dot_key(
-                    dot_entry
-                )
-
-                if key in seen:
-                    continue
-
-                seen.add(key)
-                dns_list.append(dot_entry)
-
-        if dns_list:
-            return dns_list
-
-        page_text = cls._clean_text(
-            soup.get_text(
-                " ",
-                strip=True
-            )
-        )
-
-        dot_candidates = cls._extract_bare_dot_candidates(
-            page_text
-        )
-
-        for endpoint, inferred in dot_candidates:
-            entry = cls._build_dot_entry(
-                endpoint,
-                "Unknown",
-                inferred=inferred
-            )
-
-            if not entry:
-                continue
-
-            key = cls._dot_key(entry)
-
-            if key in seen:
-                continue
-
-            seen.add(key)
-            dns_list.append(entry)
+                add_entry(dot_entry)
 
         return dns_list
 
@@ -1116,6 +1221,7 @@ class DOHParser:
         return bool(
             cls.DOT_URL_PATTERN.search(text)
             or cls.DOT_HOST_PORT_PATTERN.search(text)
+            or cls.DOT_853_PATTERN.search(text)
             or cls.DOT_LABELED_HOST_PATTERN.search(text)
         )
 
@@ -1253,6 +1359,7 @@ class DOHParser:
                     cls.DEFAULT_DOT_PORT
                 )
             )
+
         except (
             ValueError,
             TypeError
@@ -1305,7 +1412,10 @@ class DOHParser:
             query = parsed.query.lower()
 
             if any(
-                dns_host in host
+                dns_host == host
+                or host.endswith(
+                    "." + dns_host
+                )
                 for dns_host in cls.DNS_HOSTS
             ):
                 return True
