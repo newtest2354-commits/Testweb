@@ -24,21 +24,21 @@ class Deduplicator:
     def _generate_key(cls, entry: Dict[str, Any]) -> str:
         key_parts = []
         
-        if 'address' in entry:
+        if entry.get('address'):
             key_parts.append(str(entry['address']))
-        if 'doh_url' in entry:
+        if entry.get('doh_url'):
             key_parts.append(str(entry['doh_url']))
-        if 'dot' in entry:
+        if entry.get('dot'):
             key_parts.append(str(entry['dot']))
-        if 'hostname' in entry:
+        if entry.get('hostname'):
             key_parts.append(str(entry['hostname']).lower())
-        if 'name' in entry:
+        if entry.get('name'):
             key_parts.append(str(entry['name']).lower())
             
         if not key_parts:
             return str(hash(str(entry)))
             
-        return '_'.join(key_parts)
+        return '|'.join(key_parts)
     
     @classmethod
     def _merge_data(cls, existing: Dict[str, Any], new: Dict[str, Any]) -> None:
