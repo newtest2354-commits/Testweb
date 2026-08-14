@@ -9,6 +9,7 @@ from urllib.parse import urlparse
 
 class DOHParser:
     SOURCE_NAME = "curl"
+    DOT_DEFAULT_PORT = 853
 
     URL_PATTERN = re.compile(
         r'https?://[^\s<>"\'\)\]\}]+',
@@ -20,8 +21,10 @@ class DOHParser:
         r'(?P<host>'
         r'\[[0-9a-fA-F:]+\]'
         r'|'
-        r'[a-zA-Z0-9]'
-        r'(?:[a-zA-Z0-9.-]*[a-zA-Z0-9])?'
+        r'(?:[a-zA-Z0-9]'
+        r'(?:[a-zA-Z0-9.-]*[a-zA-Z0-9])?)'
+        r'|'
+        r'(?:\d{1,3}\.){3}\d{1,3}'
         r')'
         r'(?::(?P<port>\d{1,5}))?',
         re.IGNORECASE
@@ -316,6 +319,25 @@ class DOHParser:
             ):
                 add_entry(dot_entry)
 
+        full_text = cls._clean_text(
+            soup.get_text(
+                " ",
+                strip=True
+            )
+        )
+
+        if full_text:
+            provider = cls._extract_provider_from_element(
+                soup
+            )
+
+            for dot_entry in cls._extract_dot_entries(
+                soup,
+                full_text,
+                provider
+            ):
+                add_entry(dot_entry)
+
         if dns_list:
             return dns_list
 
@@ -329,7 +351,14 @@ class DOHParser:
         containers = []
 
         for element in soup.find_all(
-            ["article", "li", "section", "div"]
+            [
+                "article",
+                "li",
+                "section",
+                "div",
+                "pre",
+                "code"
+            ]
         ):
             if element.find_parent("table"):
                 continue
@@ -349,6 +378,7 @@ class DOHParser:
                 or cls._contains_dot_endpoint(text)
                 or cls._supports_dot(text)
                 or "dns" in text.lower()
+                or "tls://" in text.lower()
             )
 
             if has_dns_signal:
@@ -667,7 +697,7 @@ class DOHParser:
             ):
                 continue
 
-            endpoint = cls._parse_dot_endpoint(
+            endpoint = cls._clean_dot_endpoint(
                 href
             )
 
@@ -677,14 +707,8 @@ class DOHParser:
         for match in cls.DOT_URL_PATTERN.finditer(
             row_text
         ):
-            port = match.group("port")
-
-            if not port:
-                continue
-
-            endpoint = cls._make_dot_endpoint(
-                match.group("host"),
-                port
+            endpoint = cls._clean_dot_endpoint(
+                match.group(0)
             )
 
             if endpoint:
@@ -693,9 +717,8 @@ class DOHParser:
         for match in cls.DOT_HOST_PORT_PATTERN.finditer(
             row_text
         ):
-            endpoint = cls._make_dot_endpoint(
-                match.group("host"),
-                match.group("port")
+            endpoint = cls._clean_dot_endpoint(
+                match.group(0)
             )
 
             if endpoint:
@@ -747,8 +770,11 @@ class DOHParser:
             host = match.group("host")
             port = match.group("port")
 
-            if not host or not port:
+            if not host:
                 continue
+
+            if not port:
+                port = cls.DOT_DEFAULT_PORT
 
             hosts.append(
                 (
@@ -762,10 +788,64 @@ class DOHParser:
         )
 
     @classmethod
+    def _clean_dot_endpoint(
+        cls,
+        endpoint: str
+    ) -> Optional[str]:
+        endpoint = str(
+            endpoint or ""
+        ).strip()
+
+        if not endpoint:
+            return None
+
+        endpoint = endpoint.rstrip(
+            ".,;)]}\"'"
+        )
+
+        if not endpoint.lower().startswith(
+            "tls://"
+        ):
+            return endpoint
+
+        match = cls.DOT_URL_PATTERN.fullmatch(
+            endpoint
+        )
+
+        if not match:
+            return None
+
+        host = match.group("host")
+        port = match.group("port")
+
+        if not port:
+            return f"tls://{host}"
+
+        try:
+            port_value = int(port)
+        except (
+            ValueError,
+            TypeError
+        ):
+            return None
+
+        if not 1 <= port_value <= 65535:
+            return None
+
+        return endpoint
+
+    @classmethod
     def _parse_dot_endpoint(
         cls,
         endpoint: str
     ) -> Optional[str]:
+        endpoint = cls._clean_dot_endpoint(
+            endpoint
+        )
+
+        if not endpoint:
+            return None
+
         try:
             parsed = urlparse(endpoint)
 
@@ -775,13 +855,11 @@ class DOHParser:
             if not parsed.hostname:
                 return None
 
-            if parsed.port is None:
-                return None
+            if parsed.port is not None:
+                if not 1 <= parsed.port <= 65535:
+                    return None
 
-            return cls._make_dot_endpoint(
-                parsed.hostname,
-                parsed.port
-            )
+            return endpoint
 
         except (
             ValueError,
@@ -864,41 +942,60 @@ class DOHParser:
 
             original_endpoint = endpoint
 
+            parsed = None
+
             if endpoint.lower().startswith(
                 "tls://"
             ):
-                endpoint = endpoint[6:]
+                parsed = urlparse(endpoint)
 
-            endpoint = endpoint.rstrip("/")
-
-            if endpoint.startswith("["):
-                match = re.match(
-                    r"^\[([0-9a-fA-F:]+)\]"
-                    r":(\d+)$",
-                    endpoint
-                )
-
-                if not match:
+                if parsed.scheme.lower() != "tls":
                     return {}
 
-                hostname = match.group(1)
-                port = int(
-                    match.group(2)
+                hostname = parsed.hostname
+
+                if not hostname:
+                    return {}
+
+                port = (
+                    parsed.port
+                    if parsed.port is not None
+                    else cls.DOT_DEFAULT_PORT
                 )
 
             else:
-                if ":" not in endpoint:
-                    return {}
+                endpoint = endpoint.rstrip("/")
 
-                hostname, port_text = endpoint.rsplit(
-                    ":",
-                    1
-                )
+                if endpoint.startswith("["):
+                    match = re.match(
+                        r"^\[([0-9a-fA-F:]+)\]"
+                        r":(\d+)$",
+                        endpoint
+                    )
 
-                if not port_text.isdigit():
-                    return {}
+                    if not match:
+                        return {}
 
-                port = int(port_text)
+                    hostname = match.group(1)
+                    port = int(
+                        match.group(2)
+                    )
+
+                else:
+                    if ":" not in endpoint:
+                        return {}
+
+                    hostname, port_text = endpoint.rsplit(
+                        ":",
+                        1
+                    )
+
+                    if not port_text.isdigit():
+                        return {}
+
+                    port = int(
+                        port_text
+                    )
 
             hostname = hostname.strip()
 
@@ -997,7 +1094,15 @@ class DOHParser:
                 dns_list.append(entry)
 
         for element in soup.find_all(
-            ["table", "article", "li", "section", "div"]
+            [
+                "table",
+                "article",
+                "li",
+                "section",
+                "div",
+                "pre",
+                "code"
+            ]
         ):
             row_text = cls._clean_text(
                 element.get_text(
@@ -1049,6 +1154,24 @@ class DOHParser:
 
         if dns_list:
             return dns_list
+
+        full_text = cls._clean_text(
+            soup.get_text(
+                " ",
+                strip=True
+            )
+        )
+
+        provider = cls._extract_provider_from_element(
+            soup
+        )
+
+        for entry in cls._extract_dot_entries(
+            soup,
+            full_text,
+            provider
+        ):
+            add_entry(entry)
 
         for link in soup.find_all(
             "a",
