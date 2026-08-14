@@ -1,4 +1,6 @@
 from typing import List, Dict, Any
+import hashlib
+import json
 
 
 class Deduplicator:
@@ -14,19 +16,8 @@ class Deduplicator:
             key = cls._generate_key(entry)
 
             if key not in unique_map:
-                item = entry.copy()
-
-                sources = item.get("sources", [])
-
-                if not isinstance(sources, list):
-                    sources = [sources] if sources else []
-
-                source = item.get("source")
-
-                if source and source not in sources:
-                    sources.append(source)
-
-                item["sources"] = sources
+                item = dict(entry)
+                item["sources"] = cls._collect_sources(entry)
                 unique_map[key] = item
                 continue
 
@@ -39,52 +30,110 @@ class Deduplicator:
 
     @classmethod
     def _generate_key(cls, entry: Dict[str, Any]) -> str:
-        doh_url = str(
-            entry.get("doh_url", "")
-        ).strip().lower().rstrip("/")
+        doh_url = cls._clean(
+            entry.get("doh_url")
+        )
 
-        dot = str(
-            entry.get("dot", "")
-        ).strip().lower()
+        dot = cls._clean(
+            entry.get("dot")
+        )
 
-        address = str(
-            entry.get("address", "")
-        ).strip().lower()
+        address = cls._clean(
+            entry.get("address")
+        )
 
-        hostname = str(
-            entry.get("hostname", "")
-        ).strip().lower()
+        hostname = cls._clean(
+            entry.get("hostname")
+        )
 
-        protocol = str(
-            entry.get("protocol", "")
-        ).strip().lower()
+        protocol = cls._clean(
+            entry.get("protocol")
+        )
+
+        port = entry.get("port")
 
         if doh_url:
             return f"doh|{doh_url}"
 
         if dot:
-            return f"dot|{dot}"
+            return f"dot|{dot}|{port or ''}"
 
-        if address and protocol:
-            return f"{protocol}|{address}"
+        if protocol == "dnscrypt":
+            if address and port:
+                return f"dnscrypt|{address}|{port}"
 
-        if hostname and protocol:
-            return f"{protocol}|{hostname}"
+            if hostname:
+                return f"dnscrypt|{hostname}"
+
+        if protocol == "doh":
+            if address and port:
+                return f"doh|{address}|{port}"
+
+            if hostname:
+                return f"doh|{hostname}|{port or ''}"
+
+        if protocol == "dot":
+            if address and port:
+                return f"dot|{address}|{port}"
+
+            if hostname:
+                return f"dot|{hostname}|{port or ''}"
 
         if address:
-            return f"address|{address}"
+            return f"address|{address}|{port or ''}"
 
         if hostname:
-            return f"hostname|{hostname}"
+            return f"hostname|{hostname}|{port or ''}"
 
-        name = str(
-            entry.get("name", "")
-        ).strip().lower()
+        name = cls._clean(
+            entry.get("name")
+        )
 
         if name:
             return f"name|{name}"
 
-        return str(hash(frozenset(entry.items())))
+        payload = json.dumps(
+            entry,
+            ensure_ascii=False,
+            sort_keys=True,
+            default=str,
+            separators=(",", ":")
+        )
+
+        return "unknown|" + hashlib.sha256(
+            payload.encode("utf-8")
+        ).hexdigest()
+
+    @classmethod
+    def _clean(cls, value: Any) -> str:
+        if value is None:
+            return ""
+
+        return str(value).strip().lower().rstrip("/")
+
+    @classmethod
+    def _collect_sources(
+        cls,
+        entry: Dict[str, Any]
+    ) -> List[str]:
+        sources = []
+
+        source = entry.get("source")
+
+        if source:
+            sources.append(str(source))
+
+        entry_sources = entry.get("sources", [])
+
+        if isinstance(entry_sources, str):
+            entry_sources = [entry_sources]
+
+        if isinstance(entry_sources, list):
+            for item in entry_sources:
+                if item and item not in sources:
+                    sources.append(str(item))
+
+        return sources
 
     @classmethod
     def _merge_sources(
@@ -92,22 +141,11 @@ class Deduplicator:
         existing: Dict[str, Any],
         new: Dict[str, Any]
     ) -> None:
-        sources = existing.get("sources", [])
+        sources = cls._collect_sources(existing)
 
-        if not isinstance(sources, list):
-            sources = [sources] if sources else []
-
-        source = new.get("source")
-
-        if source and source not in sources:
-            sources.append(source)
-
-        new_sources = new.get("sources", [])
-
-        if isinstance(new_sources, list):
-            for item in new_sources:
-                if item and item not in sources:
-                    sources.append(item)
+        for source in cls._collect_sources(new):
+            if source not in sources:
+                sources.append(source)
 
         existing["sources"] = sources
 
@@ -119,16 +157,16 @@ class Deduplicator:
     ) -> None:
         for key, value in new.items():
 
-            if key in (
-                "source",
-                "sources"
-            ):
+            if key in ("source", "sources"):
                 continue
 
             if value is None or value == "":
                 continue
 
-            if key not in existing or not existing[key]:
+            if key not in existing or existing[key] in (
+                None,
+                ""
+            ):
                 existing[key] = value
                 continue
 
@@ -138,12 +176,11 @@ class Deduplicator:
                 continue
 
             if isinstance(current, list):
-                if isinstance(value, list):
-                    for item in value:
-                        if item not in current:
-                            current.append(item)
-                elif value not in current:
-                    current.append(value)
+                values = value if isinstance(value, list) else [value]
+
+                for item in values:
+                    if item not in current:
+                        current.append(item)
 
                 continue
 
