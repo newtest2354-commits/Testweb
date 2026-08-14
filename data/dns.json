@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-08-14T08:52:56.074527+00:00",
-  "total": 946,
+  "updated_at": "2026-08-14T09:09:37.104491+00:00",
+  "total": 1014,
   "categories": {
     "AdBlock": 56,
     "Adult Filter": 37,
@@ -9,7 +9,7 @@
     "Malware": 35,
     "Private": 2,
     "Security": 56,
-    "Standard": 768,
+    "Standard": 836,
     "Unfiltered": 71
   },
   "dns": [
@@ -14761,6 +14761,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "d82aa687689711993c4c7a7d9a4f08b4",
+      "address": "angry.im",
+      "type": "DoT",
+      "provider": "angry.im",
+      "name": "angry.im",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "angry.im",
+      "description": "DoT server provided by Angry.im",
+      "hostname": "angry.im"
+    },
+    {
       "id": "154c43e7cb1e77807fe35b050155c4db",
       "address": "dns.anon.no",
       "type": "DoH",
@@ -14784,6 +14805,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "c63027c1577b876a7f81daab66a670df",
+      "address": "anon.no",
+      "type": "DoT",
+      "provider": "anon.no",
+      "name": "anon.no",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "anon.no",
+      "description": "DoT server provided by anon.no",
+      "hostname": "anon.no"
+    },
+    {
       "id": "84553e0c82fd809276f0ce144c5d82f0",
       "address": "dns.applewebkit.dev",
       "type": "DoH",
@@ -14805,6 +14847,27 @@
       "hostname": "dns.applewebkit.dev",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "6f3e480d9cd3b8b0bea1d227f7bf5944",
+      "address": "applewebkit.dev",
+      "type": "DoT",
+      "provider": "applewebkit.dev",
+      "name": "applewebkit.dev",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "applewebkit.dev",
+      "description": "DoT server provided by applewebkit.dev",
+      "hostname": "applewebkit.dev"
     },
     {
       "id": "faf048a4ad51e0c994f3b2d817f3a01a",
@@ -14853,6 +14916,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "d099d585540e563007e4b1b4d8b75cab",
+      "address": "arnor.org",
+      "type": "DoT",
+      "provider": "arnor.org",
+      "name": "arnor.org",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "arnor.org",
+      "description": "DoT server provided by arnor.org",
+      "hostname": "arnor.org"
+    },
+    {
       "id": "73b3e6e0fb288640b623033dbdb6125d",
       "address": "dns.asterimoon.com",
       "type": "DoH",
@@ -14899,6 +14983,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "1adc5b9c8197209f487268b8e3751ea4",
+      "address": "a47.me",
+      "type": "DoT",
+      "provider": "a47.me",
+      "name": "a47.me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "a47.me",
+      "description": "DoT server provided by a47.me",
+      "hostname": "a47.me"
+    },
+    {
       "id": "e20eabcd6ef2866984c877a84eda1962",
       "address": "bazooki-infra.dev",
       "type": "DoH",
@@ -14920,6 +15025,27 @@
       "hostname": "bazooki-infra.dev",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "b78b059f221d27284a73d01b527628e3",
+      "address": "bazooki-infra.dev",
+      "type": "DoT",
+      "provider": "bazooki-infra.dev",
+      "name": "bazooki-infra.dev",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "bazooki-infra.dev",
+      "description": "DoT server provided by bazooki-infra.dev",
+      "hostname": "bazooki-infra.dev"
     },
     {
       "id": "0bf282a0f316f664c38643f8f7bf3ad3",
@@ -15083,6 +15209,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "bcffbdc1d0bd097a583cf04c1b888b9b",
+      "address": "brembeck.cloud",
+      "type": "DoT",
+      "provider": "brembeck.cloud",
+      "name": "brembeck.cloud",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "brembeck.cloud",
+      "description": "DoT server provided by brembeck.cloud",
+      "hostname": "brembeck.cloud"
+    },
+    {
       "id": "e47838df25e1b5a90e48bfccfba1ecf5",
       "address": "dns.busold.ws",
       "type": "DoH",
@@ -15104,6 +15251,27 @@
       "hostname": "dns.busold.ws",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "494c7a8ec6eda746b43d033e37d6bde8",
+      "address": "busold.ws",
+      "type": "DoT",
+      "provider": "busold.ws",
+      "name": "busold.ws",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "busold.ws",
+      "description": "DoT server provided by busold.ws",
+      "hostname": "busold.ws"
     },
     {
       "id": "9a3a900a32f5e41653120656a5446ebb",
@@ -15150,6 +15318,27 @@
       "hostname": "dns.caspervk.net",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "e2cb51409095ff2435be2e58f5bdcee1",
+      "address": "caspervk.net",
+      "type": "DoT",
+      "provider": "caspervk.net",
+      "name": "caspervk.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "caspervk.net",
+      "description": "DoT server provided by caspervk.net",
+      "hostname": "caspervk.net"
     },
     {
       "id": "67d8c6717ce0f3096ff5f309a77aa4b1",
@@ -15242,6 +15431,27 @@
       "hostname": "dns.chenu.ch",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "ba014c215dd3ba8dfd005ee40ccd97b1",
+      "address": "chenu.ch",
+      "type": "DoT",
+      "provider": "chenu.ch",
+      "name": "chenu.ch",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "chenu.ch",
+      "description": "DoT server provided by chenu.ch",
+      "hostname": "chenu.ch"
     },
     {
       "id": "9875f7c1020e77c9543be72d4bb63f99",
@@ -15428,6 +15638,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "ad6ee3a8abc87ebd58c3ba5456bd8ed0",
+      "address": "comss.one",
+      "type": "DoT",
+      "provider": "comss.one",
+      "name": "comss.one",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "comss.one",
+      "description": "DoT server provided by Comss.one",
+      "hostname": "comss.one"
+    },
+    {
       "id": "97dcb3badfa3acd3180c5d08e5d47198",
       "address": "dns.cynthialabs.net",
       "type": "DoH",
@@ -15449,6 +15680,27 @@
       "hostname": "dns.cynthialabs.net",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "9c0ba1f9897bf4fc87dfc38a62ff0d0e",
+      "address": "cz.nic",
+      "type": "DoT",
+      "provider": "cz.nic",
+      "name": "cz.nic",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "cz.nic",
+      "description": "DoT server provided by CZ.NIC",
+      "hostname": "cz.nic"
     },
     {
       "id": "c64cb5745ed0970933cb2c309a97aeec",
@@ -15474,6 +15726,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "c9ad74492f24f61d0c4407fdacd2e65c",
+      "address": "data.haus",
+      "type": "DoT",
+      "provider": "data.haus",
+      "name": "data.haus",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "data.haus",
+      "description": "DoT server provided by data.haus",
+      "hostname": "data.haus"
+    },
+    {
       "id": "36790a68ce9210860351d5414113cc6c",
       "address": "dns.datenquark.de",
       "type": "DoH",
@@ -15495,6 +15768,27 @@
       "hostname": "dns.datenquark.de",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "c51378a80eb1977d74c4c19f1843ef25",
+      "address": "datenquark.de",
+      "type": "DoT",
+      "provider": "datenquark.de",
+      "name": "datenquark.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "datenquark.de",
+      "description": "DoT server provided by datenquark.de",
+      "hostname": "datenquark.de"
     },
     {
       "id": "b10e8fae982c98fd24cf0d909de5916a",
@@ -15543,6 +15837,48 @@
       "path": "/dns-query"
     },
     {
+      "id": "db49e259efa1bb4cc3fa70057820d1c9",
+      "address": "disconnect.app",
+      "type": "DoT",
+      "provider": "disconnect.app",
+      "name": "disconnect.app",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "disconnect.app",
+      "description": "DoT server provided by Disconnect.app",
+      "hostname": "disconnect.app"
+    },
+    {
+      "id": "112d340de55a34d77ea351c3fb9fc0fc",
+      "address": "dns.digitalsize.net",
+      "type": "DoT",
+      "provider": ".digitalsize.net",
+      "name": ".digitalsize.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dns.digitalsize.net",
+      "description": "DoT server provided by .digitalsize.net",
+      "hostname": "dns.digitalsize.net"
+    },
+    {
       "id": "128333b62b059c783055ad7eab11a5cc",
       "address": "doh.dns.sb",
       "type": "DoH",
@@ -15564,6 +15900,27 @@
       "hostname": "doh.dns.sb",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "d1930df6354974f5d4032d38f24cd436",
+      "address": "dns.sb",
+      "type": "DoT",
+      "provider": ".sb",
+      "name": ".sb",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dns.sb",
+      "description": "DoT server provided by .SB",
+      "hostname": "dns.sb"
     },
     {
       "id": "28e95199888c01178242619e55383826",
@@ -15658,6 +16015,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "3019d6a3ff9d047f45788d30637dfcd7",
+      "address": "dns.flatuslifir.is",
+      "type": "DoT",
+      "provider": ".flatuslifir.is",
+      "name": ".flatuslifir.is",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dns.flatuslifir.is",
+      "description": "DoT server provided by .flatuslifir.is",
+      "hostname": "dns.flatuslifir.is"
+    },
+    {
       "id": "4c5e88043551e586fba9c3da4f855165",
       "address": "clean.dnsforge.de",
       "type": "DoH",
@@ -15702,6 +16080,69 @@
       "hostname": "hard.dnsforge.de",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "6784c43928dc539090745710e4821a38",
+      "address": "dnsforge.de",
+      "type": "DoT",
+      "provider": "dnsforge.de",
+      "name": "dnsforge.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dnsforge.de",
+      "description": "DoT server provided by dnsforge.de",
+      "hostname": "dnsforge.de"
+    },
+    {
+      "id": "2e1a389a3316fb7047f4b67d882df1b5",
+      "address": "dnshome.de",
+      "type": "DoT",
+      "provider": "dnshome.de",
+      "name": "dnshome.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dnshome.de",
+      "description": "DoT server provided by dnsHome.de",
+      "hostname": "dnshome.de"
+    },
+    {
+      "id": "c4080b6c09baee9b258140e66521a8fd",
+      "address": "dnslow.me",
+      "type": "DoT",
+      "provider": "dnslow.me",
+      "name": "dnslow.me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dnslow.me",
+      "description": "DoT server provided by dnslow.me",
+      "hostname": "dnslow.me"
     },
     {
       "id": "636f074005617a3415b84637eb7c0bab",
@@ -15819,6 +16260,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "51ff1dfabe4b89bc685bfb99d2f4ebdd",
+      "address": "doh.beauty",
+      "type": "DoT",
+      "provider": ".beauty",
+      "name": ".beauty",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "doh.beauty",
+      "description": "DoT server provided by .beauty",
+      "hostname": "doh.beauty"
+    },
+    {
       "id": "9a857371036de66cbfb92e6e35e2ce0f",
       "address": "doh.buzz",
       "type": "DoH",
@@ -15840,6 +16302,27 @@
       "hostname": "doh.buzz",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "1c94a47570517ef75ac4261454b85136",
+      "address": "doh.buzz",
+      "type": "DoT",
+      "provider": ".buzz",
+      "name": ".buzz",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "doh.buzz",
+      "description": "DoT server provided by .buzz",
+      "hostname": "doh.buzz"
     },
     {
       "id": "d014838d5a5607f2d2cc45cd135d0eb1",
@@ -15865,6 +16348,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "e7d508d7fc4527131eee2efac3c9b7c3",
+      "address": "domreg.lt",
+      "type": "DoT",
+      "provider": "domreg.lt",
+      "name": "domreg.lt",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "domreg.lt",
+      "description": "DoT server provided by domreg.lt",
+      "hostname": "domreg.lt"
+    },
+    {
       "id": "bd5c99cc6939dea73e90a9d6fb3ae10e",
       "address": "agh.dshubham.xyz",
       "type": "DoH",
@@ -15886,6 +16390,27 @@
       "hostname": "agh.dshubham.xyz",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "836e615d8509227f182e02b237e74bda",
+      "address": "dshubham.xyz",
+      "type": "DoT",
+      "provider": "dshubham.xyz",
+      "name": "dshubham.xyz",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dshubham.xyz",
+      "description": "DoT server provided by dshubham.xyz",
+      "hostname": "dshubham.xyz"
     },
     {
       "id": "f1f2cd8b6626c285d548df756eb904c4",
@@ -15911,6 +16436,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "c40054bdcc67689355d71244c917ae70",
+      "address": "dukun.de",
+      "type": "DoT",
+      "provider": "dukun.de",
+      "name": "dukun.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dukun.de",
+      "description": "DoT server provided by Dukun.de",
+      "hostname": "dukun.de"
+    },
+    {
       "id": "2cc4534fe9fd917b9374e31a864237ea",
       "address": "xn--durhre-yxa.de",
       "type": "DoH",
@@ -15934,6 +16480,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "353a2fc88d140a5404fd2f06108a82e3",
+      "address": "hre.de",
+      "type": "DoT",
+      "provider": "duröhre.de",
+      "name": "duröhre.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "hre.de",
+      "description": "DoT server provided by duröhre.de",
+      "hostname": "hre.de"
+    },
+    {
       "id": "ef09e4c2d9c760c9b67bd71c7a192716",
       "address": "dns.d94.xyz",
       "type": "DoH",
@@ -15955,6 +16522,27 @@
       "hostname": "dns.d94.xyz",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "e9d3de825f4d6b105bceec67302808e7",
+      "address": "d94.xyz",
+      "type": "DoT",
+      "provider": "d94.xyz",
+      "name": "d94.xyz",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "d94.xyz",
+      "description": "DoT server provided by d94.xyz",
+      "hostname": "d94.xyz"
     },
     {
       "id": "c00a6acd5b29503f16f34c46e8c4f162",
@@ -16026,6 +16614,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "3581dea87a79944357c70eb10ac3cf52",
+      "address": "envs.net",
+      "type": "DoT",
+      "provider": "envs.net",
+      "name": "envs.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "envs.net",
+      "description": "DoT server provided by envs.net",
+      "hostname": "envs.net"
+    },
+    {
       "id": "40fc0690609a4ad7b173597beed96f18",
       "address": "dns.faked.org",
       "type": "DoH",
@@ -16047,6 +16656,27 @@
       "hostname": "dns.faked.org",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "746ee249ae7a871a1884d7138656c20b",
+      "address": "faked.org",
+      "type": "DoT",
+      "provider": "faked.org",
+      "name": "faked.org",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "faked.org",
+      "description": "DoT server provided by faked.org",
+      "hostname": "faked.org"
     },
     {
       "id": "bbb7bbf444b71b58b9430af3c060558c",
@@ -16072,6 +16702,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "cb3d125dd33b088bb1dbe1a11ac2974a",
+      "address": "familiamv.net",
+      "type": "DoT",
+      "provider": "familiamv.net",
+      "name": "familiamv.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "familiamv.net",
+      "description": "DoT server provided by familiamv.net",
+      "hostname": "familiamv.net"
+    },
+    {
       "id": "9750330e2ab47f5daf853ce0edd8f6d2",
       "address": "dns.farshidhakimy.de",
       "type": "DoH",
@@ -16093,6 +16744,27 @@
       "hostname": "dns.farshidhakimy.de",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "c038f1035ba94ac3ef0a0bc54ccdf4ba",
+      "address": "farshidhakimy.de",
+      "type": "DoT",
+      "provider": "farshidhakimy.de",
+      "name": "farshidhakimy.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "farshidhakimy.de",
+      "description": "DoT server provided by farshidhakimy.de",
+      "hostname": "farshidhakimy.de"
     },
     {
       "id": "031e67a6b44253f8708e0acd71cc9477",
@@ -16141,6 +16813,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "2385a7258c9e9e957ccef7bcebd9ce41",
+      "address": "ffmuc.net",
+      "type": "DoT",
+      "provider": "ffmuc.net",
+      "name": "ffmuc.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "ffmuc.net",
+      "description": "DoT server provided by ffmuc.net",
+      "hostname": "ffmuc.net"
+    },
+    {
       "id": "7e2caa4e9eef3112d4682edbf7d83ccc",
       "address": "fidelius.top",
       "type": "DoH",
@@ -16164,6 +16857,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "3f86cd851b25f000eb96dc3d1a958e6b",
+      "address": "fidelius.top",
+      "type": "DoT",
+      "provider": "fidelius.top",
+      "name": "fidelius.top",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "fidelius.top",
+      "description": "DoT server provided by fidelius.top",
+      "hostname": "fidelius.top"
+    },
+    {
       "id": "b3a2e00c11de3cbf0163923123f28968",
       "address": "dns.floriantinney.de",
       "type": "DoH",
@@ -16185,6 +16899,27 @@
       "hostname": "dns.floriantinney.de",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "4feb25b16d8696b53d55480dc8a43d64",
+      "address": "floriantinney.de",
+      "type": "DoT",
+      "provider": "floriantinney.de",
+      "name": "floriantinney.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "floriantinney.de",
+      "description": "DoT server provided by floriantinney.de",
+      "hostname": "floriantinney.de"
     },
     {
       "id": "5c8901501a5c7c56a698582fdcfc92e0",
@@ -16279,6 +17014,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "32b8fcaa23ea113951cf9062bef0138a",
+      "address": "dot.futa.gg",
+      "type": "DoT",
+      "provider": "futadns",
+      "name": "futadns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dot.futa.gg",
+      "description": "DoT server provided by FutaDNS",
+      "hostname": "dot.futa.gg"
+    },
+    {
       "id": "1c4694a8bf4e52569c50dfcce3d4a66f",
       "address": "dns.gamban.com",
       "type": "DoH",
@@ -16325,6 +17081,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "244b68183fb0da6010833a24e96690cc",
+      "address": "gibblets.top",
+      "type": "DoT",
+      "provider": "gibblets.top",
+      "name": "gibblets.top",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "gibblets.top",
+      "description": "DoT server provided by gibblets.top",
+      "hostname": "gibblets.top"
+    },
+    {
       "id": "263dd57fb83c45ca7dae720c461732ce",
       "address": "glacius.top",
       "type": "DoH",
@@ -16346,6 +17123,27 @@
       "hostname": "glacius.top",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "fa9d1607c46043585725a87486e53fd2",
+      "address": "glacius.top",
+      "type": "DoT",
+      "provider": "glacius.top",
+      "name": "glacius.top",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "glacius.top",
+      "description": "DoT server provided by glacius.top",
+      "hostname": "glacius.top"
     },
     {
       "id": "574956ba5a2a204073bed62e2bab77f8",
@@ -16624,6 +17422,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "144d64e5ab23efe899a323a33c07eca4",
+      "address": "hostux.net",
+      "type": "DoT",
+      "provider": "hostux.net",
+      "name": "hostux.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "hostux.net",
+      "description": "DoT server provided by Hostux.net",
+      "hostname": "hostux.net"
+    },
+    {
       "id": "50ee9136e9d8c460a41b2a9023ffa1f2",
       "address": "doth.huque.com",
       "type": "DoH",
@@ -16668,6 +17487,27 @@
       "hostname": "imperio.top",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "e02dacb3a15170aad10515ec00b94346",
+      "address": "imperio.top",
+      "type": "DoT",
+      "provider": "imperio.top",
+      "name": "imperio.top",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "imperio.top",
+      "description": "DoT server provided by imperio.top",
+      "hostname": "imperio.top"
     },
     {
       "id": "7f0e639dca3b1c6bcb4599b4f3218b5a",
@@ -16760,6 +17600,27 @@
       "hostname": "dns.kapite.in",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "906dbfd343a382d39270289e6aa54df8",
+      "address": "kapite.in",
+      "type": "DoT",
+      "provider": "kapite.in",
+      "name": "kapite.in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "kapite.in",
+      "description": "DoT server provided by kapite.in",
+      "hostname": "kapite.in"
     },
     {
       "id": "7b1a5e819340d21302fd1426d5aa0049",
@@ -16877,6 +17738,48 @@
       "path": "/dns-query"
     },
     {
+      "id": "f254727d8b1216d6d13be9b7a3237723",
+      "address": "krctech.dev",
+      "type": "DoT",
+      "provider": "krctech.dev",
+      "name": "krctech.dev",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "krctech.dev",
+      "description": "DoT server provided by krctech.dev",
+      "hostname": "krctech.dev"
+    },
+    {
+      "id": "a0a5e1752035b8e2f7a4de0b6eb424d9",
+      "address": "liberador.net",
+      "type": "DoT",
+      "provider": "liberador.net",
+      "name": "liberador.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "liberador.net",
+      "description": "DoT server provided by Liberador.net",
+      "hostname": "liberador.net"
+    },
+    {
       "id": "f207bae1c338afe6809bd72358bc1195",
       "address": "loadlow.me",
       "type": "DoH",
@@ -16898,6 +17801,27 @@
       "hostname": "loadlow.me",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "31615ec73892f26b172e8b5ab985c6b8",
+      "address": "loadlow.me",
+      "type": "DoT",
+      "provider": "loadlow.me",
+      "name": "loadlow.me",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "loadlow.me",
+      "description": "DoT server provided by loadlow.me",
+      "hostname": "loadlow.me"
     },
     {
       "id": "75cc59a49c05c40841341b0b4c1f7f88",
@@ -16969,6 +17893,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "5e0f95dabf09f57cc847119e5387e65a",
+      "address": "l337.site",
+      "type": "DoT",
+      "provider": "l337.site",
+      "name": "l337.site",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "l337.site",
+      "description": "DoT server provided by l337.site",
+      "hostname": "l337.site"
+    },
+    {
       "id": "2e0eba4359a972cdc413d24d2bda5595",
       "address": "dns.marasov.id",
       "type": "DoH",
@@ -16990,6 +17935,27 @@
       "hostname": "dns.marasov.id",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "62904206a3a042fafce95abae98487ea",
+      "address": "marasov.id",
+      "type": "DoT",
+      "provider": "marasov.id",
+      "name": "marasov.id",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "marasov.id",
+      "description": "DoT server provided by marasov.id",
+      "hostname": "marasov.id"
     },
     {
       "id": "17460a99c9761b9a05e9a88f9654394f",
@@ -17038,6 +18004,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "4f3d51389f413c991bf03a82a1b3910a",
+      "address": "mateo.ovh",
+      "type": "DoT",
+      "provider": "mateo.ovh",
+      "name": "mateo.ovh",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "mateo.ovh",
+      "description": "DoT server provided by mateo.ovh",
+      "hostname": "mateo.ovh"
+    },
+    {
       "id": "548002957bfdd58f78abc9ffdf5605ff",
       "address": "dns.mayx.eu.org",
       "type": "DoH",
@@ -17084,6 +18071,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "b88741f21a4a2b78f8c9f7aae54fac89",
+      "address": "meddy94.de",
+      "type": "DoT",
+      "provider": "meddy94.de",
+      "name": "meddy94.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "meddy94.de",
+      "description": "DoT server provided by meddy94.de",
+      "hostname": "meddy94.de"
+    },
+    {
       "id": "932347cca9c48dafa8512a863f316b92",
       "address": "dns.mh4ckt3mh4ckt1c4s.xyz",
       "type": "DoH",
@@ -17105,6 +18113,27 @@
       "hostname": "dns.mh4ckt3mh4ckt1c4s.xyz",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "59b18f3ccf7bb71e3bbf08b34050cbe4",
+      "address": "mh4ckt3mh4ckt1c4s.xyz",
+      "type": "DoT",
+      "provider": "mh4ckt3mh4ckt1c4s.xyz",
+      "name": "mh4ckt3mh4ckt1c4s.xyz",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "mh4ckt3mh4ckt1c4s.xyz",
+      "description": "DoT server provided by mh4ckt3mh4ckt1c4s.xyz",
+      "hostname": "mh4ckt3mh4ckt1c4s.xyz"
     },
     {
       "id": "27fe0d0da8523dfe812ae435db1fe8d9",
@@ -17130,6 +18159,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "1c4892be6fd01a4b8181be27ae58c077",
+      "address": "m-it.ro",
+      "type": "DoT",
+      "provider": "m-it.ro",
+      "name": "m-it.ro",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "m-it.ro",
+      "description": "DoT server provided by m-it.ro",
+      "hostname": "m-it.ro"
+    },
+    {
       "id": "e78afbc65fc0bdf6c8d363ab8b0868b0",
       "address": "doh.mmmalia.com",
       "type": "DoH",
@@ -17151,6 +18201,27 @@
       "hostname": "doh.mmmalia.com",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "4ac0c8df68e5ce4cede43e7790d640fc",
+      "address": "mmmalia.com",
+      "type": "DoT",
+      "provider": "mmmalia.com",
+      "name": "mmmalia.com",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "mmmalia.com",
+      "description": "DoT server provided by mmmalia.com",
+      "hostname": "mmmalia.com"
     },
     {
       "id": "f5d0b51c6ec8ff2994d65bf45e42297e",
@@ -17243,6 +18314,27 @@
       "hostname": "family.mydns.network",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "4c3de57c975561a776f14661d6804111",
+      "address": "mydns.network",
+      "type": "DoT",
+      "provider": "mydns.network",
+      "name": "mydns.network",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "mydns.network",
+      "description": "DoT server provided by mydns.network",
+      "hostname": "mydns.network"
     },
     {
       "id": "d24df0b3f0e7ae8380ab1de43aa15a4c",
@@ -17567,6 +18659,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "61db4fb21c7472ff8c78a83532ce94dd",
+      "address": "nashkan.net",
+      "type": "DoT",
+      "provider": "nashkan.net",
+      "name": "nashkan.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "nashkan.net",
+      "description": "DoT server provided by nashkan.net",
+      "hostname": "nashkan.net"
+    },
+    {
       "id": "ab0a12c94594ca4d6bea217d8a423111",
       "address": "dns.neeb.it",
       "type": "DoH",
@@ -17588,6 +18701,27 @@
       "hostname": "dns.neeb.it",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "ce3064ac075a31da5e50519c96bbf1c6",
+      "address": "neeb.it",
+      "type": "DoT",
+      "provider": "neeb.it",
+      "name": "neeb.it",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "neeb.it",
+      "description": "DoT server provided by neeb.it",
+      "hostname": "neeb.it"
     },
     {
       "id": "a487904ab98d1c4bc95e4583332d828c",
@@ -17682,6 +18816,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "3325f11f601b23e34c0ee3dbe6460c19",
+      "address": "nic.lv",
+      "type": "DoT",
+      "provider": "nic.lv",
+      "name": "nic.lv",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "nic.lv",
+      "description": "DoT server provided by NIC.LV",
+      "hostname": "nic.lv"
+    },
+    {
       "id": "a313d6a6a59579304e131d4d77140d7a",
       "address": "doh-dilution-to-upstreams-adguardhome.nicolas-dorriere.fr",
       "type": "DoH",
@@ -17728,6 +18883,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "74854b08cbe13f6e8d5e7fa39b243269",
+      "address": "dot.niyawe.de",
+      "type": "DoT",
+      "provider": "niyawe",
+      "name": "niyawe",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dot.niyawe.de",
+      "description": "DoT server provided by NiYaWe",
+      "hostname": "dot.niyawe.de"
+    },
+    {
       "id": "ea4b9b03d0466f95d8a014389c16ebfa",
       "address": "dns.novg.net",
       "type": "DoH",
@@ -17751,6 +18927,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "8c3210c44ba5130415947ab9f78ad1a0",
+      "address": "novg.net",
+      "type": "DoT",
+      "provider": "novg.net",
+      "name": "novg.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "novg.net",
+      "description": "DoT server provided by novg.net",
+      "hostname": "novg.net"
+    },
+    {
       "id": "41609668b1b36c0c46c5af65549b4ba9",
       "address": "dns.ofdoom.net",
       "type": "DoH",
@@ -17772,6 +18969,27 @@
       "hostname": "dns.ofdoom.net",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "1feae80b23a2413bc72e3499ffe6ad3f",
+      "address": "ofdoom.net",
+      "type": "DoT",
+      "provider": "ofdoom.net",
+      "name": "ofdoom.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "ofdoom.net",
+      "description": "DoT server provided by ofdoom.net",
+      "hostname": "ofdoom.net"
     },
     {
       "id": "2359751fd14c6bfacb53ecf0b90a6cb4",
@@ -17820,6 +19038,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "9dee31d33436ac183684a6d243223126",
+      "address": "openbld.net",
+      "type": "DoT",
+      "provider": "openbld.net",
+      "name": "openbld.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "openbld.net",
+      "description": "DoT server provided by OpenBLD.net",
+      "hostname": "openbld.net"
+    },
+    {
       "id": "2254ed2d479abd8785f9d36f762573a7",
       "address": "ag.apollohct.com",
       "type": "DoH",
@@ -17864,6 +19103,27 @@
       "hostname": "dns4eu.online",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "052639de5d90a90628b857a371479c75",
+      "address": "o2cloud.fr",
+      "type": "DoT",
+      "provider": "o2cloud.fr",
+      "name": "o2cloud.fr",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "o2cloud.fr",
+      "description": "DoT server provided by o2cloud.fr",
+      "hostname": "o2cloud.fr"
     },
     {
       "id": "71d7c3bfc698b87435ba8a9b62dff3ef",
@@ -17958,6 +19218,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "1a70ec9e8e4117317f1bb37d82406c33",
+      "address": "petqa.ru",
+      "type": "DoT",
+      "provider": "petqa.ru",
+      "name": "petqa.ru",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "petqa.ru",
+      "description": "DoT server provided by petqa.ru",
+      "hostname": "petqa.ru"
+    },
+    {
       "id": "bf07c7ff6d8602f7ee463f62531a291a",
       "address": "kronos.plan9-dns.com",
       "type": "DoH",
@@ -18027,6 +19308,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "c158849df132c06ed70624a6bcbf9184",
+      "address": "pooblet.co.za",
+      "type": "DoT",
+      "provider": "pooblet.co.za",
+      "name": "pooblet.co.za",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "pooblet.co.za",
+      "description": "DoT server provided by pooblet.co.za",
+      "hostname": "pooblet.co.za"
+    },
+    {
       "id": "68f162c5b93f0b8feb60f43f3f3a9de7",
       "address": "dns.practicallyunhackable.com",
       "type": "DoH",
@@ -18071,6 +19373,132 @@
       "hostname": "dns.quad9.net",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "b3f4aabe70fa7dad3b4d8200d270542a",
+      "address": "9.9.9.9",
+      "type": "IPv4",
+      "provider": "quad9",
+      "name": "quad9",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "9.9.9.9",
+      "description": "DoT server provided by Quad9",
+      "hostname": "9.9.9.9"
+    },
+    {
+      "id": "b258722684c0770382ec7a670b835081",
+      "address": "9.9.9.10",
+      "type": "IPv4",
+      "provider": "quad9",
+      "name": "quad9",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "9.9.9.10",
+      "description": "DoT server provided by Quad9",
+      "hostname": "9.9.9.10"
+    },
+    {
+      "id": "0b38d89f937a6f1f2f303faeb8745075",
+      "address": "9.9.9.11",
+      "type": "IPv4",
+      "provider": "quad9",
+      "name": "quad9",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "9.9.9.11",
+      "description": "DoT server provided by Quad9",
+      "hostname": "9.9.9.11"
+    },
+    {
+      "id": "5f9af085db1d4658c56e2f29a1d70235",
+      "address": "9.9.9.12",
+      "type": "IPv4",
+      "provider": "quad9",
+      "name": "quad9",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "9.9.9.12",
+      "description": "DoT server provided by Quad9",
+      "hostname": "9.9.9.12"
+    },
+    {
+      "id": "aa7febcb1070f34c1929f91a694fcda6",
+      "address": "dns9.quad9.net",
+      "type": "DoT",
+      "provider": "quad9",
+      "name": "quad9",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dns9.quad9.net",
+      "description": "DoT server provided by Quad9",
+      "hostname": "dns9.quad9.net"
+    },
+    {
+      "id": "1bc70b64ab284d71c938fbde2243eae1",
+      "address": "dns.quad9.net",
+      "type": "DoT",
+      "provider": "quad9",
+      "name": "quad9",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dns.quad9.net",
+      "description": "DoT server provided by Quad9",
+      "hostname": "dns.quad9.net"
     },
     {
       "id": "da30ae830be6369a22cdab4a153d35b3",
@@ -18165,6 +19593,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "76240de44513123afde1a66f5fc41984",
+      "address": "redhosting.com.ar",
+      "type": "DoT",
+      "provider": "redhosting.com.ar",
+      "name": "redhosting.com.ar",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "redhosting.com.ar",
+      "description": "DoT server provided by redhosting.com.ar",
+      "hostname": "redhosting.com.ar"
+    },
+    {
       "id": "f088301c8485c75e5e4295f8ef089955",
       "address": "regiopolis.cloud",
       "type": "DoH",
@@ -18188,6 +19637,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "66dd9bf9ef7504ee9cd2b3747758c8bd",
+      "address": "regiopolis.cloud",
+      "type": "DoT",
+      "provider": "regiopolis.cloud",
+      "name": "regiopolis.cloud",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "regiopolis.cloud",
+      "description": "DoT server provided by regiopolis.cloud",
+      "hostname": "regiopolis.cloud"
+    },
+    {
       "id": "1021640f0e10b3826766ba1e3725c0b7",
       "address": "renardbleu.dev",
       "type": "DoH",
@@ -18209,6 +19679,27 @@
       "hostname": "renardbleu.dev",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "7e105750883eb1edf2b6b00cdce04a8b",
+      "address": "renardbleu.dev",
+      "type": "DoT",
+      "provider": "renardbleu.dev",
+      "name": "renardbleu.dev",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "renardbleu.dev",
+      "description": "DoT server provided by renardbleu.dev",
+      "hostname": "renardbleu.dev"
     },
     {
       "id": "10459c2fa7484df8b8643094cdd73ba5",
@@ -18257,6 +19748,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "b682bbd5c298ac6cc8d1c0da70346778",
+      "address": "revelio.top",
+      "type": "DoT",
+      "provider": "revelio.top",
+      "name": "revelio.top",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "revelio.top",
+      "description": "DoT server provided by revelio.top",
+      "hostname": "revelio.top"
+    },
+    {
       "id": "b95cbae60160a9b16045f7d8b0c9aa33",
       "address": "dns.rbn.gr",
       "type": "DoH",
@@ -18280,6 +19792,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "0599a0a343c36ee361edc11e9cfbf938",
+      "address": "robingroppe.de",
+      "type": "DoT",
+      "provider": "robingroppe.de",
+      "name": "robingroppe.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "robingroppe.de",
+      "description": "DoT server provided by RobinGroppe.de",
+      "hostname": "robingroppe.de"
+    },
+    {
       "id": "ce1160eba4c0c94ba0b4a4e67327d55f",
       "address": "dns.roedel.cloud",
       "type": "DoH",
@@ -18301,6 +19834,27 @@
       "hostname": "dns.roedel.cloud",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "89b231cd37490d2c5c941686e04b6a08",
+      "address": "roedel.cloud",
+      "type": "DoT",
+      "provider": "roedel.cloud",
+      "name": "roedel.cloud",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "roedel.cloud",
+      "description": "DoT server provided by roedel.cloud",
+      "hostname": "roedel.cloud"
     },
     {
       "id": "b8846b8099c591b0fa98532bfc631a7f",
@@ -18349,6 +19903,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "ffd39f6e8f331894abd097104550916b",
+      "address": "shoupperuser.com",
+      "type": "DoT",
+      "provider": "shoupperuser.com",
+      "name": "shoupperuser.com",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "shoupperuser.com",
+      "description": "DoT server provided by shoupperuser.com",
+      "hostname": "shoupperuser.com"
+    },
+    {
       "id": "43e503db756c8132836ee98ee92c8aaa",
       "address": "dns.silen.org",
       "type": "DoH",
@@ -18370,6 +19945,27 @@
       "hostname": "dns.silen.org",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "fba3255ae8660281c221bbf82b777dcd",
+      "address": "silen.org",
+      "type": "DoT",
+      "provider": "silen.org",
+      "name": "silen.org",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "silen.org",
+      "description": "DoT server provided by silen.org",
+      "hostname": "silen.org"
     },
     {
       "id": "9c5333c5a652baa2f0aea8b0e017ad07",
@@ -18395,6 +19991,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "dd727840e17049590804217b7a2a2081",
+      "address": "simplylinux.ch",
+      "type": "DoT",
+      "provider": "simplylinux.ch",
+      "name": "simplylinux.ch",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "simplylinux.ch",
+      "description": "DoT server provided by simplylinux.ch",
+      "hostname": "simplylinux.ch"
+    },
+    {
       "id": "ea04b27b21527d63161fba02f449e72d",
       "address": "dns.skrep.eu",
       "type": "DoH",
@@ -18418,6 +20035,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "d67cf3f0d97559a2c9cfebc75083c85c",
+      "address": "skrep.eu",
+      "type": "DoT",
+      "provider": "skrep.eu",
+      "name": "skrep.eu",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "skrep.eu",
+      "description": "DoT server provided by skrep.eu",
+      "hostname": "skrep.eu"
+    },
+    {
       "id": "8fd7aa7b79134ed7a4c2636ffd3f6363",
       "address": "dns.slinkyman.net",
       "type": "DoH",
@@ -18439,6 +20077,27 @@
       "hostname": "dns.slinkyman.net",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "97f4d9e47d55050c8fec6770a98cdafc",
+      "address": "slinkyman.net",
+      "type": "DoT",
+      "provider": "slinkyman.net",
+      "name": "slinkyman.net",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "slinkyman.net",
+      "description": "DoT server provided by Slinkyman.net",
+      "hostname": "slinkyman.net"
     },
     {
       "id": "7b2b14cb292db7631b05d104a196346d",
@@ -18533,6 +20192,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "1cff5ac7ddebf9dad588694bd12aa872",
+      "address": "stirringphoto.com",
+      "type": "DoT",
+      "provider": "stirringphoto.com",
+      "name": "stirringphoto.com",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "stirringphoto.com",
+      "description": "DoT server provided by stirringphoto.com",
+      "hostname": "stirringphoto.com"
+    },
+    {
       "id": "27f7034c68b40c0bb71e5e31c29b2e1e",
       "address": "dns.surfsharkdns.com",
       "type": "DoH",
@@ -18625,6 +20305,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "211194ce7f4f2da62538450b43f76484",
+      "address": "t53.de",
+      "type": "DoT",
+      "provider": "t53.de",
+      "name": "t53.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "t53.de",
+      "description": "DoT server provided by t53.de",
+      "hostname": "t53.de"
+    },
+    {
       "id": "a57b261a2e023dd6e665757b321df293",
       "address": "dns.telekom.de",
       "type": "DoH",
@@ -18694,6 +20395,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "0be66aaededf30e427e9a7a07a6d1513",
+      "address": "tls-data.de",
+      "type": "DoT",
+      "provider": "tls-data.de",
+      "name": "tls-data.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "tls-data.de",
+      "description": "DoT server provided by Tls-data.de",
+      "hostname": "tls-data.de"
+    },
+    {
       "id": "1b9ee21b7c3dd6589fa49c1d4ad3340c",
       "address": "dns.unx.io",
       "type": "DoH",
@@ -18715,6 +20437,27 @@
       "hostname": "dns.unx.io",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "2a72fe9c20ea48d8f536d05c6f026f13",
+      "address": "unx.io",
+      "type": "DoT",
+      "provider": "unx.io",
+      "name": "unx.io",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "unx.io",
+      "description": "DoT server provided by unx.io",
+      "hostname": "unx.io"
     },
     {
       "id": "09c35c66b20a24fe1e3240e7b067fa95",
@@ -18809,6 +20552,27 @@
       "path": "/dns-ecs"
     },
     {
+      "id": "701f75982b80d032f544175cece18558",
+      "address": "v.recipes",
+      "type": "DoT",
+      "provider": "v.recipes",
+      "name": "v.recipes",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "v.recipes",
+      "description": "DoT server provided by v.recipes",
+      "hostname": "v.recipes"
+    },
+    {
       "id": "136323316b94c1e3aa573fa2aaa05b45",
       "address": "dns.vaioswolke.xyz",
       "type": "DoH",
@@ -18830,6 +20594,27 @@
       "hostname": "dns.vaioswolke.xyz",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "06250649e8cb057940b67d0f785f0992",
+      "address": "vaioswolke.xyz",
+      "type": "DoT",
+      "provider": "vaioswolke.xyz",
+      "name": "vaioswolke.xyz",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "vaioswolke.xyz",
+      "description": "DoT server provided by vaioswolke.xyz",
+      "hostname": "vaioswolke.xyz"
     },
     {
       "id": "ee067b8276cd5ec8bbddffe258c90874",
@@ -18878,6 +20663,27 @@
       "path": "/dns-query"
     },
     {
+      "id": "4d279c8e75e0ac990e7c072e02c62f3c",
+      "address": "v0dka.ru",
+      "type": "DoT",
+      "provider": "v0dka.ru",
+      "name": "v0dka.ru",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "v0dka.ru",
+      "description": "DoT server provided by v0dka.ru",
+      "hostname": "v0dka.ru"
+    },
+    {
       "id": "66300a5f5c4fedf296f309b66a3171c4",
       "address": "abel.waringer-atg.de",
       "type": "DoH",
@@ -18899,6 +20705,27 @@
       "hostname": "abel.waringer-atg.de",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "a7d361a8ee69a3fa82dba036753b5979",
+      "address": "waringer-atg.de",
+      "type": "DoT",
+      "provider": "waringer-atg.de",
+      "name": "waringer-atg.de",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "waringer-atg.de",
+      "description": "DoT server provided by waringer-atg.de",
+      "hostname": "waringer-atg.de"
     },
     {
       "id": "54bf81ef47264be729d4d30e9f176cc3",
@@ -18945,6 +20772,27 @@
       "hostname": "zdn.ro",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "7df43f5a322da6abbbe2d2dc340e93af",
+      "address": "zdn.ro",
+      "type": "DoT",
+      "provider": "zdn.ro",
+      "name": "zdn.ro",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "zdn.ro",
+      "description": "DoT server provided by zdn.ro",
+      "hostname": "zdn.ro"
     },
     {
       "id": "11604cc65343de6ab6929d84470967cc",
@@ -19014,6 +20862,27 @@
       "hostname": "doh.seby.io",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "fc59a793a82ec0e2a0647ccbaeffa1d3",
+      "address": "dns.seby.io",
+      "type": "DoT",
+      "provider": "@publicarray .seby.io",
+      "name": "@publicarray .seby.io",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dns.seby.io",
+      "description": "DoT server provided by @publicarray .seby.io",
+      "hostname": "dns.seby.io"
     },
     {
       "id": "68fef1bdeaf32ff6e26295820b1ccb75",
@@ -19476,6 +21345,27 @@
       "path": "/dyne/dohd"
     },
     {
+      "id": "58fc05891117d171a97da9255183e698",
+      "address": "dyne.org",
+      "type": "DoT",
+      "provider": "dyne.org",
+      "name": "dyne.org",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dyne.org",
+      "description": "DoT server provided by Dyne.org",
+      "hostname": "dyne.org"
+    },
+    {
       "id": "bb600a2b1cc83c3f0442f22747920c1a",
       "address": "github.com",
       "type": "DoH",
@@ -19520,6 +21410,27 @@
       "hostname": "dohjs.org",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "0741bfc570db2f60c6afee855feb0746",
+      "address": "dohjs.org",
+      "type": "DoT",
+      "provider": "byu imaal",
+      "name": "byu imaal",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dohjs.org",
+      "description": "DoT server provided by BYU IMAAL",
+      "hostname": "dohjs.org"
     },
     {
       "id": "059751a70ff9d2f74e7de5fc17cf75bd",
@@ -20972,8 +22883,8 @@
       "path": "/cslev/encrypted_dns_resolvers"
     },
     {
-      "id": "235435d4c0cc258a12630bd0c16ee04e",
-      "address": "angry.im",
+      "id": "eb9697187c38260edc224a981a3d77e1",
+      "address": "dnscrypt.info",
       "type": "DoT",
       "provider": "sign in",
       "name": "sign in",
@@ -20988,516 +22899,9 @@
         "DoT"
       ],
       "status": "active",
-      "dot": "angry.im:853",
+      "dot": "dnscrypt.info",
       "description": "DoT server provided by Sign in",
-      "hostname": "angry.im",
-      "port": 853
-    },
-    {
-      "id": "a180ea39c8d457df1c1c1fc8a5ac220d",
-      "address": "a47.me",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "a47.me:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "a47.me",
-      "port": 853
-    },
-    {
-      "id": "620fcb3a42171b0ad7aa860163e16298",
-      "address": "brembeck.cloud",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "brembeck.cloud:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "brembeck.cloud",
-      "port": 853
-    },
-    {
-      "id": "987147a98cba67076bb3f86d4726a0d0",
-      "address": "comss.one",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "comss.one:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "comss.one",
-      "port": 853
-    },
-    {
-      "id": "b2ae17270f36e3162ac7178b41ffe7d6",
-      "address": "datenquark.de",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "datenquark.de:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "datenquark.de",
-      "port": 853
-    },
-    {
-      "id": "3f1dcf3258a88e35346f0234308f6489",
-      "address": "dns.flatuslifir.is",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "dns.flatuslifir.is:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "dns.flatuslifir.is",
-      "port": 853
-    },
-    {
-      "id": "3c44068075c6ff82ad6ca518d6726b33",
-      "address": "dnsforge.de",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "dnsforge.de:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "dnsforge.de",
-      "port": 853
-    },
-    {
-      "id": "eace4cc24fdf3e86ce20a97ea4d1ae60",
-      "address": "doh.beauty",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "doh.beauty:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "doh.beauty",
-      "port": 853
-    },
-    {
-      "id": "1b64ba8396709b496d155bdf566e8cb6",
-      "address": "dshubham.xyz",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "dshubham.xyz:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "dshubham.xyz",
-      "port": 853
-    },
-    {
-      "id": "5e6878b2bfbc035526dfe4d4e873d3b1",
-      "address": "envs.net",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "envs.net:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "envs.net",
-      "port": 853
-    },
-    {
-      "id": "ca6325e69dcbe9320e6c31414c82c509",
-      "address": "farshidhakimy.de",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "farshidhakimy.de:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "farshidhakimy.de",
-      "port": 853
-    },
-    {
-      "id": "c3c4e13b8266da57251630698df5c9f3",
-      "address": "loadlow.me",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "loadlow.me:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "loadlow.me",
-      "port": 853
-    },
-    {
-      "id": "becccc65a1884df10867524248b408cd",
-      "address": "mateo.ovh",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "mateo.ovh:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "mateo.ovh",
-      "port": 853
-    },
-    {
-      "id": "1979101035c1b09ac489d823f9a90b91",
-      "address": "mh4ckt3mh4ckt1c4s.xyz",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "mh4ckt3mh4ckt1c4s.xyz:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "mh4ckt3mh4ckt1c4s.xyz",
-      "port": 853
-    },
-    {
-      "id": "8ff58d01f2aa3d94e2748750d66c1eb2",
-      "address": "m-it.ro",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "m-it.ro:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "m-it.ro",
-      "port": 853
-    },
-    {
-      "id": "eb5d8ea685c27324c2566b7f0e59e82c",
-      "address": "mydns.network",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "mydns.network:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "mydns.network",
-      "port": 853
-    },
-    {
-      "id": "3a8646f5a7dc0c377d7567a1e3d09024",
-      "address": "openbld.net",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "openbld.net:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "openbld.net",
-      "port": 853
-    },
-    {
-      "id": "c7e1a6d2964d44dc1dea68c09328fbf7",
-      "address": "o2cloud.fr",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "o2cloud.fr:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "o2cloud.fr",
-      "port": 853
-    },
-    {
-      "id": "97ecf41acde3c7dff3de0273372e2740",
-      "address": "petqa.ru",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "petqa.ru:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "petqa.ru",
-      "port": 853
-    },
-    {
-      "id": "8c74690cf5ba126e010227b5bef1ef06",
-      "address": "regiopolis.cloud",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "regiopolis.cloud:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "regiopolis.cloud",
-      "port": 853
-    },
-    {
-      "id": "c6155d33236ed7c8473959bfde31749b",
-      "address": "roedel.cloud",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "roedel.cloud:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "roedel.cloud",
-      "port": 853
-    },
-    {
-      "id": "6dd3d76c6d2701e10ebdc03b4b8bafdb",
-      "address": "shoupperuser.com",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "shoupperuser.com:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "shoupperuser.com",
-      "port": 853
-    },
-    {
-      "id": "3780dad360752918662e21184bce36a1",
-      "address": "silen.org",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "silen.org:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "silen.org",
-      "port": 853
-    },
-    {
-      "id": "6b77d55f46e48de818b7f9c5b28c0b66",
-      "address": "tls-data.de",
-      "type": "DoT",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "tls-data.de:853",
-      "description": "DoT server provided by Sign in",
-      "hostname": "tls-data.de",
-      "port": 853
+      "hostname": "dnscrypt.info"
     }
   ]
 }
