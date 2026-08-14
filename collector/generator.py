@@ -1,9 +1,12 @@
 import json
-import uuid
 import os
 import hashlib
 from datetime import datetime, timezone
 from typing import List, Dict, Any
+
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, "data")
 
 
 class Generator:
@@ -12,68 +15,56 @@ class Generator:
         self.data = data
         self.stats = {}
 
-    def save(self) -> None:
-        current_data = self._generate_output()
+    def save(self):
         self._generate_stats()
 
-        current_hash = self._hash_data(
-            current_data["dns"]
-        )
+        current_data = self._generate_output()
 
-        existing_data = None
+        dns_path = os.path.join(DATA_DIR, "dns.json")
+        min_path = os.path.join(DATA_DIR, "dns.min.json")
+        stats_path = os.path.join(DATA_DIR, "stats.json")
 
-        if os.path.exists("../data/dns.json"):
+        old_data = None
+
+        if os.path.exists(dns_path):
             try:
-                with open(
-                    "../data/dns.json",
-                    "r",
-                    encoding="utf-8"
-                ) as f:
-                    existing_data = json.load(f)
+                with open(dns_path, "r", encoding="utf-8") as f:
+                    old_data = json.load(f)
             except (OSError, json.JSONDecodeError):
-                existing_data = None
+                old_data = None
 
-        if existing_data:
-            old_hash = self._hash_data(
-                existing_data.get("dns", [])
-            )
+        if old_data:
+            old_dns = old_data.get("dns", [])
+            new_dns = current_data.get("dns", [])
 
-            if current_hash == old_hash:
-                print("No changes detected, skipping save")
+            if self._hash_data(new_dns) == self._hash_data(old_dns):
+                self._save_json(stats_path, self.stats)
+                print("No DNS changes detected")
                 return
 
-        self._save_json(
-            "../data/dns.json",
-            current_data
-        )
+        self._save_json(dns_path, current_data)
 
-        self._save_json(
-            "../data/dns.min.json",
-            self._generate_minified(current_data)
-        )
+        minified_data = self._generate_minified(current_data)
+        self._save_json(min_path, minified_data)
 
-        self._save_json(
-            "../data/stats.json",
-            self.stats
-        )
+        self._save_json(stats_path, self.stats)
 
-    def _hash_data(
-        self,
-        data: List[Dict[str, Any]]
-    ) -> str:
+        print(f"Saved {len(self.data)} DNS entries")
 
+    def _hash_data(self, data: List[Dict[str, Any]]) -> str:
         normalized = []
 
-        for item in data:
-            item_copy = dict(item)
-            item_copy.pop("id", None)
-            normalized.append(item_copy)
+        for entry in data:
+            item = dict(entry)
+            item.pop("id", None)
+            normalized.append(item)
 
         normalized.sort(
             key=lambda x: (
                 str(x.get("address", "")),
                 str(x.get("hostname", "")),
                 str(x.get("doh_url", "")),
+                str(x.get("dot", "")),
                 str(x.get("name", ""))
             )
         )
@@ -85,36 +76,31 @@ class Generator:
             separators=(",", ":")
         )
 
-        return hashlib.sha256(
-            payload.encode("utf-8")
-        ).hexdigest()
+        return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
     def _generate_output(self) -> Dict[str, Any]:
         return {
             "version": 1,
-            "updated_at": datetime.now(
-                timezone.utc
-            ).isoformat(),
+            "updated_at": datetime.now(timezone.utc).isoformat(),
             "total": len(self.data),
             "categories": self._get_category_counts(),
             "dns": self._prepare_dns_entries()
         }
 
-    def _prepare_dns_entries(
-        self
-    ) -> List[Dict[str, Any]]:
-
+    def _prepare_dns_entries(self) -> List[Dict[str, Any]]:
         entries = []
 
         for entry in self.data:
-
             dns_entry = {
-                "id": self._generate_stable_id(entry),
+                "id": self._generate_id(entry),
                 "address": entry.get("address", ""),
                 "type": entry.get("type", "Unknown"),
                 "provider": entry.get("provider", ""),
                 "name": entry.get("name", ""),
-                "sources": self._normalize_sources(entry),
+                "sources": entry.get(
+                    "sources",
+                    [entry.get("source", "unknown")]
+                ),
                 "categories": entry.get(
                     "categories",
                     ["Standard"]
@@ -126,7 +112,7 @@ class Generator:
                 "status": "active"
             }
 
-            optional_fields = (
+            optional_fields = [
                 "doh_url",
                 "dot",
                 "dnscrypt",
@@ -135,7 +121,7 @@ class Generator:
                 "hostname",
                 "port",
                 "path"
-            )
+            ]
 
             for field in optional_fields:
                 value = entry.get(field)
@@ -147,17 +133,14 @@ class Generator:
 
         return entries
 
-    def _generate_stable_id(
-        self,
-        entry: Dict[str, Any]
-    ) -> str:
-
+    def _generate_id(self, entry: Dict[str, Any]) -> str:
         identity = {
             "address": entry.get("address", ""),
             "hostname": entry.get("hostname", ""),
             "doh_url": entry.get("doh_url", ""),
             "dot": entry.get("dot", ""),
-            "name": entry.get("name", "")
+            "name": entry.get("name", ""),
+            "provider": entry.get("provider", "")
         }
 
         payload = json.dumps(
@@ -167,38 +150,20 @@ class Generator:
             separators=(",", ":")
         )
 
-        digest = hashlib.sha256(
+        return hashlib.sha256(
             payload.encode("utf-8")
-        ).hexdigest()
-
-        return str(
-            uuid.UUID(digest[:32])
-        )
-
-    def _normalize_sources(
-        self,
-        entry: Dict[str, Any]
-    ) -> List[str]:
-
-        sources = entry.get("sources", [])
-
-        if not isinstance(sources, list):
-            sources = [sources] if sources else []
-
-        source = entry.get("source")
-
-        if source and source not in sources:
-            sources.append(source)
-
-        return list(
-            dict.fromkeys(
-                str(source)
-                for source in sources
-                if source
-            )
-        )
+        ).hexdigest()[:32]
 
     def _generate_stats(self) -> None:
+        sources = set()
+
+        for entry in self.data:
+            sources.update(
+                entry.get(
+                    "sources",
+                    [entry.get("source", "unknown")]
+                )
+            )
 
         self.stats = {
             "total_dns": len(self.data),
@@ -211,114 +176,67 @@ class Generator:
             "total_private": self._count_category("Private"),
             "total_family": self._count_category("Family"),
             "total_adblock": self._count_category("AdBlock"),
-            "total_adult_filter": self._count_category(
-                "Adult Filter"
-            ),
             "total_security": self._count_category("Security"),
             "total_malware": self._count_category("Malware"),
-            "total_unfiltered": self._count_category(
-                "Unfiltered"
-            ),
-            "total_freeshekan": self._count_category(
-                "FreeShekan"
-            ),
-            "total_sources": len(
-                {
-                    source
-                    for entry in self.data
-                    for source in entry.get(
-                        "sources",
-                        []
-                    )
-                    if source
-                }
-            ),
-            "last_updated": datetime.now(
-                timezone.utc
-            ).isoformat()
+            "total_freeshekan": self._count_category("FreeShekan"),
+            "total_sources": len(sources),
+            "last_updated": datetime.now(timezone.utc).isoformat()
         }
 
-    def _count_type(
-        self,
-        type_name: str
-    ) -> int:
-
+    def _count_type(self, type_name: str) -> int:
         return sum(
             1
             for entry in self.data
             if entry.get("type") == type_name
         )
 
-    def _count_protocol(
-        self,
-        protocol: str
-    ) -> int:
-
+    def _count_protocol(self, protocol: str) -> int:
         return sum(
             1
             for entry in self.data
-            if protocol in entry.get(
-                "protocols",
-                []
-            )
+            if protocol in entry.get("protocols", [])
         )
 
-    def _count_category(
-        self,
-        category: str
-    ) -> int:
-
+    def _count_category(self, category: str) -> int:
         return sum(
             1
             for entry in self.data
-            if category in entry.get(
-                "categories",
-                []
-            )
+            if category in entry.get("categories", [])
         )
 
-    def _get_category_counts(
-        self
-    ) -> Dict[str, int]:
-
+    def _get_category_counts(self) -> Dict[str, int]:
         counts = {}
 
         for entry in self.data:
-            for category in entry.get(
-                "categories",
-                []
-            ):
-                counts[category] = (
-                    counts.get(category, 0) + 1
-                )
+            for category in entry.get("categories", []):
+                counts[category] = counts.get(category, 0) + 1
 
-        return dict(
-            sorted(
-                counts.items(),
-                key=lambda item: item[0].lower()
-            )
-        )
+        return dict(sorted(counts.items()))
 
     def _generate_minified(
         self,
         current_data: Dict[str, Any]
     ) -> Dict[str, Any]:
+        output = {
+            "version": current_data.get("version", 1),
+            "updated_at": current_data.get("updated_at"),
+            "total": current_data.get("total", 0),
+            "categories": current_data.get("categories", {}),
+            "dns": []
+        }
 
-        output = json.loads(
-            json.dumps(
-                current_data,
-                ensure_ascii=False
-            )
-        )
+        for dns in current_data.get("dns", []):
+            item = dict(dns)
 
-        for dns in output.get("dns", []):
             for key in (
                 "description",
                 "source",
                 "path",
                 "port"
             ):
-                dns.pop(key, None)
+                item.pop(key, None)
+
+            output["dns"].append(item)
 
         return output
 
@@ -327,17 +245,15 @@ class Generator:
         filepath: str,
         data: Dict[str, Any]
     ) -> None:
+        os.makedirs(
+            os.path.dirname(filepath),
+            exist_ok=True
+        )
 
-        directory = os.path.dirname(filepath)
-
-        if directory:
-            os.makedirs(
-                directory,
-                exist_ok=True
-            )
+        temp_path = f"{filepath}.tmp"
 
         with open(
-            filepath,
+            temp_path,
             "w",
             encoding="utf-8"
         ) as f:
@@ -347,3 +263,5 @@ class Generator:
                 indent=2,
                 ensure_ascii=False
             )
+
+        os.replace(temp_path, filepath)
