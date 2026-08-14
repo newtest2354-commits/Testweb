@@ -246,11 +246,6 @@ main {
     border-color: #8b5cf6;
 }
 
-.filter-btn[data-filter="FreeShekan"].active {
-    background: linear-gradient(135deg, #f97316, #fb923c);
-    color: #ffffff;
-    border-color: #f97316;
-}
 
 .filter-btn[data-filter="Private"].active {
     background: linear-gradient(135deg, #06b6d4, #22d3ee);
