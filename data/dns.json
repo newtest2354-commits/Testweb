@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-08-14T08:42:41.506171+00:00",
-  "total": 922,
+  "updated_at": "2026-08-14T08:52:56.074527+00:00",
+  "total": 946,
   "categories": {
     "AdBlock": 56,
     "Adult Filter": 37,
@@ -9,7 +9,7 @@
     "Malware": 35,
     "Private": 2,
     "Security": 56,
-    "Standard": 744,
+    "Standard": 768,
     "Unfiltered": 71
   },
   "dns": [
@@ -20970,6 +20970,534 @@
       "hostname": "github.com",
       "port": 443,
       "path": "/cslev/encrypted_dns_resolvers"
+    },
+    {
+      "id": "235435d4c0cc258a12630bd0c16ee04e",
+      "address": "angry.im",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "angry.im:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "angry.im",
+      "port": 853
+    },
+    {
+      "id": "a180ea39c8d457df1c1c1fc8a5ac220d",
+      "address": "a47.me",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "a47.me:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "a47.me",
+      "port": 853
+    },
+    {
+      "id": "620fcb3a42171b0ad7aa860163e16298",
+      "address": "brembeck.cloud",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "brembeck.cloud:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "brembeck.cloud",
+      "port": 853
+    },
+    {
+      "id": "987147a98cba67076bb3f86d4726a0d0",
+      "address": "comss.one",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "comss.one:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "comss.one",
+      "port": 853
+    },
+    {
+      "id": "b2ae17270f36e3162ac7178b41ffe7d6",
+      "address": "datenquark.de",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "datenquark.de:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "datenquark.de",
+      "port": 853
+    },
+    {
+      "id": "3f1dcf3258a88e35346f0234308f6489",
+      "address": "dns.flatuslifir.is",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dns.flatuslifir.is:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "dns.flatuslifir.is",
+      "port": 853
+    },
+    {
+      "id": "3c44068075c6ff82ad6ca518d6726b33",
+      "address": "dnsforge.de",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dnsforge.de:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "dnsforge.de",
+      "port": 853
+    },
+    {
+      "id": "eace4cc24fdf3e86ce20a97ea4d1ae60",
+      "address": "doh.beauty",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "doh.beauty:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "doh.beauty",
+      "port": 853
+    },
+    {
+      "id": "1b64ba8396709b496d155bdf566e8cb6",
+      "address": "dshubham.xyz",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dshubham.xyz:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "dshubham.xyz",
+      "port": 853
+    },
+    {
+      "id": "5e6878b2bfbc035526dfe4d4e873d3b1",
+      "address": "envs.net",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "envs.net:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "envs.net",
+      "port": 853
+    },
+    {
+      "id": "ca6325e69dcbe9320e6c31414c82c509",
+      "address": "farshidhakimy.de",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "farshidhakimy.de:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "farshidhakimy.de",
+      "port": 853
+    },
+    {
+      "id": "c3c4e13b8266da57251630698df5c9f3",
+      "address": "loadlow.me",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "loadlow.me:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "loadlow.me",
+      "port": 853
+    },
+    {
+      "id": "becccc65a1884df10867524248b408cd",
+      "address": "mateo.ovh",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "mateo.ovh:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "mateo.ovh",
+      "port": 853
+    },
+    {
+      "id": "1979101035c1b09ac489d823f9a90b91",
+      "address": "mh4ckt3mh4ckt1c4s.xyz",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "mh4ckt3mh4ckt1c4s.xyz:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "mh4ckt3mh4ckt1c4s.xyz",
+      "port": 853
+    },
+    {
+      "id": "8ff58d01f2aa3d94e2748750d66c1eb2",
+      "address": "m-it.ro",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "m-it.ro:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "m-it.ro",
+      "port": 853
+    },
+    {
+      "id": "eb5d8ea685c27324c2566b7f0e59e82c",
+      "address": "mydns.network",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "mydns.network:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "mydns.network",
+      "port": 853
+    },
+    {
+      "id": "3a8646f5a7dc0c377d7567a1e3d09024",
+      "address": "openbld.net",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "openbld.net:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "openbld.net",
+      "port": 853
+    },
+    {
+      "id": "c7e1a6d2964d44dc1dea68c09328fbf7",
+      "address": "o2cloud.fr",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "o2cloud.fr:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "o2cloud.fr",
+      "port": 853
+    },
+    {
+      "id": "97ecf41acde3c7dff3de0273372e2740",
+      "address": "petqa.ru",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "petqa.ru:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "petqa.ru",
+      "port": 853
+    },
+    {
+      "id": "8c74690cf5ba126e010227b5bef1ef06",
+      "address": "regiopolis.cloud",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "regiopolis.cloud:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "regiopolis.cloud",
+      "port": 853
+    },
+    {
+      "id": "c6155d33236ed7c8473959bfde31749b",
+      "address": "roedel.cloud",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "roedel.cloud:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "roedel.cloud",
+      "port": 853
+    },
+    {
+      "id": "6dd3d76c6d2701e10ebdc03b4b8bafdb",
+      "address": "shoupperuser.com",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "shoupperuser.com:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "shoupperuser.com",
+      "port": 853
+    },
+    {
+      "id": "3780dad360752918662e21184bce36a1",
+      "address": "silen.org",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "silen.org:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "silen.org",
+      "port": 853
+    },
+    {
+      "id": "6b77d55f46e48de818b7f9c5b28c0b66",
+      "address": "tls-data.de",
+      "type": "DoT",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "tls-data.de:853",
+      "description": "DoT server provided by Sign in",
+      "hostname": "tls-data.de",
+      "port": 853
     }
   ]
 }
