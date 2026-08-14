@@ -672,19 +672,19 @@ class DOHParser:
             if endpoint:
                 candidates.append(endpoint)
 
-        for match in cls.DOT_HOST_PATTERN.finditer(row_text):
-            endpoint = cls._clean_dot_endpoint(
-                match.group(0)
-            )
-
-            if endpoint:
-                candidates.append(endpoint)
-
         for match in cls.DOT_LABELED_HOST_PATTERN.finditer(
             row_text
         ):
             endpoint = cls._clean_dot_endpoint(
                 match.group("endpoint")
+            )
+
+            if endpoint:
+                candidates.append(endpoint)
+
+        for match in cls.DOT_HOST_PATTERN.finditer(row_text):
+            endpoint = cls._clean_dot_endpoint(
+                match.group(0)
             )
 
             if endpoint:
@@ -787,6 +787,8 @@ class DOHParser:
             if not endpoint:
                 return {}
 
+            original_endpoint = endpoint
+
             if endpoint.lower().startswith("tls://"):
                 parsed = urlparse(endpoint)
 
@@ -811,13 +813,30 @@ class DOHParser:
                         1:end
                     ]
 
-                elif ":" in raw_endpoint:
-                    hostname = raw_endpoint.rsplit(
-                        ":",
-                        1
-                    )[0]
                 else:
                     hostname = raw_endpoint
+
+                    if (
+                        re.match(
+                            r"^\d{1,3}(?:\.\d{1,3}){3}:\d{1,5}$",
+                            raw_endpoint
+                        )
+                    ):
+                        hostname = raw_endpoint.rsplit(
+                            ":",
+                            1
+                        )[0]
+
+                    elif (
+                        re.match(
+                            r"^[A-Za-z0-9.-]+:\d{1,5}$",
+                            raw_endpoint
+                        )
+                    ):
+                        hostname = raw_endpoint.rsplit(
+                            ":",
+                            1
+                        )[0]
 
                 hostname = hostname.strip()
 
@@ -863,7 +882,7 @@ class DOHParser:
                 "type": "DoT",
                 "hostname": hostname,
                 "protocol": "DoT",
-                "dot": endpoint,
+                "dot": original_endpoint,
                 "description": (
                     f"DoT server provided by "
                     f"{provider}"
@@ -1400,6 +1419,9 @@ class DOHParser:
             ).lower()
 
             netloc = hostname
+
+            if parsed.port is not None:
+                netloc = f"{hostname}:{parsed.port}"
 
             path = (
                 parsed.path
