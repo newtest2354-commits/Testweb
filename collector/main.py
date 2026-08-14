@@ -16,6 +16,9 @@ def main():
         dnscrypt_data = DNSCryptParser.fetch()
         doh_data = DOHParser.fetch()
         
+        print(f"DNSCrypt entries: {len(dnscrypt_data)}")
+        print(f"DoH entries: {len(doh_data)}")
+        
         all_dns = dnscrypt_data + doh_data
         
         if not all_dns:
