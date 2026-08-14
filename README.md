@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="assets/logo/readme.png" alt="Arista DNS Hub" width="700">
+<p align="center">
+  <img src="assets/logo/readme.png" alt="Arista DNS Hub" width="700">
+</p>
 
 # Arista DNS Hub
 
