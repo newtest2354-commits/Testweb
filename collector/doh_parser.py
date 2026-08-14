@@ -17,24 +17,27 @@ class DOHParser:
     )
 
     DOT_URL_PATTERN = re.compile(
-        r'\btls://'
+        r'(?<![\w])tls://'
         r'(?P<host>'
         r'\[[0-9a-fA-F:]+\]'
         r'|'
-        r'[a-zA-Z0-9]'
-        r'(?:[a-zA-Z0-9.-]*[a-zA-Z0-9])?'
+        r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9.-]*[a-zA-Z0-9])?)'
+        r'|'
+        r'(?:\d{1,3}\.){3}\d{1,3}'
         r')'
         r'(?::(?P<port>\d{1,5}))?',
         re.IGNORECASE
     )
 
     DOT_HOST_PORT_PATTERN = re.compile(
-        r'(?<![/\w.-])'
+        r'(?<![/:@\w.-])'
         r'(?P<host>'
         r'\[[0-9a-fA-F:]+\]'
         r'|'
         r'(?:[a-zA-Z0-9](?:[a-zA-Z0-9.-]*[a-zA-Z0-9])?\.)+'
         r'[a-zA-Z]{2,}'
+        r'|'
+        r'(?:\d{1,3}\.){3}\d{1,3}'
         r')'
         r':(?P<port>\d{1,5})'
         r'(?!\d)',
@@ -200,7 +203,10 @@ class DOHParser:
                     continue
 
                 row_text = cls._clean_text(
-                    row.get_text(" ", strip=True)
+                    row.get_text(
+                        " ",
+                        strip=True
+                    )
                 )
 
                 provider = cls._extract_provider_from_row(
@@ -338,6 +344,7 @@ class DOHParser:
             if (
                 cell.find("a", href=True)
                 or cls._contains_url(text)
+                or cls._contains_dot_endpoint(text)
             ):
                 candidates.append(cell)
 
@@ -477,45 +484,25 @@ class DOHParser:
                         )
                     )
 
-        for match in cls.DOT_URL_PATTERN.finditer(
-            row_text
-        ):
-            host = match.group("host")
-            port = match.group("port")
-
-            endpoint = cls._make_dot_endpoint(
-                host,
-                int(port)
-                if port
-                else cls.DEFAULT_DOT_PORT
+            link_text = cls._clean_text(
+                link.get_text(
+                    " ",
+                    strip=True
+                )
             )
 
-            if endpoint:
-                candidates.append(
-                    (
-                        endpoint,
-                        False
+            if link_text:
+                candidates.extend(
+                    cls._extract_bare_dot_candidates(
+                        link_text
                     )
                 )
 
-        for match in cls.DOT_HOST_PORT_PATTERN.finditer(
-            row_text
-        ):
-            host = match.group("host")
-            port = int(match.group("port"))
-
-            endpoint = cls._make_dot_endpoint(
-                host,
-                port
+        candidates.extend(
+            cls._extract_bare_dot_candidates(
+                row_text
             )
-
-            if endpoint:
-                candidates.append(
-                    (
-                        endpoint,
-                        False
-                    )
-                )
+        )
 
         labeled_hosts = cls._extract_labeled_dot_hosts(
             row_text
@@ -582,6 +569,66 @@ class DOHParser:
             result.append(entry)
 
         return result
+
+    @classmethod
+    def _extract_bare_dot_candidates(
+        cls,
+        text: str
+    ) -> List[tuple]:
+        candidates = []
+
+        if not text:
+            return candidates
+
+        for match in cls.DOT_URL_PATTERN.finditer(
+            text
+        ):
+            host = match.group("host")
+            port = match.group("port")
+
+            endpoint = cls._make_dot_endpoint(
+                host,
+                int(port)
+                if port
+                else cls.DEFAULT_DOT_PORT
+            )
+
+            if endpoint:
+                candidates.append(
+                    (
+                        endpoint,
+                        False
+                    )
+                )
+
+        for match in cls.DOT_HOST_PORT_PATTERN.finditer(
+            text
+        ):
+            host = match.group("host")
+            port = match.group("port")
+
+            try:
+                port = int(port)
+            except (
+                ValueError,
+                TypeError
+            ):
+                continue
+
+            endpoint = cls._make_dot_endpoint(
+                host,
+                port
+            )
+
+            if endpoint:
+                candidates.append(
+                    (
+                        endpoint,
+                        False
+                    )
+                )
+
+        return candidates
 
     @classmethod
     def _extract_labeled_dot_hosts(
@@ -669,11 +716,15 @@ class DOHParser:
 
         except ValueError:
             if not re.match(
-                r"^[a-zA-Z0-9]"
+                r"^(?=.{1,253}$)"
+                r"[a-zA-Z0-9]"
                 r"(?:[a-zA-Z0-9.-]*"
                 r"[a-zA-Z0-9])?$",
                 host
             ):
+                return None
+
+            if ".." in host:
                 return None
 
         try:
@@ -721,6 +772,7 @@ class DOHParser:
                     return {}
 
                 hostname = match.group(1)
+
                 port = int(
                     match.group(2)
                     or cls.DEFAULT_DOT_PORT
@@ -760,6 +812,9 @@ class DOHParser:
                     r"[a-zA-Z0-9])?$",
                     hostname
                 ):
+                    return {}
+
+                if ".." in hostname:
                     return {}
 
             provider = cls._clean_provider(
@@ -878,34 +933,49 @@ class DOHParser:
                 ""
             ).strip()
 
-            if not cls._is_dns_url(href):
-                continue
+            link_text = cls._clean_text(
+                link.get_text(
+                    " ",
+                    strip=True
+                )
+            )
 
             provider = cls._find_provider(
                 link
             )
 
-            entry = cls._build_entry(
-                href,
-                provider
-            )
+            if cls._is_dns_url(href):
+                entry = cls._build_entry(
+                    href,
+                    provider
+                )
 
-            if entry:
-                key = cls._doh_key(entry)
+                if entry:
+                    key = cls._doh_key(entry)
 
-                if key not in seen:
-                    seen.add(key)
-                    dns_list.append(entry)
+                    if key not in seen:
+                        seen.add(key)
+                        dns_list.append(entry)
 
             context = cls._get_link_context(
                 link
             )
 
+            dot_context = " ".join(
+                part
+                for part in (
+                    link_text,
+                    context,
+                    href
+                )
+                if part
+            )
+
             dot_entries = cls._extract_dot_entries(
                 link.parent,
-                context,
+                dot_context,
                 provider,
-                [href]
+                [href] if cls._is_http_url(href) else []
             )
 
             for dot_entry in dot_entries:
@@ -918,6 +988,38 @@ class DOHParser:
 
                 seen.add(key)
                 dns_list.append(dot_entry)
+
+        if dns_list:
+            return dns_list
+
+        page_text = cls._clean_text(
+            soup.get_text(
+                " ",
+                strip=True
+            )
+        )
+
+        dot_candidates = cls._extract_bare_dot_candidates(
+            page_text
+        )
+
+        for endpoint, inferred in dot_candidates:
+            entry = cls._build_dot_entry(
+                endpoint,
+                "Unknown",
+                inferred=inferred
+            )
+
+            if not entry:
+                continue
+
+            key = cls._dot_key(entry)
+
+            if key in seen:
+                continue
+
+            seen.add(key)
+            dns_list.append(entry)
 
         return dns_list
 
@@ -1144,12 +1246,18 @@ class DOHParser:
             )
         ).lower()
 
-        port = int(
-            entry.get(
-                "port",
-                cls.DEFAULT_DOT_PORT
+        try:
+            port = int(
+                entry.get(
+                    "port",
+                    cls.DEFAULT_DOT_PORT
+                )
             )
-        )
+        except (
+            ValueError,
+            TypeError
+        ):
+            port = cls.DEFAULT_DOT_PORT
 
         return (
             f"dot|{hostname}|{port}"
