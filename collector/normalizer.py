@@ -33,10 +33,11 @@ class Normalizer:
             normalized[key] = value
         
         if 'address' not in normalized or not normalized['address']:
-            if 'doh_url' in normalized and normalized['doh_url']:
+            if 'doh_url' in normalized:
                 parsed = urlparse(normalized['doh_url'])
-                hostname = parsed.netloc.split(':')[0]
-                normalized['address'] = hostname
+                normalized['address'] = parsed.netloc.split(':')[0]
+                normalized['hostname'] = parsed.netloc.split(':')[0]
+                normalized['path'] = parsed.path or '/dns-query'
             elif 'hostname' in normalized:
                 normalized['address'] = normalized['hostname']
                 
@@ -74,8 +75,8 @@ class Normalizer:
     
     @classmethod
     def _is_valid(cls, entry: Dict[str, Any]) -> bool:
-        if 'name' not in entry or not entry['name']:
+        if not entry.get('name'):
             return False
-        if 'address' not in entry and 'doh_url' not in entry:
+        if not entry.get('address') and not entry.get('doh_url') and not entry.get('hostname'):
             return False
         return True
