@@ -12,7 +12,8 @@ class Classifier:
             'ad filter',
             'ads',
             'tracker',
-            'tracking'
+            'tracking',
+            'adguard'
         ],
 
         'Family': [
@@ -95,7 +96,6 @@ class Classifier:
             if any(keyword in text for keyword in keywords):
                 categories.append(category)
 
-        # FreeShekan
         if (
             'free shekan' in text
             or 'freeshekan' in text
@@ -103,7 +103,6 @@ class Classifier:
         ):
             categories.append('FreeShekan')
 
-        # Standard فقط وقتی هیچ دسته دیگری پیدا نشده
         if not categories:
             categories.append('Standard')
 
