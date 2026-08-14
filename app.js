@@ -6,6 +6,11 @@ class AristaDNSHub {
         this.pageSize = 50;
         this.currentFilter = 'all';
         this.searchQuery = '';
+        this.metadata = {
+            total: 0,
+            updated_at: null
+        };
+        this.stats = null;
 
         this.init();
     }
@@ -16,12 +21,15 @@ class AristaDNSHub {
             this.setupEventListeners();
             this.render();
         } catch (error) {
+            console.error('Failed to initialize DNS Hub:', error);
             this.showError();
         }
     }
 
     async loadData() {
-        const response = await fetch('data/dns.json');
+        const response = await fetch('data/dns.json', {
+            cache: 'no-cache'
+        });
 
         if (!response.ok) {
             throw new Error('Failed to load DNS data');
@@ -29,38 +37,56 @@ class AristaDNSHub {
 
         const data = await response.json();
 
-        this.dnsData = data.dns || [];
+        this.dnsData = Array.isArray(data.dns)
+            ? data.dns
+            : [];
 
         this.metadata = {
-            total: data.total || 0,
-            updated_at: data.updated_at || new Date().toISOString()
+            total: Number.isFinite(data.total)
+                ? data.total
+                : this.dnsData.length,
+            updated_at: data.updated_at || null
         };
 
-        const statsResponse = await fetch('data/stats.json');
+        try {
+            const statsResponse = await fetch('data/stats.json', {
+                cache: 'no-cache'
+            });
 
-        if (statsResponse.ok) {
-            this.stats = await statsResponse.json();
+            if (statsResponse.ok) {
+                this.stats = await statsResponse.json();
+            }
+        } catch (error) {
+            console.warn('Failed to load stats:', error);
+            this.stats = null;
         }
 
         this.filteredData = [...this.dnsData];
     }
 
     setupEventListeners() {
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            this.searchQuery = e.target.value.toLowerCase();
-            this.currentPage = 1;
-            this.filterData();
-            this.render();
-        });
+        const searchInput = document.getElementById('searchInput');
 
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.filter-btn').forEach(b => {
-                    b.classList.remove('active');
+        if (searchInput) {
+            searchInput.addEventListener('input', event => {
+                this.searchQuery = event.target.value
+                    .trim()
+                    .toLowerCase();
+
+                this.currentPage = 1;
+                this.filterData();
+                this.render();
+            });
+        }
+
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
                 });
 
-                btn.classList.add('active');
-                this.currentFilter = btn.dataset.filter;
+                button.classList.add('active');
+                this.currentFilter = button.dataset.filter || 'all';
                 this.currentPage = 1;
 
                 this.filterData();
@@ -68,28 +94,45 @@ class AristaDNSHub {
             });
         });
 
-        document.getElementById('prevPage').addEventListener('click', () => {
-            if (this.currentPage > 1) {
-                this.currentPage--;
-                this.render();
-            }
-        });
+        const prevPage = document.getElementById('prevPage');
 
-        document.getElementById('nextPage').addEventListener('click', () => {
-            const totalPages = Math.ceil(
-                this.filteredData.length / this.pageSize
-            );
+        if (prevPage) {
+            prevPage.addEventListener('click', () => {
+                if (this.currentPage > 1) {
+                    this.currentPage--;
+                    this.render();
+                }
+            });
+        }
 
-            if (this.currentPage < totalPages) {
-                this.currentPage++;
-                this.render();
-            }
-        });
+        const nextPage = document.getElementById('nextPage');
 
-        document.getElementById('retryBtn').addEventListener('click', () => {
-            document.getElementById('errorModal').style.display = 'none';
-            this.init();
-        });
+        if (nextPage) {
+            nextPage.addEventListener('click', () => {
+                const totalPages = Math.ceil(
+                    this.filteredData.length / this.pageSize
+                );
+
+                if (this.currentPage < totalPages) {
+                    this.currentPage++;
+                    this.render();
+                }
+            });
+        }
+
+        const retryBtn = document.getElementById('retryBtn');
+
+        if (retryBtn) {
+            retryBtn.addEventListener('click', () => {
+                const modal = document.getElementById('errorModal');
+
+                if (modal) {
+                    modal.style.display = 'none';
+                }
+
+                this.init();
+            });
+        }
     }
 
     filterData() {
@@ -102,37 +145,51 @@ class AristaDNSHub {
                 } else if (this.currentFilter === 'IPv6') {
                     matchesFilter = dns.type === 'IPv6';
                 } else {
-                    const inCategories =
-                        dns.categories &&
-                        dns.categories.includes(this.currentFilter);
+                    const categories = Array.isArray(dns.categories)
+                        ? dns.categories
+                        : [];
 
-                    const inProtocols =
-                        dns.protocols &&
-                        dns.protocols.includes(this.currentFilter);
+                    const protocols = Array.isArray(dns.protocols)
+                        ? dns.protocols
+                        : [];
 
-                    matchesFilter = inCategories || inProtocols;
+                    matchesFilter =
+                        categories.includes(this.currentFilter) ||
+                        protocols.includes(this.currentFilter);
                 }
             }
 
-            let matchesSearch = true;
-
-            if (this.searchQuery) {
-                const searchable = [
-                    dns.address,
-                    dns.provider,
-                    dns.name,
-                    ...(dns.categories || []),
-                    ...(dns.protocols || [])
-                ]
-                    .filter(Boolean)
-                    .map(s => String(s).toLowerCase());
-
-                matchesSearch = searchable.some(field =>
-                    field.includes(this.searchQuery)
-                );
+            if (!matchesFilter) {
+                return false;
             }
 
-            return matchesFilter && matchesSearch;
+            if (!this.searchQuery) {
+                return true;
+            }
+
+            const searchable = [
+                dns.address,
+                dns.provider,
+                dns.name,
+                dns.doh_url,
+                dns.dot,
+                dns.hostname,
+                dns.port,
+                dns.type,
+                dns.protocol,
+                ...(Array.isArray(dns.categories)
+                    ? dns.categories
+                    : []),
+                ...(Array.isArray(dns.protocols)
+                    ? dns.protocols
+                    : [])
+            ]
+                .filter(value => value !== null && value !== undefined)
+                .map(value => String(value).toLowerCase());
+
+            return searchable.some(value =>
+                value.includes(this.searchQuery)
+            );
         });
     }
 
@@ -143,36 +200,37 @@ class AristaDNSHub {
     }
 
     updateStats() {
-        document.getElementById('totalDns').textContent =
-            this.metadata.total || 0;
+        const totalDns = document.getElementById('totalDns');
+        const lastUpdated = document.getElementById('lastUpdated');
 
-        document.getElementById('lastUpdated').textContent =
-            this.formatDate(this.metadata.updated_at);
+        if (totalDns) {
+            totalDns.textContent = this.metadata.total;
+        }
 
-        if (this.stats) {
-            document.getElementById('dashTotal').textContent =
-                this.stats.total_dns || 0;
+        if (lastUpdated) {
+            lastUpdated.textContent =
+                this.formatDate(this.metadata.updated_at);
+        }
 
-            document.getElementById('dashIPv4').textContent =
-                this.stats.total_ipv4 || 0;
+        if (!this.stats) {
+            return;
+        }
 
-            document.getElementById('dashIPv6').textContent =
-                this.stats.total_ipv6 || 0;
+        this.setText('dashTotal', this.stats.total_dns);
+        this.setText('dashIPv4', this.stats.total_ipv4);
+        this.setText('dashIPv6', this.stats.total_ipv6);
+        this.setText('dashDoH', this.stats.total_doh);
+        this.setText('dashDoT', this.stats.total_dot);
+        this.setText('dashAdBlock', this.stats.total_adblock);
+        this.setText('dashFamily', this.stats.total_family);
+        this.setText('dashSecurity', this.stats.total_security);
+    }
 
-            document.getElementById('dashDoH').textContent =
-                this.stats.total_doh || 0;
+    setText(id, value) {
+        const element = document.getElementById(id);
 
-            document.getElementById('dashDoT').textContent =
-                this.stats.total_dot || 0;
-
-            document.getElementById('dashAdBlock').textContent =
-                this.stats.total_adblock || 0;
-
-            document.getElementById('dashFamily').textContent =
-                this.stats.total_family || 0;
-
-            document.getElementById('dashSecurity').textContent =
-                this.stats.total_security || 0;
+        if (element) {
+            element.textContent = value ?? 0;
         }
     }
 
@@ -180,12 +238,19 @@ class AristaDNSHub {
         const container = document.getElementById('dnsContainer');
         const emptyState = document.getElementById('emptyState');
 
-        const start = (this.currentPage - 1) * this.pageSize;
-        const end = start + this.pageSize;
+        if (!container || !emptyState) {
+            return;
+        }
 
-        const pageData = this.filteredData.slice(start, end);
+        const start =
+            (this.currentPage - 1) * this.pageSize;
 
-        if (pageData.length === 0) {
+        const pageData = this.filteredData.slice(
+            start,
+            start + this.pageSize
+        );
+
+        if (!pageData.length) {
             container.innerHTML = '';
             emptyState.style.display = 'block';
             return;
@@ -197,121 +262,144 @@ class AristaDNSHub {
             .map(dns => this.createDNSCard(dns))
             .join('');
 
-        document.querySelectorAll('.copy-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const address = btn.dataset.address;
-                this.copyToClipboard(address, btn);
+        container
+            .querySelectorAll('.copy-btn')
+            .forEach(button => {
+                button.addEventListener('click', () => {
+                    this.copyToClipboard(
+                        button.dataset.address || '',
+                        button
+                    );
+                });
             });
-        });
     }
 
     createDNSCard(dns) {
-        const categories = (dns.categories || [])
-            .map(cat => `<span class="category-badge">${cat}</span>`)
-            .join('');
+        const categories = Array.isArray(dns.categories)
+            ? dns.categories
+            : [];
 
         const protocols = Array.isArray(dns.protocols)
             ? dns.protocols
             : [];
 
-        const protocolsHtml = protocols
-            .map(proto => `<span class="protocol-badge">${proto}</span>`)
+        const categoriesHtml = categories
+            .map(category =>
+                `<span class="category-badge">${this.escapeHtml(category)}</span>`
+            )
             .join('');
 
-        const address = dns.address || 'N/A';
-        const provider = dns.provider || dns.name || 'Unknown Provider';
-        const type = dns.type || 'Unknown';
+        const protocolsHtml = protocols
+            .map(protocol =>
+                `<span class="protocol-badge">${this.escapeHtml(protocol)}</span>`
+            )
+            .join('');
 
-        let displayAddress = address;
-        let copyAddress = address;
+        const displayAddress = this.getDisplayAddress(dns);
+        const copyAddress = displayAddress;
 
-        const isIPv6 =
-            type === 'IPv6' &&
-            address !== 'N/A';
+        const provider =
+            dns.provider ||
+            dns.name ||
+            'Unknown Provider';
 
-        if (dns.doh_url) {
-            displayAddress = dns.doh_url;
-            copyAddress = dns.doh_url;
-        } else if (dns.dot) {
-            displayAddress = this.formatDotAddress(
-                dns.dot,
-                address,
-                isIPv6
-            );
-
-            copyAddress = displayAddress;
-        } else if (
-            dns.protocol === 'DoT' ||
-            protocols.includes('DoT')
-        ) {
-            displayAddress = this.formatDotAddress(
-                null,
-                address,
-                isIPv6
-            );
-
-            copyAddress = displayAddress;
-        } else if (isIPv6) {
-            displayAddress = address;
-            copyAddress = address;
-        }
+        const type =
+            dns.type ||
+            dns.protocol ||
+            'Unknown';
 
         return `
             <div class="dns-card glass-card">
                 <div class="dns-header">
-                    <span class="dns-address">${displayAddress}</span>
+                    <span class="dns-address">${this.escapeHtml(displayAddress)}</span>
                     <span class="dns-status">● ACTIVE</span>
                 </div>
-                <div class="dns-provider">${provider}</div>
-                <div class="dns-categories">${categories}</div>
-                <div class="dns-protocols">${protocolsHtml}</div>
-                <div class="dns-type">${type}</div>
+
+                <div class="dns-provider">
+                    ${this.escapeHtml(provider)}
+                </div>
+
+                <div class="dns-categories">
+                    ${categoriesHtml}
+                </div>
+
+                <div class="dns-protocols">
+                    ${protocolsHtml}
+                </div>
+
+                <div class="dns-type">
+                    ${this.escapeHtml(type)}
+                </div>
+
                 <div class="dns-actions">
-                    <button class="copy-btn" data-address="${copyAddress}">Copy</button>
+                    <button
+                        class="copy-btn"
+                        data-address="${this.escapeHtml(copyAddress)}"
+                    >
+                        Copy
+                    </button>
                 </div>
             </div>
         `;
     }
 
-    formatDotAddress(dot, address, isIPv6) {
-        if (dot) {
-            const value = String(dot).trim();
-
-            if (!value) {
-                return address || 'N/A';
-            }
-
-            return value;
+    getDisplayAddress(dns) {
+        if (
+            typeof dns.doh_url === 'string' &&
+            dns.doh_url.trim()
+        ) {
+            return dns.doh_url;
         }
 
-        if (!address || address === 'N/A') {
-            return 'N/A';
+        if (
+            typeof dns.dot === 'string' &&
+            dns.dot.trim()
+        ) {
+            return dns.dot;
         }
 
-        if (isIPv6) {
-            return address;
+        if (
+            typeof dns.address === 'string' &&
+            dns.address.trim()
+        ) {
+            return dns.address;
         }
 
-        return address;
+        return 'N/A';
     }
 
     updatePagination() {
-        const totalPages = Math.ceil(
-            this.filteredData.length / this.pageSize
+        const totalPages = Math.max(
+            1,
+            Math.ceil(
+                this.filteredData.length / this.pageSize
+            )
         );
 
         const prevBtn = document.getElementById('prevPage');
         const nextBtn = document.getElementById('nextPage');
         const pageInfo = document.getElementById('pageInfo');
 
-        prevBtn.disabled = this.currentPage <= 1;
-        nextBtn.disabled = this.currentPage >= totalPages;
+        if (prevBtn) {
+            prevBtn.disabled = this.currentPage <= 1;
+        }
 
-        pageInfo.textContent =
-            `Page ${this.currentPage} of ${totalPages || 1}`;
+        if (nextBtn) {
+            nextBtn.disabled =
+                this.currentPage >= totalPages;
+        }
+
+        if (pageInfo) {
+            pageInfo.textContent =
+                `Page ${this.currentPage} of ${totalPages}`;
+        }
     }
 
     async copyToClipboard(text, button) {
+        if (!text) {
+            return;
+        }
+
         try {
             await navigator.clipboard.writeText(text);
 
@@ -322,8 +410,8 @@ class AristaDNSHub {
                 button.textContent = 'Copy';
                 button.classList.remove('copied');
             }, 2000);
-        } catch (err) {
-            console.error('Failed to copy:', err);
+        } catch (error) {
+            console.error('Failed to copy:', error);
         }
     }
 
@@ -332,23 +420,36 @@ class AristaDNSHub {
             return 'Never';
         }
 
-        try {
-            const date = new Date(dateString);
+        const date = new Date(dateString);
 
-            return date.toLocaleString('en-US', {
-                month: 'short',
-                day: 'numeric',
-                year: 'numeric',
-                hour: '2-digit',
-                minute: '2-digit'
-            });
-        } catch {
-            return dateString;
+        if (Number.isNaN(date.getTime())) {
+            return String(dateString);
         }
+
+        return date.toLocaleString('en-US', {
+            month: 'short',
+            day: 'numeric',
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+    }
+
+    escapeHtml(value) {
+        return String(value ?? '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#039;');
     }
 
     showError() {
-        document.getElementById('errorModal').style.display = 'block';
+        const modal = document.getElementById('errorModal');
+
+        if (modal) {
+            modal.style.display = 'block';
+        }
     }
 }
 
