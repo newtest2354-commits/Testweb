@@ -9,7 +9,6 @@ from urllib.parse import urlparse
 
 class DOHParser:
     SOURCE_NAME = "curl"
-    DEFAULT_DOT_PORT = 853
 
     URL_PATTERN = re.compile(
         r'https?://[^\s<>"\'\)\]\}]+',
@@ -41,23 +40,6 @@ class DOHParser:
         r'(?:\d{1,3}\.){3}\d{1,3}'
         r')'
         r':(?P<port>\d{1,5})'
-        r'(?!\d)',
-        re.IGNORECASE
-    )
-
-    DOT_853_PATTERN = re.compile(
-        r'(?<![A-Za-z0-9._/-])'
-        r'(?P<host>'
-        r'\[[0-9a-fA-F:]+\]'
-        r'|'
-        r'(?:[a-zA-Z0-9]'
-        r'(?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?'
-        r'\.)+'
-        r'[a-zA-Z]{2,63}'
-        r'|'
-        r'(?:\d{1,3}\.){3}\d{1,3}'
-        r')'
-        r':853'
         r'(?!\d)',
         re.IGNORECASE
     )
@@ -132,6 +114,13 @@ class DOHParser:
         "organization",
         "organisation",
         "operated by",
+    )
+
+    PROVIDER_NOISE = re.compile(
+        r'\b(?:standard|adblock|family|security|malware|adult|'
+        r'unfiltered|free|shekan|private|ipv4|ipv6|doh|dot|'
+        r'dns|active|copy)\b',
+        re.IGNORECASE
     )
 
     @classmethod
@@ -248,7 +237,10 @@ class DOHParser:
                     continue
 
                 row_text = cls._clean_text(
-                    row.get_text(" ", strip=True)
+                    row.get_text(
+                        " ",
+                        strip=True
+                    )
                 )
 
                 provider = cls._extract_provider_from_row(
@@ -285,8 +277,7 @@ class DOHParser:
                 for dot_entry in cls._extract_dot_entries(
                     row,
                     row_text,
-                    provider,
-                    urls
+                    provider
                 ):
                     add_entry(dot_entry)
 
@@ -321,8 +312,7 @@ class DOHParser:
             for dot_entry in cls._extract_dot_entries(
                 element,
                 text,
-                provider,
-                urls
+                provider
             ):
                 add_entry(dot_entry)
 
@@ -361,10 +351,8 @@ class DOHParser:
                 or "dns" in text.lower()
             )
 
-            if not has_dns_signal:
-                continue
-
-            containers.append(element)
+            if has_dns_signal:
+                containers.append(element)
 
         return containers
 
@@ -373,42 +361,87 @@ class DOHParser:
         cls,
         element
     ) -> str:
-        text = cls._clean_text(
-            element.get_text(
-                " ",
-                strip=True
+        links = element.find_all(
+            "a",
+            href=True
+        )
+
+        candidates = []
+
+        for child in element.find_all(
+            ["span", "strong", "b", "small"]
+        ):
+            text = cls._clean_text(
+                child.get_text(
+                    " ",
+                    strip=True
+                )
             )
-        )
 
-        if not text:
-            return "Unknown"
+            if not text:
+                continue
 
-        provider = cls._clean_provider(
-            text
-        )
+            if cls._contains_url(text):
+                continue
 
-        provider = re.sub(
-            r'\b(?:standard|adblock|family|security|malware|adult|'
-            r'unfiltered|free|shekan|private|ipv4|ipv6|doh|dot|'
-            r'dns)\b',
-            ' ',
-            provider,
-            flags=re.IGNORECASE
-        )
+            if cls._contains_dot_endpoint(text):
+                continue
 
-        provider = re.sub(
-            r'\s+',
-            ' ',
-            provider
-        ).strip()
+            cleaned = cls._clean_provider(text)
 
-        if len(provider) > 100:
-            return "Unknown"
+            if cleaned:
+                candidates.append(cleaned)
 
-        if not provider:
-            return "Unknown"
+        for link in links:
+            text = cls._clean_text(
+                link.get_text(
+                    " ",
+                    strip=True
+                )
+            )
 
-        return provider
+            if not text:
+                continue
+
+            if cls._is_http_url(
+                link.get("href", "")
+            ):
+                continue
+
+            if cls._contains_dot_endpoint(text):
+                continue
+
+            cleaned = cls._clean_provider(text)
+
+            if cleaned:
+                candidates.append(cleaned)
+
+        for candidate in candidates:
+            if (
+                candidate.lower()
+                not in (
+                    "standard",
+                    "adblock",
+                    "family",
+                    "security",
+                    "malware",
+                    "adult",
+                    "unfiltered",
+                    "free",
+                    "shekan",
+                    "private",
+                    "ipv4",
+                    "ipv6",
+                    "doh",
+                    "dot",
+                    "dns",
+                    "active",
+                    "copy",
+                )
+            ):
+                return candidate
+
+        return "Unknown"
 
     @classmethod
     def _extract_headers(
@@ -455,6 +488,8 @@ class DOHParser:
             "dns endpoint",
             "doh",
             "dns over https",
+            "dot",
+            "dns over tls",
         )
 
         for index, header in enumerate(headers):
@@ -514,10 +549,12 @@ class DOHParser:
                 strip=True
             )
 
+            provider = cls._clean_provider(
+                provider
+            )
+
             if provider:
-                return cls._clean_provider(
-                    provider
-                )
+                return provider
 
         candidates = []
 
@@ -528,9 +565,11 @@ class DOHParser:
             ):
                 continue
 
-            text = cell.get_text(
-                " ",
-                strip=True
+            text = cls._clean_text(
+                cell.get_text(
+                    " ",
+                    strip=True
+                )
             )
 
             if not text:
@@ -545,21 +584,18 @@ class DOHParser:
             if len(text) > 200:
                 continue
 
-            if re.fullmatch(
-                r'(?:standard|adblock|family|security|malware|adult|'
-                r'unfiltered|free|shekan|private|ipv4|ipv6|doh|dot|'
-                r'dns|active|copy)+',
-                re.sub(r'\s+', '', text),
-                re.IGNORECASE
-            ):
+            cleaned = cls._clean_provider(text)
+
+            if not cleaned:
                 continue
 
-            candidates.append(text)
+            if cls._is_ui_value(cleaned):
+                continue
+
+            candidates.append(cleaned)
 
         if candidates:
-            return cls._clean_provider(
-                candidates[0]
-            )
+            return candidates[0]
 
         return "Unknown"
 
@@ -580,7 +616,9 @@ class DOHParser:
             ).strip()
 
             if cls._is_http_url(href):
-                urls.append(href)
+                urls.append(
+                    cls._clean_url(href)
+                )
 
         text = element.get_text(
             " ",
@@ -609,14 +647,13 @@ class DOHParser:
     @classmethod
     def _extract_dot_entries(
         cls,
-        row,
+        element,
         row_text: str,
-        provider: str,
-        doh_urls: List[str]
+        provider: str
     ) -> List[Dict[str, Any]]:
         candidates = []
 
-        for link in row.find_all(
+        for link in element.find_all(
             "a",
             href=True
         ):
@@ -625,130 +662,63 @@ class DOHParser:
                 ""
             ).strip()
 
-            if href.lower().startswith("tls://"):
-                endpoint = cls._parse_dot_endpoint(
-                    href
-                )
+            if not href.lower().startswith(
+                "tls://"
+            ):
+                continue
 
-                if endpoint:
-                    candidates.append(
-                        (
-                            endpoint,
-                            False
-                        )
-                    )
+            endpoint = cls._parse_dot_endpoint(
+                href
+            )
+
+            if endpoint:
+                candidates.append(endpoint)
 
         for match in cls.DOT_URL_PATTERN.finditer(
             row_text
         ):
-            host = match.group("host")
             port = match.group("port")
 
+            if not port:
+                continue
+
             endpoint = cls._make_dot_endpoint(
-                host,
-                int(port)
-                if port
-                else cls.DEFAULT_DOT_PORT
+                match.group("host"),
+                port
             )
 
             if endpoint:
-                candidates.append(
-                    (
-                        endpoint,
-                        False
-                    )
-                )
-
-        for match in cls.DOT_853_PATTERN.finditer(
-            row_text
-        ):
-            host = match.group("host")
-
-            endpoint = cls._make_dot_endpoint(
-                host,
-                cls.DEFAULT_DOT_PORT
-            )
-
-            if endpoint:
-                candidates.append(
-                    (
-                        endpoint,
-                        False
-                    )
-                )
+                candidates.append(endpoint)
 
         for match in cls.DOT_HOST_PORT_PATTERN.finditer(
             row_text
         ):
-            host = match.group("host")
-            port = int(
+            endpoint = cls._make_dot_endpoint(
+                match.group("host"),
                 match.group("port")
             )
 
-            endpoint = cls._make_dot_endpoint(
-                host,
-                port
-            )
-
             if endpoint:
-                candidates.append(
-                    (
-                        endpoint,
-                        False
-                    )
-                )
+                candidates.append(endpoint)
 
-        labeled_hosts = cls._extract_labeled_dot_hosts(
+        for host, port in cls._extract_labeled_dot_hosts(
             row_text
-        )
-
-        for host, port in labeled_hosts:
+        ):
             endpoint = cls._make_dot_endpoint(
                 host,
                 port
             )
 
             if endpoint:
-                candidates.append(
-                    (
-                        endpoint,
-                        False
-                    )
-                )
-
-        if (
-            not candidates
-            and cls._supports_dot(row_text)
-        ):
-            for doh_url in doh_urls:
-                hostname = cls._extract_hostname(
-                    doh_url
-                )
-
-                if not hostname:
-                    continue
-
-                endpoint = cls._make_dot_endpoint(
-                    hostname,
-                    cls.DEFAULT_DOT_PORT
-                )
-
-                if endpoint:
-                    candidates.append(
-                        (
-                            endpoint,
-                            True
-                        )
-                    )
+                candidates.append(endpoint)
 
         result = []
         local_seen = set()
 
-        for endpoint, inferred in candidates:
+        for endpoint in candidates:
             entry = cls._build_dot_entry(
                 endpoint,
-                provider,
-                inferred=inferred
+                provider
             )
 
             if not entry:
@@ -777,15 +747,13 @@ class DOHParser:
             host = match.group("host")
             port = match.group("port")
 
-            if not host:
+            if not host or not port:
                 continue
 
             hosts.append(
                 (
                     host,
-                    int(port)
-                    if port
-                    else cls.DEFAULT_DOT_PORT
+                    port
                 )
             )
 
@@ -807,16 +775,12 @@ class DOHParser:
             if not parsed.hostname:
                 return None
 
-            hostname = parsed.hostname
-
-            port = (
-                parsed.port
-                or cls.DEFAULT_DOT_PORT
-            )
+            if parsed.port is None:
+                return None
 
             return cls._make_dot_endpoint(
-                hostname,
-                port
+                parsed.hostname,
+                parsed.port
             )
 
         except (
@@ -829,11 +793,22 @@ class DOHParser:
     def _make_dot_endpoint(
         cls,
         host: str,
-        port: int = DEFAULT_DOT_PORT
+        port
     ) -> Optional[str]:
         host = str(host).strip()
 
         if not host:
+            return None
+
+        try:
+            port = int(port)
+        except (
+            ValueError,
+            TypeError
+        ):
+            return None
+
+        if not 1 <= port <= 65535:
             return None
 
         if (
@@ -846,7 +821,9 @@ class DOHParser:
             ip = ipaddress.ip_address(host)
 
             if ip.version == 6:
-                host = f"[{host}]"
+                return f"[{host}]:{port}"
+
+            return f"{host}:{port}"
 
         except ValueError:
             if not re.match(
@@ -869,45 +846,35 @@ class DOHParser:
             ):
                 return None
 
-        try:
-            port = int(port)
-
-        except (
-            ValueError,
-            TypeError
-        ):
-            return None
-
-        if not 1 <= port <= 65535:
-            return None
-
-        return f"{host}:{port}"
+            return f"{host}:{port}"
 
     @classmethod
     def _build_dot_entry(
         cls,
         endpoint: str,
-        provider: str,
-        inferred: bool = False
+        provider: str
     ) -> Dict[str, Any]:
         try:
+            endpoint = str(
+                endpoint
+            ).strip()
+
             if not endpoint:
                 return {}
+
+            original_endpoint = endpoint
 
             if endpoint.lower().startswith(
                 "tls://"
             ):
                 endpoint = endpoint[6:]
 
-            endpoint = endpoint.strip().rstrip("/")
-
-            hostname = ""
-            port = cls.DEFAULT_DOT_PORT
+            endpoint = endpoint.rstrip("/")
 
             if endpoint.startswith("["):
                 match = re.match(
                     r"^\[([0-9a-fA-F:]+)\]"
-                    r"(?::(\d+))?$",
+                    r":(\d+)$",
                     endpoint
                 )
 
@@ -915,28 +882,25 @@ class DOHParser:
                     return {}
 
                 hostname = match.group(1)
-
                 port = int(
                     match.group(2)
-                    or cls.DEFAULT_DOT_PORT
                 )
 
             else:
-                if ":" in endpoint:
-                    host_part, port_part = endpoint.rsplit(
-                        ":",
-                        1
-                    )
+                if ":" not in endpoint:
+                    return {}
 
-                    if port_part.isdigit():
-                        hostname = host_part
-                        port = int(port_part)
-                    else:
-                        hostname = endpoint
-                else:
-                    hostname = endpoint
+                hostname, port_text = endpoint.rsplit(
+                    ":",
+                    1
+                )
 
-            hostname = hostname.strip().lower()
+                if not port_text.isdigit():
+                    return {}
+
+                port = int(port_text)
+
+            hostname = hostname.strip()
 
             if not hostname:
                 return {}
@@ -972,13 +936,10 @@ class DOHParser:
                 provider
             )
 
-            if (
-                not provider
-                or provider == "Unknown"
-            ):
+            if not provider:
                 provider = hostname
 
-            entry = {
+            return {
                 "provider": provider,
                 "address": hostname,
                 "name": provider,
@@ -987,17 +948,12 @@ class DOHParser:
                 "hostname": hostname,
                 "port": port,
                 "protocol": "DoT",
-                "dot": f"{hostname}:{port}",
+                "dot": original_endpoint,
                 "description": (
                     f"DoT server provided by "
                     f"{provider}"
                 ),
             }
-
-            if inferred:
-                entry["dot_inferred"] = True
-
-            return entry
 
         except (
             ValueError,
@@ -1018,7 +974,11 @@ class DOHParser:
             if not entry:
                 return
 
-            if entry.get("protocol") == "DoH":
+            protocol = entry.get(
+                "protocol"
+            )
+
+            if protocol == "DoH":
                 key = cls._doh_key(entry)
 
                 if key in seen_doh:
@@ -1027,7 +987,7 @@ class DOHParser:
                 seen_doh.add(key)
                 dns_list.append(entry)
 
-            elif entry.get("protocol") == "DoT":
+            elif protocol == "DoT":
                 key = cls._dot_key(entry)
 
                 if key in seen_dot:
@@ -1039,10 +999,6 @@ class DOHParser:
         for element in soup.find_all(
             ["table", "article", "li", "section", "div"]
         ):
-            cells = element.find_all(
-                ["td", "th"]
-            )
-
             row_text = cls._clean_text(
                 element.get_text(
                     " ",
@@ -1053,9 +1009,11 @@ class DOHParser:
             if not row_text:
                 continue
 
-            urls = cls._extract_urls(element)
+            cells = element.find_all(
+                ["td", "th"]
+            )
 
-            provider = cls._extract_provider_from_element(
+            urls = cls._extract_urls(
                 element
             )
 
@@ -1065,6 +1023,10 @@ class DOHParser:
                     cells,
                     None,
                     None
+                )
+            else:
+                provider = cls._extract_provider_from_element(
+                    element
                 )
 
             for url in urls:
@@ -1081,8 +1043,7 @@ class DOHParser:
             for entry in cls._extract_dot_entries(
                 element,
                 row_text,
-                provider,
-                urls
+                provider
             ):
                 add_entry(entry)
 
@@ -1098,33 +1059,37 @@ class DOHParser:
                 ""
             ).strip()
 
-            if not cls._is_dns_url(href):
-                continue
+            if cls._is_http_url(href):
+                if cls._is_dns_url(href):
+                    provider = cls._find_provider(
+                        link
+                    )
 
-            provider = cls._find_provider(
-                link
-            )
+                    add_entry(
+                        cls._build_entry(
+                            cls._clean_url(href),
+                            provider
+                        )
+                    )
 
-            entry = cls._build_entry(
-                href,
-                provider
-            )
+            elif href.lower().startswith(
+                "tls://"
+            ):
+                endpoint = cls._parse_dot_endpoint(
+                    href
+                )
 
-            add_entry(entry)
+                if endpoint:
+                    provider = cls._find_provider(
+                        link
+                    )
 
-            context = cls._get_link_context(
-                link
-            )
-
-            dot_entries = cls._extract_dot_entries(
-                link.parent,
-                context,
-                provider,
-                [href]
-            )
-
-            for dot_entry in dot_entries:
-                add_entry(dot_entry)
+                    add_entry(
+                        cls._build_dot_entry(
+                            endpoint,
+                            provider
+                        )
+                    )
 
         return dns_list
 
@@ -1135,6 +1100,10 @@ class DOHParser:
         provider: str
     ) -> Dict[str, Any]:
         try:
+            url = cls._clean_url(
+                url
+            )
+
             parsed = urlparse(url)
 
             scheme = parsed.scheme.lower()
@@ -1148,36 +1117,32 @@ class DOHParser:
             ):
                 return {}
 
-            hostname = parsed.hostname.lower()
+            hostname = parsed.hostname
 
-            port = (
-                parsed.port
-                or (
+            port = parsed.port
+
+            if port is None:
+                port = (
                     443
                     if scheme == "https"
                     else 80
                 )
+
+            path = (
+                parsed.path
+                or "/dns-query"
             )
-
-            path = parsed.path or "/dns-query"
-
-            clean_url = parsed._replace(
-                fragment=""
-            ).geturl().rstrip("/")
 
             provider = cls._clean_provider(
                 provider
             )
 
-            if (
-                not provider
-                or provider == "Unknown"
-            ):
+            if not provider:
                 provider = hostname
 
             return {
                 "provider": provider,
-                "doh_url": clean_url,
+                "doh_url": url,
                 "address": hostname,
                 "name": provider,
                 "source": cls.SOURCE_NAME,
@@ -1203,13 +1168,9 @@ class DOHParser:
         cls,
         text: str
     ) -> bool:
-        normalized = cls._clean_text(
-            text
-        ).lower()
-
         return bool(
             cls.DOT_LABEL_PATTERN.search(
-                normalized
+                cls._clean_text(text)
             )
         )
 
@@ -1221,7 +1182,6 @@ class DOHParser:
         return bool(
             cls.DOT_URL_PATTERN.search(text)
             or cls.DOT_HOST_PORT_PATTERN.search(text)
-            or cls.DOT_853_PATTERN.search(text)
             or cls.DOT_LABELED_HOST_PATTERN.search(text)
         )
 
@@ -1237,17 +1197,26 @@ class DOHParser:
                 )
 
                 for cell in cells:
-                    text = cell.get_text(
-                        " ",
-                        strip=True
+                    text = cls._clean_text(
+                        cell.get_text(
+                            " ",
+                            strip=True
+                        )
                     )
 
-                    if (
-                        text
-                        and not cls._contains_url(text)
-                        and not cls._contains_dot_endpoint(text)
-                        and len(text) <= 200
-                    ):
+                    if not text:
+                        continue
+
+                    if cls._contains_url(text):
+                        continue
+
+                    if cls._contains_dot_endpoint(text):
+                        continue
+
+                    if cls._is_ui_value(text):
+                        continue
+
+                    if len(text) <= 200:
                         return cls._clean_provider(
                             text
                         )
@@ -1259,26 +1228,41 @@ class DOHParser:
                 "article",
                 "li",
             ):
-                text = parent.get_text(
-                    " ",
-                    strip=True
-                )
+                candidates = []
 
-                text = cls.URL_PATTERN.sub(
-                    " ",
-                    text
-                )
+                for child in parent.find_all(
+                    ["span", "strong", "b"]
+                ):
+                    text = cls._clean_text(
+                        child.get_text(
+                            " ",
+                            strip=True
+                        )
+                    )
 
-                text = re.sub(
-                    r"\s+",
-                    " ",
-                    text
-                ).strip()
+                    if not text:
+                        continue
 
-                if text:
-                    return cls._clean_provider(
+                    if cls._contains_url(text):
+                        continue
+
+                    if cls._contains_dot_endpoint(text):
+                        continue
+
+                    if cls._is_ui_value(text):
+                        continue
+
+                    cleaned = cls._clean_provider(
                         text
                     )
+
+                    if cleaned:
+                        candidates.append(
+                            cleaned
+                        )
+
+                if candidates:
+                    return candidates[0]
 
         return "Unknown"
 
@@ -1355,16 +1339,14 @@ class DOHParser:
         try:
             port = int(
                 entry.get(
-                    "port",
-                    cls.DEFAULT_DOT_PORT
+                    "port"
                 )
             )
-
         except (
             ValueError,
             TypeError
         ):
-            port = cls.DEFAULT_DOT_PORT
+            return f"dot|{hostname}"
 
         return (
             f"dot|{hostname}|{port}"
@@ -1379,7 +1361,7 @@ class DOHParser:
             parsed = urlparse(url)
 
             if parsed.hostname:
-                return parsed.hostname.lower()
+                return parsed.hostname
 
         except (
             ValueError,
@@ -1474,11 +1456,40 @@ class DOHParser:
         )
 
     @classmethod
+    def _contains_dot_port(
+        cls,
+        text: str
+    ) -> bool:
+        return bool(
+            cls.DOT_HOST_PORT_PATTERN.search(
+                text
+            )
+        )
+
+    @classmethod
+    def _is_ui_value(
+        cls,
+        text: str
+    ) -> bool:
+        normalized = re.sub(
+            r"\s+",
+            "",
+            str(text or "")
+        )
+
+        return bool(
+            normalized
+            and cls.PROVIDER_NOISE.fullmatch(
+                normalized
+            )
+        )
+
+    @classmethod
     def _clean_url(
         cls,
         url: str
     ) -> str:
-        return url.strip().rstrip(
+        return str(url).strip().rstrip(
             ".,;:)]}\"'"
         )
 
@@ -1525,7 +1536,9 @@ class DOHParser:
             ValueError,
             TypeError
         ):
-            return url.lower().rstrip("/")
+            return str(
+                url
+            ).lower().rstrip("/")
 
     @classmethod
     def _clean_text(
@@ -1556,6 +1569,11 @@ class DOHParser:
             "",
             provider,
             flags=re.IGNORECASE
+        )
+
+        provider = cls.PROVIDER_NOISE.sub(
+            " ",
+            provider
         )
 
         provider = re.sub(
