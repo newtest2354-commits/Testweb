@@ -121,9 +121,6 @@ class AristaDNSHub {
                     dns.address,
                     dns.provider,
                     dns.name,
-                    dns.doh_url,
-                    dns.dot,
-                    dns.hostname,
                     ...(dns.categories || []),
                     ...(dns.protocols || [])
                 ]
@@ -238,8 +235,7 @@ class AristaDNSHub {
         } else if (dns.dot) {
             displayAddress = this.formatDotAddress(
                 dns.dot,
-                dns.address,
-                dns.port,
+                address,
                 isIPv6
             );
 
@@ -250,14 +246,13 @@ class AristaDNSHub {
         ) {
             displayAddress = this.formatDotAddress(
                 null,
-                dns.address,
-                dns.port,
+                address,
                 isIPv6
             );
 
             copyAddress = displayAddress;
         } else if (isIPv6) {
-            displayAddress = `[${address}]`;
+            displayAddress = address;
             copyAddress = address;
         }
 
@@ -278,51 +273,12 @@ class AristaDNSHub {
         `;
     }
 
-    formatDotAddress(dot, address, port, isIPv6) {
+    formatDotAddress(dot, address, isIPv6) {
         if (dot) {
             const value = String(dot).trim();
 
             if (!value) {
-                return this.formatDotAddress(
-                    null,
-                    address,
-                    port,
-                    isIPv6
-                );
-            }
-
-            if (value.startsWith('[')) {
-                const ipv6Match = value.match(
-                    /^\[([0-9a-fA-F:]+)\](?::(\d+))?$/
-                );
-
-                if (ipv6Match) {
-                    return ipv6Match[2]
-                        ? `[${ipv6Match[1]}]:${ipv6Match[2]}`
-                        : `[${ipv6Match[1]}]`;
-                }
-
-                return value;
-            }
-
-            if (isIPv6) {
-                const ipv6Match = value.match(
-                    /^([0-9a-fA-F:]+)(?::(\d+))?$/
-                );
-
-                if (ipv6Match) {
-                    return ipv6Match[2]
-                        ? `[${ipv6Match[1]}]:${ipv6Match[2]}`
-                        : `[${ipv6Match[1]}]`;
-                }
-            }
-
-            const hostnamePort = value.match(
-                /^(.+):(\d+)$/
-            );
-
-            if (hostnamePort) {
-                return value;
+                return address || 'N/A';
             }
 
             return value;
@@ -332,24 +288,11 @@ class AristaDNSHub {
             return 'N/A';
         }
 
-        const normalizedAddress = String(address).trim();
-
-        const normalizedPort =
-            port !== undefined &&
-            port !== null &&
-            String(port).trim() !== ''
-                ? String(port).trim()
-                : null;
-
         if (isIPv6) {
-            return normalizedPort
-                ? `[${normalizedAddress}]:${normalizedPort}`
-                : `[${normalizedAddress}]`;
+            return address;
         }
 
-        return normalizedPort
-            ? `${normalizedAddress}:${normalizedPort}`
-            : normalizedAddress;
+        return address;
     }
 
     updatePagination() {
