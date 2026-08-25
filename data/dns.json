@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-08-21T00:34:12.526354+00:00",
-  "total": 1009,
+  "updated_at": "2026-08-25T00:32:12.796859+00:00",
+  "total": 1007,
   "categories": {
     "AdBlock": 56,
     "Adult Filter": 37,
@@ -9,7 +9,7 @@
     "Malware": 35,
     "Private": 2,
     "Security": 56,
-    "Standard": 831,
+    "Standard": 829,
     "Unfiltered": 71
   },
   "dns": [
@@ -908,7 +908,7 @@
       "path": "/"
     },
     {
-      "id": "eda42fb06126ff66bb970c76e5d5a87c",
+      "id": "4195eb8bcb64d43bd925bfb0d474718e",
       "address": "102.209.21.176",
       "type": "IPv4",
       "provider": "cipherdns-ct1-doh-za",
@@ -924,9 +924,9 @@
         "DoH"
       ],
       "status": "active",
-      "doh_url": "https://ct1-doh.cipherdns.co.za/dns-query",
+      "doh_url": "https://cipherdns.co.za/dns-query",
       "description": "CipherDNS Cape Town privacy resolver. Based in Cape Town, South Africa. Zero logging, DNSSEC validation, unfiltered raw resolution.",
-      "hostname": "ct1-doh.cipherdns.co.za",
+      "hostname": "cipherdns.co.za",
       "port": 443,
       "path": "/dns-query"
     },
@@ -19125,50 +19125,6 @@
       "hostname": "dns.decky.eu",
       "port": 443,
       "path": "/dns-query"
-    },
-    {
-      "id": "b2d1e535ab226d78d55ed2f36b26cc1c",
-      "address": "dns.petqa.ru",
-      "type": "DoH",
-      "provider": "petqa.ru",
-      "name": "petqa.ru",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://dns.petqa.ru/dns-query",
-      "description": "DoH server provided by petqa.ru",
-      "hostname": "dns.petqa.ru",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "1a70ec9e8e4117317f1bb37d82406c33",
-      "address": "petqa.ru",
-      "type": "DoT",
-      "provider": "petqa.ru",
-      "name": "petqa.ru",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "petqa.ru",
-      "description": "DoT server provided by petqa.ru",
-      "hostname": "petqa.ru"
     },
     {
       "id": "bf07c7ff6d8602f7ee463f62531a291a",
