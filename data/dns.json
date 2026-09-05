@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-09-04T01:40:42.375246+00:00",
-  "total": 1011,
+  "updated_at": "2026-09-05T01:41:50.816092+00:00",
+  "total": 1010,
   "categories": {
     "AdBlock": 55,
     "Adult Filter": 37,
@@ -9,7 +9,7 @@
     "Malware": 34,
     "Private": 2,
     "Security": 56,
-    "Standard": 836,
+    "Standard": 835,
     "Unfiltered": 69
   },
   "dns": [
@@ -13152,8 +13152,7 @@
       "provider": "mullvad-adblock-doh",
       "name": "mullvad-adblock-doh",
       "sources": [
-        "dnscrypt",
-        "curl"
+        "dnscrypt"
       ],
       "categories": [
         "AdBlock"
@@ -13176,8 +13175,7 @@
       "provider": "mullvad-all-doh",
       "name": "mullvad-all-doh",
       "sources": [
-        "dnscrypt",
-        "curl"
+        "dnscrypt"
       ],
       "categories": [
         "AdBlock",
@@ -13202,8 +13200,7 @@
       "provider": "mullvad-base-doh",
       "name": "mullvad-base-doh",
       "sources": [
-        "dnscrypt",
-        "curl"
+        "dnscrypt"
       ],
       "categories": [
         "AdBlock",
@@ -13227,8 +13224,7 @@
       "provider": "mullvad-doh",
       "name": "mullvad-doh",
       "sources": [
-        "dnscrypt",
-        "curl"
+        "dnscrypt"
       ],
       "categories": [
         "Unfiltered"
@@ -13251,8 +13247,7 @@
       "provider": "mullvad-extend-doh",
       "name": "mullvad-extend-doh",
       "sources": [
-        "dnscrypt",
-        "curl"
+        "dnscrypt"
       ],
       "categories": [
         "AdBlock",
@@ -13276,8 +13271,7 @@
       "provider": "mullvad-family-doh",
       "name": "mullvad-family-doh",
       "sources": [
-        "dnscrypt",
-        "curl"
+        "dnscrypt"
       ],
       "categories": [
         "AdBlock",
@@ -22144,29 +22138,6 @@
       "hostname": "lacontrevoie.fr",
       "port": 443,
       "path": "/en/services/doh/"
-    },
-    {
-      "id": "441816aa8350f5aa6aa4bac299739cf2",
-      "address": "mullvad.net",
-      "type": "DoH",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://mullvad.net/en/help/dns-over-https-and-dns-over-tls",
-      "description": "DoH server provided by Sign in",
-      "hostname": "mullvad.net",
-      "port": 443,
-      "path": "/en/help/dns-over-https-and-dns-over-tls/"
     },
     {
       "id": "1dc4b7bb9751ebf5d345f24181bf9837",
