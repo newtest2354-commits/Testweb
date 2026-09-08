@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-09-05T01:41:50.816092+00:00",
-  "total": 1010,
+  "updated_at": "2026-09-08T01:44:14.681291+00:00",
+  "total": 1002,
   "categories": {
     "AdBlock": 55,
     "Adult Filter": 37,
@@ -9,8 +9,8 @@
     "Malware": 34,
     "Private": 2,
     "Security": 56,
-    "Standard": 835,
-    "Unfiltered": 69
+    "Standard": 831,
+    "Unfiltered": 65
   },
   "dns": [
     {
@@ -6183,29 +6183,6 @@
       "path": "/dns-query"
     },
     {
-      "id": "9ce76565ac817d1fc5a589f47cb4e055",
-      "address": "81.7.11.246",
-      "type": "IPv4",
-      "provider": "dnscry.pt-doh-jena-ipv4",
-      "name": "dnscry.pt-doh-jena-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Unfiltered"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://jen01.dnscry.pt/dns-query",
-      "description": "DNSCry.pt Jena - DoH, no filter, no logs, DNSSEC support (IPv4 server) https://www.dnscry.pt",
-      "hostname": "jen01.dnscry.pt",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
       "id": "8c8ed51271ef3badbdca28375cccfa80",
       "address": "169.239.128.124",
       "type": "IPv4",
@@ -7770,29 +7747,6 @@
       "path": "/dns-query"
     },
     {
-      "id": "fa27f27754d0043e036414768be96c21",
-      "address": "103.228.101.178",
-      "type": "IPv4",
-      "provider": "dnscry.pt-doh-vientiane-ipv4",
-      "name": "dnscry.pt-doh-vientiane-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Unfiltered"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://vte01.dnscry.pt/dns-query",
-      "description": "DNSCry.pt Vientiane - DoH, no filter, no logs, DNSSEC support (IPv4 server) https://www.dnscry.pt",
-      "hostname": "vte01.dnscry.pt",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
       "id": "bc138d1f602f6eeb5e2d9046bfcc11fb",
       "address": "162.254.86.13",
       "type": "IPv4",
@@ -8940,50 +8894,6 @@
       "port": 443
     },
     {
-      "id": "88086fb788867538b3c453cbc19f0209",
-      "address": "103.99.133.110",
-      "type": "IPv4",
-      "provider": "dnscry.pt-islamabad-ipv4",
-      "name": "dnscry.pt-islamabad-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Islamabad resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
-      "id": "de0c290a7355dfdeb07029c7b9f10972",
-      "address": "2001:df2:d40:29::2",
-      "type": "IPv6",
-      "provider": "dnscry.pt-islamabad-ipv6",
-      "name": "dnscry.pt-islamabad-ipv6",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Islamabad resolver. IPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
       "id": "d37aa87848c836c692b4682ed664564c",
       "address": "188.132.192.168",
       "type": "IPv4",
@@ -9112,50 +9022,6 @@
       "status": "active",
       "dnscrypt": true,
       "description": "dnscry.pt Jakarta resolver. IPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
-      "id": "7ab16d4a2cd38812be9f5897a5d0e014",
-      "address": "81.7.11.246",
-      "type": "IPv4",
-      "provider": "dnscry.pt-jena-ipv4",
-      "name": "dnscry.pt-jena-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Jena resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
-      "id": "599e4fa4de3bdec713efc4c95a4b9917",
-      "address": "2a02:180:6:1::8b4",
-      "type": "IPv6",
-      "provider": "dnscry.pt-jena-ipv6",
-      "name": "dnscry.pt-jena-ipv6",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Jena resolver. IPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
       "hostname": "2.dnscrypt-cert.dnscry.pt",
       "port": 443
     },
@@ -12130,50 +11996,6 @@
       "port": 443
     },
     {
-      "id": "a313b03ed6870cc33ff662304472c4eb",
-      "address": "103.228.101.178",
-      "type": "IPv4",
-      "provider": "dnscry.pt-vientiane-ipv4",
-      "name": "dnscry.pt-vientiane-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Unfiltered"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "DNSCry.pt Vientiane - DNSCrypt, no filter, no logs, DNSSEC support (IPv4 server) https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
-      "id": "60a5d328dbf45cbfe6e80075c67bb05c",
-      "address": "2400:81c0:dc01:85::2",
-      "type": "IPv6",
-      "provider": "dnscry.pt-vientiane-ipv6",
-      "name": "dnscry.pt-vientiane-ipv6",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Unfiltered"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "DNSCry.pt Vientiane - DNSCrypt, no filter, no logs, DNSSEC support (IPv6 server) https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
       "id": "3b8892fe1407bdb4575561d0e3a3af3d",
       "address": "162.254.86.13",
       "type": "IPv4",
@@ -13163,7 +12985,7 @@
       ],
       "status": "active",
       "doh_url": "https://adblock.dns.mullvad.net/dns-query",
-      "description": "Mullvad Ads & Trackers resolver. No logging, DNSSEC-capable, global anycast network. Blocks ads and trackers. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
+      "description": "Mullvad Ads & Trackers resolver. - Deprecated, will be shot down on 11/02/2026 No logging, DNSSEC-capable, global anycast network. Blocks ads and trackers. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
       "hostname": "adblock.dns.mullvad.net",
       "port": 443,
       "path": "/dns-query"
@@ -13188,7 +13010,7 @@
       ],
       "status": "active",
       "doh_url": "https://all.dns.mullvad.net/dns-query",
-      "description": "Mullvad all-filter resolver. No logging, DNSSEC-capable, global anycast network. Blocks ads, trackers, malware, adult content, gambling and social media. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
+      "description": "Mullvad all-filter resolver. - Deprecated, will be shot down on 11/02/2026 No logging, DNSSEC-capable, global anycast network. Blocks ads, trackers, malware, adult content, gambling and social media. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
       "hostname": "all.dns.mullvad.net",
       "port": 443,
       "path": "/dns-query"
@@ -13212,7 +13034,7 @@
       ],
       "status": "active",
       "doh_url": "https://base.dns.mullvad.net/dns-query",
-      "description": "Mullvad base filtering resolver. No logging, DNSSEC-capable, global anycast network. Blocks ads, trackers and malware. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
+      "description": "Mullvad base filtering resolver. - Deprecated, will be shot down on 11/02/2026 No logging, DNSSEC-capable, global anycast network. Blocks ads, trackers and malware. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
       "hostname": "base.dns.mullvad.net",
       "port": 443,
       "path": "/dns-query"
@@ -13235,7 +13057,7 @@
       ],
       "status": "active",
       "doh_url": "https://dns.mullvad.net/dns-query",
-      "description": "Mullvad non-filtering public resolver. No logging, DNSSEC-capable. Anycast IPv4/IPv6 with servers in SE, DE, UK, US, AU, and SG. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
+      "description": "Mullvad non-filtering public resolver. - Deprecated, will be shot down on 11/02/2026 No logging, DNSSEC-capable. Anycast IPv4/IPv6 with servers in SE, DE, UK, US, AU, and SG. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
       "hostname": "dns.mullvad.net",
       "port": 443,
       "path": "/dns-query"
@@ -13259,7 +13081,7 @@
       ],
       "status": "active",
       "doh_url": "https://extended.dns.mullvad.net/dns-query",
-      "description": "Mullvad extended filtering resolver. No logging, DNSSEC-capable, global anycast network. Blocks ads, trackers, malware and social media. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
+      "description": "Mullvad extended filtering resolver. - Deprecated, will be shot down on 11/02/2026 No logging, DNSSEC-capable, global anycast network. Blocks ads, trackers, malware and social media. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
       "hostname": "extended.dns.mullvad.net",
       "port": 443,
       "path": "/dns-query"
@@ -13285,7 +13107,7 @@
       ],
       "status": "active",
       "doh_url": "https://family.dns.mullvad.net/dns-query",
-      "description": "Mullvad family filtering resolver. No logging, DNSSEC-capable, global anycast network. Blocks ads, trackers, malware, adult content and gambling. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
+      "description": "Mullvad family filtering resolver. - Deprecated, will be shot down on 11/02/2026 No logging, DNSSEC-capable, global anycast network. Blocks ads, trackers, malware, adult content and gambling. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
       "hostname": "family.dns.mullvad.net",
       "port": 443,
       "path": "/dns-query"
