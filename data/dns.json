@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-09-08T01:44:14.681291+00:00",
-  "total": 1002,
+  "updated_at": "2026-09-11T01:45:48.402592+00:00",
+  "total": 1003,
   "categories": {
     "AdBlock": 55,
     "Adult Filter": 37,
@@ -10,7 +10,7 @@
     "Private": 2,
     "Security": 56,
     "Standard": 831,
-    "Unfiltered": 65
+    "Unfiltered": 66
   },
   "dns": [
     {
@@ -13111,6 +13111,28 @@
       "hostname": "family.dns.mullvad.net",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "558a7a943f087993840cd26326597a5a",
+      "address": "167.233.241.101",
+      "type": "IPv4",
+      "provider": "nbg-dnscrypt",
+      "name": "nbg-dnscrypt",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Unfiltered"
+      ],
+      "protocols": [
+        "DNS",
+        "DNSCrypt"
+      ],
+      "status": "active",
+      "dnscrypt": true,
+      "description": "Uncensored and privacy-friendly DNSCrypt resolver located in Nuernberg, Germany. Strictly no logs and no filters. DNSSEC validating.",
+      "hostname": "2.dnscrypt-cert.nbg-dnscrypt.eu",
+      "port": 443
     },
     {
       "id": "466debb94e6e85592876f0f4f0ca640d",
