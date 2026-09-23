@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-09-18T01:51:53.805330+00:00",
-  "total": 1005,
+  "updated_at": "2026-09-23T02:06:42.425941+00:00",
+  "total": 1007,
   "categories": {
-    "AdBlock": 55,
-    "Adult Filter": 37,
-    "Family": 31,
-    "Malware": 34,
+    "AdBlock": 56,
+    "Adult Filter": 38,
+    "Family": 32,
+    "Malware": 35,
     "Private": 2,
     "Security": 56,
     "Standard": 833,
-    "Unfiltered": 66
+    "Unfiltered": 67
   },
   "dns": [
     {
@@ -12711,6 +12711,55 @@
       "description": "Nicolas Derriere recursive-to-root resolver. Hosted in France. DNSSEC, no logs, no filters. Homepage: https://nicolas-dorriere.fr/blog/it-was-dns.html",
       "hostname": "2.dnscrypt-cert.dnscrypt-recursive-to-root-udp-only.nicolas-dorriere.fr",
       "port": 443
+    },
+    {
+      "id": "c0464dbfcce37546c15f2d0ccd91692f",
+      "address": "185.44.82.158",
+      "type": "IPv4",
+      "provider": "dremaxx",
+      "name": "dremaxx",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Unfiltered"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://open.dns.dremaxx.com/dns-query",
+      "description": "Dremaxx Open resolver. Non-filtering, no logs, DNSSEC validation. Recursive, sites in Zurich, Dusseldorf and Houston. Resolves on its own (not a frontend to another public resolver). IPv4 endpoint; IPv6 is anycast from AS218835. Operated by Yannick Dreher. Homepage: https://dremaxx.de/en/dns-resolvers",
+      "hostname": "open.dns.dremaxx.com",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
+      "id": "3dc8026d02c856bfa7cadb70ed7b1f52",
+      "address": "185.44.82.150",
+      "type": "IPv4",
+      "provider": "dremaxx-family",
+      "name": "dremaxx-family",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "AdBlock",
+        "Family",
+        "Adult Filter",
+        "Malware"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://family.dns.dremaxx.com/dns-query",
+      "description": "Dremaxx Family resolver. Blocks adult content, no logs, DNSSEC validation. Recursive, sites in Zurich, Dusseldorf and Houston. Blocks about 489,000 adult domains (OISD NSFW list, refreshed hourly); no ad, tracker or malware filtering. IPv4 endpoint. Blocked names are rewritten, so clients validating DNSSEC themselves get SERVFAIL for blocked signed domains. Operated by Yannick Dreher. Homepage: https://dremaxx.de/en/dns-resolvers",
+      "hostname": "family.dns.dremaxx.com",
+      "port": 443,
+      "path": "/dns-query"
     },
     {
       "id": "8eacbb41d0e0b9d99b67aaa72d370c01",
