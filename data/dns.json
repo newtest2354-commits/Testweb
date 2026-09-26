@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-09-23T02:06:42.425941+00:00",
-  "total": 1007,
+  "updated_at": "2026-09-26T02:16:20.529265+00:00",
+  "total": 1008,
   "categories": {
     "AdBlock": 56,
     "Adult Filter": 38,
@@ -10,7 +10,7 @@
     "Private": 2,
     "Security": 56,
     "Standard": 833,
-    "Unfiltered": 67
+    "Unfiltered": 68
   },
   "dns": [
     {
@@ -12421,7 +12421,7 @@
       ],
       "status": "active",
       "doh_url": "https://dnslow.me/dns-query",
-      "description": "dnslow.me privacy-first filtering resolver. Open-source project with advertising and threat blocking. More info on the [homepage](https://dnslow.me) and [GitHub](https://github.com/PeterDaveHello/dnslow.me)",
+      "description": "dnslow.me privacy-first filtering resolver. Open-source project with advertising and threat blocking. More info on the homepage (https://dnslow.me) and GitHub (https://github.com/PeterDaveHello/dnslow.me)",
       "hostname": "dnslow.me",
       "port": 443,
       "path": "/dns-query"
@@ -12758,6 +12758,29 @@
       "doh_url": "https://family.dns.dremaxx.com/dns-query",
       "description": "Dremaxx Family resolver. Blocks adult content, no logs, DNSSEC validation. Recursive, sites in Zurich, Dusseldorf and Houston. Blocks about 489,000 adult domains (OISD NSFW list, refreshed hourly); no ad, tracker or malware filtering. IPv4 endpoint. Blocked names are rewritten, so clients validating DNSSEC themselves get SERVFAIL for blocked signed domains. Operated by Yannick Dreher. Homepage: https://dremaxx.de/en/dns-resolvers",
       "hostname": "family.dns.dremaxx.com",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
+      "id": "4b82e04e720af06da75572a75d509660",
+      "address": "164.70.114.51",
+      "type": "IPv4",
+      "provider": "ekinao-doh-ipv4",
+      "name": "ekinao-doh-ipv4",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Unfiltered"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.ekinao.com/dns-query",
+      "description": "Operated by ekinao.com (https://www.ekinao.com/). No logging, no filtering, DNSSEC validation enabled, no EDNS. Service page: パブリックDNSサービス (https://www.ekinao.com/publicdns.html)",
+      "hostname": "dns.ekinao.com",
       "port": 443,
       "path": "/dns-query"
     },
