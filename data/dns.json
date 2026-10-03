@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-09-30T02:41:58.701514+00:00",
-  "total": 1008,
+  "updated_at": "2026-10-03T02:37:01.578864+00:00",
+  "total": 1011,
   "categories": {
     "AdBlock": 56,
     "Adult Filter": 38,
@@ -9,7 +9,7 @@
     "Malware": 35,
     "Private": 2,
     "Security": 56,
-    "Standard": 833,
+    "Standard": 836,
     "Unfiltered": 68
   },
   "dns": [
@@ -17414,6 +17414,71 @@
       "dot": "hostux.net",
       "description": "DoT server provided by Hostux.net",
       "hostname": "hostux.net"
+    },
+    {
+      "id": "2b08ad0653ea2af89d7224a056aa3c3a",
+      "address": "dns.hqdns.sarl",
+      "type": "DoH",
+      "provider": "hqdns",
+      "name": "hqdns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.hqdns.sarl/dns-query",
+      "description": "DoH server provided by HQDNS",
+      "hostname": "dns.hqdns.sarl",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
+      "id": "f2d2ad82e32cff13922a09e4f28ff212",
+      "address": "dns.hqdns.sarl",
+      "type": "DoT",
+      "provider": "hqdns",
+      "name": "hqdns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "dns.hqdns.sarl",
+      "description": "DoT server provided by HQDNS",
+      "hostname": "dns.hqdns.sarl"
+    },
+    {
+      "id": "31364c8da010ddd8fac9c748825124be",
+      "address": "185.215.166.168",
+      "type": "IPv4",
+      "provider": "hqdns",
+      "name": "hqdns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "185.215.166.168",
+      "description": "DoT server provided by HQDNS",
+      "hostname": "185.215.166.168"
     },
     {
       "id": "50ee9136e9d8c460a41b2a9023ffa1f2",
