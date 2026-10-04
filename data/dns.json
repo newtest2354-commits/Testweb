@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-03T02:37:01.578864+00:00",
-  "total": 1011,
+  "updated_at": "2026-10-04T03:08:09.228073+00:00",
+  "total": 1008,
   "categories": {
     "AdBlock": 56,
     "Adult Filter": 38,
@@ -9,7 +9,7 @@
     "Malware": 35,
     "Private": 2,
     "Security": 56,
-    "Standard": 836,
+    "Standard": 833,
     "Unfiltered": 68
   },
   "dns": [
@@ -4125,28 +4125,6 @@
       "port": 443
     },
     {
-      "id": "d6f4f4c0446c93e239d6f320243be53a",
-      "address": "2001:df1:88c0:200::14",
-      "type": "IPv6",
-      "provider": "dnscry.pt-bangkok-ipv6",
-      "name": "dnscry.pt-bangkok-ipv6",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Bangkok resolver. IPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
       "id": "48bd9107337b355c7235734144011a7a",
       "address": "160.191.182.216",
       "type": "IPv4",
@@ -6183,6 +6161,29 @@
       "path": "/dns-query"
     },
     {
+      "id": "9ce76565ac817d1fc5a589f47cb4e055",
+      "address": "81.7.11.246",
+      "type": "IPv4",
+      "provider": "dnscry.pt-doh-jena-ipv4",
+      "name": "dnscry.pt-doh-jena-ipv4",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://jen01.dnscry.pt/dns-query",
+      "description": "dnscry.pt Jena DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
+      "hostname": "jen01.dnscry.pt",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
       "id": "8c8ed51271ef3badbdca28375cccfa80",
       "address": "169.239.128.124",
       "type": "IPv4",
@@ -6271,52 +6272,6 @@
       "doh_url": "https://mci01.dnscry.pt/dns-query",
       "description": "dnscry.pt Kansas City DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
       "hostname": "mci01.dnscry.pt",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "4aad5bc11dd879c1c84b45bb5e2efee3",
-      "address": "217.12.221.61",
-      "type": "IPv4",
-      "provider": "dnscry.pt-doh-kyiv-ipv4",
-      "name": "dnscry.pt-doh-kyiv-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://iev01.dnscry.pt/dns-query",
-      "description": "dnscry.pt Kyiv DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
-      "hostname": "iev01.dnscry.pt",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "8af5693bfa455a3b16d072e140b039ab",
-      "address": "185.126.255.30",
-      "type": "IPv4",
-      "provider": "dnscry.pt-doh-kyiv02-ipv4",
-      "name": "dnscry.pt-doh-kyiv02-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://iev02.dnscry.pt/dns-query",
-      "description": "dnscry.pt Kyiv 02 DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
-      "hostname": "iev02.dnscry.pt",
       "port": 443,
       "path": "/dns-query"
     },
@@ -7379,29 +7334,6 @@
       "path": "/dns-query"
     },
     {
-      "id": "46ea8e05e73612094dbb1ccb31e996d0",
-      "address": "103.131.189.191",
-      "type": "IPv4",
-      "provider": "dnscry.pt-doh-taipeh-ipv4",
-      "name": "dnscry.pt-doh-taipeh-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://tpe01.dnscry.pt/dns-query",
-      "description": "dnscry.pt Taipeh DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
-      "hostname": "tpe01.dnscry.pt",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
       "id": "43a52044fd364704a4b4b844ecb593b6",
       "address": "185.194.53.22",
       "type": "IPv4",
@@ -7743,6 +7675,29 @@
       "doh_url": "https://vie01.dnscry.pt/dns-query",
       "description": "dnscry.pt Vienna DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
       "hostname": "vie01.dnscry.pt",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
+      "id": "fa27f27754d0043e036414768be96c21",
+      "address": "103.228.101.178",
+      "type": "IPv4",
+      "provider": "dnscry.pt-doh-vientiane-ipv4",
+      "name": "dnscry.pt-doh-vientiane-ipv4",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://vte01.dnscry.pt/dns-query",
+      "description": "dnscry.pt Vientiane DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
+      "hostname": "vte01.dnscry.pt",
       "port": 443,
       "path": "/dns-query"
     },
@@ -8564,6 +8519,28 @@
       "port": 443
     },
     {
+      "id": "a35059aceac27f8bb2bffd8c1fb14de3",
+      "address": "165.99.131.95",
+      "type": "IPv4",
+      "provider": "dnscry.pt-hochiminhcity-ipv4",
+      "name": "dnscry.pt-hochiminhcity-ipv4",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DNSCrypt"
+      ],
+      "status": "active",
+      "dnscrypt": true,
+      "description": "dnscry.pt Ho Chi Minh City resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
+      "hostname": "2.dnscrypt-cert.dnscry.pt",
+      "port": 443
+    },
+    {
       "id": "9c46fae78ebaf23dae7c19ab94d9e5e4",
       "address": "2400:d760:0:343::1",
       "type": "IPv6",
@@ -9198,94 +9175,6 @@
       "status": "active",
       "dnscrypt": true,
       "description": "dnscry.pt Kansas City resolver. IPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
-      "id": "d24a607687fd9ab2252c6001756521d9",
-      "address": "217.12.221.61",
-      "type": "IPv4",
-      "provider": "dnscry.pt-kyiv-ipv4",
-      "name": "dnscry.pt-kyiv-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Kyiv resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
-      "id": "b7e78a70d607ccf4423a997fc3418318",
-      "address": "2a02:27ad::201",
-      "type": "IPv6",
-      "provider": "dnscry.pt-kyiv-ipv6",
-      "name": "dnscry.pt-kyiv-ipv6",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Kyiv resolver. IPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
-      "id": "753b75ee2418f9c2cf354ea678648ec9",
-      "address": "185.126.255.30",
-      "type": "IPv4",
-      "provider": "dnscry.pt-kyiv02-ipv4",
-      "name": "dnscry.pt-kyiv02-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Kyiv 02 resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
-      "id": "75d8c028af13e2fdafc14908e92c937d",
-      "address": "2a01:f500:2:1500::a",
-      "type": "IPv6",
-      "provider": "dnscry.pt-kyiv02-ipv6",
-      "name": "dnscry.pt-kyiv02-ipv6",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Kyiv 02 resolver. IPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
       "hostname": "2.dnscrypt-cert.dnscry.pt",
       "port": 443
     },
@@ -11288,50 +11177,6 @@
       "status": "active",
       "dnscrypt": true,
       "description": "dnscry.pt Sydney 02 resolver. IPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
-      "id": "c0129599b85944fef3adaf8dbd862a78",
-      "address": "103.131.189.191",
-      "type": "IPv4",
-      "provider": "dnscry.pt-taipeh-ipv4",
-      "name": "dnscry.pt-taipeh-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Taipeh resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
-      "id": "71bd9ee96daa4f21db9ec73148fd65f8",
-      "address": "2403:cfc0:1004::b5b:47ff",
-      "type": "IPv6",
-      "provider": "dnscry.pt-taipeh-ipv6",
-      "name": "dnscry.pt-taipeh-ipv6",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Taipeh resolver. IPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
       "hostname": "2.dnscrypt-cert.dnscry.pt",
       "port": 443
     },
@@ -16185,6 +16030,50 @@
       "hostname": "seoul.dnsovertor.cc",
       "port": 443,
       "path": "/dns-query"
+    },
+    {
+      "id": "4bafd1e683d79b33e14265d9a7717189",
+      "address": "dnsdoh.art",
+      "type": "DoH",
+      "provider": "dnsdoh",
+      "name": "dnsdoh",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dnsdoh.art/dns-query",
+      "description": "DoH server provided by DNSDOH",
+      "hostname": "dnsdoh.art",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
+      "id": "7b6b48b2026c775b3a70042156e1ca8d",
+      "address": "194.180.189.33",
+      "type": "IPv4",
+      "provider": "dnsdoh",
+      "name": "dnsdoh",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoT"
+      ],
+      "status": "active",
+      "dot": "194.180.189.33",
+      "description": "DoT server provided by DNSDOH",
+      "hostname": "194.180.189.33"
     },
     {
       "id": "0a4e951f7b88be67a574bbe634ae1ab2",
@@ -21661,6 +21550,29 @@
       "path": "/TechnitiumSoftware/DnsServer"
     },
     {
+      "id": "cf585dfd27a659331c362a3c8b383445",
+      "address": "github.com",
+      "type": "DoH",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://github.com/DNSCrypt/dnscrypt-resolvers",
+      "description": "DoH server provided by Sign in",
+      "hostname": "github.com",
+      "port": 443,
+      "path": "/DNSCrypt/dnscrypt-resolvers"
+    },
+    {
       "id": "cc3eb8c536b90e1401a46cd2578f00d0",
       "address": "adguard-dns.io",
       "type": "DoH",
@@ -21958,6 +21870,29 @@
       "hostname": "www.dnshome.de",
       "port": 443,
       "path": "/doh-dot-public-resolver.php"
+    },
+    {
+      "id": "a37b6b28ca5a044c4039bf0d775353ca",
+      "address": "dnsdoh.art",
+      "type": "DoH",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dnsdoh.art/",
+      "description": "DoH server provided by Sign in",
+      "hostname": "dnsdoh.art",
+      "port": 443,
+      "path": "/"
     },
     {
       "id": "a1bad79656037910865d13d7960c68a9",
