@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "updated_at": "2026-10-04T03:08:09.228073+00:00",
-  "total": 1008,
+  "updated_at": "2026-10-05T02:41:44.836280+00:00",
+  "total": 1010,
   "categories": {
-    "AdBlock": 56,
+    "AdBlock": 59,
     "Adult Filter": 38,
     "Family": 32,
-    "Malware": 35,
+    "Malware": 38,
     "Private": 2,
-    "Security": 56,
-    "Standard": 833,
-    "Unfiltered": 68
+    "Security": 57,
+    "Standard": 830,
+    "Unfiltered": 70
   },
   "dns": [
     {
@@ -6069,29 +6069,6 @@
       "path": "/dns-query"
     },
     {
-      "id": "d8aef220518d4b67c7a3ff91d089d8a2",
-      "address": "103.99.133.110",
-      "type": "IPv4",
-      "provider": "dnscry.pt-doh-islamabad-ipv4",
-      "name": "dnscry.pt-doh-islamabad-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://isb01.dnscry.pt/dns-query",
-      "description": "dnscry.pt Islamabad DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
-      "hostname": "isb01.dnscry.pt",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
       "id": "ec5222f6815501b1c1f179655b410efd",
       "address": "188.132.192.168",
       "type": "IPv4",
@@ -6157,29 +6134,6 @@
       "doh_url": "https://jkt01.dnscry.pt/dns-query",
       "description": "dnscry.pt Jakarta DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
       "hostname": "jkt01.dnscry.pt",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "9ce76565ac817d1fc5a589f47cb4e055",
-      "address": "81.7.11.246",
-      "type": "IPv4",
-      "provider": "dnscry.pt-doh-jena-ipv4",
-      "name": "dnscry.pt-doh-jena-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://jen01.dnscry.pt/dns-query",
-      "description": "dnscry.pt Jena DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
-      "hostname": "jen01.dnscry.pt",
       "port": 443,
       "path": "/dns-query"
     },
@@ -6272,6 +6226,29 @@
       "doh_url": "https://mci01.dnscry.pt/dns-query",
       "description": "dnscry.pt Kansas City DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
       "hostname": "mci01.dnscry.pt",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
+      "id": "8af5693bfa455a3b16d072e140b039ab",
+      "address": "185.126.255.30",
+      "type": "IPv4",
+      "provider": "dnscry.pt-doh-kyiv02-ipv4",
+      "name": "dnscry.pt-doh-kyiv02-ipv4",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://iev02.dnscry.pt/dns-query",
+      "description": "dnscry.pt Kyiv 02 DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
+      "hostname": "iev02.dnscry.pt",
       "port": 443,
       "path": "/dns-query"
     },
@@ -7334,6 +7311,29 @@
       "path": "/dns-query"
     },
     {
+      "id": "46ea8e05e73612094dbb1ccb31e996d0",
+      "address": "103.131.189.191",
+      "type": "IPv4",
+      "provider": "dnscry.pt-doh-taipeh-ipv4",
+      "name": "dnscry.pt-doh-taipeh-ipv4",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://tpe01.dnscry.pt/dns-query",
+      "description": "dnscry.pt Taipeh DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
+      "hostname": "tpe01.dnscry.pt",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
       "id": "43a52044fd364704a4b4b844ecb593b6",
       "address": "185.194.53.22",
       "type": "IPv4",
@@ -7675,29 +7675,6 @@
       "doh_url": "https://vie01.dnscry.pt/dns-query",
       "description": "dnscry.pt Vienna DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
       "hostname": "vie01.dnscry.pt",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "fa27f27754d0043e036414768be96c21",
-      "address": "103.228.101.178",
-      "type": "IPv4",
-      "provider": "dnscry.pt-doh-vientiane-ipv4",
-      "name": "dnscry.pt-doh-vientiane-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://vte01.dnscry.pt/dns-query",
-      "description": "dnscry.pt Vientiane DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
-      "hostname": "vte01.dnscry.pt",
       "port": 443,
       "path": "/dns-query"
     },
@@ -9175,6 +9152,28 @@
       "status": "active",
       "dnscrypt": true,
       "description": "dnscry.pt Kansas City resolver. IPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
+      "hostname": "2.dnscrypt-cert.dnscry.pt",
+      "port": 443
+    },
+    {
+      "id": "d24a607687fd9ab2252c6001756521d9",
+      "address": "217.12.221.61",
+      "type": "IPv4",
+      "provider": "dnscry.pt-kyiv-ipv4",
+      "name": "dnscry.pt-kyiv-ipv4",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DNSCrypt"
+      ],
+      "status": "active",
+      "dnscrypt": true,
+      "description": "dnscry.pt Kyiv resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
       "hostname": "2.dnscrypt-cert.dnscry.pt",
       "port": 443
     },
@@ -12723,6 +12722,32 @@
       "path": "/dns-query"
     },
     {
+      "id": "47357bcb758e42f7ff4dc6bfb0297315",
+      "address": "185.215.166.168",
+      "type": "IPv4",
+      "provider": "hqdns-doh",
+      "name": "hqdns-doh",
+      "sources": [
+        "dnscrypt",
+        "curl"
+      ],
+      "categories": [
+        "AdBlock",
+        "Security",
+        "Malware"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.hqdns.sarl/dns-query",
+      "description": "Independent public DNS resolver with filtering for ads, trackers, malware and phishing. Personal, non-commercial project. HQDNS does not retain DNS query logs and performs its own recursive DNS resolution. Homepage: https://hqdns.sarl",
+      "hostname": "dns.hqdns.sarl",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
       "id": "ecdd93856fc6706097208e1d2d2b3045",
       "address": "213.196.191.96",
       "type": "IPv4",
@@ -13188,6 +13213,30 @@
       "doh_url": "https://dns.as212683.net/dns-query",
       "description": "Olilo public resolver. Two nodes in London. No logging, no filtering, DNSSEC validation. No EDNS Client Subnet. Operated by Olilo (AS212683). DNS service: https://dns.as212683.net",
       "hostname": "dns.as212683.net",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
+      "id": "43b6078040e5a9871604271a315b8dbd",
+      "address": "188.245.192.196",
+      "type": "IPv4",
+      "provider": "pidoh-mapledns",
+      "name": "pidoh-mapledns",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "AdBlock",
+        "Malware"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://pidoh.mapledns.net/dns-query",
+      "description": "MapleDNS public recursive resolver. Blocks ads, trackers and malware. DNSSEC validating. No query logging. DoH and DoT. No plain DNS.",
+      "hostname": "pidoh.mapledns.net",
       "port": 443,
       "path": "/dns-query"
     },
@@ -14436,6 +14485,78 @@
       "doh_url": "https://77.88.8.88/dns-query",
       "description": "Yandex Public DNS Safe resolver. Anycast service operated by Yandex with malware filtering. Operated by Yandex. Service page: https://dns.yandex.com/",
       "hostname": "77.88.8.88",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
+      "id": "38ff2d467040d258d801913af7aad01f",
+      "address": "177.177.83.83",
+      "type": "IPv4",
+      "provider": "yunzheng",
+      "name": "yunzheng",
+      "sources": [
+        "dnscrypt",
+        "curl"
+      ],
+      "categories": [
+        "Unfiltered"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.yunzheng.space/dns-query",
+      "description": "YunZheng LAB public resolver. Anycast service with DNSSEC validation and no filtering. No per-query logs are kept. Service addresses: 177.177.83.83, 2602:f3ff:83::83. DoH, DoT and DoQ on dns.yunzheng.space. Operated by YunZheng LAB (AS204921), a non-profit educational and research laboratory. Service page: https://orbit.yunzheng.space/public-resolver/ Privacy policy: https://orbit.yunzheng.space/public-resolver/privacy/",
+      "hostname": "dns.yunzheng.space",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
+      "id": "5f3ecc360bc278dc8ed9becaaa519c03",
+      "address": "177.177.83.64",
+      "type": "IPv4",
+      "provider": "yunzheng-dns64",
+      "name": "yunzheng-dns64",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Unfiltered"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns64.dns.yunzheng.space/dns-query",
+      "description": "YunZheng LAB public resolver, DNS64. Anycast service with DNSSEC validation and no filtering, plus DNS64 (RFC 6147) on the well-known prefix 64:ff9b::/96: a name with no AAAA record is answered with an address built from its A record, for IPv6-only networks whose NAT64 gateway uses that prefix. No per-query logs are kept. Service addresses: 177.177.83.64, 2602:f3ff:83::64. DoH, DoT and DoQ on dns64.dns.yunzheng.space. Operated by YunZheng LAB (AS204921), a non-profit educational and research laboratory. Service page: https://orbit.yunzheng.space/public-resolver/ Privacy policy: https://orbit.yunzheng.space/public-resolver/privacy/",
+      "hostname": "dns64.dns.yunzheng.space",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
+      "id": "7a71ef1fb4a72cd637cf0dad78c8e409",
+      "address": "177.177.83.84",
+      "type": "IPv4",
+      "provider": "yunzheng-filtered",
+      "name": "yunzheng-filtered",
+      "sources": [
+        "dnscrypt",
+        "curl"
+      ],
+      "categories": [
+        "AdBlock",
+        "Malware"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://filter.dns.yunzheng.space/dns-query",
+      "description": "YunZheng LAB public resolver, filtering. Anycast service with DNSSEC validation. Advertising, tracking and known-malware domains are refused and answered with a notice page. No per-query logs are kept. Service addresses: 177.177.83.84, 2602:f3ff:83::84. DoH, DoT and DoQ on filter.dns.yunzheng.space. Operated by YunZheng LAB (AS204921), a non-profit educational and research laboratory. Service page: https://orbit.yunzheng.space/public-resolver/ Privacy policy: https://orbit.yunzheng.space/public-resolver/privacy/",
+      "hostname": "filter.dns.yunzheng.space",
       "port": 443,
       "path": "/dns-query"
     },
@@ -17303,29 +17424,6 @@
       "dot": "hostux.net",
       "description": "DoT server provided by Hostux.net",
       "hostname": "hostux.net"
-    },
-    {
-      "id": "2b08ad0653ea2af89d7224a056aa3c3a",
-      "address": "dns.hqdns.sarl",
-      "type": "DoH",
-      "provider": "hqdns",
-      "name": "hqdns",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://dns.hqdns.sarl/dns-query",
-      "description": "DoH server provided by HQDNS",
-      "hostname": "dns.hqdns.sarl",
-      "port": 443,
-      "path": "/dns-query"
     },
     {
       "id": "f2d2ad82e32cff13922a09e4f28ff212",
@@ -20542,52 +20640,6 @@
       "doh_url": "https://dns.w3ctag.org/dns-query",
       "description": "DoH server provided by W3C TAG",
       "hostname": "dns.w3ctag.org",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "3e12d5abd491f84c60389703124961b7",
-      "address": "dns.yunzheng.space",
-      "type": "DoH",
-      "provider": "yunzheng lab",
-      "name": "yunzheng lab",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://dns.yunzheng.space/dns-query",
-      "description": "DoH server provided by YunZheng LAB",
-      "hostname": "dns.yunzheng.space",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "ccf91a657c866a983cbe4b23f4150a76",
-      "address": "filter.dns.yunzheng.space",
-      "type": "DoH",
-      "provider": "yunzheng lab",
-      "name": "yunzheng lab",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://filter.dns.yunzheng.space/dns-query",
-      "description": "DoH server provided by YunZheng LAB",
-      "hostname": "filter.dns.yunzheng.space",
       "port": 443,
       "path": "/dns-query"
     },

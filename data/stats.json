@@ -1,17 +1,17 @@
 {
-  "total_dns": 1008,
-  "total_ipv4": 445,
+  "total_dns": 1010,
+  "total_ipv4": 450,
   "total_ipv6": 188,
-  "total_doh": 520,
+  "total_doh": 521,
   "total_dot": 92,
-  "total_dnscrypt": 396,
-  "total_standard": 833,
+  "total_dnscrypt": 397,
+  "total_standard": 830,
   "total_private": 2,
   "total_family": 32,
-  "total_adblock": 56,
-  "total_security": 56,
-  "total_malware": 35,
+  "total_adblock": 59,
+  "total_security": 57,
+  "total_malware": 38,
   "total_freeshekan": 0,
   "total_sources": 2,
-  "last_updated": "2026-10-04T03:08:09.228050+00:00"
+  "last_updated": "2026-10-05T02:41:44.836256+00:00"
 }
