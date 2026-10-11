@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T03:34:05.648023+00:00",
-  "total": 1009,
+  "updated_at": "2026-10-11T02:32:43.134096+00:00",
+  "total": 1012,
   "categories": {
     "AdBlock": 59,
     "Adult Filter": 38,
@@ -9,7 +9,7 @@
     "Malware": 38,
     "Private": 2,
     "Security": 57,
-    "Standard": 829,
+    "Standard": 832,
     "Unfiltered": 70
   },
   "dns": [
@@ -672,29 +672,6 @@
       "doh_url": "https://139.129.137.137/dns-query",
       "description": "Alibaba Cloud Public DNS resolver. Operated by Alibaba Cloud for mainland China, with domestic, Hong Kong and overseas access nodes. Homepage: https://alidns.com Warning: GFW filtering rules are applied by this resolver.",
       "hostname": "139.129.137.137",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "281d3100f86af1cac18442fd2f7ab2ac",
-      "address": "47.122.8.11",
-      "type": "IPv4",
-      "provider": "alidns-doh",
-      "name": "alidns-doh",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://47.122.8.11/dns-query",
-      "description": "Alibaba Cloud Public DNS resolver. Operated by Alibaba Cloud for mainland China, with domestic, Hong Kong and overseas access nodes. Homepage: https://alidns.com Warning: GFW filtering rules are applied by this resolver.",
-      "hostname": "47.122.8.11",
       "port": 443,
       "path": "/dns-query"
     },
@@ -6069,6 +6046,29 @@
       "path": "/dns-query"
     },
     {
+      "id": "d8aef220518d4b67c7a3ff91d089d8a2",
+      "address": "103.99.133.110",
+      "type": "IPv4",
+      "provider": "dnscry.pt-doh-islamabad-ipv4",
+      "name": "dnscry.pt-doh-islamabad-ipv4",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://isb01.dnscry.pt/dns-query",
+      "description": "dnscry.pt Islamabad DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
+      "hostname": "isb01.dnscry.pt",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
       "id": "ec5222f6815501b1c1f179655b410efd",
       "address": "188.132.192.168",
       "type": "IPv4",
@@ -9178,6 +9178,28 @@
       "port": 443
     },
     {
+      "id": "753b75ee2418f9c2cf354ea678648ec9",
+      "address": "185.126.255.30",
+      "type": "IPv4",
+      "provider": "dnscry.pt-kyiv02-ipv4",
+      "name": "dnscry.pt-kyiv02-ipv4",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DNSCrypt"
+      ],
+      "status": "active",
+      "dnscrypt": true,
+      "description": "dnscry.pt Kyiv 02 resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
+      "hostname": "2.dnscrypt-cert.dnscry.pt",
+      "port": 443
+    },
+    {
       "id": "aa38fb5a4dd499c1a25d8e2bd6ba6c0d",
       "address": "66.187.4.39",
       "type": "IPv4",
@@ -11176,6 +11198,50 @@
       "status": "active",
       "dnscrypt": true,
       "description": "dnscry.pt Sydney 02 resolver. IPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
+      "hostname": "2.dnscrypt-cert.dnscry.pt",
+      "port": 443
+    },
+    {
+      "id": "c0129599b85944fef3adaf8dbd862a78",
+      "address": "103.131.189.191",
+      "type": "IPv4",
+      "provider": "dnscry.pt-taipeh-ipv4",
+      "name": "dnscry.pt-taipeh-ipv4",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DNSCrypt"
+      ],
+      "status": "active",
+      "dnscrypt": true,
+      "description": "dnscry.pt Taipeh resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
+      "hostname": "2.dnscrypt-cert.dnscry.pt",
+      "port": 443
+    },
+    {
+      "id": "71bd9ee96daa4f21db9ec73148fd65f8",
+      "address": "2403:cfc0:1004::b5b:47ff",
+      "type": "IPv6",
+      "provider": "dnscry.pt-taipeh-ipv6",
+      "name": "dnscry.pt-taipeh-ipv6",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DNSCrypt"
+      ],
+      "status": "active",
+      "dnscrypt": true,
+      "description": "dnscry.pt Taipeh resolver. IPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
       "hostname": "2.dnscrypt-cert.dnscry.pt",
       "port": 443
     },
