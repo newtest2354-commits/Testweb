@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-11T02:32:43.134096+00:00",
-  "total": 1012,
+  "updated_at": "2026-10-14T02:25:09.270999+00:00",
+  "total": 1011,
   "categories": {
     "AdBlock": 59,
     "Adult Filter": 38,
@@ -9,7 +9,7 @@
     "Malware": 38,
     "Private": 2,
     "Security": 57,
-    "Standard": 832,
+    "Standard": 831,
     "Unfiltered": 70
   },
   "dns": [
@@ -130,7 +130,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "AdGuard DNS Default public resolver. Blocks ads, trackers, phishing and malicious domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
+      "description": "AdGuard DNS Default public resolver. Available through servers in multiple locations around the world. Blocks ads, trackers, phishing and malicious domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
       "hostname": "2.dnscrypt.default.ns1.adguard.com",
       "port": 5443
     },
@@ -153,7 +153,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "AdGuard DNS Default public resolver. Blocks ads, trackers, phishing and malicious domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
+      "description": "AdGuard DNS Default public resolver. Available through servers in multiple locations around the world. Blocks ads, trackers, phishing and malicious domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
       "hostname": "2.dnscrypt.default.ns1.adguard.com",
       "port": 5443
     },
@@ -176,7 +176,7 @@
       ],
       "status": "active",
       "doh_url": "https://94.140.14.14/dns-query",
-      "description": "AdGuard DNS Default public resolver. Blocks ads, trackers, phishing and malicious domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
+      "description": "AdGuard DNS Default public resolver. Available through servers in multiple locations around the world. Blocks ads, trackers, phishing and malicious domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
       "hostname": "94.140.14.14",
       "port": 443,
       "path": "/dns-query"
@@ -200,7 +200,7 @@
       ],
       "status": "active",
       "doh_url": "https://94.140.15.15/dns-query",
-      "description": "AdGuard DNS Default public resolver. Blocks ads, trackers, phishing and malicious domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
+      "description": "AdGuard DNS Default public resolver. Available through servers in multiple locations around the world. Blocks ads, trackers, phishing and malicious domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
       "hostname": "94.140.15.15",
       "port": 443,
       "path": "/dns-query"
@@ -226,7 +226,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "AdGuard DNS Family Protection resolver. Blocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
+      "description": "AdGuard DNS Family Protection resolver. Available through servers in multiple locations around the world. Blocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
       "hostname": "2.dnscrypt.family.ns1.adguard.com",
       "port": 5443
     },
@@ -251,7 +251,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "AdGuard DNS Family Protection resolver. Blocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
+      "description": "AdGuard DNS Family Protection resolver. Available through servers in multiple locations around the world. Blocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
       "hostname": "2.dnscrypt.family.ns1.adguard.com",
       "port": 5443
     },
@@ -276,7 +276,7 @@
       ],
       "status": "active",
       "doh_url": "https://94.140.14.15/dns-query",
-      "description": "AdGuard DNS Family Protection resolver. Blocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
+      "description": "AdGuard DNS Family Protection resolver. Available through servers in multiple locations around the world. Blocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
       "hostname": "94.140.14.15",
       "port": 443,
       "path": "/dns-query"
@@ -302,7 +302,7 @@
       ],
       "status": "active",
       "doh_url": "https://94.140.15.16/dns-query",
-      "description": "AdGuard DNS Family Protection resolver. Blocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
+      "description": "AdGuard DNS Family Protection resolver. Available through servers in multiple locations around the world. Blocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
       "hostname": "94.140.15.16",
       "port": 443,
       "path": "/dns-query"
@@ -328,7 +328,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "AdGuard DNS Family Protection resolver. IPv6 endpoint. Blocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
+      "description": "AdGuard DNS Family Protection resolver. Available through servers in multiple locations around the world. IPv6 endpoint. Blocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
       "hostname": "2.dnscrypt.family.ns1.adguard.com",
       "port": 5443
     },
@@ -353,7 +353,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "AdGuard DNS Family Protection resolver. IPv6 endpoint. Blocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
+      "description": "AdGuard DNS Family Protection resolver. Available through servers in multiple locations around the world. IPv6 endpoint. Blocks ads, trackers, phishing, malicious and adult domains. Enforces safe search where available. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
       "hostname": "2.dnscrypt.family.ns1.adguard.com",
       "port": 5443
     },
@@ -376,7 +376,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "AdGuard DNS Default public resolver. IPv6 endpoint. Blocks ads, trackers, phishing and malicious domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
+      "description": "AdGuard DNS Default public resolver. Available through servers in multiple locations around the world. IPv6 endpoint. Blocks ads, trackers, phishing and malicious domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
       "hostname": "2.dnscrypt.default.ns1.adguard.com",
       "port": 5443
     },
@@ -399,7 +399,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "AdGuard DNS Default public resolver. IPv6 endpoint. Blocks ads, trackers, phishing and malicious domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
+      "description": "AdGuard DNS Default public resolver. Available through servers in multiple locations around the world. IPv6 endpoint. Blocks ads, trackers, phishing and malicious domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
       "hostname": "2.dnscrypt.default.ns1.adguard.com",
       "port": 5443
     },
@@ -421,7 +421,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "AdGuard DNS Non-filtering public resolver. Does not block or rewrite domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
+      "description": "AdGuard DNS Non-filtering public resolver. Available through servers in multiple locations around the world. Does not block or rewrite domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
       "hostname": "2.dnscrypt.unfiltered.ns1.adguard.com",
       "port": 5443
     },
@@ -443,7 +443,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "AdGuard DNS Non-filtering public resolver. Does not block or rewrite domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
+      "description": "AdGuard DNS Non-filtering public resolver. Available through servers in multiple locations around the world. Does not block or rewrite domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
       "hostname": "2.dnscrypt.unfiltered.ns1.adguard.com",
       "port": 5443
     },
@@ -465,7 +465,7 @@
       ],
       "status": "active",
       "doh_url": "https://94.140.14.140/dns-query",
-      "description": "AdGuard DNS Non-filtering public resolver. Does not block or rewrite domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
+      "description": "AdGuard DNS Non-filtering public resolver. Available through servers in multiple locations around the world. Does not block or rewrite domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
       "hostname": "94.140.14.140",
       "port": 443,
       "path": "/dns-query"
@@ -488,7 +488,7 @@
       ],
       "status": "active",
       "doh_url": "https://94.140.14.141/dns-query",
-      "description": "AdGuard DNS Non-filtering public resolver. Does not block or rewrite domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
+      "description": "AdGuard DNS Non-filtering public resolver. Available through servers in multiple locations around the world. Does not block or rewrite domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html",
       "hostname": "94.140.14.141",
       "port": 443,
       "path": "/dns-query"
@@ -511,7 +511,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "AdGuard DNS Non-filtering public resolver. IPv6 endpoint. Does not block or rewrite domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
+      "description": "AdGuard DNS Non-filtering public resolver. Available through servers in multiple locations around the world. IPv6 endpoint. Does not block or rewrite domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
       "hostname": "2.dnscrypt.unfiltered.ns1.adguard.com",
       "port": 5443
     },
@@ -533,7 +533,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "AdGuard DNS Non-filtering public resolver. IPv6 endpoint. Does not block or rewrite domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
+      "description": "AdGuard DNS Non-filtering public resolver. Available through servers in multiple locations around the world. IPv6 endpoint. Does not block or rewrite domains. Operated by AdGuard. Service page: https://adguard-dns.io/en/public-dns.html Warning: This server is incompatible with anonymization.",
       "hostname": "2.dnscrypt.unfiltered.ns1.adguard.com",
       "port": 5443
     },
@@ -981,7 +981,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Cisco OpenDNS public resolver. Part of Cisco consumer and Umbrella DNS services. Operated by Cisco OpenDNS. Service page: https://www.opendns.com/ Warning: Doesn't work any more in some countries such as France and Portugal. Warning: This server is incompatible with anonymization. Warning: modifies your queries to include a copy of your network address when forwarding them to a selection of companies and organizations.",
+      "description": "Cisco OpenDNS public resolver. Available through servers in multiple locations around the world. Part of Cisco consumer and Umbrella DNS services. Operated by Cisco OpenDNS. Service page: https://www.opendns.com/ Warning: Doesn't work any more in some countries such as France and Portugal. Warning: This server is incompatible with anonymization. Warning: modifies your queries to include a copy of your network address when forwarding them to a selection of companies and organizations.",
       "hostname": "2.dnscrypt-cert.opendns.com",
       "port": 443
     },
@@ -1004,7 +1004,7 @@
       ],
       "status": "active",
       "doh_url": "https://doh.opendns.com/dns-query",
-      "description": "Cisco OpenDNS public resolver. Part of Cisco consumer and Umbrella DNS services. Operated by Cisco OpenDNS. Service page: https://www.opendns.com/ Warning: Doesn't work any more in some countries such as France and Portugal. Warning: modifies your queries to include a copy of your network address when forwarding them to a selection of companies and organizations.",
+      "description": "Cisco OpenDNS public resolver. Available through servers in multiple locations around the world. Part of Cisco consumer and Umbrella DNS services. Operated by Cisco OpenDNS. Service page: https://www.opendns.com/ Warning: Doesn't work any more in some countries such as France and Portugal. Warning: modifies your queries to include a copy of your network address when forwarding them to a selection of companies and organizations.",
       "hostname": "doh.opendns.com",
       "port": 443,
       "path": "/dns-query"
@@ -1028,7 +1028,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Cisco OpenDNS FamilyShield resolver. Preconfigured to block adult content. Operated by Cisco OpenDNS. Service page: https://www.opendns.com/ Warning: Doesn't work any more in some countries such as France and Portugal. Warning: modifies your queries to include a copy of your network address when forwarding them to a selection of companies and organizations. Currently incompatible with DNS anonymization.",
+      "description": "Cisco OpenDNS FamilyShield resolver. Available through servers in multiple locations around the world. Preconfigured to block adult content. Operated by Cisco OpenDNS. Service page: https://www.opendns.com/ Warning: Doesn't work any more in some countries such as France and Portugal. Warning: modifies your queries to include a copy of your network address when forwarding them to a selection of companies and organizations. Currently incompatible with DNS anonymization.",
       "hostname": "2.dnscrypt-cert.opendns.com",
       "port": 443
     },
@@ -1051,7 +1051,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Cisco OpenDNS FamilyShield resolver. IPv6 endpoint. Preconfigured to block adult content. Operated by Cisco OpenDNS. Service page: https://www.opendns.com/ Warning: Doesn't work any more in some countries such as France and Portugal. Warning: This server is incompatible with anonymization. Warning: modifies your queries to include a copy of your network address when forwarding them to a selection of companies and organizations.",
+      "description": "Cisco OpenDNS FamilyShield resolver. Available through servers in multiple locations around the world. IPv6 endpoint. Preconfigured to block adult content. Operated by Cisco OpenDNS. Service page: https://www.opendns.com/ Warning: Doesn't work any more in some countries such as France and Portugal. Warning: This server is incompatible with anonymization. Warning: modifies your queries to include a copy of your network address when forwarding them to a selection of companies and organizations.",
       "hostname": "2.dnscrypt-cert.opendns.com",
       "port": 443
     },
@@ -1073,7 +1073,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Cisco OpenDNS public resolver. IPv6 endpoint. Part of Cisco consumer and Umbrella DNS services. Operated by Cisco OpenDNS. Service page: https://www.opendns.com/ Warning: Doesn't work any more in some countries such as France and Portugal. Warning: This server is incompatible with anonymization. Warning: modifies your queries to include a copy of your network address when forwarding them to a selection of companies and organizations.",
+      "description": "Cisco OpenDNS public resolver. Available through servers in multiple locations around the world. IPv6 endpoint. Part of Cisco consumer and Umbrella DNS services. Operated by Cisco OpenDNS. Service page: https://www.opendns.com/ Warning: Doesn't work any more in some countries such as France and Portugal. Warning: This server is incompatible with anonymization. Warning: modifies your queries to include a copy of your network address when forwarding them to a selection of companies and organizations.",
       "hostname": "2.dnscrypt-cert.opendns.com",
       "port": 443
     },
@@ -1095,7 +1095,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Cisco OpenDNS Sandbox (anycast) Warning: Doesn't work any more in some countries such as France and Portugal. Operated by Cisco OpenDNS. Service page: https://www.opendns.com/ Warning: This server is incompatible with anonymization.",
+      "description": "Cisco OpenDNS Sandbox. Available through servers in multiple locations around the world. Warning: Doesn't work any more in some countries such as France and Portugal. Operated by Cisco OpenDNS. Service page: https://www.opendns.com/ Warning: This server is incompatible with anonymization.",
       "hostname": "2.dnscrypt-cert.opendns.com",
       "port": 443
     },
@@ -1117,7 +1117,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "CleanBrowsing Adult Filter. Blocks adult, pornographic and explicit sites. Allows proxy and VPN domains and mixed-content sites. Google and Bing are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
+      "description": "CleanBrowsing Adult Filter. Available through servers in multiple locations around the world. Blocks adult, pornographic and explicit sites. Allows proxy and VPN domains and mixed-content sites. Google and Bing are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
       "hostname": "cleanbrowsing.org",
       "port": 8443
     },
@@ -1139,7 +1139,7 @@
       ],
       "status": "active",
       "doh_url": "https://cleanbrowsing.org/doh/adult-filter",
-      "description": "CleanBrowsing Adult Filter. Blocks adult, pornographic and explicit sites. Allows proxy and VPN domains and mixed-content sites. Google and Bing are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/",
+      "description": "CleanBrowsing Adult Filter. Available through servers in multiple locations around the world. Blocks adult, pornographic and explicit sites. Allows proxy and VPN domains and mixed-content sites. Google and Bing are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/",
       "hostname": "cleanbrowsing.org",
       "port": 443,
       "path": "/doh/adult-filter"
@@ -1162,7 +1162,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "CleanBrowsing Adult Filter. IPv6 endpoint. Blocks adult, pornographic and explicit sites. Allows proxy and VPN domains and mixed-content sites. Google and Bing are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
+      "description": "CleanBrowsing Adult Filter. Available through servers in multiple locations around the world. IPv6 endpoint. Blocks adult, pornographic and explicit sites. Allows proxy and VPN domains and mixed-content sites. Google and Bing are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
       "hostname": "cleanbrowsing.org",
       "port": 8443
     },
@@ -1184,7 +1184,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "CleanBrowsing Adult Filter. IPv6 endpoint. Blocks adult, pornographic and explicit sites. Allows proxy and VPN domains and mixed-content sites. Google and Bing are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
+      "description": "CleanBrowsing Adult Filter. Available through servers in multiple locations around the world. IPv6 endpoint. Blocks adult, pornographic and explicit sites. Allows proxy and VPN domains and mixed-content sites. Google and Bing are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
       "hostname": "cleanbrowsing.org",
       "port": 8443
     },
@@ -1207,7 +1207,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "CleanBrowsing Family Filter. Blocks adult and explicit sites, proxy and VPN bypass domains, and mixed-content sites. Google, Bing and YouTube are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
+      "description": "CleanBrowsing Family Filter. Available through servers in multiple locations around the world. Blocks adult and explicit sites, proxy and VPN bypass domains, and mixed-content sites. Google, Bing and YouTube are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
       "hostname": "cleanbrowsing.org",
       "port": 8443
     },
@@ -1230,7 +1230,7 @@
       ],
       "status": "active",
       "doh_url": "https://cleanbrowsing.org/doh/family-filter",
-      "description": "CleanBrowsing Family Filter. Blocks adult and explicit sites, proxy and VPN bypass domains, and mixed-content sites. Google, Bing and YouTube are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/",
+      "description": "CleanBrowsing Family Filter. Available through servers in multiple locations around the world. Blocks adult and explicit sites, proxy and VPN bypass domains, and mixed-content sites. Google, Bing and YouTube are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/",
       "hostname": "cleanbrowsing.org",
       "port": 443,
       "path": "/doh/family-filter"
@@ -1254,7 +1254,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "CleanBrowsing Family Filter. IPv6 endpoint. Blocks adult and explicit sites, proxy and VPN bypass domains, and mixed-content sites. Google, Bing and YouTube are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
+      "description": "CleanBrowsing Family Filter. Available through servers in multiple locations around the world. IPv6 endpoint. Blocks adult and explicit sites, proxy and VPN bypass domains, and mixed-content sites. Google, Bing and YouTube are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
       "hostname": "cleanbrowsing.org",
       "port": 8443
     },
@@ -1277,7 +1277,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "CleanBrowsing Family Filter. IPv6 endpoint. Blocks adult and explicit sites, proxy and VPN bypass domains, and mixed-content sites. Google, Bing and YouTube are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
+      "description": "CleanBrowsing Family Filter. Available through servers in multiple locations around the world. IPv6 endpoint. Blocks adult and explicit sites, proxy and VPN bypass domains, and mixed-content sites. Google, Bing and YouTube are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
       "hostname": "cleanbrowsing.org",
       "port": 8443
     },
@@ -1301,7 +1301,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "CleanBrowsing Security Filter. Blocks phishing, spam, malware and other malicious domains, without adult-content filtering. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
+      "description": "CleanBrowsing Security Filter. Available through servers in multiple locations around the world. Blocks phishing, spam, malware and other malicious domains, without adult-content filtering. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
       "hostname": "cleanbrowsing.org",
       "port": 8443
     },
@@ -1325,7 +1325,7 @@
       ],
       "status": "active",
       "doh_url": "https://cleanbrowsing.org/doh/security-filter",
-      "description": "CleanBrowsing Security Filter. Blocks phishing, spam, malware and other malicious domains, without adult-content filtering. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/",
+      "description": "CleanBrowsing Security Filter. Available through servers in multiple locations around the world. Blocks phishing, spam, malware and other malicious domains, without adult-content filtering. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/",
       "hostname": "cleanbrowsing.org",
       "port": 443,
       "path": "/doh/security-filter"
@@ -1350,7 +1350,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "CleanBrowsing Security Filter. IPv6 endpoint. Blocks phishing, spam, malware and other malicious domains, without adult-content filtering. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
+      "description": "CleanBrowsing Security Filter. Available through servers in multiple locations around the world. IPv6 endpoint. Blocks phishing, spam, malware and other malicious domains, without adult-content filtering. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
       "hostname": "cleanbrowsing.org",
       "port": 8443
     },
@@ -1374,7 +1374,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "CleanBrowsing Security Filter. IPv6 endpoint. Blocks phishing, spam, malware and other malicious domains, without adult-content filtering. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
+      "description": "CleanBrowsing Security Filter. Available through servers in multiple locations around the world. IPv6 endpoint. Blocks phishing, spam, malware and other malicious domains, without adult-content filtering. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/ Warning: This server is incompatible with anonymization.",
       "hostname": "cleanbrowsing.org",
       "port": 8443
     },
@@ -1396,7 +1396,7 @@
       ],
       "status": "active",
       "doh_url": "https://dns.cloudflare.com/dns-query",
-      "description": "Cloudflare 1.1.1.1 public resolver. Global anycast, non-filtering. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
+      "description": "Cloudflare 1.1.1.1 public resolver. Available through servers in multiple locations around the world. Non-filtering. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
       "hostname": "dns.cloudflare.com",
       "port": 443,
       "path": "/dns-query"
@@ -1419,7 +1419,7 @@
       ],
       "status": "active",
       "doh_url": "https://1.0.0.1/dns-query",
-      "description": "Cloudflare 1.1.1.1 public resolver. Global anycast, non-filtering. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
+      "description": "Cloudflare 1.1.1.1 public resolver. Available through servers in multiple locations around the world. Non-filtering. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
       "hostname": "1.0.0.1",
       "port": 443,
       "path": "/dns-query"
@@ -1442,7 +1442,7 @@
       ],
       "status": "active",
       "doh_url": "https://162.159.36.1/dns-query",
-      "description": "Cloudflare 1.1.1.1 public resolver. Global anycast, non-filtering. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
+      "description": "Cloudflare 1.1.1.1 public resolver. Available through servers in multiple locations around the world. Non-filtering. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
       "hostname": "162.159.36.1",
       "port": 443,
       "path": "/dns-query"
@@ -1465,7 +1465,7 @@
       ],
       "status": "active",
       "doh_url": "https://162.159.46.1/dns-query",
-      "description": "Cloudflare 1.1.1.1 public resolver. Global anycast, non-filtering. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
+      "description": "Cloudflare 1.1.1.1 public resolver. Available through servers in multiple locations around the world. Non-filtering. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
       "hostname": "162.159.46.1",
       "port": 443,
       "path": "/dns-query"
@@ -1489,7 +1489,7 @@
       ],
       "status": "active",
       "doh_url": "https://cloudflare-dns.com/dns-query",
-      "description": "Cloudflare 1.1.1.1 public resolver. Global anycast, non-filtering. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
+      "description": "Cloudflare 1.1.1.1 public resolver. Available through servers in multiple locations around the world. Non-filtering. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
       "hostname": "cloudflare-dns.com",
       "port": 443,
       "path": "/dns-query"
@@ -1514,7 +1514,7 @@
       ],
       "status": "active",
       "doh_url": "https://1.0.0.3/dns-query",
-      "description": "Cloudflare 1.1.1.1 for Families resolver. Global anycast. Blocks malware and adult-content domains. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
+      "description": "Cloudflare 1.1.1.1 for Families resolver. Available through servers in multiple locations around the world. Blocks malware and adult-content domains. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
       "hostname": "1.0.0.3",
       "port": 443,
       "path": "/dns-query"
@@ -1538,7 +1538,7 @@
       ],
       "status": "active",
       "doh_url": "https://1.0.0.2/dns-query",
-      "description": "Cloudflare 1.1.1.1 security resolver. Global anycast. Blocks malware domains. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
+      "description": "Cloudflare 1.1.1.1 security resolver. Available through servers in multiple locations around the world. Blocks malware domains. Operated by Cloudflare. Service page: https://developers.cloudflare.com/1.1.1.1/",
       "hostname": "1.0.0.2",
       "port": 443,
       "path": "/dns-query"
@@ -1561,7 +1561,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Comodo Dome Shield (anycast) - https://cdome.comodo.com/shield/ Operated by Comodo. Service page: https://cdome.comodo.com/shield/",
+      "description": "Comodo Dome Shield - https://cdome.comodo.com/shield/ Available through servers in multiple locations around the world. Operated by Comodo. Service page: https://cdome.comodo.com/shield/",
       "hostname": "2.dnscrypt-cert.shield-2.dnsbycomodo.com",
       "port": 443
     },
@@ -1583,7 +1583,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Comodo Dome Shield (anycast) - https://cdome.comodo.com/shield/ Operated by Comodo. Service page: https://cdome.comodo.com/shield/",
+      "description": "Comodo Dome Shield - https://cdome.comodo.com/shield/ Available through servers in multiple locations around the world. Operated by Comodo. Service page: https://cdome.comodo.com/shield/",
       "hostname": "2.dnscrypt-cert.shield-2.dnsbycomodo.com",
       "port": 443
     },
@@ -1605,7 +1605,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Comodo Dome Shield (anycast) - https://cdome.comodo.com/shield/ Operated by Comodo. Service page: https://cdome.comodo.com/shield/",
+      "description": "Comodo Dome Shield - https://cdome.comodo.com/shield/ Available through servers in multiple locations around the world. Operated by Comodo. Service page: https://cdome.comodo.com/shield/",
       "hostname": "2.dnscrypt-cert.shield-2.dnsbycomodo.com",
       "port": 443
     },
@@ -1651,7 +1651,7 @@
       ],
       "status": "active",
       "doh_url": "https://freedns.controld.com/p1",
-      "description": "Control D Free DNS Malware resolver. Blocks known dangerous domains. No query logging. Global anycast network. https://controld.com/free-dns Operated by Control D. Service page: https://controld.com/free-dns",
+      "description": "Control D Free DNS Malware resolver. Available through servers in multiple locations around the world. Blocks known dangerous domains. No query logging. https://controld.com/free-dns Operated by Control D. Service page: https://controld.com/free-dns",
       "hostname": "freedns.controld.com",
       "port": 443,
       "path": "/p1"
@@ -1675,7 +1675,7 @@
       ],
       "status": "active",
       "doh_url": "https://freedns.controld.com/p2",
-      "description": "Control D Free DNS Ads & Tracking resolver. Blocks malware, ads and trackers. No query logging. Global anycast network. https://controld.com/free-dns Operated by Control D. Service page: https://controld.com/free-dns",
+      "description": "Control D Free DNS Ads & Tracking resolver. Available through servers in multiple locations around the world. Blocks malware, ads and trackers. No query logging. https://controld.com/free-dns Operated by Control D. Service page: https://controld.com/free-dns",
       "hostname": "freedns.controld.com",
       "port": 443,
       "path": "/p2"
@@ -1699,7 +1699,7 @@
       ],
       "status": "active",
       "doh_url": "https://freedns.controld.com/p3",
-      "description": "Control D Free DNS Social resolver. Blocks malware, ads, trackers and major social-media services. No query logging. Global anycast network. https://controld.com/free-dns Operated by Control D. Service page: https://controld.com/free-dns",
+      "description": "Control D Free DNS Social resolver. Available through servers in multiple locations around the world. Blocks malware, ads, trackers and major social-media services. No query logging. https://controld.com/free-dns Operated by Control D. Service page: https://controld.com/free-dns",
       "hostname": "freedns.controld.com",
       "port": 443,
       "path": "/p3"
@@ -1725,7 +1725,7 @@
       ],
       "status": "active",
       "doh_url": "https://freedns.controld.com/family",
-      "description": "Control D Free DNS Family Friendly resolver. Blocks malware, ads, trackers, adult content and drug-related domains. No query logging. Global anycast network. https://controld.com/free-dns Operated by Control D. Service page: https://controld.com/free-dns",
+      "description": "Control D Free DNS Family Friendly resolver. Available through servers in multiple locations around the world. Blocks malware, ads, trackers, adult content and drug-related domains. No query logging. https://controld.com/free-dns Operated by Control D. Service page: https://controld.com/free-dns",
       "hostname": "freedns.controld.com",
       "port": 443,
       "path": "/family"
@@ -1748,7 +1748,7 @@
       ],
       "status": "active",
       "doh_url": "https://freedns.controld.com/uncensored",
-      "description": "Control D Free DNS Uncensored resolver. Attempts to unblock domains censored in various countries. No query logging. Global anycast network. https://controld.com/free-dns Operated by Control D. Service page: https://controld.com/free-dns",
+      "description": "Control D Free DNS Uncensored resolver. Available through servers in multiple locations around the world. Attempts to unblock domains censored in various countries. No query logging. https://controld.com/free-dns Operated by Control D. Service page: https://controld.com/free-dns",
       "hostname": "freedns.controld.com",
       "port": 443,
       "path": "/uncensored"
@@ -1771,7 +1771,7 @@
       ],
       "status": "active",
       "doh_url": "https://freedns.controld.com/p0",
-      "description": "Control D Free DNS Unfiltered resolver. Does not block or rewrite domains. No query logging. Global anycast network. https://controld.com/free-dns Operated by Control D. Service page: https://controld.com/free-dns",
+      "description": "Control D Free DNS Unfiltered resolver. Available through servers in multiple locations around the world. Does not block or rewrite domains. No query logging. https://controld.com/free-dns Operated by Control D. Service page: https://controld.com/free-dns",
       "hostname": "freedns.controld.com",
       "port": 443,
       "path": "/p0"
@@ -3536,7 +3536,7 @@
       ],
       "status": "active",
       "doh_url": "https://185.222.222.222/dns-query",
-      "description": "DNS.SB public resolver. Operated by xTom. No logs, no filtering, supports DNSSEC. Homepage: https://dns.sb",
+      "description": "DNS.SB public resolver. Available through servers in multiple locations around the world. Operated by xTom. No logs, no filtering, supports DNSSEC. Homepage: https://dns.sb",
       "hostname": "185.222.222.222",
       "port": 443,
       "path": "/dns-query"
@@ -3559,7 +3559,7 @@
       ],
       "status": "active",
       "doh_url": "https://45.11.45.11/dns-query",
-      "description": "DNS.SB public resolver. Operated by xTom. No logs, no filtering, supports DNSSEC. Homepage: https://dns.sb",
+      "description": "DNS.SB public resolver. Available through servers in multiple locations around the world. Operated by xTom. No logs, no filtering, supports DNSSEC. Homepage: https://dns.sb",
       "hostname": "45.11.45.11",
       "port": 443,
       "path": "/dns-query"
@@ -9156,28 +9156,6 @@
       "port": 443
     },
     {
-      "id": "d24a607687fd9ab2252c6001756521d9",
-      "address": "217.12.221.61",
-      "type": "IPv4",
-      "provider": "dnscry.pt-kyiv-ipv4",
-      "name": "dnscry.pt-kyiv-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Kyiv resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
       "id": "753b75ee2418f9c2cf354ea678648ec9",
       "address": "185.126.255.30",
       "type": "IPv4",
@@ -12354,7 +12332,7 @@
       ],
       "status": "active",
       "doh_url": "https://120.53.53.53/dns-query",
-      "description": "DNSPod Public DNS resolver. Operated by Tencent Cloud DNSPod for users in China. Overseas access to the free Public DNS service may be unreliable. Homepage: https://dnspod.cn Warning: GFW filtering rules are applied by this resolver.",
+      "description": "DNSPod Public DNS resolver. Available through servers in multiple locations. Operated by Tencent Cloud DNSPod for users in China. Overseas access to the free Public DNS service may be unreliable. Homepage: https://dnspod.cn Warning: GFW filtering rules are applied by this resolver.",
       "hostname": "120.53.53.53",
       "port": 443,
       "path": "/dns-query"
@@ -12377,7 +12355,7 @@
       ],
       "status": "active",
       "doh_url": "https://1.12.12.12/dns-query",
-      "description": "DNSPod Public DNS resolver. Operated by Tencent Cloud DNSPod for users in China. Overseas access to the free Public DNS service may be unreliable. Homepage: https://dnspod.cn Warning: GFW filtering rules are applied by this resolver.",
+      "description": "DNSPod Public DNS resolver. Available through servers in multiple locations. Operated by Tencent Cloud DNSPod for users in China. Overseas access to the free Public DNS service may be unreliable. Homepage: https://dnspod.cn Warning: GFW filtering rules are applied by this resolver.",
       "hostname": "1.12.12.12",
       "port": 443,
       "path": "/dns-query"
@@ -12401,7 +12379,7 @@
       ],
       "status": "active",
       "doh_url": "https://doh.cleanbrowsing.org/doh/adult-filter",
-      "description": "CleanBrowsing Adult Filter. Blocks adult, pornographic and explicit sites. Allows proxy and VPN domains and mixed-content sites. Google and Bing are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/",
+      "description": "CleanBrowsing Adult Filter. Available through servers in multiple locations around the world. Blocks adult, pornographic and explicit sites. Allows proxy and VPN domains and mixed-content sites. Google and Bing are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/",
       "hostname": "doh.cleanbrowsing.org",
       "port": 443,
       "path": "/doh/adult-filter/"
@@ -12426,7 +12404,7 @@
       ],
       "status": "active",
       "doh_url": "https://doh.cleanbrowsing.org/doh/family-filter",
-      "description": "CleanBrowsing Family Filter. Blocks adult and explicit sites, proxy and VPN bypass domains, and mixed-content sites. Google, Bing and YouTube are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/",
+      "description": "CleanBrowsing Family Filter. Available through servers in multiple locations around the world. Blocks adult and explicit sites, proxy and VPN bypass domains, and mixed-content sites. Google, Bing and YouTube are set to Safe Mode. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/",
       "hostname": "doh.cleanbrowsing.org",
       "port": 443,
       "path": "/doh/family-filter/"
@@ -12453,7 +12431,7 @@
       ],
       "status": "active",
       "doh_url": "https://doh.cleanbrowsing.org/doh/security-filter",
-      "description": "CleanBrowsing Security Filter. Blocks phishing, malware and malicious domains. Does not block adult content. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/",
+      "description": "CleanBrowsing Security Filter. Available through servers in multiple locations around the world. Blocks phishing, malware and malicious domains. Does not block adult content. Operated by CleanBrowsing. Service page: https://cleanbrowsing.org/filters/",
       "hostname": "doh.cleanbrowsing.org",
       "port": 443,
       "path": "/doh/security-filter/"
@@ -12476,7 +12454,7 @@
       ],
       "status": "active",
       "doh_url": "https://doh.crypto.sx/dns-query",
-      "description": "crypto.sx public resolver. Maintained by Frank Denis. Anycast, globally cached via Cloudflare, no logs, no censorship, DNSSEC. https://crypto.sx",
+      "description": "crypto.sx public resolver. Available through servers in multiple locations around the world. Maintained by Frank Denis. Cached via Cloudflare. No logs, no censorship, DNSSEC. https://crypto.sx",
       "hostname": "doh.crypto.sx",
       "port": 443,
       "path": "/dns-query"
@@ -12595,7 +12573,7 @@
       ],
       "status": "active",
       "doh_url": "https://doh.tiarap.org/dns-query",
-      "description": "Tiarap Cloudflare-cached filtering resolver. Operated by id-gmail. No logging, blocks ads, trackers and malware, no EDNS Client Subnet, supports DNSSEC. https://doh.tiarap.org",
+      "description": "Tiarap Cloudflare-cached filtering resolver. Available through servers in multiple locations around the world. Operated by id-gmail. No logging, blocks ads, trackers and malware, no EDNS Client Subnet, supports DNSSEC. https://doh.tiarap.org",
       "hostname": "doh.tiarap.org",
       "port": 443,
       "path": "/dns-query"
@@ -12640,7 +12618,7 @@
       ],
       "status": "active",
       "doh_url": "https://open.dns.dremaxx.com/dns-query",
-      "description": "Dremaxx Open resolver. Non-filtering, no logs, DNSSEC validation. Recursive, sites in Zurich, Dusseldorf and Houston. Resolves on its own (not a frontend to another public resolver). IPv4 endpoint; IPv6 is anycast from AS218835. Operated by Yannick Dreher. Homepage: https://dremaxx.de/en/dns-resolvers",
+      "description": "Dremaxx Open resolver. Non-filtering, no logs, DNSSEC validation. Recursive. Available through servers in Zurich, Dusseldorf and Houston. Resolves on its own (not a frontend to another public resolver). IPv4 endpoint. Operated by Yannick Dreher. Homepage: https://dremaxx.de/en/dns-resolvers",
       "hostname": "open.dns.dremaxx.com",
       "port": 443,
       "path": "/dns-query"
@@ -12666,7 +12644,7 @@
       ],
       "status": "active",
       "doh_url": "https://family.dns.dremaxx.com/dns-query",
-      "description": "Dremaxx Family resolver. Blocks adult content, no logs, DNSSEC validation. Recursive, sites in Zurich, Dusseldorf and Houston. Blocks about 489,000 adult domains (OISD NSFW list, refreshed hourly); no ad, tracker or malware filtering. IPv4 endpoint. Blocked names are rewritten, so clients validating DNSSEC themselves get SERVFAIL for blocked signed domains. Operated by Yannick Dreher. Homepage: https://dremaxx.de/en/dns-resolvers",
+      "description": "Dremaxx Family resolver. Blocks adult content, no logs, DNSSEC validation. Recursive. Available through servers in Zurich, Dusseldorf and Houston. Blocks about 489,000 adult domains (OISD NSFW list, refreshed hourly); no ad, tracker or malware filtering. IPv4 endpoint. Blocked names are rewritten, so clients validating DNSSEC themselves get SERVFAIL for blocked signed domains. Operated by Yannick Dreher. Homepage: https://dremaxx.de/en/dns-resolvers",
       "hostname": "family.dns.dremaxx.com",
       "port": 443,
       "path": "/dns-query"
@@ -12736,7 +12714,7 @@
       ],
       "status": "active",
       "doh_url": "https://8.8.8.8/dns-query",
-      "description": "Google Public DNS resolver. Global anycast service operated by Google. Operated by Google Public DNS. Service page: https://developers.google.com/speed/public-dns",
+      "description": "Google Public DNS resolver. Available through servers in multiple locations around the world. Service operated by Google. Operated by Google Public DNS. Service page: https://developers.google.com/speed/public-dns",
       "hostname": "8.8.8.8",
       "port": 443,
       "path": "/dns-query"
@@ -12759,7 +12737,7 @@
       ],
       "status": "active",
       "doh_url": "https://8.8.4.4/dns-query",
-      "description": "Google Public DNS resolver. Global anycast service operated by Google. Operated by Google Public DNS. Service page: https://developers.google.com/speed/public-dns",
+      "description": "Google Public DNS resolver. Available through servers in multiple locations around the world. Service operated by Google. Operated by Google Public DNS. Service page: https://developers.google.com/speed/public-dns",
       "hostname": "8.8.4.4",
       "port": 443,
       "path": "/dns-query"
@@ -12782,7 +12760,7 @@
       ],
       "status": "active",
       "doh_url": "https://ordns.he.net/dns-query",
-      "description": "Hurricane Electric public resolver. Anycast service operated by Hurricane Electric. Unknown logging policy. https://he.net/",
+      "description": "Hurricane Electric public resolver. Available through servers in multiple locations. Service operated by Hurricane Electric. Unknown logging policy. https://he.net/",
       "hostname": "ordns.he.net",
       "port": 443,
       "path": "/dns-query"
@@ -12993,7 +12971,7 @@
       ],
       "status": "active",
       "doh_url": "https://adblock.dns.mullvad.net/dns-query",
-      "description": "Mullvad Ads & Trackers resolver. - Deprecated, will be shot down on 11/02/2026 No logging, DNSSEC-capable, global anycast network. Blocks ads and trackers. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
+      "description": "Mullvad Ads & Trackers resolver. - Deprecated, will be shot down on 11/02/2026 Available through servers in multiple locations around the world. No logging, DNSSEC-capable. Blocks ads and trackers. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
       "hostname": "adblock.dns.mullvad.net",
       "port": 443,
       "path": "/dns-query"
@@ -13018,7 +12996,7 @@
       ],
       "status": "active",
       "doh_url": "https://all.dns.mullvad.net/dns-query",
-      "description": "Mullvad all-filter resolver. - Deprecated, will be shot down on 11/02/2026 No logging, DNSSEC-capable, global anycast network. Blocks ads, trackers, malware, adult content, gambling and social media. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
+      "description": "Mullvad all-filter resolver. - Deprecated, will be shot down on 11/02/2026 Available through servers in multiple locations around the world. No logging, DNSSEC-capable. Blocks ads, trackers, malware, adult content, gambling and social media. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
       "hostname": "all.dns.mullvad.net",
       "port": 443,
       "path": "/dns-query"
@@ -13042,7 +13020,7 @@
       ],
       "status": "active",
       "doh_url": "https://base.dns.mullvad.net/dns-query",
-      "description": "Mullvad base filtering resolver. - Deprecated, will be shot down on 11/02/2026 No logging, DNSSEC-capable, global anycast network. Blocks ads, trackers and malware. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
+      "description": "Mullvad base filtering resolver. - Deprecated, will be shot down on 11/02/2026 Available through servers in multiple locations around the world. No logging, DNSSEC-capable. Blocks ads, trackers and malware. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
       "hostname": "base.dns.mullvad.net",
       "port": 443,
       "path": "/dns-query"
@@ -13065,7 +13043,7 @@
       ],
       "status": "active",
       "doh_url": "https://dns.mullvad.net/dns-query",
-      "description": "Mullvad non-filtering public resolver. - Deprecated, will be shot down on 11/02/2026 No logging, DNSSEC-capable. Anycast IPv4/IPv6 with servers in SE, DE, UK, US, AU, and SG. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
+      "description": "Mullvad non-filtering public resolver. - Deprecated, will be shot down on 11/02/2026 Available through servers in multiple locations around the world. No logging, DNSSEC-capable. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
       "hostname": "dns.mullvad.net",
       "port": 443,
       "path": "/dns-query"
@@ -13089,7 +13067,7 @@
       ],
       "status": "active",
       "doh_url": "https://extended.dns.mullvad.net/dns-query",
-      "description": "Mullvad extended filtering resolver. - Deprecated, will be shot down on 11/02/2026 No logging, DNSSEC-capable, global anycast network. Blocks ads, trackers, malware and social media. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
+      "description": "Mullvad extended filtering resolver. - Deprecated, will be shot down on 11/02/2026 Available through servers in multiple locations around the world. No logging, DNSSEC-capable. Blocks ads, trackers, malware and social media. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
       "hostname": "extended.dns.mullvad.net",
       "port": 443,
       "path": "/dns-query"
@@ -13115,7 +13093,7 @@
       ],
       "status": "active",
       "doh_url": "https://family.dns.mullvad.net/dns-query",
-      "description": "Mullvad family filtering resolver. - Deprecated, will be shot down on 11/02/2026 No logging, DNSSEC-capable, global anycast network. Blocks ads, trackers, malware, adult content and gambling. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
+      "description": "Mullvad family filtering resolver. - Deprecated, will be shot down on 11/02/2026 Available through servers in multiple locations around the world. No logging, DNSSEC-capable. Blocks ads, trackers, malware, adult content and gambling. Operated by Mullvad. Service page: https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/",
       "hostname": "family.dns.mullvad.net",
       "port": 443,
       "path": "/dns-query"
@@ -13161,7 +13139,7 @@
       ],
       "status": "active",
       "doh_url": "https://anycast.dns.nextdns.io/dns-query",
-      "description": "NextDNS non-filtering private DNS resolver. Cloud-based service that gives users control over what is allowed and blocked. DNSSEC, anycast, non-logging, no filters. Operated by NextDNS. Service page: https://www.nextdns.io/",
+      "description": "NextDNS non-filtering private DNS resolver. Available through servers in multiple locations around the world. Cloud-based service that gives users control over what is allowed and blocked. DNSSEC, non-logging, no filters. Operated by NextDNS. Service page: https://www.nextdns.io/",
       "hostname": "anycast.dns.nextdns.io",
       "port": 443,
       "path": "/dns-query"
@@ -13184,7 +13162,7 @@
       ],
       "status": "active",
       "doh_url": "https://dns.nextdns.io/dnscrypt-proxy",
-      "description": "NextDNS ultralow-latency resolver. Cloud-based service that gives users control over what is allowed and blocked. DNSSEC, anycast, non-logging, no filters. Operated by NextDNS. Service page: https://www.nextdns.io/ To select the server location, the \"-ultralow\" variant relies on bootstrap servers instead of anycast.",
+      "description": "NextDNS ultralow-latency resolver. Available through servers in multiple locations around the world. Cloud-based service that gives users control over what is allowed and blocked. DNSSEC, non-logging, no filters. Operated by NextDNS. Service page: https://www.nextdns.io/ The \"-ultralow\" variant uses bootstrap servers to select a server location.",
       "hostname": "dns.nextdns.io",
       "port": 443,
       "path": "/dnscrypt-proxy"
@@ -13301,7 +13279,7 @@
       ],
       "status": "active",
       "doh_url": "https://pidoh.mapledns.net/dns-query",
-      "description": "MapleDNS public recursive resolver. Blocks ads, trackers and malware. DNSSEC validating. No query logging. DoH and DoT. No plain DNS.",
+      "description": "MapleDNS public recursive resolver. Blocks ads, trackers and malware. DNSSEC validating. No query logging. DoH and DoT. No plain DNS. Available through servers in multiple locations around the world.",
       "hostname": "pidoh.mapledns.net",
       "port": 443,
       "path": "/dns-query"
@@ -13503,7 +13481,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 Secure + ECS resolver. Anycast service with DNSSEC validation, EDNS Client Subnet and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.11, 149.112.112.11. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 Secure + ECS resolver. Available through servers in multiple locations around the world. Service with DNSSEC validation, EDNS Client Subnet and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.11, 149.112.112.11. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13525,7 +13503,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 Secure + ECS resolver. Anycast service with DNSSEC validation, EDNS Client Subnet and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.11, 149.112.112.11. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 Secure + ECS resolver. Available through servers in multiple locations around the world. Service with DNSSEC validation, EDNS Client Subnet and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.11, 149.112.112.11. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13547,7 +13525,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 Secure resolver. Anycast service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.9, 149.112.112.9, 149.112.112.112. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 Secure resolver. Available through servers in multiple locations around the world. Service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.9, 149.112.112.9, 149.112.112.112. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13569,7 +13547,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 Secure resolver. Anycast service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.9, 149.112.112.9, 149.112.112.112. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 Secure resolver. Available through servers in multiple locations around the world. Service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.9, 149.112.112.9, 149.112.112.112. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13591,7 +13569,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 Secure resolver. Anycast service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.9, 149.112.112.9, 149.112.112.112. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 Secure resolver. Available through servers in multiple locations around the world. Service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.9, 149.112.112.9, 149.112.112.112. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13613,7 +13591,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 No Threat Blocking + ECS resolver. Anycast service with DNSSEC validation and EDNS Client Subnet. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.12, 149.112.112.12. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 No Threat Blocking + ECS resolver. Available through servers in multiple locations around the world. Service with DNSSEC validation and EDNS Client Subnet. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.12, 149.112.112.12. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13635,7 +13613,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 No Threat Blocking + ECS resolver. Anycast service with DNSSEC validation and EDNS Client Subnet. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.12, 149.112.112.12. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 No Threat Blocking + ECS resolver. Available through servers in multiple locations around the world. Service with DNSSEC validation and EDNS Client Subnet. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.12, 149.112.112.12. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13657,7 +13635,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 No Threat Blocking resolver. Anycast service with DNSSEC validation. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.10, 149.112.112.10. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 No Threat Blocking resolver. Available through servers in multiple locations around the world. Service with DNSSEC validation. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.10, 149.112.112.10. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13679,7 +13657,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 No Threat Blocking resolver. Anycast service with DNSSEC validation. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.10, 149.112.112.10. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 No Threat Blocking resolver. Available through servers in multiple locations around the world. Service with DNSSEC validation. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.10, 149.112.112.10. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13701,7 +13679,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 Secure + ECS resolver. IPv6 anycast service with DNSSEC validation, EDNS Client Subnet and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::11, 2620:fe::fe:11. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 Secure + ECS resolver. Available through servers in multiple locations around the world. IPv6 service with DNSSEC validation, EDNS Client Subnet and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::11, 2620:fe::fe:11. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13723,7 +13701,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 Secure + ECS resolver. IPv6 anycast service with DNSSEC validation, EDNS Client Subnet and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::11, 2620:fe::fe:11. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 Secure + ECS resolver. Available through servers in multiple locations around the world. IPv6 service with DNSSEC validation, EDNS Client Subnet and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::11, 2620:fe::fe:11. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13745,7 +13723,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 Secure resolver. IPv6 anycast service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::fe, 2620:fe::9, 2620:fe::fe:9. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 Secure resolver. Available through servers in multiple locations around the world. IPv6 service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::fe, 2620:fe::9, 2620:fe::fe:9. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13767,7 +13745,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 Secure resolver. IPv6 anycast service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::fe, 2620:fe::9, 2620:fe::fe:9. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 Secure resolver. Available through servers in multiple locations around the world. IPv6 service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::fe, 2620:fe::9, 2620:fe::fe:9. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13789,7 +13767,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 Secure resolver. IPv6 anycast service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::fe, 2620:fe::9, 2620:fe::fe:9. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 Secure resolver. Available through servers in multiple locations around the world. IPv6 service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::fe, 2620:fe::9, 2620:fe::fe:9. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13811,7 +13789,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 No Threat Blocking + ECS resolver. IPv6 anycast service with DNSSEC validation and EDNS Client Subnet. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::12, 2620:fe::fe:12. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 No Threat Blocking + ECS resolver. Available through servers in multiple locations around the world. IPv6 service with DNSSEC validation and EDNS Client Subnet. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::12, 2620:fe::fe:12. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13833,7 +13811,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 No Threat Blocking + ECS resolver. IPv6 anycast service with DNSSEC validation and EDNS Client Subnet. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::12, 2620:fe::fe:12. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 No Threat Blocking + ECS resolver. Available through servers in multiple locations around the world. IPv6 service with DNSSEC validation and EDNS Client Subnet. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::12, 2620:fe::fe:12. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13855,7 +13833,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 No Threat Blocking resolver. IPv6 anycast service with DNSSEC validation. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::10, 2620:fe::fe:10. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 No Threat Blocking resolver. Available through servers in multiple locations around the world. IPv6 service with DNSSEC validation. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::10, 2620:fe::fe:10. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13877,7 +13855,7 @@
       ],
       "status": "active",
       "dnscrypt": true,
-      "description": "Quad9 No Threat Blocking resolver. IPv6 anycast service with DNSSEC validation. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::10, 2620:fe::fe:10. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 No Threat Blocking resolver. Available through servers in multiple locations around the world. IPv6 service with DNSSEC validation. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 2620:fe::10, 2620:fe::fe:10. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "2.dnscrypt-cert.quad9.net",
       "port": 8443
     },
@@ -13900,7 +13878,7 @@
       ],
       "status": "active",
       "doh_url": "https://dns11.quad9.net/dns-query",
-      "description": "Quad9 Secure + ECS resolver. Anycast service with DNSSEC validation, EDNS Client Subnet and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.11, 149.112.112.11. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 Secure + ECS resolver. Available through servers in multiple locations around the world. Service with DNSSEC validation, EDNS Client Subnet and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.11, 149.112.112.11. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "dns11.quad9.net",
       "port": 443,
       "path": "/dns-query"
@@ -13924,7 +13902,7 @@
       ],
       "status": "active",
       "doh_url": "https://dns9.quad9.net/dns-query",
-      "description": "Quad9 Secure resolver. Anycast service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.9, 149.112.112.9, 149.112.112.112. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 Secure resolver. Available through servers in multiple locations around the world. Service with DNSSEC validation and malicious-domain blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.9, 149.112.112.9, 149.112.112.112. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "dns9.quad9.net",
       "port": 443,
       "path": "/dns-query"
@@ -13948,7 +13926,7 @@
       ],
       "status": "active",
       "doh_url": "https://dns12.quad9.net/dns-query",
-      "description": "Quad9 No Threat Blocking + ECS resolver. Anycast service with DNSSEC validation and EDNS Client Subnet. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.12, 149.112.112.12. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 No Threat Blocking + ECS resolver. Available through servers in multiple locations around the world. Service with DNSSEC validation and EDNS Client Subnet. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.12, 149.112.112.12. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "dns12.quad9.net",
       "port": 443,
       "path": "/dns-query"
@@ -13972,7 +13950,7 @@
       ],
       "status": "active",
       "doh_url": "https://dns10.quad9.net/dns-query",
-      "description": "Quad9 No Threat Blocking resolver. Anycast service with DNSSEC validation. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.10, 149.112.112.10. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
+      "description": "Quad9 No Threat Blocking resolver. Available through servers in multiple locations around the world. Service with DNSSEC validation. Does not perform security blocking. Quad9 says it does not log client IP addresses. Service addresses: 9.9.9.10, 149.112.112.10. Operated by Quad9 Foundation. Service page: https://quad9.net/service/service-addresses-and-features/",
       "hostname": "dns10.quad9.net",
       "port": 443,
       "path": "/dns-query"
@@ -14020,7 +13998,7 @@
       ],
       "status": "active",
       "doh_url": "https://sky.rethinkdns.com/dns-query",
-      "description": "RethinkDNS public resolver. No logging, no filtering. `sky.rethinkdns.com` is a Cloudflare-hosted stub resolver; `max.rethinkdns.com` is a recursive resolver hosted on Fly.io. The stub strips identification parameters from the request and proxies to another recursive resolver. Operated by RethinkDNS. Service page: https://rethinkdns.com/",
+      "description": "RethinkDNS public resolver. Available through servers in multiple locations around the world. No logging, no filtering. `sky.rethinkdns.com` is a Cloudflare-hosted stub resolver; `max.rethinkdns.com` is a recursive resolver hosted on Fly.io. The stub strips identification parameters from the request and proxies to another recursive resolver. Operated by RethinkDNS. Service page: https://rethinkdns.com/",
       "hostname": "sky.rethinkdns.com",
       "port": 443,
       "path": "/dns-query"
@@ -14043,7 +14021,7 @@
       ],
       "status": "active",
       "doh_url": "https://max.rethinkdns.com/dns-query",
-      "description": "RethinkDNS public resolver. No logging, no filtering. `sky.rethinkdns.com` is a Cloudflare-hosted stub resolver; `max.rethinkdns.com` is a recursive resolver hosted on Fly.io. The stub strips identification parameters from the request and proxies to another recursive resolver. Operated by RethinkDNS. Service page: https://rethinkdns.com/",
+      "description": "RethinkDNS public resolver. Available through servers in multiple locations around the world. No logging, no filtering. `sky.rethinkdns.com` is a Cloudflare-hosted stub resolver; `max.rethinkdns.com` is a recursive resolver hosted on Fly.io. The stub strips identification parameters from the request and proxies to another recursive resolver. Operated by RethinkDNS. Service page: https://rethinkdns.com/",
       "hostname": "max.rethinkdns.com",
       "port": 443,
       "path": "/dns-query"
@@ -14433,7 +14411,7 @@
       ],
       "status": "active",
       "doh_url": "https://anycast.uncensoreddns.org/dns-query",
-      "description": "UncensoredDNS anycast resolver. Also known as censurfridns. Run by Thomas Steen Rasmussen. No logs, no filtering. https://blog.uncensoreddns.org",
+      "description": "UncensoredDNS public resolver. Available through servers in Denmark and the United States. Also known as censurfridns. Run by Thomas Steen Rasmussen. No logs, no filtering. https://blog.uncensoreddns.org",
       "hostname": "anycast.uncensoreddns.org",
       "port": 443,
       "path": "/dns-query"
@@ -14457,7 +14435,7 @@
       ],
       "status": "active",
       "doh_url": "https://wikimedia-dns.org/dns-query",
-      "description": "Wikimedia DNS resolver. Caching recursive public resolver run by the Wikimedia Foundation Site Reliability Engineering Traffic team. Helps secure DNS lookups for Wikimedia projects and other websites. Operated by Wikimedia DNS. Service page: https://wikimedia-dns.org/",
+      "description": "Wikimedia DNS resolver. Available through servers in multiple locations around the world. Caching recursive public resolver run by the Wikimedia Foundation Site Reliability Engineering Traffic team. Helps secure DNS lookups for Wikimedia projects and other websites. Operated by Wikimedia DNS. Service page: https://wikimedia-dns.org/",
       "hostname": "wikimedia-dns.org",
       "port": 443,
       "path": "/dns-query"
@@ -14480,7 +14458,7 @@
       ],
       "status": "active",
       "doh_url": "https://77.88.8.1/dns-query",
-      "description": "Yandex Public DNS Basic resolver. Anycast service operated by Yandex. Operated by Yandex. Service page: https://dns.yandex.com/",
+      "description": "Yandex Public DNS Basic resolver. Available through servers in multiple locations. Service operated by Yandex. Operated by Yandex. Service page: https://dns.yandex.com/",
       "hostname": "77.88.8.1",
       "port": 443,
       "path": "/dns-query"
@@ -14503,7 +14481,7 @@
       ],
       "status": "active",
       "doh_url": "https://77.88.8.8/dns-query",
-      "description": "Yandex Public DNS Basic resolver. Anycast service operated by Yandex. Operated by Yandex. Service page: https://dns.yandex.com/",
+      "description": "Yandex Public DNS Basic resolver. Available through servers in multiple locations. Service operated by Yandex. Operated by Yandex. Service page: https://dns.yandex.com/",
       "hostname": "77.88.8.8",
       "port": 443,
       "path": "/dns-query"
@@ -14526,7 +14504,7 @@
       ],
       "status": "active",
       "doh_url": "https://77.88.8.2/dns-query",
-      "description": "Yandex Public DNS Safe resolver. Anycast service operated by Yandex with malware filtering. Operated by Yandex. Service page: https://dns.yandex.com/",
+      "description": "Yandex Public DNS Safe resolver. Available through servers in multiple locations. Service operated by Yandex with malware filtering. Operated by Yandex. Service page: https://dns.yandex.com/",
       "hostname": "77.88.8.2",
       "port": 443,
       "path": "/dns-query"
@@ -14549,7 +14527,7 @@
       ],
       "status": "active",
       "doh_url": "https://77.88.8.88/dns-query",
-      "description": "Yandex Public DNS Safe resolver. Anycast service operated by Yandex with malware filtering. Operated by Yandex. Service page: https://dns.yandex.com/",
+      "description": "Yandex Public DNS Safe resolver. Available through servers in multiple locations. Service operated by Yandex with malware filtering. Operated by Yandex. Service page: https://dns.yandex.com/",
       "hostname": "77.88.8.88",
       "port": 443,
       "path": "/dns-query"
@@ -14573,7 +14551,7 @@
       ],
       "status": "active",
       "doh_url": "https://dns.yunzheng.space/dns-query",
-      "description": "YunZheng LAB public resolver. Anycast service with DNSSEC validation and no filtering. No per-query logs are kept. Service addresses: 177.177.83.83, 2602:f3ff:83::83. DoH, DoT and DoQ on dns.yunzheng.space. Operated by YunZheng LAB (AS204921), a non-profit educational and research laboratory. Service page: https://orbit.yunzheng.space/public-resolver/ Privacy policy: https://orbit.yunzheng.space/public-resolver/privacy/",
+      "description": "YunZheng LAB public resolver. Available through servers in Asia and Europe. Service with DNSSEC validation and no filtering. No per-query logs are kept. Service addresses: 177.177.83.83, 2602:f3ff:83::83. DoH, DoT and DoQ on dns.yunzheng.space. Operated by YunZheng LAB (AS204921), a non-profit educational and research laboratory. Service page: https://orbit.yunzheng.space/public-resolver/ Privacy policy: https://orbit.yunzheng.space/public-resolver/privacy/",
       "hostname": "dns.yunzheng.space",
       "port": 443,
       "path": "/dns-query"
@@ -14596,7 +14574,7 @@
       ],
       "status": "active",
       "doh_url": "https://dns64.dns.yunzheng.space/dns-query",
-      "description": "YunZheng LAB public resolver, DNS64. Anycast service with DNSSEC validation and no filtering, plus DNS64 (RFC 6147) on the well-known prefix 64:ff9b::/96: a name with no AAAA record is answered with an address built from its A record, for IPv6-only networks whose NAT64 gateway uses that prefix. No per-query logs are kept. Service addresses: 177.177.83.64, 2602:f3ff:83::64. DoH, DoT and DoQ on dns64.dns.yunzheng.space. Operated by YunZheng LAB (AS204921), a non-profit educational and research laboratory. Service page: https://orbit.yunzheng.space/public-resolver/ Privacy policy: https://orbit.yunzheng.space/public-resolver/privacy/",
+      "description": "YunZheng LAB public resolver, DNS64. Available through servers in Asia and Europe. Service with DNSSEC validation and no filtering, plus DNS64 (RFC 6147) on the well-known prefix 64:ff9b::/96: a name with no AAAA record is answered with an address built from its A record, for IPv6-only networks whose NAT64 gateway uses that prefix. No per-query logs are kept. Service addresses: 177.177.83.64, 2602:f3ff:83::64. DoH, DoT and DoQ on dns64.dns.yunzheng.space. Operated by YunZheng LAB (AS204921), a non-profit educational and research laboratory. Service page: https://orbit.yunzheng.space/public-resolver/ Privacy policy: https://orbit.yunzheng.space/public-resolver/privacy/",
       "hostname": "dns64.dns.yunzheng.space",
       "port": 443,
       "path": "/dns-query"
@@ -14621,7 +14599,7 @@
       ],
       "status": "active",
       "doh_url": "https://filter.dns.yunzheng.space/dns-query",
-      "description": "YunZheng LAB public resolver, filtering. Anycast service with DNSSEC validation. Advertising, tracking and known-malware domains are refused and answered with a notice page. No per-query logs are kept. Service addresses: 177.177.83.84, 2602:f3ff:83::84. DoH, DoT and DoQ on filter.dns.yunzheng.space. Operated by YunZheng LAB (AS204921), a non-profit educational and research laboratory. Service page: https://orbit.yunzheng.space/public-resolver/ Privacy policy: https://orbit.yunzheng.space/public-resolver/privacy/",
+      "description": "YunZheng LAB public resolver, filtering. Available through servers in Asia and Europe. Service with DNSSEC validation. Advertising, tracking and known-malware domains are refused and answered with a notice page. No per-query logs are kept. Service addresses: 177.177.83.84, 2602:f3ff:83::84. DoH, DoT and DoQ on filter.dns.yunzheng.space. Operated by YunZheng LAB (AS204921), a non-profit educational and research laboratory. Service page: https://orbit.yunzheng.space/public-resolver/ Privacy policy: https://orbit.yunzheng.space/public-resolver/privacy/",
       "hostname": "filter.dns.yunzheng.space",
       "port": 443,
       "path": "/dns-query"
