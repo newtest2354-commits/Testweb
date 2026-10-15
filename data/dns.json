@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-14T02:25:09.270999+00:00",
+  "updated_at": "2026-10-15T02:06:11.155069+00:00",
   "total": 1011,
   "categories": {
     "AdBlock": 59,
@@ -12786,7 +12786,7 @@
       ],
       "status": "active",
       "doh_url": "https://dns.hqdns.sarl/dns-query",
-      "description": "Independent public DNS resolver with filtering for ads, trackers, malware and phishing. Personal, non-commercial project. HQDNS does not retain DNS query logs and performs its own recursive DNS resolution. Homepage: https://hqdns.sarl",
+      "description": "Independent public DNS resolver with filtering for ads, trackers, malware and phishing. Personal, non-commercial project. No logging: query, error and web console logs are disabled in Technitium DNS Server. HQDNS performs its own recursive DNS resolution. Homepage: https://hqdns.sarl",
       "hostname": "dns.hqdns.sarl",
       "port": 443,
       "path": "/dns-query"
