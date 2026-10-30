@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-23T02:16:02.422719+00:00",
-  "total": 1016,
+  "updated_at": "2026-10-30T03:13:48.763448+00:00",
+  "total": 983,
   "categories": {
     "AdBlock": 59,
     "Adult Filter": 38,
@@ -9,7 +9,7 @@
     "Malware": 38,
     "Private": 2,
     "Security": 56,
-    "Standard": 837,
+    "Standard": 804,
     "Unfiltered": 69
   },
   "dns": [
@@ -1610,8 +1610,8 @@
       "port": 443
     },
     {
-      "id": "478df0194d7cdf497acfcd747b647afc",
-      "address": "83.220.169.155",
+      "id": "c97bf75fe540e960c0021492418e3029",
+      "address": "212.109.221.20",
       "type": "IPv4",
       "provider": "comss.one",
       "name": "comss.one",
@@ -4080,28 +4080,6 @@
       "port": 443
     },
     {
-      "id": "48d6aace9b689ac17646fb5fdf044e5a",
-      "address": "103.38.250.55",
-      "type": "IPv4",
-      "provider": "dnscry.pt-bangkok-ipv4",
-      "name": "dnscry.pt-bangkok-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Bangkok resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
       "id": "48bd9107337b355c7235734144011a7a",
       "address": "160.191.182.216",
       "type": "IPv4",
@@ -5053,29 +5031,6 @@
       "doh_url": "https://akl01.dnscry.pt/dns-query",
       "description": "dnscry.pt Auckland DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
       "hostname": "akl01.dnscry.pt",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "1297f4c86c35353b8bee531ab42d3045",
-      "address": "103.38.250.55",
-      "type": "IPv4",
-      "provider": "dnscry.pt-doh-bangkok-ipv4",
-      "name": "dnscry.pt-doh-bangkok-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://bkk01.dnscry.pt/dns-query",
-      "description": "dnscry.pt Bangkok DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
-      "hostname": "bkk01.dnscry.pt",
       "port": 443,
       "path": "/dns-query"
     },
@@ -6506,8 +6461,8 @@
       "path": "/dns-query"
     },
     {
-      "id": "75d2b25a9de80f3b4724adf7bfbfa974",
-      "address": "128.254.207.50",
+      "id": "ccb80fca764b87bd8939192f3c35fe2d",
+      "address": "169.128.191.202",
       "type": "IPv4",
       "provider": "dnscry.pt-doh-miami-ipv4",
       "name": "dnscry.pt-doh-miami-ipv4",
@@ -6663,29 +6618,6 @@
       "doh_url": "https://muc01.dnscry.pt/dns-query",
       "description": "dnscry.pt Munich DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
       "hostname": "muc01.dnscry.pt",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "672988f7a9ba55afc00be43a113ede69",
-      "address": "45.95.38.29",
-      "type": "IPv4",
-      "provider": "dnscry.pt-doh-naaldwijk-ipv4",
-      "name": "dnscry.pt-doh-naaldwijk-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://naw01.dnscry.pt/dns-query",
-      "description": "dnscry.pt Naaldwijk DoH resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. https://www.dnscry.pt",
-      "hostname": "naw01.dnscry.pt",
       "port": 443,
       "path": "/dns-query"
     },
@@ -9685,8 +9617,8 @@
       "port": 443
     },
     {
-      "id": "4f8c69b7d05c255235df8bf09b66782f",
-      "address": "128.254.207.50",
+      "id": "bd96b1cb5434f6d5b9e85f2e7f47ecf6",
+      "address": "169.128.191.202",
       "type": "IPv4",
       "provider": "dnscry.pt-miami-ipv4",
       "name": "dnscry.pt-miami-ipv4",
@@ -9707,8 +9639,8 @@
       "port": 443
     },
     {
-      "id": "df1e5a6e194abf75a9222c391cd00ede",
-      "address": "2602:f7f8:6:a::a",
+      "id": "8ff6423d9959df6cb9f784c74e2f57a8",
+      "address": "2602:f7f8:b:401::a",
       "type": "IPv6",
       "provider": "dnscry.pt-miami-ipv6",
       "name": "dnscry.pt-miami-ipv6",
@@ -9989,28 +9921,6 @@
       "status": "active",
       "dnscrypt": true,
       "description": "dnscry.pt Munich resolver. IPv6 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
-      "hostname": "2.dnscrypt-cert.dnscry.pt",
-      "port": 443
-    },
-    {
-      "id": "7ee939fa186f7ec9a2b0c86e7676f4fb",
-      "address": "45.95.38.29",
-      "type": "IPv4",
-      "provider": "dnscry.pt-naaldwijk-ipv4",
-      "name": "dnscry.pt-naaldwijk-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DNSCrypt"
-      ],
-      "status": "active",
-      "dnscrypt": true,
-      "description": "dnscry.pt Naaldwijk resolver. IPv4 endpoint. Operated by dnscry.pt. No query logs, no intentional filtering, blocking, redirecting or rewriting, DNSSEC validation. All dnscry.pt resolvers can also be used as Anonymized DNSCrypt relays. https://www.dnscry.pt",
       "hostname": "2.dnscrypt-cert.dnscry.pt",
       "port": 443
     },
@@ -15433,52 +15343,6 @@
       "path": "/dns-query"
     },
     {
-      "id": "0be8e2c9504741d7c770672970e3a6b7",
-      "address": "doh-01.spectrum.com",
-      "type": "DoH",
-      "provider": "charter",
-      "name": "charter",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://doh-01.spectrum.com/dns-query",
-      "description": "DoH server provided by Charter",
-      "hostname": "doh-01.spectrum.com",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "ae53005c43b4afdb7545834e6bddb80c",
-      "address": "doh-02.spectrum.com",
-      "type": "DoH",
-      "provider": "charter",
-      "name": "charter",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://doh-02.spectrum.com/dns-query",
-      "description": "DoH server provided by Charter",
-      "hostname": "doh-02.spectrum.com",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
       "id": "cd0d5b4974f7007e48acc3cdbc4f6c96",
       "address": "dns.chenu.ch",
       "type": "DoH",
@@ -15772,50 +15636,6 @@
       "hostname": "cz.nic"
     },
     {
-      "id": "c64cb5745ed0970933cb2c309a97aeec",
-      "address": "ns.data.haus",
-      "type": "DoH",
-      "provider": "data.haus",
-      "name": "data.haus",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://ns.data.haus/dns-query",
-      "description": "DoH server provided by data.haus",
-      "hostname": "ns.data.haus",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "c9ad74492f24f61d0c4407fdacd2e65c",
-      "address": "data.haus",
-      "type": "DoT",
-      "provider": "data.haus",
-      "name": "data.haus",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "data.haus",
-      "description": "DoT server provided by data.haus",
-      "hostname": "data.haus"
-    },
-    {
       "id": "36790a68ce9210860351d5414113cc6c",
       "address": "dns.datenquark.de",
       "type": "DoH",
@@ -16059,50 +15879,6 @@
       "hostname": "child-noads.joindns4.eu",
       "port": 443,
       "path": "/dns-query"
-    },
-    {
-      "id": "97ce5c9f4ee95d1160fda5d1debd3da3",
-      "address": "dns.flatuslifir.is",
-      "type": "DoH",
-      "provider": ".flatuslifir.is",
-      "name": ".flatuslifir.is",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://dns.flatuslifir.is/dns-query",
-      "description": "DoH server provided by .flatuslifir.is",
-      "hostname": "dns.flatuslifir.is",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "3019d6a3ff9d047f45788d30637dfcd7",
-      "address": "dns.flatuslifir.is",
-      "type": "DoT",
-      "provider": ".flatuslifir.is",
-      "name": ".flatuslifir.is",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "dns.flatuslifir.is",
-      "description": "DoT server provided by .flatuslifir.is",
-      "hostname": "dns.flatuslifir.is"
     },
     {
       "id": "4c5e88043551e586fba9c3da4f855165",
@@ -16947,50 +16723,6 @@
       "hostname": "ffmuc.net"
     },
     {
-      "id": "7e2caa4e9eef3112d4682edbf7d83ccc",
-      "address": "fidelius.top",
-      "type": "DoH",
-      "provider": "fidelius.top",
-      "name": "fidelius.top",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://fidelius.top/dns-query",
-      "description": "DoH server provided by fidelius.top",
-      "hostname": "fidelius.top",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "3f86cd851b25f000eb96dc3d1a958e6b",
-      "address": "fidelius.top",
-      "type": "DoT",
-      "provider": "fidelius.top",
-      "name": "fidelius.top",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "fidelius.top",
-      "description": "DoT server provided by fidelius.top",
-      "hostname": "fidelius.top"
-    },
-    {
       "id": "b3a2e00c11de3cbf0163923123f28968",
       "address": "dns.floriantinney.de",
       "type": "DoH",
@@ -17056,29 +16788,6 @@
       "hostname": "doh.applied-privacy.net",
       "port": 443,
       "path": "/query"
-    },
-    {
-      "id": "aa9106673f726eb33b221b291e02215c",
-      "address": "es-ma.foxyfy.net",
-      "type": "DoH",
-      "provider": "foxyfy",
-      "name": "foxyfy",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://es-ma.foxyfy.net/dns-query",
-      "description": "DoH server provided by Foxyfy",
-      "hostname": "es-ma.foxyfy.net",
-      "port": 443,
-      "path": "/dns-query"
     },
     {
       "id": "4cd1fa9390e79ac9c84a56489fba82b0",
@@ -17169,94 +16878,6 @@
       "hostname": "dns.gamban.com",
       "port": 443,
       "path": "/dns-query"
-    },
-    {
-      "id": "729df5b32d79710d373c707fa20780b1",
-      "address": "gibblets.top",
-      "type": "DoH",
-      "provider": "gibblets.top",
-      "name": "gibblets.top",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://gibblets.top/dns-query",
-      "description": "DoH server provided by gibblets.top",
-      "hostname": "gibblets.top",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "244b68183fb0da6010833a24e96690cc",
-      "address": "gibblets.top",
-      "type": "DoT",
-      "provider": "gibblets.top",
-      "name": "gibblets.top",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "gibblets.top",
-      "description": "DoT server provided by gibblets.top",
-      "hostname": "gibblets.top"
-    },
-    {
-      "id": "263dd57fb83c45ca7dae720c461732ce",
-      "address": "glacius.top",
-      "type": "DoH",
-      "provider": "glacius.top",
-      "name": "glacius.top",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://glacius.top/dns-query",
-      "description": "DoH server provided by glacius.top",
-      "hostname": "glacius.top",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "fa9d1607c46043585725a87486e53fd2",
-      "address": "glacius.top",
-      "type": "DoT",
-      "provider": "glacius.top",
-      "name": "glacius.top",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "glacius.top",
-      "description": "DoT server provided by glacius.top",
-      "hostname": "glacius.top"
     },
     {
       "id": "574956ba5a2a204073bed62e2bab77f8",
@@ -17556,71 +17177,6 @@
       "hostname": "hostux.net"
     },
     {
-      "id": "2b08ad0653ea2af89d7224a056aa3c3a",
-      "address": "dns.hqdns.sarl",
-      "type": "DoH",
-      "provider": "hqdns",
-      "name": "hqdns",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://dns.hqdns.sarl/dns-query",
-      "description": "DoH server provided by HQDNS",
-      "hostname": "dns.hqdns.sarl",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "f2d2ad82e32cff13922a09e4f28ff212",
-      "address": "dns.hqdns.sarl",
-      "type": "DoT",
-      "provider": "hqdns",
-      "name": "hqdns",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "dns.hqdns.sarl",
-      "description": "DoT server provided by HQDNS",
-      "hostname": "dns.hqdns.sarl"
-    },
-    {
-      "id": "31364c8da010ddd8fac9c748825124be",
-      "address": "185.215.166.168",
-      "type": "IPv4",
-      "provider": "hqdns",
-      "name": "hqdns",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "185.215.166.168",
-      "description": "DoT server provided by HQDNS",
-      "hostname": "185.215.166.168"
-    },
-    {
       "id": "50ee9136e9d8c460a41b2a9023ffa1f2",
       "address": "doth.huque.com",
       "type": "DoH",
@@ -17642,50 +17198,6 @@
       "hostname": "doth.huque.com",
       "port": 443,
       "path": "/dns-query"
-    },
-    {
-      "id": "bcf9a26c1792a120cd18d815466abec8",
-      "address": "imperio.top",
-      "type": "DoH",
-      "provider": "imperio.top",
-      "name": "imperio.top",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://imperio.top/dns-query",
-      "description": "DoH server provided by imperio.top",
-      "hostname": "imperio.top",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "e02dacb3a15170aad10515ec00b94346",
-      "address": "imperio.top",
-      "type": "DoT",
-      "provider": "imperio.top",
-      "name": "imperio.top",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "imperio.top",
-      "description": "DoT server provided by imperio.top",
-      "hostname": "imperio.top"
     },
     {
       "id": "7f0e639dca3b1c6bcb4599b4f3218b5a",
@@ -18948,73 +18460,6 @@
       "path": "/dns-query"
     },
     {
-      "id": "5eff0a53b75a43cf907aca54a662b8f8",
-      "address": "doh.lv",
-      "type": "DoH",
-      "provider": "nic.lv",
-      "name": "nic.lv",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://doh.lv/dns-query",
-      "description": "DoH server provided by NIC.LV",
-      "hostname": "doh.lv",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "7d79f2f84b8461798d1497dc973c8f84",
-      "address": "doh.nic.lv",
-      "type": "DoH",
-      "provider": "nic.lv",
-      "name": "nic.lv",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://doh.nic.lv/dns-query",
-      "description": "DoH server provided by NIC.LV",
-      "hostname": "doh.nic.lv",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "3325f11f601b23e34c0ee3dbe6460c19",
-      "address": "nic.lv",
-      "type": "DoT",
-      "provider": "nic.lv",
-      "name": "nic.lv",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "nic.lv",
-      "description": "DoT server provided by NIC.LV",
-      "hostname": "nic.lv"
-    },
-    {
       "id": "a313d6a6a59579304e131d4d77140d7a",
       "address": "doh-dilution-to-upstreams-adguardhome.nicolas-dorriere.fr",
       "type": "DoH",
@@ -19216,50 +18661,6 @@
       "path": "/dns-query"
     },
     {
-      "id": "3e0bd6fa2e4c905fa5ada760b77111ed",
-      "address": "dns4eu.online",
-      "type": "DoH",
-      "provider": "o2cloud.fr",
-      "name": "o2cloud.fr",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://dns4eu.online/dns-query",
-      "description": "DoH server provided by o2cloud.fr",
-      "hostname": "dns4eu.online",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "052639de5d90a90628b857a371479c75",
-      "address": "o2cloud.fr",
-      "type": "DoT",
-      "provider": "o2cloud.fr",
-      "name": "o2cloud.fr",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "o2cloud.fr",
-      "description": "DoT server provided by o2cloud.fr",
-      "hostname": "o2cloud.fr"
-    },
-    {
       "id": "71d7c3bfc698b87435ba8a9b62dff3ef",
       "address": "dns.paesa.es",
       "type": "DoH",
@@ -19373,50 +18774,6 @@
       "hostname": "privacy.plumedns.com",
       "port": 443,
       "path": "/dns-query"
-    },
-    {
-      "id": "fb74504b171f5dc54d103d47d455717a",
-      "address": "pooblet.co.za",
-      "type": "DoH",
-      "provider": "pooblet.co.za",
-      "name": "pooblet.co.za",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://pooblet.co.za/dns-query",
-      "description": "DoH server provided by pooblet.co.za",
-      "hostname": "pooblet.co.za",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "c158849df132c06ed70624a6bcbf9184",
-      "address": "pooblet.co.za",
-      "type": "DoT",
-      "provider": "pooblet.co.za",
-      "name": "pooblet.co.za",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "pooblet.co.za",
-      "description": "DoT server provided by pooblet.co.za",
-      "hostname": "pooblet.co.za"
     },
     {
       "id": "68f162c5b93f0b8feb60f43f3f3a9de7",
@@ -19769,50 +19126,6 @@
       "hostname": "dns.retakecs.com",
       "port": 443,
       "path": "/dns-query"
-    },
-    {
-      "id": "8686f29c3e2710070cfe4a5ec69ffa87",
-      "address": "revelio.top",
-      "type": "DoH",
-      "provider": "revelio.top",
-      "name": "revelio.top",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://revelio.top/dns-query",
-      "description": "DoH server provided by revelio.top",
-      "hostname": "revelio.top",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "b682bbd5c298ac6cc8d1c0da70346778",
-      "address": "revelio.top",
-      "type": "DoT",
-      "provider": "revelio.top",
-      "name": "revelio.top",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoT"
-      ],
-      "status": "active",
-      "dot": "revelio.top",
-      "description": "DoT server provided by revelio.top",
-      "hostname": "revelio.top"
     },
     {
       "id": "b95cbae60160a9b16045f7d8b0c9aa33",
@@ -20257,29 +19570,6 @@
       "dot": "stirringphoto.com",
       "description": "DoT server provided by stirringphoto.com",
       "hostname": "stirringphoto.com"
-    },
-    {
-      "id": "27f7034c68b40c0bb71e5e31c29b2e1e",
-      "address": "dns.surfsharkdns.com",
-      "type": "DoH",
-      "provider": "surfshark",
-      "name": "surfshark",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://dns.surfsharkdns.com/dns-query",
-      "description": "DoH server provided by Surfshark",
-      "hostname": "dns.surfsharkdns.com",
-      "port": 443,
-      "path": "/dns-query"
     },
     {
       "id": "76175b63f7ca0a3faa0b745df752d9fa",
@@ -22351,29 +21641,6 @@
       "hostname": "my.nextdns.io",
       "port": 443,
       "path": "/start"
-    },
-    {
-      "id": "166805c5aa14188a5258eb9ec80e0aba",
-      "address": "doh.lv",
-      "type": "DoH",
-      "provider": "sign in",
-      "name": "sign in",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://doh.lv/",
-      "description": "DoH server provided by Sign in",
-      "hostname": "doh.lv",
-      "port": 443,
-      "path": "/"
     },
     {
       "id": "11ec2b896ace616e8ec7270f72682d48",

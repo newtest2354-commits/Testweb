@@ -1,11 +1,11 @@
 {
-  "total_dns": 1016,
-  "total_ipv4": 453,
+  "total_dns": 983,
+  "total_ipv4": 448,
   "total_ipv6": 191,
-  "total_doh": 521,
-  "total_dot": 92,
-  "total_dnscrypt": 403,
-  "total_standard": 837,
+  "total_doh": 502,
+  "total_dot": 80,
+  "total_dnscrypt": 401,
+  "total_standard": 804,
   "total_private": 2,
   "total_family": 32,
   "total_adblock": 59,
@@ -13,5 +13,5 @@
   "total_malware": 38,
   "total_freeshekan": 0,
   "total_sources": 2,
-  "last_updated": "2026-10-29T03:10:21.718452+00:00"
+  "last_updated": "2026-10-30T03:13:48.763420+00:00"
 }
