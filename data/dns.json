@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-30T03:13:48.763448+00:00",
-  "total": 983,
+  "updated_at": "2026-11-02T02:59:49.909444+00:00",
+  "total": 984,
   "categories": {
     "AdBlock": 59,
     "Adult Filter": 38,
@@ -9,7 +9,7 @@
     "Malware": 38,
     "Private": 2,
     "Security": 56,
-    "Standard": 804,
+    "Standard": 805,
     "Unfiltered": 69
   },
   "dns": [
@@ -15025,6 +15025,29 @@
       "dot": "bazooki-infra.dev",
       "description": "DoT server provided by bazooki-infra.dev",
       "hostname": "bazooki-infra.dev"
+    },
+    {
+      "id": "fc6b6b5599720a782aa3d49ff0e62feb",
+      "address": "beatquantum.com",
+      "type": "DoH",
+      "provider": "beatquantum",
+      "name": "beatquantum",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://beatquantum.com/dns-query",
+      "description": "DoH server provided by BeatQuantum",
+      "hostname": "beatquantum.com",
+      "port": 443,
+      "path": "/dns-query"
     },
     {
       "id": "0bf282a0f316f664c38643f8f7bf3ad3",
