@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-05T03:57:02.337721+00:00",
-  "total": 986,
+  "updated_at": "2026-11-06T03:54:53.152303+00:00",
+  "total": 984,
   "categories": {
     "AdBlock": 59,
     "Adult Filter": 38,
@@ -9,7 +9,7 @@
     "Malware": 38,
     "Private": 2,
     "Security": 56,
-    "Standard": 807,
+    "Standard": 805,
     "Unfiltered": 69
   },
   "dns": [
@@ -16972,29 +16972,6 @@
       "path": "/dns-query"
     },
     {
-      "id": "3b94df2327a74135aa7d5923abb96cf8",
-      "address": "dns.glf.wtf",
-      "type": "DoH",
-      "provider": "gottlieb freitag",
-      "name": "gottlieb freitag",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://dns.glf.wtf/dns-query",
-      "description": "DoH server provided by Gottlieb Freitag",
-      "hostname": "dns.glf.wtf",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
       "id": "47266f93f3a1ffcfed171d79effa6aa7",
       "address": "dns.guard.io",
       "type": "DoH",
@@ -19974,29 +19951,6 @@
       "dot": "vaioswolke.xyz",
       "description": "DoT server provided by vaioswolke.xyz",
       "hostname": "vaioswolke.xyz"
-    },
-    {
-      "id": "ee067b8276cd5ec8bbddffe258c90874",
-      "address": "doh.viatech.com.tw",
-      "type": "DoH",
-      "provider": "via",
-      "name": "via",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://doh.viatech.com.tw/dns-query",
-      "description": "DoH server provided by VIA",
-      "hostname": "doh.viatech.com.tw",
-      "port": 443,
-      "path": "/dns-query"
     },
     {
       "id": "a36324b8ca5c9ca2f40858ad9d4540d2",
