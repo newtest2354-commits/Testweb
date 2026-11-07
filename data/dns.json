@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-06T03:54:53.152303+00:00",
-  "total": 984,
+  "updated_at": "2026-11-07T03:29:33.060541+00:00",
+  "total": 986,
   "categories": {
     "AdBlock": 59,
     "Adult Filter": 38,
@@ -9,7 +9,7 @@
     "Malware": 38,
     "Private": 2,
     "Security": 56,
-    "Standard": 805,
+    "Standard": 807,
     "Unfiltered": 69
   },
   "dns": [
@@ -15791,6 +15791,29 @@
       "hostname": "dns.digitalsize.net"
     },
     {
+      "id": "b3c1a610fa80d1615f592ad982229584",
+      "address": "dns.dnsguard.pub",
+      "type": "DoH",
+      "provider": "dnsguard",
+      "name": "dnsguard",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.dnsguard.pub/dns-query",
+      "description": "DoH server provided by DNSGuard",
+      "hostname": "dns.dnsguard.pub",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
       "id": "128333b62b059c783055ad7eab11a5cc",
       "address": "doh.dns.sb",
       "type": "DoH",
@@ -19413,6 +19436,29 @@
       "dot": "skrep.eu",
       "description": "DoT server provided by skrep.eu",
       "hostname": "skrep.eu"
+    },
+    {
+      "id": "91b2df9ccb15eff015d8d625d6926b45",
+      "address": "dns.sktr.com.tr",
+      "type": "DoH",
+      "provider": "sktr",
+      "name": "sktr",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.sktr.com.tr/dns-query",
+      "description": "DoH server provided by Sktr",
+      "hostname": "dns.sktr.com.tr",
+      "port": 443,
+      "path": "/dns-query"
     },
     {
       "id": "8fd7aa7b79134ed7a4c2636ffd3f6363",
