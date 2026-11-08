@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-07T03:29:33.060541+00:00",
-  "total": 986,
+  "updated_at": "2026-11-08T02:58:23.113430+00:00",
+  "total": 988,
   "categories": {
     "AdBlock": 59,
     "Adult Filter": 38,
@@ -10,7 +10,7 @@
     "Private": 2,
     "Security": 56,
     "Standard": 807,
-    "Unfiltered": 69
+    "Unfiltered": 71
   },
   "dns": [
     {
@@ -810,6 +810,30 @@
       "doh_url": "https://dns.artikel10.org/dns-query",
       "description": "Artikel10 no-log resolver. DNSSEC-validating and non-filtering, operated by the Artikel10 association. Homepage: https://artikel10.org",
       "hostname": "dns.artikel10.org",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
+      "id": "41f28a8cfd0ff6470dab575cdb13b338",
+      "address": "207.2.121.35",
+      "type": "IPv4",
+      "provider": "beatquantum",
+      "name": "beatquantum",
+      "sources": [
+        "dnscrypt",
+        "curl"
+      ],
+      "categories": [
+        "Unfiltered"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://beatquantum.com/dns-query",
+      "description": "BeatQuantum non-filtering, no-log, DNSSEC-validating DoH resolver in the United Kingdom, with post-quantum (ML-KEM) key exchange. Accepts classical, hybrid (X25519MLKEM768) and pure ML-KEM TLS key exchange. Also DoH3, DoT and DoQ. Operated by BeatQuantum Limited. Homepage: https://beatquantum.com/stamps",
+      "hostname": "beatquantum.com",
       "port": 443,
       "path": "/dns-query"
     },
@@ -12700,7 +12724,8 @@
       "provider": "ekinao-doh-ipv4",
       "name": "ekinao-doh-ipv4",
       "sources": [
-        "dnscrypt"
+        "dnscrypt",
+        "curl"
       ],
       "categories": [
         "Unfiltered"
@@ -12970,6 +12995,29 @@
       "hostname": "doh.libredns.gr",
       "port": 443,
       "path": "/noads"
+    },
+    {
+      "id": "4e84c411c0702d104e3bc0144862066a",
+      "address": "144.79.161.88",
+      "type": "IPv4",
+      "provider": "moklav-dns",
+      "name": "moklav-dns",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "Unfiltered"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.moklav.co.jp/dns-query",
+      "description": "MOKLAV Public DNS, operated by MOKLAV GLOBAL GK (AS154448), Tokyo, Japan. Non-filtering resolver with DNSSEC validation. No query logs are kept. DoT and plain DNS are also available on the same addresses. Operated by MOKLAV GLOBAL GK. Service page: https://www.moklav.co.jp/en/dns",
+      "hostname": "dns.moklav.co.jp",
+      "port": 443,
+      "path": "/dns-query"
     },
     {
       "id": "7813eee2d3e78d4034b6f68503ba90ea",
@@ -15025,29 +15073,6 @@
       "dot": "bazooki-infra.dev",
       "description": "DoT server provided by bazooki-infra.dev",
       "hostname": "bazooki-infra.dev"
-    },
-    {
-      "id": "fc6b6b5599720a782aa3d49ff0e62feb",
-      "address": "beatquantum.com",
-      "type": "DoH",
-      "provider": "beatquantum",
-      "name": "beatquantum",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://beatquantum.com/dns-query",
-      "description": "DoH server provided by BeatQuantum",
-      "hostname": "beatquantum.com",
-      "port": 443,
-      "path": "/dns-query"
     },
     {
       "id": "0bf282a0f316f664c38643f8f7bf3ad3",
@@ -21457,6 +21482,29 @@
       "hostname": "docs.dnspod.cn",
       "port": 443,
       "path": "/public-dns/dot-doh/"
+    },
+    {
+      "id": "48cbed06a709a47413d16a7b481fd863",
+      "address": "www.ekinao.com",
+      "type": "DoH",
+      "provider": "sign in",
+      "name": "sign in",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://www.ekinao.com/publicdns.html",
+      "description": "DoH server provided by Sign in",
+      "hostname": "www.ekinao.com",
+      "port": 443,
+      "path": "/publicdns.html"
     },
     {
       "id": "15eb8b5bfaaa1c98cfb7aac9d261a742",
