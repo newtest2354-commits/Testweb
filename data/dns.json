@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-11-08T02:58:23.113430+00:00",
-  "total": 988,
+  "updated_at": "2026-11-09T03:20:11.709482+00:00",
+  "total": 989,
   "categories": {
     "AdBlock": 59,
     "Adult Filter": 38,
@@ -9,7 +9,7 @@
     "Malware": 38,
     "Private": 2,
     "Security": 56,
-    "Standard": 807,
+    "Standard": 808,
     "Unfiltered": 71
   },
   "dns": [
@@ -17131,6 +17131,29 @@
       "doh_url": "https://juuri.hagezi.org/dns-query",
       "description": "DoH server provided by HaGeZi",
       "hostname": "juuri.hagezi.org",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
+      "id": "64fa9b07c5a3290e7b1be093dedad0e6",
+      "address": "ctif.hagezi.org",
+      "type": "DoH",
+      "provider": "hagezi",
+      "name": "hagezi",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ctif.hagezi.org/dns-query",
+      "description": "DoH server provided by HaGeZi",
+      "hostname": "ctif.hagezi.org",
       "port": 443,
       "path": "/dns-query"
     },
