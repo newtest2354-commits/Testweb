@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "updated_at": "2026-11-10T04:57:31.270337+00:00",
+  "updated_at": "2026-11-13T03:51:19.517249+00:00",
   "total": 986,
   "categories": {
-    "AdBlock": 59,
+    "AdBlock": 60,
     "Adult Filter": 38,
     "Family": 32,
     "Malware": 38,
     "Private": 2,
     "Security": 56,
-    "Standard": 805,
+    "Standard": 804,
     "Unfiltered": 71
   },
   "dns": [
@@ -3608,29 +3608,6 @@
       "doh_url": "https://doh.dns4all.eu/dns-query",
       "description": "DNS4All public resolver by SIDN Labs. No logs, DNSSEC validation. Filters domains sanctioned by the EU. Homepage: https://dns4all.eu",
       "hostname": "doh.dns4all.eu",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "1d6d1b956d01c3841ec28052de8d23ce",
-      "address": "194.0.5.64",
-      "type": "IPv4",
-      "provider": "dns4all-ipv4",
-      "name": "dns4all-ipv4",
-      "sources": [
-        "dnscrypt"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://doh64.dns4all.eu/dns-query",
-      "description": "DNS4All public resolver by SIDN Labs. No logs, DNSSEC validation. Filters domains sanctioned by the EU. Homepage: https://dns4all.eu",
-      "hostname": "doh64.dns4all.eu",
       "port": 443,
       "path": "/dns-query"
     },
@@ -12834,6 +12811,29 @@
       "path": "/dns-query"
     },
     {
+      "id": "1df5a1650afee6332473035d832fea09",
+      "address": "dns.iakovf1.com",
+      "type": "DoH",
+      "provider": "iadns",
+      "name": "iadns",
+      "sources": [
+        "dnscrypt"
+      ],
+      "categories": [
+        "AdBlock"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://dns.iakovf1.com/dns-query",
+      "description": "Provided by a personal, independently-run encrypted DNS resolver network (IaDNS) with ad/tracker blocking, DNSSEC validation, and no query-log retention. Nodes geo-routed across the United States (New York metro + Los Angeles).",
+      "hostname": "dns.iakovf1.com",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
       "id": "ecdd93856fc6706097208e1d2d2b3045",
       "address": "213.196.191.96",
       "type": "IPv4",
@@ -17498,6 +17498,29 @@
       "hostname": "krctech.dev"
     },
     {
+      "id": "20541171c004c212cb9b8a5ffbe3f32e",
+      "address": "ledns.eu",
+      "type": "DoH",
+      "provider": "le_dns",
+      "name": "le_dns",
+      "sources": [
+        "curl"
+      ],
+      "categories": [
+        "Standard"
+      ],
+      "protocols": [
+        "DNS",
+        "DoH"
+      ],
+      "status": "active",
+      "doh_url": "https://ledns.eu/dns-query",
+      "description": "DoH server provided by le_dns",
+      "hostname": "ledns.eu",
+      "port": 443,
+      "path": "/dns-query"
+    },
+    {
       "id": "a0a5e1752035b8e2f7a4de0b6eb424d9",
       "address": "liberador.net",
       "type": "DoT",
@@ -18256,29 +18279,6 @@
       "doh_url": "https://sg-w-p-1.nashkan.net/dns-query",
       "description": "DoH server provided by nashkan.net",
       "hostname": "sg-w-p-1.nashkan.net",
-      "port": 443,
-      "path": "/dns-query"
-    },
-    {
-      "id": "a249967d886d3c8f877bddf8c0c54463",
-      "address": "us-chi-w-f-1.nashkan.net",
-      "type": "DoH",
-      "provider": "nashkan.net",
-      "name": "nashkan.net",
-      "sources": [
-        "curl"
-      ],
-      "categories": [
-        "Standard"
-      ],
-      "protocols": [
-        "DNS",
-        "DoH"
-      ],
-      "status": "active",
-      "doh_url": "https://us-chi-w-f-1.nashkan.net/dns-query",
-      "description": "DoH server provided by nashkan.net",
-      "hostname": "us-chi-w-f-1.nashkan.net",
       "port": 443,
       "path": "/dns-query"
     },
